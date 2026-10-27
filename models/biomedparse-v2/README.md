@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/microsoft/BiomedParse"><img src="https://img.shields.io/badge/WEIGHTS-Gated%2DCheckpoint-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
 </p>
 
-> ← Back to the [model atlas](../README.md) · Selected set: Current six-model comparison set
+[← Model atlas](../README.md)
 
 ## At a glance
 
 | Field | Details |
 |---|---|
-| Atlas group | Current six-model comparison set |
+| Model type | Text-guided biomedical parsing model |
 | Research team / organization | Microsoft Research |
 | Input / modality | 3D CT, MRI, ultrasound, PET and 3D microscopy according to the v2 README; dedicated pretrained v2 weights are for 3D. |
 | Prompt / interaction | Text-concept prompts; slice-wise model inference with neighboring volume context encoded into RGB input. |
@@ -48,9 +48,9 @@ python inference.py --input_dir examples/imgs --output_dir outputs/3d \
 ```
 The script expects challenge-format preprocessed NPZ volumes. Raw DICOM/NIfTI still needs modality-appropriate intensity preprocessing; reduce `--slice_batch_size` if GPU memory is limited.
 
-## ⚠️ Version and comparison notes
+## ⚠️ Version and practical notes
 
-Use the v2 branch and `biomedparse_v2.ckpt` for the 3D comparison. The v1 branch/weights are a separate 2D workflow; raw scanner images are not automatically windowed or normalized by the v2 inference script.
+Use the v2 branch and biomedparse_v2.ckpt for the 3D workflow. The v1 branch and weights are a separate 2D workflow; raw scanner images require modality-appropriate preprocessing.
 
 ## 📜 License
 

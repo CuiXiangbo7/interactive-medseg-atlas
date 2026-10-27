@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/wanglab/MedSAM2"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
 </p>
 
-> ← Back to the [model atlas](../README.md) · Selected set: SRO-Edit comparison baselines
+[← Model atlas](../README.md)
 
 ## At a glance
 
 | Field | Details |
 |---|---|
-| Atlas group | SRO-Edit comparison baselines |
+| Model type | 3D and video promptable segmentation |
 | Research team / organization | University Health Network, University of Toronto and collaborating institutions |
 | Input / modality | 3D CT/MRI/PET volumes and medical videos such as ultrasound or endoscopy. |
 | Prompt / interaction | Spatial prompts such as boxes/masks on a slice or frame, followed by propagation and interactive correction. |
@@ -44,9 +44,9 @@ python medsam2_infer_3D_CT.py -i CT_DeepLesion/images -o CT_DeepLesion/segmentat
 ```
 That CLI example is CT-specific; follow the official MRI/video notebooks or scripts for those modalities.
 
-## ⚠️ Version and comparison notes
+## ⚠️ Version and practical notes
 
-The SRO-Edit manuscript compares a MedSAM2 variant fine-tuned for 250 epochs on each target task. Do not substitute `MedSAM2_latest.pt` without checking that its training data, checkpoint version and interaction setup match the reported baseline.
+The upstream repository provides general and task-specific checkpoints. Record the exact checkpoint, training data, modality and prompt configuration; the latest release is not automatically identical to earlier published weights.
 
 ## 📜 License
 

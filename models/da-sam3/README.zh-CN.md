@@ -10,13 +10,13 @@
 <a href="https://github.com/Reconsider80/DA-SAM3#readme"><img src="https://img.shields.io/badge/WEIGHTS-Not%2DListed-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
 </p>
 
-> ← 返回 [模型目录](../README.zh-CN.md) · 目录分组: 本轮六模型对比组
+[← 模型目录](../README.zh-CN.md)
 
 ## 基本信息
 
 | 字段 | 说明 |
 |---|---|
-| 目录分组 | 本轮六模型对比组 |
+| 模型类型 | 参数高效的医学 SAM3 适配 |
 | 研究团队 / 机构 | MICCAI 2026 论文作者：Ying Chen、Jinyue Li、Kun Wang、Qiankun Li、Yang Liu |
 | 输入 / 模态 | 医学图像分割；公开仓库列出 Synapse、MMWHS、BTCV 和 ACDC 数据集。 |
 | 提示 / 交互 | 自然语言文本提示，并结合图像条件的 expert routing。 |
@@ -49,9 +49,9 @@ python infer.py --config configs/da_sam3_default.yaml \
 ```
 
 
-## ⚠️ 版本与对比说明
+## ⚠️ 版本与使用说明
 
-上游 GitHub 实现可用于了解和运行方法，但 README 未提供可直接下载的 DA checkpoint。应记录 Git commit、SAM 3 base checkpoint、训练阶段和本地生成的 adapter checkpoint；若声称精确复现论文，应向作者确认该 GitHub 实现。
+公开实现未列出可下载的 DA-SAM3 checkpoint。请记录 Git revision、SAM 3 base checkpoint、训练阶段和 adapter checkpoint；论文页和 GitHub README 对代码发布状态的说明目前不同。
 
 ## 📜 许可
 

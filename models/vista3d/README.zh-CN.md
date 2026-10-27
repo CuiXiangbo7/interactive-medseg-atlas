@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/nvidia/NV-Segment-CT"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
 </p>
 
-> ← 返回 [模型目录](../README.zh-CN.md) · 目录分组: SRO-Edit 对比基线
+[← 模型目录](../README.zh-CN.md)
 
 ## 基本信息
 
 | 字段 | 说明 |
 |---|---|
-| 目录分组 | SRO-Edit 对比基线 |
+| 模型类型 | 3D 自动与点提示分割 |
 | 研究团队 / 机构 | Project MONAI / NVIDIA |
 | 输入 / 模态 | CVPR 2025 研究版 checkpoint 以 CT 为主，支持 127 类解剖结构/病灶。 |
 | 提示 / 交互 | 自动分割使用类别提示；交互分割与细化使用 3D 正/负点击点。 |
@@ -47,9 +47,9 @@ python -m scripts.infer --config_file 'configs/infer.yaml' - infer \
 ```
 
 
-## ⚠️ 版本与对比说明
+## ⚠️ 版本与使用说明
 
-SRO-Edit 稿件报告了针对每个目标任务微调 250 个 epoch 的 VISTA3D。VISTA3D 研究仓库是 CT 版本，不能与较新的 CTMR 自动模型混为一谈；应记录使用类别自动提示、仅点提示还是 auto-plus-point。
+研究仓库主要面向 CT，与较新的 CTMR 自动模型不同。请注明推理使用类别提示、点提示，还是自动分割后再用点修正。
 
 ## 📜 许可
 

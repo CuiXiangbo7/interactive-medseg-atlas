@@ -18,7 +18,7 @@ Browse the [dataset catalog](datasets/README.md) for concise comparisons and ded
 
 ## 🤖 Interactive model guides
 
-Browse the [model atlas](models/README.md) for the two comparison sets discussed in this project, with bilingual pages for all 14 methods. Each page links to the original paper, source code and weights, and summarizes installation, inference, modality, prompting, version and license details.
+Browse the [model atlas](models/README.md) for a bilingual overview of interactive and promptable medical segmentation models. Each model page links to its original paper, source code and weights, and summarizes setup, inference, modality, prompts, versions and licenses.
 
 ## 📖 Scope and citation
 

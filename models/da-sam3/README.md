@@ -10,13 +10,13 @@
 <a href="https://github.com/Reconsider80/DA-SAM3#readme"><img src="https://img.shields.io/badge/WEIGHTS-Not%2DListed-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
 </p>
 
-> ← Back to the [model atlas](../README.md) · Selected set: Current six-model comparison set
+[← Model atlas](../README.md)
 
 ## At a glance
 
 | Field | Details |
 |---|---|
-| Atlas group | Current six-model comparison set |
+| Model type | Parameter-efficient medical SAM3 adaptation |
 | Research team / organization | MICCAI 2026 paper authors: Ying Chen, Jinyue Li, Kun Wang, Qiankun Li and Yang Liu |
 | Input / modality | Medical image segmentation; the public repository lists Synapse, MMWHS, BTCV and ACDC datasets. |
 | Prompt / interaction | Natural-language text prompt combined with image-conditioned expert routing. |
@@ -49,9 +49,9 @@ python infer.py --config configs/da_sam3_default.yaml \
 ```
 
 
-## ⚠️ Version and comparison notes
+## ⚠️ Version and practical notes
 
-The upstream GitHub implementation is useful for studying/running the method, but its checkpoint is not a one-click download in the README. Record the Git commit, SAM 3 base checkpoint, training stage and locally produced adapter checkpoint; confirm the GitHub implementation with the authors if claiming exact paper reproduction.
+The public implementation does not list a downloadable DA-SAM3 checkpoint. Record the Git revision, SAM 3 base checkpoint, training stage and adapter checkpoint; the paper page and GitHub README currently describe code availability differently.
 
 ## 📜 License
 

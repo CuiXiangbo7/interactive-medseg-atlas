@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/mrokuss/VoxTell"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
 </p>
 
-> ← Back to the [model atlas](../README.md) · Selected set: Current six-model comparison set
+[← Model atlas](../README.md)
 
 ## At a glance
 
 | Field | Details |
 |---|---|
-| Atlas group | Current six-model comparison set |
+| Model type | Free-text 3D segmentation model |
 | Research team / organization | German Cancer Research Center (DKFZ) / Helmholtz Imaging |
 | Input / modality | 3D CT, MRI and PET volumes; current v1.1 weights are distributed by the authors. |
 | Prompt / interaction | Free-text prompt only; no point/box interaction is required by the standard predictor. |
@@ -43,9 +43,9 @@ voxtell-predict -i case.nii.gz -o output -p "liver" "spleen"
 ```
 Use NIfTI input and preserve orientation metadata. VoxTell expects RAS orientation, does not automatically resample unusual voxel spacing and recommends checking orientation/spacing when results look anatomically misplaced.
 
-## ⚠️ Version and comparison notes
+## ⚠️ Version and practical notes
 
-This is a text-only volumetric model. Preserve the exact English prompt, image orientation, voxel spacing and model tag in comparison metadata; prompt wording and preprocessing can affect the result.
+This is a text-only volumetric model. Preserve the exact English prompt, image orientation, voxel spacing and model tag; prompt wording and preprocessing can affect predictions.
 
 ## 📜 License
 

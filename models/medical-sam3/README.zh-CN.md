@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/Chongcong/Medical-SAM3"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
 </p>
 
-> ← 返回 [模型目录](../README.zh-CN.md) · 目录分组: 本轮六模型对比组
+[← 模型目录](../README.zh-CN.md)
 
 ## 基本信息
 
 | 字段 | 说明 |
 |---|---|
-| 目录分组 | 本轮六模型对比组 |
+| 模型类型 | Medical-SAM3 的 2D/3D 适配 |
 | 研究团队 / 机构 | AIM Research Lab 项目 |
 | 输入 / 模态 | 2D 医学 benchmark 与 3D NPZ 体数据；需注明结果使用的代码路径/版本。 |
 | 提示 / 交互 | 2D 框/文本提示；当前 3D v2 推理使用文本提示并覆盖完整深度。 |
@@ -45,9 +45,9 @@ python medical/inference_3d.py \
 ```
 2D evaluation 路径独立：`cd inference && python run_medsam3_evaluation.py --checkpoint ... --model-name medsam3`。3D 路径输出 NPZ 文件，其中 `segs` 保持原始 `(D,H,W)` 几何。
 
-## ⚠️ 版本与对比说明
+## ⚠️ 版本与使用说明
 
-对于 3D v2，上游 README 说明推理覆盖完整深度，不使用真值掩膜、框、点或由真值选择的切片。对比结果应说明使用 2D 模型还是 3D v2 checkpoint。
+仓库分别提供 2D 和 3D 流程。对于 3D v2，上游 README 说明推理覆盖完整深度，不使用真值提示或由真值选择的切片。
 
 ## 📜 许可
 

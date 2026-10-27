@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/Chongcong/Medical-SAM3"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
 </p>
 
-> ← Back to the [model atlas](../README.md) · Selected set: Current six-model comparison set
+[← Model atlas](../README.md)
 
 ## At a glance
 
 | Field | Details |
 |---|---|
-| Atlas group | Current six-model comparison set |
+| Model type | Medical SAM3 2D/3D adaptation |
 | Research team / organization | AIM Research Lab project |
 | Input / modality | 2D medical benchmarks and 3D NPZ volumes; check which code path/version a result uses. |
 | Prompt / interaction | 2D box/text prompts; current 3D v2 inference is text-prompted and full-depth. |
@@ -45,9 +45,9 @@ python medical/inference_3d.py \
 ```
 The 2D evaluation path is separate: `cd inference && python run_medsam3_evaluation.py --checkpoint ... --model-name medsam3`. Outputs from the 3D path are NPZ files containing `segs` with original `(D,H,W)` geometry.
 
-## ⚠️ Version and comparison notes
+## ⚠️ Version and practical notes
 
-For 3D v2, the upstream README says inference covers the full depth and does not use ground-truth masks, boxes, points or ground-truth-selected slices. State whether a comparison uses the 2D model or the 3D v2 checkpoint.
+The repository has separate 2D and 3D workflows. For 3D v2, the upstream README says inference covers the full depth without ground-truth prompts or ground-truth-selected slices.
 
 ## 📜 License
 

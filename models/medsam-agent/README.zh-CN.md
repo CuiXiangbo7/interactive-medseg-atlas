@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/Saint-lsy/MedSAM-Agent-Qwen3-VL-8B-MedSAM2"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
 </p>
 
-> ← 返回 [模型目录](../README.zh-CN.md) · 目录分组: SRO-Edit 对比基线
+[← 模型目录](../README.zh-CN.md)
 
 ## 基本信息
 
 | 字段 | 说明 |
 |---|---|
-| 目录分组 | SRO-Edit 对比基线 |
+| 模型类型 | Agentic 多轮分割框架 |
 | 研究团队 / 机构 | 香港中文大学、腾讯混元及合作机构 |
 | 输入 / 模态 | 作者评估包含 6 种模态、21 个数据集的 2D 医学图像。 |
 | 提示 / 交互 | 自然语言目标描述加 agent 自动生成的点击；可选 Qwen 或 GPT grounding model，并需单独配置 segmentation backbone。 |
@@ -48,9 +48,9 @@ python infer/run_single_inference.py \
 ```
 上游报告开发环境为 Python 3.11、CUDA 12.9、PyTorch 2.8.0。论文训练使用 8 张 H20 GPU；这是训练配置，不代表推理的最低硬件要求。
 
-## ⚠️ 版本与对比说明
+## ⚠️ 版本与使用说明
 
-该方法采用自主多轮交互，交互预算由 agent policy 控制。SRO-Edit 对比使用官方 closed-loop policy 和相同的 MedSAM2 baseline checkpoint；这与固定次数的人工点击并不等价。
+该方法采用自主多轮交互，由 action policy 选择提示，因此交互次数不能直接等同于固定次数的人工点击。请分别记录 grounding model 和 segmentation backbone。
 
 ## 📜 许可
 

@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/nvidia/NV-Segment-CT"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
 </p>
 
-> ← Back to the [model atlas](../README.md) · Selected set: SRO-Edit comparison baselines
+[← Model atlas](../README.md)
 
 ## At a glance
 
 | Field | Details |
 |---|---|
-| Atlas group | SRO-Edit comparison baselines |
+| Model type | 3D automatic and point-prompt segmentation |
 | Research team / organization | Project MONAI / NVIDIA |
 | Input / modality | The CVPR 2025 research checkpoint is CT-focused and supports 127 anatomy/lesion classes. |
 | Prompt / interaction | Class prompts for automatic segmentation; positive/negative 3D point clicks for interactive segmentation and refinement. |
@@ -47,9 +47,9 @@ python -m scripts.infer --config_file 'configs/infer.yaml' - infer \
 ```
 
 
-## ⚠️ Version and comparison notes
+## ⚠️ Version and practical notes
 
-The SRO-Edit manuscript reports VISTA3D fine-tuning for 250 epochs on each target task. The VISTA3D research repo is CT-only and does not mean the newer CTMR automatic model; record whether prompts are automatic class labels, point-only or auto-plus-point.
+The research repository is CT-focused and distinct from the newer CTMR automatic model. State whether inference uses class prompts, points, or automatic segmentation followed by point refinement.
 
 ## 📜 License
 

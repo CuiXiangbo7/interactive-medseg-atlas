@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/lal-Joey/MedSAM3_v1"><img src="https://img.shields.io/badge/WEIGHTS-LoRA%2DWeights-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
 </p>
 
-> ← Back to the [model atlas](../README.md) · Selected set: Current six-model comparison set
+[← Model atlas](../README.md)
 
 ## At a glance
 
 | Field | Details |
 |---|---|
-| Atlas group | Current six-model comparison set |
+| Model type | Text-guided medical SAM adapter |
 | Research team / organization | Hong Kong University of Science and Technology (Guangzhou), University of Illinois Urbana-Champaign and collaborators |
 | Input / modality | The authors describe radiology, optical/microscopy, pathology and procedure imagery; the first release's exact supported category list is still being documented. |
 | Prompt / interaction | Text prompt; LoRA medical adapter on top of the SAM 3 model. |
@@ -46,9 +46,9 @@ python3 infer_sam.py \
 ```
 Set the LoRA checkpoint path in `configs/full_lora_config.yaml` as directed by the upstream README.
 
-## ⚠️ Version and comparison notes
+## ⚠️ Version and practical notes
 
-Use the name `MedSAM3-v1` for this LoRA release and keep it distinct from Meta's SAM 3 and from the Medical-SAM3 project. The authors note that the exact v1 supported-task list is still being documented.
+Keep this LoRA release distinct from Meta's SAM 3 and the separate Medical-SAM3 project. The authors note that the exact v1 supported-task list is still being documented.
 
 ## 📜 License
 

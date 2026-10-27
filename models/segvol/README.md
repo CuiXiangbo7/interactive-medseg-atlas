@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/BAAI/SegVol"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
 </p>
 
-> ← Back to the [model atlas](../README.md) · Selected set: SRO-Edit comparison baselines
+[← Model atlas](../README.md)
 
 ## At a glance
 
 | Field | Details |
 |---|---|
-| Atlas group | SRO-Edit comparison baselines |
+| Model type | Text and spatial prompt 3D segmentation |
 | Research team / organization | Beijing Academy of Artificial Intelligence (BAAI), DCAI |
 | Input / modality | 3D CT; the upstream paper/release emphasizes more than 200 anatomical categories. |
 | Prompt / interaction | Text, point and box prompts; optional zoom-in/zoom-out refinement. |
@@ -44,9 +44,9 @@ bash script/inference_demo.sh
 ```
 Important: the upstream demo/evaluation script reads ground-truth masks to synthesize point/box prompts. Those are GT-derived/oracle prompts; they are not a human-input inference recipe. See the [official inference guide](https://github.com/BAAI-DCAI/SegVol/blob/main/documents/inference_demo.md).
 
-## ⚠️ Version and comparison notes
+## ⚠️ Version and practical notes
 
-The SRO-Edit manuscript uses a SegVol variant fine-tuned for 250 epochs on each target task. Keep the checkpoint, prompting mode and the official demo's GT-derived prompt behavior separate when documenting or reproducing results.
+The official evaluation demo synthesizes point/box prompts from ground-truth masks. Such runs are GT-derived/oracle; for deployment or human-in-the-loop evaluation, provide prompts independently of the ground truth.
 
 ## 📜 License
 

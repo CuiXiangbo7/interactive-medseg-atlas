@@ -10,13 +10,13 @@
 <a href="https://owncloud.gwdg.de/index.php/s/f5Ol4FrjPQWfjUF"><img src="https://img.shields.io/badge/WEIGHTS-OwnCloud-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
 </p>
 
-> ← Back to the [model atlas](../README.md) · Selected set: SRO-Edit comparison baselines
+[← Model atlas](../README.md)
 
 ## At a glance
 
 | Field | Details |
 |---|---|
-| Atlas group | SRO-Edit comparison baselines |
+| Model type | Medical-domain SAM segmentation model |
 | Research team / organization | Computational Cell Analytics, University of Göttingen |
 | Input / modality | 2D and 3D biomedical images; based on the upstream micro-sam ecosystem. |
 | Prompt / interaction | SAM-style points, boxes and masks; also exposes an additional pretrained segmentation decoder for semantic segmentation. |
@@ -45,9 +45,9 @@ wget 'https://owncloud.gwdg.de/index.php/s/f5Ol4FrjPQWfjUF/download' \
 ```
 For an interactive annotation UI, the authors recommend [micro-sam](https://github.com/computational-cell-analytics/micro-sam); follow the official [`TOOL_USAGE.md`](https://github.com/computational-cell-analytics/medico-sam/blob/master/TOOL_USAGE.md) for the exact viewer workflow.
 
-## ⚠️ Version and comparison notes
+## ⚠️ Version and practical notes
 
-The SRO-Edit manuscript reports a MedicoSAM baseline fine-tuned for 250 epochs on each target task. The public `vit_b_medicosam.pt` is a starting checkpoint; document any downstream training and the exact SAM variant used.
+The public vit_b_medicosam.pt file is a starting checkpoint. Record any downstream fine-tuning and the exact SAM variant used.
 
 ## 📜 License
 

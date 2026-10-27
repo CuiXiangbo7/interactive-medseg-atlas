@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/MIC-DKFZ/nnInteractive"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
 </p>
 
-> ← Back to the [model atlas](../README.md) · Selected set: SRO-Edit comparison baselines
+[← Model atlas](../README.md)
 
 ## At a glance
 
 | Field | Details |
 |---|---|
-| Atlas group | SRO-Edit comparison baselines |
+| Model type | Open-set 3D interactive segmentation |
 | Research team / organization | German Cancer Research Center (DKFZ) / Helmholtz Imaging |
 | Input / modality | 3D CT, MRI, PET and 3D microscopy, among other volumetric images. |
 | Prompt / interaction | 2D interactions produce 3D masks; supports points, scribbles, bounding boxes and lasso. |
@@ -41,9 +41,9 @@ nninteractive-download-model nnInteractive_v1.0
 ```
 Use the [official minimal inference example](https://github.com/MIC-DKFZ/nnInteractive#getting-started) with `nnInteractiveInferenceSession`. A remote GPU server is also available; CPU-only clients can install `nninteractive-client` and connect to that server.
 
-## ⚠️ Version and comparison notes
+## ⚠️ Version and practical notes
 
-The SRO-Edit manuscript uses the official pretrained model because nnInteractive does not provide the same target-specific training path as the other trained baselines. Keep its prompt protocol and checkpoint license visible in comparisons.
+The official model is distributed as a pretrained checkpoint. Its code and weights have different licenses, so review both before reuse or redistribution.
 
 ## 📜 License
 

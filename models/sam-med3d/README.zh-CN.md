@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/blueyo0/SAM-Med3D"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
 </p>
 
-> ← 返回 [模型目录](../README.zh-CN.md) · 目录分组: SRO-Edit 对比基线
+[← 模型目录](../README.zh-CN.md)
 
 ## 基本信息
 
 | 字段 | 说明 |
 |---|---|
-| 目录分组 | SRO-Edit 对比基线 |
+| 模型类型 | 3D 点提示分割模型 |
 | 研究团队 / 机构 | Uni-Medical 医学图像研究项目 |
 | 输入 / 模态 | 3D 医学体数据；项目在 CT、MRI 等多种体数据模态上评估。 |
 | 提示 / 交互 | 3D 点提示交互与迭代修正。 |
@@ -43,9 +43,9 @@ python medim_val_single.py
 ```
 该示例用于评估，需要配对的真值掩膜。模型构建与权重选择见[官方 MedIM 示例](https://github.com/uni-medical/SAM-Med3D/blob/main/medim_val_single.py)。
 
-## ⚠️ 版本与对比说明
+## ⚠️ 版本与使用说明
 
-SRO-Edit 稿件中的对比对象是针对每个目标任务微调 250 个 epoch 的 SAM-Med3D 变体。后续发布的 `SAM-Med3D-turbo` 不能默认视为同一 checkpoint；复现时应记录具体权重与提示协议。
+项目目前重点推荐较新的 SAM-Med3D-turbo checkpoint。它与原始论文 checkpoint 不同；复现已发表结果时应记录具体权重和提示协议。
 
 ## 📜 许可
 

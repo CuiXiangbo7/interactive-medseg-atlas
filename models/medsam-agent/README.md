@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/Saint-lsy/MedSAM-Agent-Qwen3-VL-8B-MedSAM2"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
 </p>
 
-> ← Back to the [model atlas](../README.md) · Selected set: SRO-Edit comparison baselines
+[← Model atlas](../README.md)
 
 ## At a glance
 
 | Field | Details |
 |---|---|
-| Atlas group | SRO-Edit comparison baselines |
+| Model type | Agentic multi-turn segmentation framework |
 | Research team / organization | The Chinese University of Hong Kong, Tencent Hunyuan and collaborators |
 | Input / modality | 2D medical images from six modalities and 21 datasets in the authors' evaluation. |
 | Prompt / interaction | Natural-language target description plus agent-generated clicks; selectable Qwen or GPT grounding model and a separate segmentation backbone. |
@@ -48,9 +48,9 @@ python infer/run_single_inference.py \
 ```
 Upstream reports its development environment as Python 3.11, CUDA 12.9 and PyTorch 2.8.0. The paper's training used eight H20 GPUs; that is a training setup, not a guaranteed minimum inference requirement.
 
-## ⚠️ Version and comparison notes
+## ⚠️ Version and practical notes
 
-This method is autonomous and multi-turn, so its interaction budget is controlled by the agent policy. The SRO-Edit comparison uses the official closed-loop policy with the same MedSAM2 baseline checkpoint; it is not equivalent to a fixed number of manually placed clicks.
+This is an autonomous multi-turn method. Its action policy chooses prompts, so its interaction count is not directly comparable with a fixed manual-click budget. Record the grounding model and segmentation backbone separately.
 
 ## 📜 License
 

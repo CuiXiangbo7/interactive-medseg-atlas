@@ -10,13 +10,13 @@
 <a href="https://owncloud.gwdg.de/index.php/s/f5Ol4FrjPQWfjUF"><img src="https://img.shields.io/badge/WEIGHTS-OwnCloud-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
 </p>
 
-> ← 返回 [模型目录](../README.zh-CN.md) · 目录分组: SRO-Edit 对比基线
+[← 模型目录](../README.zh-CN.md)
 
 ## 基本信息
 
 | 字段 | 说明 |
 |---|---|
-| 目录分组 | SRO-Edit 对比基线 |
+| 模型类型 | 医学领域 SAM 分割模型 |
 | 研究团队 / 机构 | University of Göttingen 的 Computational Cell Analytics 团队 |
 | 输入 / 模态 | 2D 和 3D 生物医学图像；与上游 micro-sam 生态兼容。 |
 | 提示 / 交互 | SAM 风格的点、框和掩膜提示；还提供额外预训练 segmentation decoder 用于语义分割。 |
@@ -45,9 +45,9 @@ wget 'https://owncloud.gwdg.de/index.php/s/f5Ol4FrjPQWfjUF/download' \
 ```
 交互标注界面方面，作者推荐 [micro-sam](https://github.com/computational-cell-analytics/micro-sam)；具体 viewer 流程见官方 [`TOOL_USAGE.md`](https://github.com/computational-cell-analytics/medico-sam/blob/master/TOOL_USAGE.md)。
 
-## ⚠️ 版本与对比说明
+## ⚠️ 版本与使用说明
 
-SRO-Edit 稿件报告的是针对每个目标任务微调 250 个 epoch 的 MedicoSAM 基线。公开的 `vit_b_medicosam.pt` 是起始 checkpoint；应同时记录后续训练过程和具体 SAM 变体。
+公开的 vit_b_medicosam.pt 是起始 checkpoint。请记录后续微调设置和具体使用的 SAM 变体。
 
 ## 📜 许可
 

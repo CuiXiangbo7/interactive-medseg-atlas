@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/MIC-DKFZ/nnInteractive"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
 </p>
 
-> ← 返回 [模型目录](../README.zh-CN.md) · 目录分组: SRO-Edit 对比基线
+[← 模型目录](../README.zh-CN.md)
 
 ## 基本信息
 
 | 字段 | 说明 |
 |---|---|
-| 目录分组 | SRO-Edit 对比基线 |
+| 模型类型 | Open-set 3D 交互式分割 |
 | 研究团队 / 机构 | 德国癌症研究中心（DKFZ）/ Helmholtz Imaging |
 | 输入 / 模态 | 3D CT、MRI、PET、3D 显微图像等体数据。 |
 | 提示 / 交互 | 用 2D 交互生成 3D 掩膜；支持点、涂鸦、边界框和套索。 |
@@ -41,9 +41,9 @@ nninteractive-download-model nnInteractive_v1.0
 ```
 使用官方 [minimal inference 示例](https://github.com/MIC-DKFZ/nnInteractive#getting-started) 中的 `nnInteractiveInferenceSession`。项目也提供远程 GPU server；无 GPU 的客户端可装 `nninteractive-client` 连接服务器。
 
-## ⚠️ 版本与对比说明
+## ⚠️ 版本与使用说明
 
-SRO-Edit 稿件使用官方预训练模型，因为 nnInteractive 没有提供与其他训练型基线相同的任务专用训练流程。对比时应注明其提示协议及 checkpoint 许可。
+该模型以官方预训练 checkpoint 形式发布。代码和权重适用不同许可，复用或再分发前请分别核对。
 
 ## 📜 许可
 

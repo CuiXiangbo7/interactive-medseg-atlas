@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/wanglab/MedSAM2"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
 </p>
 
-> ← 返回 [模型目录](../README.zh-CN.md) · 目录分组: SRO-Edit 对比基线
+[← 模型目录](../README.zh-CN.md)
 
 ## 基本信息
 
 | 字段 | 说明 |
 |---|---|
-| 目录分组 | SRO-Edit 对比基线 |
+| 模型类型 | 3D 与视频提示分割 |
 | 研究团队 / 机构 | University Health Network、University of Toronto 及合作机构 |
 | 输入 / 模态 | 3D CT/MRI/PET 体数据，以及超声、内镜等医学视频。 |
 | 提示 / 交互 | 在切片或帧上提供框/掩膜等空间提示，再进行传播与交互式修正。 |
@@ -44,9 +44,9 @@ python medsam2_infer_3D_CT.py -i CT_DeepLesion/images -o CT_DeepLesion/segmentat
 ```
 该命令针对 CT；MRI 和视频请按官方 notebook 或脚本操作。
 
-## ⚠️ 版本与对比说明
+## ⚠️ 版本与使用说明
 
-SRO-Edit 稿件中的 MedSAM2 对比对象是针对每个目标任务微调 250 个 epoch 的版本。替换成 `MedSAM2_latest.pt` 前，应核对其训练数据、checkpoint 版本和交互设置是否与论文基线一致。
+上游仓库提供通用和任务专用 checkpoint。请记录具体权重、训练数据、模态与提示配置；最新版本不一定与早期论文权重相同。
 
 ## 📜 许可
 

@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/lal-Joey/MedSAM3_v1"><img src="https://img.shields.io/badge/WEIGHTS-LoRA%2DWeights-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
 </p>
 
-> ← 返回 [模型目录](../README.zh-CN.md) · 目录分组: 本轮六模型对比组
+[← 模型目录](../README.zh-CN.md)
 
 ## 基本信息
 
 | 字段 | 说明 |
 |---|---|
-| 目录分组 | 本轮六模型对比组 |
+| 模型类型 | 文本引导医学 SAM adapter |
 | 研究团队 / 机构 | 香港科技大学（广州）、University of Illinois Urbana-Champaign 及合作机构 |
 | 输入 / 模态 | 作者介绍覆盖放射影像、光学/显微、病理及操作视频；首版具体支持类别仍在补充文档。 |
 | 提示 / 交互 | 文本提示；在 SAM 3 基础模型上加载医学 LoRA adapter。 |
@@ -46,9 +46,9 @@ python3 infer_sam.py \
 ```
 按上游 README 在 `configs/full_lora_config.yaml` 中设置 LoRA checkpoint 路径。
 
-## ⚠️ 版本与对比说明
+## ⚠️ 版本与使用说明
 
-该 LoRA 发布版称为 `MedSAM3-v1`，应与 Meta 的 SAM 3 及 Medical-SAM3 项目区分。作者注明 v1 具体支持任务列表仍在补充。
+请将此 LoRA release 与 Meta 的 SAM 3 及独立的 Medical-SAM3 项目区分。作者注明 v1 具体支持任务列表仍在补充。
 
 ## 📜 许可
 

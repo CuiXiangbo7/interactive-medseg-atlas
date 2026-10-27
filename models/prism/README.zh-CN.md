@@ -10,13 +10,13 @@
 <a href="https://github.com/MedICL-VU/PRISM#models"><img src="https://img.shields.io/badge/WEIGHTS-Google%2DDrive-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
 </p>
 
-> ← 返回 [模型目录](../README.zh-CN.md) · 目录分组: SRO-Edit 对比基线
+[← 模型目录](../README.zh-CN.md)
 
 ## 基本信息
 
 | 字段 | 说明 |
 |---|---|
-| 目录分组 | SRO-Edit 对比基线 |
+| 模型类型 | 视觉提示交互式分割 |
 | 研究团队 / 机构 | MedICL-VU；Vanderbilt University 研究团队 |
 | 输入 / 模态 | 覆盖医学 2D 和 3D 任务；主要公开版本展示 3D CT 肿瘤分割，PRISM Lite 则是独立的 3D 超声胎盘分割项目。 |
 | 提示 / 交互 | 点击/点提示、框与涂鸦提示；支持迭代细化。 |
@@ -48,9 +48,9 @@ python test.py --data colon --data_dir /path/to/data --split test \
 ```
 完整 CUDA/PyTorch 环境及其他提示参数见官方 README。
 
-## ⚠️ 版本与对比说明
+## ⚠️ 版本与使用说明
 
-SRO-Edit 稿件报告的是采用默认任务设置训练 250 个 epoch 的 PRISM 基线。上游预训练权重与稿件中的微调对比模型是不同 artifact；官方测试示例也按数据集配置。
+公开版本同时提供预训练和任务专用 checkpoint。请按目标任务选择模型版本；示例测试命令按数据集配置。
 
 ## 📜 许可
 

@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/BAAI/SegVol"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
 </p>
 
-> ← 返回 [模型目录](../README.zh-CN.md) · 目录分组: SRO-Edit 对比基线
+[← 模型目录](../README.zh-CN.md)
 
 ## 基本信息
 
 | 字段 | 说明 |
 |---|---|
-| 目录分组 | SRO-Edit 对比基线 |
+| 模型类型 | 文本与空间提示 3D 分割 |
 | 研究团队 / 机构 | 北京智源人工智能研究院（BAAI），DCAI |
 | 输入 / 模态 | 3D CT；上游论文/发布版本强调支持 200 多种解剖类别。 |
 | 提示 / 交互 | 文本、点和框提示；可选 zoom-in/zoom-out 细化。 |
@@ -44,9 +44,9 @@ bash script/inference_demo.sh
 ```
 注意：上游 demo/评估脚本读取真值掩膜来合成点/框提示，属于 GT-derived/oracle 提示，不是人工输入推理流程。详见[官方推理指南](https://github.com/BAAI-DCAI/SegVol/blob/main/documents/inference_demo.md)。
 
-## ⚠️ 版本与对比说明
+## ⚠️ 版本与使用说明
 
-SRO-Edit 稿件使用SRO-Edit 稿件中按目标任务微调 250 个 epoch 的 SegVol 变体。整理或复现结果时，应区分具体 checkpoint、提示模式，以及官方 demo 中 GT-derived 提示这一行为。
+官方 evaluation demo 会根据 ground-truth mask 合成点/框提示，属于 GT-derived/oracle。部署或 human-in-the-loop 评估时，提示应独立于真值生成。
 
 ## 📜 许可
 

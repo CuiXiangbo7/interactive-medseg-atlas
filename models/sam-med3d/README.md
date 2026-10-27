@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/blueyo0/SAM-Med3D"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
 </p>
 
-> ← Back to the [model atlas](../README.md) · Selected set: SRO-Edit comparison baselines
+[← Model atlas](../README.md)
 
 ## At a glance
 
 | Field | Details |
 |---|---|
-| Atlas group | SRO-Edit comparison baselines |
+| Model type | 3D point-prompt segmentation model |
 | Research team / organization | Uni-Medical research project |
 | Input / modality | 3D medical volumes; the project benchmarks CT, MRI and other volumetric modalities. |
 | Prompt / interaction | Interactive 3D point prompts; iterative corrections. |
@@ -43,9 +43,9 @@ python medim_val_single.py
 ```
 The demo is an evaluation example and expects a paired ground-truth mask. For model construction and checkpoint selection, see the [official MedIM example](https://github.com/uni-medical/SAM-Med3D/blob/main/medim_val_single.py).
 
-## ⚠️ Version and comparison notes
+## ⚠️ Version and practical notes
 
-The SRO-Edit manuscript compares a SAM-Med3D variant fine-tuned for 250 epochs on each target task. Do not treat the later `SAM-Med3D-turbo` release as the same checkpoint; record the exact checkpoint and prompt protocol used in any reproduction.
+The project currently highlights the newer SAM-Med3D-turbo checkpoint. Keep it distinct from the original paper checkpoint, and record the exact weight and prompt protocol when reproducing published results.
 
 ## 📜 License
 

@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/mrokuss/VoxTell"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
 </p>
 
-> ← 返回 [模型目录](../README.zh-CN.md) · 目录分组: 本轮六模型对比组
+[← 模型目录](../README.zh-CN.md)
 
 ## 基本信息
 
 | 字段 | 说明 |
 |---|---|
-| 目录分组 | 本轮六模型对比组 |
+| 模型类型 | 自由文本 3D 分割模型 |
 | 研究团队 / 机构 | 德国癌症研究中心（DKFZ）/ Helmholtz Imaging |
 | 输入 / 模态 | 3D CT、MRI 和 PET 体数据；作者提供当前 v1.1 权重。 |
 | 提示 / 交互 | 标准 predictor 使用自由文本提示，不要求点/框交互。 |
@@ -43,9 +43,9 @@ voxtell-predict -i case.nii.gz -o output -p "liver" "spleen"
 ```
 使用 NIfTI 输入并保留方向元数据。VoxTell 期望 RAS 方向，不会自动重采样异常 voxel spacing；若解剖定位异常，应检查方向和间距。
 
-## ⚠️ 版本与对比说明
+## ⚠️ 版本与使用说明
 
-这是文本提示的体数据模型。对比记录应保留精确英文 prompt、图像方向、voxel spacing 和模型 tag；提示措辞与预处理会影响结果。
+这是文本提示的体数据模型。请保留精确英文 prompt、图像方向、voxel spacing 和模型 tag；提示措辞与预处理会影响预测结果。
 
 ## 📜 许可
 

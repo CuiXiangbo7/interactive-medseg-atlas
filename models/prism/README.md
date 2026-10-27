@@ -10,13 +10,13 @@
 <a href="https://github.com/MedICL-VU/PRISM#models"><img src="https://img.shields.io/badge/WEIGHTS-Google%2DDrive-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
 </p>
 
-> ← Back to the [model atlas](../README.md) · Selected set: SRO-Edit comparison baselines
+[← Model atlas](../README.md)
 
 ## At a glance
 
 | Field | Details |
 |---|---|
-| Atlas group | SRO-Edit comparison baselines |
+| Model type | Visual-prompt interactive segmentation |
 | Research team / organization | MedICL-VU; Vanderbilt University research group |
 | Input / modality | Medical 2D and 3D tasks; the main public release demonstrates 3D CT tumor segmentation, while PRISM Lite is a separate 3D ultrasound placenta project. |
 | Prompt / interaction | Click/point interaction, boxes and scribbles; iterative refinement. |
@@ -48,9 +48,9 @@ python test.py --data colon --data_dir /path/to/data --split test \
 ```
 The official README documents the full CUDA/PyTorch installation and alternate prompt flags.
 
-## ⚠️ Version and comparison notes
+## ⚠️ Version and practical notes
 
-The SRO-Edit manuscript reports a PRISM baseline trained for 250 epochs using its default task setup. The upstream pretrained weights and the manuscript's fine-tuned comparison model are distinct artifacts; the upstream test example is dataset-specific.
+The public release includes pretrained and task-specific checkpoints. Choose the intended dataset/model variant; the example test command is dataset-specific.
 
 ## 📜 License
 

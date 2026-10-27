@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/facebook/sam3"><img src="https://img.shields.io/badge/WEIGHTS-Gated%2DCheckpoint-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
 </p>
 
-> ← Back to the [model atlas](../README.md) · Selected set: Current six-model comparison set
+[← Model atlas](../README.md)
 
 ## At a glance
 
 | Field | Details |
 |---|---|
-| Atlas group | Current six-model comparison set |
+| Model type | Concept-prompt image and video segmentation |
 | Research team / organization | Meta AI Research |
 | Input / modality | 2D images and videos; not a native 3D-volume segmenter. |
 | Prompt / interaction | Short text concepts, image exemplars, points, boxes and masks; video tracking and refinement are supported. |
@@ -46,9 +46,9 @@ hf auth login  # after checkpoint access is approved
 ```
 For inference, follow the official image predictor notebook or the `build_sam3_image_model()` + `Sam3Processor` example in the [README](https://github.com/facebookresearch/sam3#basic-usage).
 
-## ⚠️ Version and comparison notes
+## ⚠️ Version and practical notes
 
-SAM 3's native input is 2D image/video. When adapting it to 3D medical volumes, report the medical adapter and slice/clip policy as part of the method rather than describing it as native volumetric inference.
+SAM 3 natively handles 2D images and videos. Any 3D medical workflow adds an adaptation and a slice/clip policy that should be documented.
 
 ## 📜 License
 

@@ -10,13 +10,13 @@
 <a href="https://huggingface.co/facebook/sam3"><img src="https://img.shields.io/badge/WEIGHTS-Gated%2DCheckpoint-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
 </p>
 
-> ← 返回 [模型目录](../README.zh-CN.md) · 目录分组: 本轮六模型对比组
+[← 模型目录](../README.zh-CN.md)
 
 ## 基本信息
 
 | 字段 | 说明 |
 |---|---|
-| 目录分组 | 本轮六模型对比组 |
+| 模型类型 | 概念提示图像与视频分割 |
 | 研究团队 / 机构 | Meta AI Research |
 | 输入 / 模态 | 2D 图像和视频；不是原生 3D 体数据分割器。 |
 | 提示 / 交互 | 短文本概念、图像示例、点、框和掩膜；支持视频跟踪与细化。 |
@@ -46,9 +46,9 @@ hf auth login  # checkpoint 获批后登录
 ```
 推理请使用官方 image predictor notebook，或参照 README 中的 `build_sam3_image_model()` + `Sam3Processor` 示例。
 
-## ⚠️ 版本与对比说明
+## ⚠️ 版本与使用说明
 
-SAM 3 原生输入是 2D 图像/视频。将其适配到 3D 医学体数据时，应把医学适配器及 slice/clip 策略作为方法的一部分说明，不能写成原生体数据推理。
+SAM 3 原生处理 2D 图像和视频。3D 医学工作流程需要额外适配和 slice/clip 策略，使用时应说明这些设置。
 
 ## 📜 许可
 
