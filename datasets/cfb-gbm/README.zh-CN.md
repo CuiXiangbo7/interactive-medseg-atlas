@@ -2,7 +2,7 @@
 
 <h1 align="center">🧠 CFB-GBM</h1>
 
-<p align="center"><strong>胶质母细胞瘤影像与分割 · 纵向多模态数据</strong></p>
+<p align="center"><strong>胶质母细胞瘤（glioblastoma）影像与分割 · 纵向多模态数据（longitudinal multimodal data）</strong></p>
 
 <p align="center">
 <a href="https://www.cancerimagingarchive.net/collection/cfb-gbm/"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="官方数据来源"></a>
@@ -41,9 +41,9 @@ TCIA 当前数据集页面列出的许可为 **CC BY 4.0**。引用数据集并�
 
 ## 📚 出版物与引用
 
-**数据集与方法论文：** Leclercq 等，“CFB-GBM v2.0: An Augmented Longitudinal Dataset for Multi-Modal Glioblastoma Segmentation, Radiomics, and RANO Progression Tracking.” *Machine Learning for Biomedical Imaging (MELBA)*，MICCAI Open Data 2026 专题，2026 年，763–771 页。[DOI：10.59275/j.melba.2026-dd48](https://doi.org/10.59275/j.melba.2026-dd48) · [开放获取论文](https://www.melba-journal.org/papers/2026%3A038.html)。
+**Dataset and methods paper（数据集与方法论文）：** Leclercq et al. “CFB-GBM v2.0: An Augmented Longitudinal Dataset for Multi-Modal Glioblastoma Segmentation, Radiomics, and RANO Progression Tracking.” *Machine Learning for Biomedical Imaging (MELBA)*, Special Issue: MICCAI Open Data 2026, 2026, pp. 763–771. [DOI: 10.59275/j.melba.2026-dd48](https://doi.org/10.59275/j.melba.2026-dd48) · [Open article（开放获取论文）](https://www.melba-journal.org/papers/2026%3A038.html).
 
-**TCIA 数据集引用：** Moreau 等，“Pre and post treatment MRI and radiotherapy plans of patients with glioblastoma: the CFB-GBM cohort (CFB-GBM), Version 4.” *The Cancer Imaging Archive*，2025 年。[DOI：10.7937/V9PN-2F72](https://doi.org/10.7937/V9PN-2F72)。
+**TCIA collection citation（TCIA 数据集引用）：** Moreau et al. “Pre and post treatment MRI and radiotherapy plans of patients with glioblastoma: the CFB-GBM cohort (CFB-GBM), Version 4.” *The Cancer Imaging Archive*, 2025. [DOI: 10.7937/V9PN-2F72](https://doi.org/10.7937/V9PN-2F72).
 
 2026 年论文介绍扩展版 v2.0 数据资源；使用 Version 4 发布版本时，也应引用对应的 TCIA 数据集记录。
 

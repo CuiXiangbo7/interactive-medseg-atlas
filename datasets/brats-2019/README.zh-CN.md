@@ -2,7 +2,7 @@
 
 <h1 align="center">🧠 BraTS 2019</h1>
 
-<p align="center"><strong>术前胶质瘤分割 · 多模态 MRI</strong></p>
+<p align="center"><strong>术前胶质瘤分割（pre-operative glioma segmentation）· 多模态 MRI（multimodal MRI）</strong></p>
 
 <p align="center">
 <a href="https://www.med.upenn.edu/cbica/brats-2019/"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="官方数据来源"></a>
@@ -23,12 +23,12 @@
 | **输入** | T1、T1ce、T2、FLAIR |
 | **任务** | 胶质瘤亚区分割及相关挑战赛任务 |
 | **标签** | NCR/NET、水肿、增强肿瘤；可派生 WT、TC、ET 区域 |
-| **机构来源** | 挑战赛由宾夕法尼亚大学佩雷尔曼医学院 CBICA 牵头组织。官方挑战赛说明该术前 MRI 队列来自多个机构。[官方挑战赛页面](https://www.med.upenn.edu/cbica/brats-2019/)。 |
+| **机构来源** | 挑战赛由宾夕法尼亚大学佩雷尔曼医学院（Perelman School of Medicine at the University of Pennsylvania, UPenn）的 CBICA 牵头组织。官方挑战赛说明该术前 MRI 队列来自多个机构。[官方挑战赛页面](https://www.med.upenn.edu/cbica/brats-2019/)。 |
 | **官方来源** | [挑战赛页面](https://www.med.upenn.edu/cbica/brats-2019/) · [官方数据说明](https://www.med.upenn.edu/cbica/brats2019/data.html) |
 
 ## 🧾 数据集简介
 
-BraTS 2019 使用多机构术前 MRI 和经过专家审核的肿瘤标注。官方数据说明介绍了标准化处理、图像配准与去颅骨流程，以及标注规范。
+BraTS 2019 使用多机构术前 MRI（multi-institutional, pre-operative MRI） 和经过专家审核的肿瘤标注。官方数据说明介绍了标准化处理、图像配准与去颅骨流程，以及标注规范。
 
 挑战赛训练集包含 **335 例有标签病例**。挑战赛还设置验证和测试阶段；挑战赛页面说明，测试数据和评测结果仅在投稿后的短期窗口内向已提交论文的团队开放。
 
@@ -44,7 +44,7 @@ BraTS 2019 使用多机构术前 MRI 和经过专家审核的肿瘤标注。官�
 
 ## 🏷️ 标签与评估说明
 
-2019 年官方数据页面规定的体素标签为：**1 = NCR/NET**、**2 = 水肿**、**4 = 增强肿瘤**。常用派生区域为 **WT = {1,2,4}**、**TC = {1,4}**、**ET = {4}**。报告指标时请同时注明这些定义。
+2019 年官方数据页面规定的体素标签为：**1 = NCR/NET**、**2 = 水肿（edema）**、**4 = 增强肿瘤（enhancing tumor）**。常用派生区域为 **WT (whole tumor) = {1,2,4}**、**TC (tumor core) = {1,4}**、**ET (enhancing tumor) = {4}**。报告指标时请同时注明这些定义。
 
 ## 🔒 获取方式与使用条款
 
@@ -62,13 +62,13 @@ BraTS 2019 使用多机构术前 MRI 和经过专家审核的肿瘤标注。官�
 
 ## 📚 出版物与引用
 
-**挑战赛论文集：** *BrainLes 2019* 与 MICCAI 2019 联合举办，于 2020 年由 Springer 收录于《Lecture Notes in Computer Science》第 11992 卷（第一部分）和第 11993 卷（第二部分）。
+**Challenge proceedings（挑战赛论文集）：** *BrainLes 2019*, held in conjunction with MICCAI 2019 and published in 2020 as Springer Lecture Notes in Computer Science, vols. 11992 (Part I) and 11993 (Part II).
 
-- [第一部分，LNCS 11992，DOI：10.1007/978-3-030-46640-4](https://doi.org/10.1007/978-3-030-46640-4) · [第二部分，LNCS 11993，DOI：10.1007/978-3-030-46643-5](https://doi.org/10.1007/978-3-030-46643-5)
+- [Part I, LNCS 11992, DOI: 10.1007/978-3-030-46640-4（第一部分）](https://doi.org/10.1007/978-3-030-46640-4) · [Part II, LNCS 11993, DOI: 10.1007/978-3-030-46643-5（第二部分）](https://doi.org/10.1007/978-3-030-46643-5)
 
-**数据集资源论文：** Bakas 等，“Advancing The Cancer Genome Atlas glioma MRI collections with expert segmentation labels and radiomic features”。*Scientific Data*，第 4 卷，文章编号 170117，2017 年。[DOI：10.1038/sdata.2017.117](https://doi.org/10.1038/sdata.2017.117)。
+**Dataset resource paper（数据集资源论文）：** Bakas et al. “Advancing The Cancer Genome Atlas glioma MRI collections with expert segmentation labels and radiomic features.” *Scientific Data*, vol. 4, article 170117, 2017. [DOI: 10.1038/sdata.2017.117](https://doi.org/10.1038/sdata.2017.117).
 
-**基准研究论文：** Menze 等，“The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS)”。*IEEE Transactions on Medical Imaging*，第 34 卷第 10 期，1993–2024 页，2015 年。[DOI：10.1109/TMI.2014.2377694](https://doi.org/10.1109/TMI.2014.2377694)。
+**Foundational benchmark reference（基准研究论文）：** Menze et al. “The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS).” *IEEE Transactions on Medical Imaging*, vol. 34, no. 10, pp. 1993–2024, 2015. [DOI: 10.1109/TMI.2014.2377694](https://doi.org/10.1109/TMI.2014.2377694).
 
 MICCAI 2019 挑战赛档案及划分、标签说明见上方官方来源部分。
 

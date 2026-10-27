@@ -2,7 +2,7 @@
 
 <h1 align="center">🧠 UCSF-BMSR</h1>
 
-<p align="center"><strong>脑转移瘤分割 · 立体定向放射外科 MRI</strong></p>
+<p align="center"><strong>脑转移瘤（brain metastasis）分割 · 立体定向放射外科 MRI（stereotactic radiosurgery MRI）</strong></p>
 
 <p align="center">
 <a href="https://imagingdatasets.ucsf.edu/dataset/1"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="官方数据来源"></a>
@@ -22,7 +22,7 @@
 | **公开下载** | UCSF 页面当前公布 461 次检查 |
 | **输入** | 增强 T1、平扫 T1、FLAIR、减影影像 |
 | **目标** | 脑转移瘤增强区域的体素级标注 |
-| **机构来源** | 数据采集于加州大学旧金山分校（UCSF）；官方登记将 UCSF 智能影像中心列为数据集管理机构。[UCSF 数据集页面](https://imagingdatasets.ucsf.edu/dataset/1)。 |
+| **机构来源** | 数据采集于加州大学旧金山分校（University of California, San Francisco, UCSF）；官方登记将 UCSF 智能影像中心（UCSF Center for Intelligent Imaging）列为数据集管理机构。[UCSF 数据集页面](https://imagingdatasets.ucsf.edu/dataset/1)。 |
 | **官方来源** | [UCSF Ci2 数据集页面](https://imagingdatasets.ucsf.edu/dataset/1) |
 
 ## 🧾 数据集简介
@@ -51,9 +51,9 @@ UCSF 官方仓库说明，数据免费提供给**非商业科研**使用。数�
 
 ## 📚 出版物与引用
 
-Rudie 等，“The University of California San Francisco Brain Metastases Stereotactic Radiosurgery (UCSF-BMSR) MRI Dataset.” *Radiology: Artificial Intelligence*，第 6 卷第 2 期，文章编号 e230126，2024 年。[DOI：10.1148/ryai.230126](https://doi.org/10.1148/ryai.230126)。
+Rudie et al. “The University of California San Francisco Brain Metastases Stereotactic Radiosurgery (UCSF-BMSR) MRI Dataset.” *Radiology: Artificial Intelligence*, vol. 6, no. 2, article e230126, 2024. [DOI: 10.1148/ryai.230126](https://doi.org/10.1148/ryai.230126).
 
-- [期刊论文](https://pubs.rsna.org/doi/10.1148/ryai.230126) · [PubMed：38381038](https://pubmed.ncbi.nlm.nih.gov/38381038/) · [PMC10982817](https://pmc.ncbi.nlm.nih.gov/articles/PMC10982817/)
+- [Publisher article（期刊论文页面）](https://pubs.rsna.org/doi/10.1148/ryai.230126) · [PubMed: 38381038](https://pubmed.ncbi.nlm.nih.gov/38381038/) · [PMC10982817](https://pmc.ncbi.nlm.nih.gov/articles/PMC10982817/)
 
 论文介绍了数据队列和挑战赛划分；当前可下载内容及使用条款请以 UCSF 官方数据集页面为准。
 

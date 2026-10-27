@@ -2,7 +2,7 @@
 
 <h1 align="center">🧠 BraTS 2015</h1>
 
-<p align="center"><strong>多模态胶质瘤 MRI · 历史版 BraTS 挑战赛数据</strong></p>
+<p align="center"><strong>多模态胶质瘤 MRI（multimodal glioma MRI）· 历史版 BraTS 挑战赛数据</strong></p>
 
 <p align="center">
 <a href="https://www.smir.ch/BRATS/Start2015"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="官方数据来源"></a>
@@ -20,7 +20,7 @@
 | **输入** | 术前 MRI：T1、T1ce、T2、FLAIR |
 | **任务** | 胶质瘤分割 |
 | **目标区域** | 增强肿瘤（ET）、肿瘤核心（TC）、全肿瘤（WT） |
-| **机构来源** | 挑战赛组织和数据整理与宾夕法尼亚大学佩雷尔曼医学院生物医学图像计算与分析中心（CBICA）有关。底层影像队列来自多个机构，并非单中心数据。[CBICA 挑战赛档案](https://www.med.upenn.edu/cbica/brats/)。 |
+| **机构来源** | 挑战赛组织和数据整理与宾夕法尼亚大学佩雷尔曼医学院（Perelman School of Medicine at the University of Pennsylvania, UPenn）生物医学图像计算与分析中心（Center for Biomedical Image Computing and Analytics, CBICA）有关。底层影像队列来自多个机构，并非单中心数据。[CBICA 挑战赛档案](https://www.med.upenn.edu/cbica/brats/)。 |
 | **官方来源** | [SMIR 上的 BraTS 2015 页面](https://www.smir.ch/BRATS/Start2015) · [BraTS 挑战赛档案](https://www.med.upenn.edu/cbica/brats/) |
 
 ## 🧾 数据集简介
@@ -37,9 +37,9 @@ BraTS 2015 属于早期 BraTS 基准系列。该届挑战赛论文集和 SMIR �
 
 BraTS 使用嵌套的肿瘤区域：
 
-- **ET**：对比剂增强肿瘤
-- **TC**：肿瘤核心
-- **WT**：包含水肿区域的全肿瘤
+- **ET（enhancing tumor）**：对比剂增强肿瘤
+- **TC（tumor core）**：肿瘤核心
+- **WT（whole tumor）**：包含水肿（edema）区域的全肿瘤
 
 不同 BraTS 版本及后续发布中的体素标签编号和合并方式有所变化。比较结果时请保留具体版本的标签映射，不要假设 2015 年与较新版本使用同一套整数编码。
 
@@ -57,9 +57,9 @@ BraTS 使用嵌套的肿瘤区域：
 
 ## 📚 出版物与引用
 
-**本届挑战赛资料：** [MICCAI-BRATS 2015 官方论文集（PDF）](https://www.cbica.upenn.edu/sbia/Spyridon.Bakas/MICCAI_BraTS/MICCAI_BraTS_2015_proceedings.pdf) · [CBICA BraTS 档案](https://www.med.upenn.edu/cbica/brats/)。
+**Edition-specific source（本届挑战赛资料）：** [MICCAI-BRATS 2015 official proceedings (PDF)](https://www.cbica.upenn.edu/sbia/Spyridon.Bakas/MICCAI_BraTS/MICCAI_BraTS_2015_proceedings.pdf) · [CBICA BraTS archive](https://www.med.upenn.edu/cbica/brats/)。
 
-**基准研究论文：** Menze 等，“The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS)”。*IEEE Transactions on Medical Imaging*，第 34 卷第 10 期，1993–2024 页，2015 年。[DOI：10.1109/TMI.2014.2377694](https://doi.org/10.1109/TMI.2014.2377694)。
+**Foundational benchmark article（基准研究论文）：** Menze et al. “The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS).” *IEEE Transactions on Medical Imaging*, vol. 34, no. 10, pp. 1993–2024, 2015. [DOI: 10.1109/TMI.2014.2377694](https://doi.org/10.1109/TMI.2014.2377694).
 
 IEEE TMI 论文是早期 2012–2013 年 BraTS 版本的重要基准参考；引用 2015 年挑战赛发布时，请同时引用 2015 年论文集。
 

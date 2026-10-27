@@ -2,7 +2,7 @@
 
 <h1 align="center">🩻 AMOS 2022</h1>
 
-<p align="center"><strong>腹部多器官分割 · CT 与 MRI</strong></p>
+<p align="center"><strong>腹部多器官分割（abdominal multi-organ segmentation）· CT 与 MRI</strong></p>
 
 <p align="center">
 <a href="https://amos22.grand-challenge.org/"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="官方数据来源"></a>
@@ -20,12 +20,12 @@
 | --- | --- |
 | **输入** | 500 例 CT、100 例 MRI |
 | **目标** | 15 类腹部器官 |
-| **机构来源** | 基准团队作者单位包括香港大学、香港中文大学（深圳）与深圳大数据研究院、龙岗中心医院和龙岗人民医院。论文将影像描述为多中心采集；这些作者单位不应被视为完整的影像采集医院列表。[NeurIPS 论文](https://proceedings.neurips.cc/paper_files/paper/2022/file/ee604e1bedbd069d9fc9328b7b9584be-Paper-Datasets_and_Benchmarks.pdf)。 |
+| **机构来源** | 基准团队作者单位包括香港大学（The University of Hong Kong, HKU）、香港中文大学（深圳）（The Chinese University of Hong Kong, Shenzhen, CUHK-Shenzhen）与深圳大数据研究院（Shenzhen Research Institute of Big Data, SRIBD）、龙岗中心医院（Longgang Central Hospital）和龙岗人民医院（Longgang People's Hospital）。论文将影像描述为多中心采集；这些作者单位不应被视为完整的影像采集医院列表。[NeurIPS 论文](https://proceedings.neurips.cc/paper_files/paper/2022/file/ee604e1bedbd069d9fc9328b7b9584be-Paper-Datasets_and_Benchmarks.pdf)。 |
 | **官方来源** | [AMOS 2022 挑战赛](https://amos22.grand-challenge.org/) · [挑战赛后 Zenodo 记录](https://zenodo.org/records/7262581) |
 
 ## 🧾 数据集简介
 
-AMOS 用于评估腹部器官分割在多中心、多厂商、多模态和多疾病影像上的表现。数据集论文介绍了 15 类器官的体素级标注，包括脾脏、双肾、胆囊、食管、肝脏、胃、主动脉、下腔静脉、胰腺、肾上腺、十二指肠、膀胱以及前列腺/子宫。
+AMOS 用于评估腹部器官分割在多中心、多厂商、多模态和多疾病影像上的表现。数据集论文介绍了 15 类器官的体素级标注，包括脾脏（spleen）、双肾（kidneys）、胆囊（gallbladder）、食管（esophagus）、肝脏（liver）、胃（stomach）、主动脉（aorta）、下腔静脉（inferior vena cava）、胰腺（pancreas）、肾上腺（adrenal glands）、十二指肠（duodenum）、膀胱（bladder）以及前列腺/子宫（prostate/uterus）。
 
 挑战赛包含仅 CT 任务和 CT/MRI 混合任务。官方 Zenodo 记录提供一个含 500 例 CT 和 100 例 MRI 标签的数据包，以及另外的无标签数据。
 
@@ -54,10 +54,10 @@ AMOS 用于评估腹部器官分割在多中心、多厂商、多模态和多疾
 
 ## 📚 出版物与引用
 
-**Ji 等。** “AMOS: A Large-Scale Abdominal Multi-Organ Benchmark for Versatile Medical Image Segmentation.” *Advances in Neural Information Processing Systems (NeurIPS), Datasets and Benchmarks Track*，第 35 卷，36722–36732 页，2022 年。
+**Ji et al.** “AMOS: A Large-Scale Abdominal Multi-Organ Benchmark for Versatile Medical Image Segmentation.” *Advances in Neural Information Processing Systems (NeurIPS), Datasets and Benchmarks Track*, vol. 35, 2022, pp. 36722–36732.
 
-- [NeurIPS 论文](https://proceedings.neurips.cc/paper_files/paper/2022/file/ee604e1bedbd069d9fc9328b7b9584be-Paper-Datasets_and_Benchmarks.pdf) · [arXiv:2206.08023](https://arxiv.org/abs/2206.08023)
-- [数据集存档 DOI：10.5281/zenodo.7262581](https://doi.org/10.5281/zenodo.7262581)
+- [NeurIPS proceedings paper（NeurIPS 论文集论文）](https://proceedings.neurips.cc/paper_files/paper/2022/file/ee604e1bedbd069d9fc9328b7b9584be-Paper-Datasets_and_Benchmarks.pdf) · [arXiv:2206.08023](https://arxiv.org/abs/2206.08023)
+- [Dataset archive DOI: 10.5281/zenodo.7262581（数据集存档 DOI）](https://doi.org/10.5281/zenodo.7262581)
 
 挑战赛门户与 Zenodo 存档对应不同的数据发布版本；选择数据时，请参考上方划分与标签说明。
 

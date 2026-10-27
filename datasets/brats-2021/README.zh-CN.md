@@ -2,7 +2,7 @@
 
 <h1 align="center">🧠 BraTS 2021</h1>
 
-<p align="center"><strong>RSNA–ASNR–MICCAI 脑肿瘤基准 · 术前 MRI</strong></p>
+<p align="center"><strong>RSNA–ASNR–MICCAI 脑肿瘤基准（brain tumor benchmark）· 术前 MRI（pre-operative MRI）</strong></p>
 
 <p align="center">
 <a href="https://www.med.upenn.edu/cbica/brats2021/"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="官方数据来源"></a>
@@ -21,7 +21,7 @@
 | **输入** | T1、T1ce、T2、FLAIR |
 | **任务** | 胶质瘤亚区分割；基准还包含放射基因组学分类任务 |
 | **病例数** | 共 2,040 例：1,251 例训练、219 例验证、570 例测试 |
-| **机构来源** | 牵头组织方：宾夕法尼亚大学 CBICA；挑战赛合作方：RSNA、ASNR 和 MICCAI。数据来自多个机构，包括 CBICA/宾夕法尼亚大学、加州大学旧金山分校、圣路易斯华盛顿大学、海德堡大学和塔塔纪念中心。[组织方与贡献者信息](https://www.med.upenn.edu/cbica/brats2021/)。 |
+| **机构来源** | 牵头组织方：宾夕法尼亚大学（University of Pennsylvania, UPenn）的 CBICA；挑战赛合作方：RSNA、ASNR 和 MICCAI。数据来自多个机构，包括 CBICA/UPenn、加州大学旧金山分校（University of California, San Francisco, UCSF）、圣路易斯华盛顿大学（Washington University in St. Louis）、海德堡大学（Heidelberg University）和塔塔纪念中心（Tata Memorial Centre）。[组织方与贡献者信息](https://www.med.upenn.edu/cbica/brats2021/)。 |
 | **官方来源** | [BraTS 2021 挑战赛](https://www.med.upenn.edu/cbica/brats2021/) · [Synapse 当前访问说明](https://www.synapse.org/Synapse:syn25829067/discussion/threadId=12691) |
 
 ## 🗂️ 官方划分与标签可用性
@@ -40,7 +40,7 @@ Synapse 当前公告称，旧版 BraTS 2018–2021 数据集已不再托管于�
 
 ## 数据与标注
 
-每个病例包含四种结构 MRI 序列。BraTS 标准目标包括全肿瘤、肿瘤核心和增强肿瘤；训练集参考标签由专家进行肿瘤亚区标注。标签编码应以所用数据版本的说明为准，不应根据文件名推断。
+每个病例包含四种结构 MRI 序列。BraTS 标准目标包括全肿瘤（whole tumor, WT）、肿瘤核心（tumor core, TC）和增强肿瘤（enhancing tumor, ET）；训练集参考标签由专家进行肿瘤亚区标注。标签编码应以所用数据版本的说明为准，不应根据文件名推断。
 
 ## 🔒 获取方式与使用条款
 
@@ -59,11 +59,11 @@ Synapse 当前公告称，旧版 BraTS 2018–2021 数据集已不再托管于�
 
 ## 📚 出版物与引用
 
-**基准论文：** Baid 等，“The RSNA-ASNR-MICCAI BraTS 2021 Benchmark on Brain Tumor Segmentation and Radiogenomic Classification”。*arXiv 预印本*，2021 年。[arXiv:2107.02314](https://arxiv.org/abs/2107.02314)。
+**Benchmark paper（基准论文）：** Baid et al. “The RSNA-ASNR-MICCAI BraTS 2021 Benchmark on Brain Tumor Segmentation and Radiogenomic Classification.” *arXiv preprint*, 2021. [arXiv:2107.02314](https://arxiv.org/abs/2107.02314).
 
-- [TCIA 数据集记录，DOI：10.7937/jc8x-9874](https://doi.org/10.7937/jc8x-9874)
+- [TCIA dataset record, DOI: 10.7937/jc8x-9874（TCIA 数据集记录）](https://doi.org/10.7937/jc8x-9874)
 
-**相关基础参考：** Menze 等，“The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS)”。*IEEE Transactions on Medical Imaging*，第 34 卷第 10 期，1993–2024 页，2015 年。[DOI：10.1109/TMI.2014.2377694](https://doi.org/10.1109/TMI.2014.2377694)。
+**Related foundational reference（相关基础参考）：** Menze et al. “The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS).” *IEEE Transactions on Medical Imaging*, vol. 34, no. 10, pp. 1993–2024, 2015. [DOI: 10.1109/TMI.2014.2377694](https://doi.org/10.1109/TMI.2014.2377694).
 
 此处链接的基准论文为 arXiv 版本；本页未将其标注为期刊或会议论文。
 

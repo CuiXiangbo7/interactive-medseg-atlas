@@ -2,7 +2,7 @@
 
 <h1 align="center">🧠 BraTS-MEN 2023</h1>
 
-<p align="center"><strong>术前脑膜瘤分割 · 多参数 MRI</strong></p>
+<p align="center"><strong>术前脑膜瘤分割（pre-operative meningioma segmentation）· 多参数 MRI（multiparametric MRI）</strong></p>
 
 <p align="center">
 <a href="https://www.synapse.org/Synapse:syn51514106"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="官方数据来源"></a>
@@ -20,7 +20,7 @@
 | --- | --- |
 | **队列** | 1,344 名患者，共 1,424 次 MRI 检查 |
 | **输入** | T1、T1ce、T2、FLAIR |
-| **机构来源** | 数据集论文报告了 6 家参与的学术医学中心：杜克大学、托马斯·杰斐逊大学、耶鲁大学、加州大学旧金山分校、密苏里大学和宾夕法尼亚大学。[Scientific Data 论文](https://doi.org/10.1038/s41597-024-03350-9)。 |
+| **机构来源** | 数据集论文报告了 6 家参与的学术医学中心：杜克大学（Duke University）、托马斯·杰斐逊大学（Thomas Jefferson University）、耶鲁大学（Yale University）、加州大学旧金山分校（University of California, San Francisco, UCSF）、密苏里大学（University of Missouri）和宾夕法尼亚大学（University of Pennsylvania）。[Scientific Data 论文](https://doi.org/10.1038/s41597-024-03350-9)。 |
 | **官方来源** | [BraTS-MEN Synapse 数据集](https://www.synapse.org/Synapse:syn51514106) · [BraTS 2023 挑战赛页面](https://www.synapse.org/Synapse:syn51156910/wiki/622351) |
 
 ## 🧾 数据集简介
@@ -39,7 +39,7 @@ Scientific Data 论文指出，训练集和验证集公开，而 283 例测试�
 
 ## 🧬 模态与标注
 
-四种 MRI 序列为 T1、增强 T1（T1ce）、T2 和 FLAIR。标注规范包括增强肿瘤、非增强肿瘤/核心及周围水肿。派生 WT/TC/ET 区域时，请保留具体发布版本的体素标签映射。
+四种 MRI 序列为 T1、增强 T1（T1ce）、T2 和 FLAIR。标注规范包括增强肿瘤（enhancing tumor）、非增强肿瘤/核心（non-enhancing tumor/core）及周围水肿（edema）。派生 WT/TC/ET 区域时，请保留具体发布版本的体素标签映射。
 
 ## 🔒 获取方式与使用条款
 
@@ -55,11 +55,11 @@ Scientific Data 论文指出，训练集和验证集公开，而 283 例测试�
 
 ## 📚 出版物与引用
 
-**数据集论文：** LaBella 等，“A multi-institutional meningioma MRI dataset for automated multi-sequence image segmentation.” *Scientific Data*，第 11 卷第 1 期，文章编号 496，2024 年。[DOI：10.1038/s41597-024-03350-9](https://doi.org/10.1038/s41597-024-03350-9)。
+**Dataset paper（数据集论文）：** LaBella et al. “A multi-institutional meningioma MRI dataset for automated multi-sequence image segmentation.” *Scientific Data*, vol. 11, no. 1, article 496, 2024. [DOI: 10.1038/s41597-024-03350-9](https://doi.org/10.1038/s41597-024-03350-9).
 
-**挑战赛分析：** LaBella 等，“Analysis of the BraTS 2023 Intracranial Meningioma Segmentation Challenge”。*arXiv 预印本*，2024 年。[arXiv:2405.09787](https://arxiv.org/abs/2405.09787)。
+**Challenge analysis（挑战赛分析）：** LaBella et al. “Analysis of the BraTS 2023 Intracranial Meningioma Segmentation Challenge.” *arXiv preprint*, 2024. [arXiv:2405.09787](https://arxiv.org/abs/2405.09787).
 
-- [Synapse 数据集记录，DOI：10.7303/syn51514106](https://doi.org/10.7303/syn51514106)
+- [Synapse dataset record, DOI: 10.7303/syn51514106（Synapse 数据集记录）](https://doi.org/10.7303/syn51514106)
 
 数据集论文与挑战赛分析是两篇不同的参考文献；上方划分说明区分了原始挑战赛队列与后续公开数据内容。
 

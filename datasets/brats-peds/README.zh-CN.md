@@ -2,7 +2,7 @@
 
 <h1 align="center">🧒🧠 BraTS-PEDs</h1>
 
-<p align="center"><strong>儿童高级别胶质瘤分割 · 多参数 MRI</strong></p>
+<p align="center"><strong>儿童高级别胶质瘤分割（pediatric high-grade glioma segmentation）· 多参数 MRI（multiparametric MRI）</strong></p>
 
 <p align="center">
 <a href="https://www.cancerimagingarchive.net/collection/brats-peds/"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="官方数据来源"></a>
@@ -20,12 +20,12 @@
 | --- | --- |
 | **输入** | T1n、T1c、T2w、T2-FLAIR |
 | **队列总量** | 457 名儿科患者 |
-| **机构来源** | 这是一个由多个儿科联盟共同汇集的队列，包括儿童脑肿瘤网络（CBTN）、DIPG Registry、CONNECT 联盟及其他儿科机构。ASNR 合作者参与了专家标注。[挑战赛与队列论文](https://pmc.ncbi.nlm.nih.gov/articles/PMC10246083/)。 |
+| **机构来源** | 这是一个由多个儿科联盟共同汇集的队列，包括儿童脑肿瘤网络（Children’s Brain Tumor Network, CBTN）、DIPG Registry（DIPGR）、CONNECT 联盟（CONNECT consortium）及其他儿科机构。ASNR 合作者参与了专家标注。[挑战赛与队列论文](https://pmc.ncbi.nlm.nih.gov/articles/PMC10246083/)。 |
 | **官方来源** | [TCIA 数据集页面](https://www.cancerimagingarchive.net/collection/brats-peds/) · [TCIA DOI](https://doi.org/10.7937/dx5c-tj86) |
 
 ## 🧾 数据集简介
 
-BraTS-PEDs 是用于儿童高级别胶质瘤的多机构专家标注 MRI 基准。数据集论文介绍了标准化预处理，包括 DICOM 转 NIfTI、配准/重采样和去面部信息。分割标签包括增强肿瘤（ET）、非增强肿瘤（NET）、囊性成分（CC）和水肿（ED）。
+BraTS-PEDs 是用于儿童高级别胶质瘤的多机构专家标注 MRI 基准。数据集论文介绍了标准化预处理，包括 DICOM 转 NIfTI、配准/重采样和去面部信息。分割标签包括增强肿瘤（enhancing tumor, ET）、非增强肿瘤（non-enhancing tumor, NET）、囊性成分（cystic component, CC）和水肿（edema, ED）。
 
 ## 🗂️ 官方划分与标签可用性
 
@@ -53,12 +53,12 @@ BraTS-PEDs 是用于儿童高级别胶质瘤的多机构专家标注 MRI 基准�
 
 ## 📚 出版物与引用
 
-Fathi Kazerooni 等，“Multi-Institutional Annotated Multiparametric MRI Dataset of Pediatric High-Grade Gliomas.” *Radiology: Artificial Intelligence*，第 8 卷第 3 期，文章编号 e250902，2026 年。[DOI：10.1148/ryai.250902](https://doi.org/10.1148/ryai.250902)。
+Fathi Kazerooni et al. “Multi-Institutional Annotated Multiparametric MRI Dataset of Pediatric High-Grade Gliomas.” *Radiology: Artificial Intelligence*, vol. 8, no. 3, article e250902, 2026. [DOI: 10.1148/ryai.250902](https://doi.org/10.1148/ryai.250902).
 
-- [期刊论文](https://pubs.rsna.org/doi/10.1148/ryai.250902) · [TCIA 数据集记录，DOI：10.7937/dx5c-tj86](https://doi.org/10.7937/dx5c-tj86)
-- [BraTS-PEDs 挑战赛概述](https://arxiv.org/abs/2305.17033)
+- [Publisher article（期刊论文页面）](https://pubs.rsna.org/doi/10.1148/ryai.250902) · [TCIA dataset record, DOI: 10.7937/dx5c-tj86（TCIA 数据集记录）](https://doi.org/10.7937/dx5c-tj86)
+- [BraTS-PEDs challenge overview（BraTS-PEDs 挑战赛概述）](https://arxiv.org/abs/2305.17033)
 
-期刊论文介绍多机构数据集；挑战赛概述论文补充了基准赛背景。
+期刊论文介绍多机构数据集；链接的挑战赛概述论文补充了基准赛背景。
 
 ---
 

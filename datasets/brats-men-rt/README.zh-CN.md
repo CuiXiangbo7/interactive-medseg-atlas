@@ -2,7 +2,7 @@
 
 <h1 align="center">🧠 BraTS-MEN-RT 2024</h1>
 
-<p align="center"><strong>脑膜瘤放疗靶区分割 · 增强 T1 MRI</strong></p>
+<p align="center"><strong>脑膜瘤放疗靶区分割（meningioma radiotherapy target segmentation）· 增强 T1 MRI（post-contrast T1 MRI）</strong></p>
 
 <p align="center">
 <a href="https://www.synapse.org/Synapse:syn59059779"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="官方数据来源"></a>
@@ -21,7 +21,7 @@
 | **队列** | 747 名患者，共 750 次 MRI 检查 |
 | **输入** | 放疗计划用 3D 增强 T1 MRI |
 | **目标** | 大体肿瘤体积（GTV），必要时包含术后高风险区域 |
-| **机构来源** | 数据集论文报告了 7 家参与的学术中心：杜克大学、加州大学旧金山分校、纽约州立大学上州医科大学、华盛顿大学、密苏里大学、伦敦国王学院和加州大学圣迭戈分校。[Scientific Data 论文](https://doi.org/10.1038/s41597-026-06649-x)。 |
+| **机构来源** | 数据集论文报告了 7 家参与的学术中心：杜克大学（Duke University）、加州大学旧金山分校（University of California, San Francisco, UCSF）、纽约州立大学上州医科大学（SUNY Upstate Medical University）、华盛顿大学（University of Washington）、密苏里大学（University of Missouri）、伦敦国王学院（King's College London）和加州大学圣迭戈分校（University of California San Diego, UCSD）。[Scientific Data 论文](https://doi.org/10.1038/s41597-026-06649-x)。 |
 | **官方来源** | [Synapse 数据集](https://www.synapse.org/Synapse:syn59059779) |
 
 ## 🗂️ 官方划分与标签可用性
@@ -52,9 +52,9 @@
 
 ## 📚 出版物与引用
 
-LaBella 等，“The 2024 Brain Tumor Segmentation Challenge Meningioma Radiotherapy (BraTS-MEN-RT) dataset.” *Scientific Data*，第 13 卷第 1 期，文章编号 306，2026 年。[DOI：10.1038/s41597-026-06649-x](https://doi.org/10.1038/s41597-026-06649-x) · [PubMed：41593091](https://pubmed.ncbi.nlm.nih.gov/41593091/)。
+LaBella et al. “The 2024 Brain Tumor Segmentation Challenge Meningioma Radiotherapy (BraTS-MEN-RT) dataset.” *Scientific Data*, vol. 13, no. 1, article 306, 2026. [DOI: 10.1038/s41597-026-06649-x](https://doi.org/10.1038/s41597-026-06649-x) · [PubMed: 41593091](https://pubmed.ncbi.nlm.nih.gov/41593091/).
 
-- [Synapse 数据集记录，DOI：10.7303/syn59059779](https://doi.org/10.7303/syn59059779)
+- [Synapse dataset record, DOI: 10.7303/syn59059779（Synapse 数据集记录）](https://doi.org/10.7303/syn59059779)
 
 数据论文描述了公开的数据发布；挑战赛期间的划分和标签情况在上方单独总结。
 
