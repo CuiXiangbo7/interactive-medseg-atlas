@@ -4,7 +4,13 @@
 
 <p align="center">
 <a href="https://www.smir.ch/BRATS/Start2015"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
-<a href="https://doi.org/10.1109/TMI.2014.2377694"><img src="https://img.shields.io/badge/IEEE%20TMI-2015-2455a4?style=flat-square" alt="IEEE TMI 2015"></a> <a href="https://www.cbica.upenn.edu/sbia/Spyridon.Bakas/MICCAI_BraTS/MICCAI_BraTS_2015_proceedings.pdf"><img src="https://img.shields.io/badge/BRATS-2015%20proceedings-8b1e3f?style=flat-square" alt="BRATS 2015 proceedings"></a>
+<a href="https://www.smir.ch/BRATS/Start2015"><img src="https://img.shields.io/badge/CHALLENGE-BRATS%202015-8b1e3f?style=flat-square" alt="Related challenge"></a>
+</p>
+
+<p align="center"><strong>📚 Publications and records</strong></p>
+<p align="center">
+<a href="https://doi.org/10.1109/TMI.2014.2377694"><img src="https://img.shields.io/badge/IEEE%20TMI-2015-2455a4?style=flat-square" alt="IEEE TMI 2015"></a>
+<a href="https://www.cbica.upenn.edu/sbia/Spyridon.Bakas/MICCAI_BraTS/MICCAI_BraTS_2015_proceedings.pdf"><img src="https://img.shields.io/badge/BRATS-2015%20proceedings-8b1e3f?style=flat-square" alt="BRATS 2015 proceedings"></a>
 </p>
 
 | Quick facts | |
@@ -12,6 +18,7 @@
 | **Input** | Pre-operative MRI: T1, T1ce, T2, FLAIR |
 | **Task** | Glioma segmentation |
 | **Targets** | Enhancing tumor (ET), tumor core (TC), whole tumor (WT) |
+| **Institutional origin** | Challenge coordination and data curation are associated with the Center for Biomedical Image Computing and Analytics (CBICA), Perelman School of Medicine at the University of Pennsylvania (UPenn). The underlying imaging cohort is multi-institutional, not a single-center collection. [CBICA challenge archive](https://www.med.upenn.edu/cbica/brats/). |
 | **Official source** | [BraTS 2015 at SMIR](https://www.smir.ch/BRATS/Start2015) · [BraTS challenge archive](https://www.med.upenn.edu/cbica/brats/) |
 
 ## 🧾 Dataset overview
@@ -39,6 +46,12 @@ Voxel IDs and label merging changed across BraTS editions and later releases. Pr
 - **Dataset / historical download page:** [SMIR — BRATS 2015](https://www.smir.ch/BRATS/Start2015)
 - **Challenge history and proceedings:** [CBICA BraTS archive](https://www.med.upenn.edu/cbica/brats/)
 - Review the terms displayed by the official source. This page does not assign a blanket reuse license.
+
+## 🏁 Related challenge
+
+**MICCAI-BRATS 2015** benchmarked automated glioma subregion segmentation from multimodal pre-operative MRI.
+
+- [2015 challenge and data entry (SMIR)](https://www.smir.ch/BRATS/Start2015) · [CBICA BraTS archive and proceedings](https://www.med.upenn.edu/cbica/brats/)
 
 ## 📚 Publications and citation
 
