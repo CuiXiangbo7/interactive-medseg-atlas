@@ -4,13 +4,21 @@
 
 <p align="center">
 <a href="https://amos22.grand-challenge.org/"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
-<a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/ee604e1bedbd069d9fc9328b7b9584be-Paper-Datasets_and_Benchmarks.pdf"><img src="https://img.shields.io/badge/NeurIPS%20D%26B-2022-2d6a4f?style=flat-square" alt="NeurIPS D&B 2022"></a> <a href="https://arxiv.org/abs/2206.08023"><img src="https://img.shields.io/badge/arXiv-2206.08023-b31b1b?style=flat-square" alt="arXiv 2206.08023"></a>
+<a href="https://amos22.grand-challenge.org/"><img src="https://img.shields.io/badge/CHALLENGE-AMOS%202022-8b1e3f?style=flat-square" alt="Related challenge"></a>
+</p>
+
+<p align="center"><strong>📚 Publications and records</strong></p>
+<p align="center">
+<a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/ee604e1bedbd069d9fc9328b7b9584be-Paper-Datasets_and_Benchmarks.pdf"><img src="https://img.shields.io/badge/NeurIPS%20D%26B-2022-2d6a4f?style=flat-square" alt="NeurIPS D&B 2022"></a>
+<a href="https://arxiv.org/abs/2206.08023"><img src="https://img.shields.io/badge/arXiv-2206.08023-b31b1b?style=flat-square" alt="arXiv 2206.08023"></a>
+<a href="https://doi.org/10.5281/zenodo.7262581"><img src="https://img.shields.io/badge/Zenodo%20DOI-10.5281%2Fzenodo.7262581-1f6feb?style=flat-square" alt="Zenodo DOI 10.5281/zenodo.7262581"></a>
 </p>
 
 | Quick facts | |
 | --- | --- |
 | **Input** | 500 CT and 100 MRI scans |
 | **Targets** | 15 abdominal organs |
+| **Institutional origin** | The benchmark team’s affiliations include the University of Hong Kong, CUHK-Shenzhen and the Shenzhen Research Institute of Big Data, Longgang Central Hospital, and Longgang People’s Hospital. The paper describes the images as a multi-center collection; these affiliations should not be read as a complete list of acquisition hospitals. [NeurIPS paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/ee604e1bedbd069d9fc9328b7b9584be-Paper-Datasets_and_Benchmarks.pdf). |
 | **Official source** | [AMOS 2022 challenge](https://amos22.grand-challenge.org/) · [Post-challenge Zenodo record](https://zenodo.org/records/7262581) |
 
 ## 🧾 Dataset overview
@@ -35,6 +43,12 @@ The challenge split and the post-challenge archive are different release context
 - [AMOS challenge portal](https://amos22.grand-challenge.org/)
 - [Zenodo dataset record, DOI 10.5281/zenodo.7262581](https://doi.org/10.5281/zenodo.7262581)
 - The Zenodo record lists archives and file checksums. Review its current metadata and the challenge terms before reuse.
+
+## 🏁 Related challenge
+
+**AMOS 2022 Challenge** benchmarked segmentation of 15 abdominal organs across CT and MRI, using data collected across multiple centers and vendors.
+
+- [Official AMOS 2022 challenge website](https://amos22.grand-challenge.org/) · [Challenge paper](https://arxiv.org/abs/2206.08023)
 
 ## 📚 Publication and citation
 
