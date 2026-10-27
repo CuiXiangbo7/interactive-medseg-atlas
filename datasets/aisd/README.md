@@ -4,7 +4,12 @@
 
 <p align="center">
 <a href="https://github.com/GriffinLiang/AISD"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
-<a href="https://doi.org/10.1007/978-3-030-87234-2_41"><img src="https://img.shields.io/badge/MICCAI-2021-8b1e3f?style=flat-square" alt="MICCAI 2021"></a> <a href="https://arxiv.org/abs/2110.05039"><img src="https://img.shields.io/badge/arXiv-2110.05039-b31b1b?style=flat-square" alt="arXiv 2110.05039"></a>
+</p>
+
+<p align="center"><strong>📚 Publications and records</strong></p>
+<p align="center">
+<a href="https://doi.org/10.1007/978-3-030-87234-2_41"><img src="https://img.shields.io/badge/MICCAI-2021-8b1e3f?style=flat-square" alt="MICCAI 2021"></a>
+<a href="https://arxiv.org/abs/2110.05039"><img src="https://img.shields.io/badge/arXiv-2110.05039-b31b1b?style=flat-square" alt="arXiv 2110.05039"></a>
 </p>
 
 | Quick facts | |
@@ -12,6 +17,7 @@
 | **Input** | Non-contrast CT (NCCT), 5 mm slice thickness |
 | **Cohort** | 397 acute ischemic stroke scans |
 | **Reference** | DWI acquired within 24 hours after CT |
+| **Institutional origin** | The linked paper’s author affiliations include the Pattern Recognition and Intelligent System Laboratory at Beijing University of Posts and Telecommunications, Deepwise AI Lab, Jinling Hospital at Nanjing University School of Medicine, Peking University, and the University of Hong Kong. The public release does not identify one patient-acquisition center. [Original paper](https://arxiv.org/abs/2110.05039). |
 | **Official source** | [Authors’ AISD repository](https://github.com/GriffinLiang/AISD) |
 
 ## 🧾 Dataset overview
