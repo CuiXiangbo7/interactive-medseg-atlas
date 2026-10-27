@@ -6,30 +6,45 @@
 | --- | --- |
 | **Input** | Non-contrast CT (NCCT), 5 mm slice thickness |
 | **Cohort** | 397 acute ischemic stroke scans |
-| **Reference** | DWI acquired within 24 hours of symptom onset |
+| **Reference** | DWI acquired within 24 hours after CT |
 | **Official source** | [Authors’ AISD repository](https://github.com/GriffinLiang/AISD) |
 
 ## Dataset overview
 
-AISD pairs NCCT with infarct annotations informed by diffusion-weighted MRI (DWI). The authors’ repository reports that all cases were acquired within 24 hours of symptom onset and that scans were reviewed by experienced readers.
+AISD pairs NCCT with infarct annotations informed by diffusion-weighted MRI (DWI). The authors report that NCCT was obtained within 24 hours of symptom onset, lesions were manually contoured using MRI as the reference, and a senior doctor double-reviewed the labels.
 
 ## Official split and label availability
 
 | Cohort | Cases | Official description |
 | --- | ---: | --- |
-| Train/validation | 345 | Combined count; the repository does not define a single official train-versus-validation split |
-| Test | 52 | Held-out test cohort |
+| Train/validation | 345 | Combined count; the repository does not define one official train-versus-validation subdivision |
+| Test | 52 | Held-out test cohort; the repository lists its case IDs |
 
-The official repository links separate image and mask archives, but its README does not clearly state whether the test reference masks are included in the mask archive or how they are separated. Confirm the archive contents and terms at the source before treating test labels as available.
+The official repository links a separate mask archive, but does not clearly state whether test reference masks are included or how the masks are separated by split. Confirm archive contents before treating test labels as available.
 
 ## Labels
 
-The author documentation distinguishes infarct-related regions, including remote infarct and several degrees of acute infarct visibility. Use the original label definitions and official mask archive rather than collapsing labels without documenting the change.
+The author repository defines:
 
-## Access and terms
+| Value | Meaning |
+| ---: | --- |
+| 1 | Remote infarct |
+| 2 | Clear acute infarct |
+| 3 | Blurred acute infarct |
+| 4 | Invisible acute infarct |
+| 5 | Infarct |
 
-- [Official download instructions and archives](https://github.com/GriffinLiang/AISD)
-- The author repository describes use for non-commercial academic research. Check its current terms and required citation before downloading or redistributing the data.
+The authors identify labels **{1, 2, 3, 5}** as the infarct-lesion region. Preserve the original categories if evaluating label-specific performance.
+
+## Official downloads
+
+The author repository links the following archives:
+
+- **NCCT images:** [Baidu Netdisk](https://pan.baidu.com/s/12nouuU6MbFrQps4EmTcomA) (password: `aisd`) · [Google Drive](https://drive.google.com/file/d/157f9aE3ZhRSdIuIbP2PRG8ub9JJWvMGk/view?usp=share_link)
+- **Masks:** [Baidu Netdisk](https://pan.baidu.com/s/1MR4tAEHypdTRnqprXuRRXQ) (password: `aisd`) · [Google Drive](https://drive.google.com/file/d/1d08fFpEvK4D6YTKfRlNuv_OlIxigZxl6/view?usp=share_link)
+- [Official repository and DICOM archive links](https://github.com/GriffinLiang/AISD)
+
+The repository states non-commercial use for academic research, teaching, scientific publication, and personal experimentation. Follow its current terms before using or redistributing data.
 
 ## Dataset paper
 
