@@ -4,7 +4,16 @@
 
 <p align="center">
 <a href="https://www.med.upenn.edu/cbica/brats-2019/"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
-<a href="https://doi.org/10.1007/978-3-030-46640-4"><img src="https://img.shields.io/badge/BrainLes-2019-8b1e3f?style=flat-square" alt="BrainLes 2019"></a> <a href="https://doi.org/10.1007/978-3-030-46643-5"><img src="https://img.shields.io/badge/LNCS-2020-6f42c1?style=flat-square" alt="LNCS 2020"></a> <a href="https://doi.org/10.1038/sdata.2017.117"><img src="https://img.shields.io/badge/Scientific%20Data-2017-2455a4?style=flat-square" alt="Scientific Data 2017"></a>
+<a href="https://www.med.upenn.edu/cbica/brats-2019/"><img src="https://img.shields.io/badge/CHALLENGE-BraTS%202019-8b1e3f?style=flat-square" alt="Related challenge"></a>
+</p>
+
+<p align="center"><strong>📚 Publications and records</strong></p>
+<p align="center">
+<a href="https://doi.org/10.1007/978-3-030-46640-4"><img src="https://img.shields.io/badge/BrainLes-2019-8b1e3f?style=flat-square" alt="BrainLes 2019"></a>
+<a href="https://doi.org/10.1007/978-3-030-46640-4"><img src="https://img.shields.io/badge/LNCS-11992-6f42c1?style=flat-square" alt="LNCS 11992"></a>
+<a href="https://doi.org/10.1007/978-3-030-46643-5"><img src="https://img.shields.io/badge/LNCS-11993-6f42c1?style=flat-square" alt="LNCS 11993"></a>
+<a href="https://doi.org/10.1038/sdata.2017.117"><img src="https://img.shields.io/badge/Scientific%20Data-2017-2455a4?style=flat-square" alt="Scientific Data 2017"></a>
+<a href="https://doi.org/10.1109/TMI.2014.2377694"><img src="https://img.shields.io/badge/IEEE%20TMI-2015-2455a4?style=flat-square" alt="IEEE TMI 2015"></a>
 </p>
 
 | Quick facts | |
@@ -12,6 +21,7 @@
 | **Input** | T1, T1ce, T2, FLAIR |
 | **Task** | Glioma subregion segmentation and related challenge tasks |
 | **Labels** | NCR/NET, edema, enhancing tumor; derived regions WT, TC, ET |
+| **Institutional origin** | Challenge coordination was led through CBICA at the Perelman School of Medicine, University of Pennsylvania (UPenn). The official challenge describes the pre-operative MRI cohort as multi-institutional. [Official challenge page](https://www.med.upenn.edu/cbica/brats-2019/). |
 | **Official source** | [Challenge page](https://www.med.upenn.edu/cbica/brats-2019/) · [Official data notes](https://www.med.upenn.edu/cbica/brats2019/data.html) |
 
 ## 🧾 Dataset overview
@@ -41,6 +51,12 @@ The official 2019 data page specifies voxel labels **1 = NCR/NET**, **2 = edema*
 - [Legacy Synapse project page](https://www.synapse.org/Synapse:syn25829067/wiki/610863)
 
 The original challenge page remains the source for its release schedule and access terms. The legacy Synapse link may not provide the historical files today; do not substitute an unofficial mirror without checking provenance and terms.
+
+## 🏁 Related challenge
+
+**BraTS 2019**, held with MICCAI 2019 as part of the BrainLes workshop, evaluated glioma MRI segmentation, overall-survival prediction, and segmentation uncertainty.
+
+- [Official challenge page](https://www.med.upenn.edu/cbica/brats-2019/) · [Data and evaluation notes](https://www.med.upenn.edu/cbica/brats2019/data.html)
 
 ## 📚 Publications and citation
 
