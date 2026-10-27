@@ -43,13 +43,13 @@
 | 模型 / 机构来源 | 模态 / 提示 | 官方代码 | 权重 | 详情 |
 |---|---|---|---|---|
 | [MedSAM-Agent](medsam-agent/README.zh-CN.md)<br><sub>🏛️ The Chinese University of Hong Kong · Tencent Hunyuan</sub> | 2D · 自主多轮 | [code](https://github.com/CUHK-AIM-Group/MedSAM-Agent) | [Hugging-Face](https://huggingface.co/Saint-lsy/MedSAM-Agent-Qwen3-VL-8B-MedSAM2) | [指南](medsam-agent/README.zh-CN.md) |
-| [nnInteractive-Agent](nninteractive-agent/README.zh-CN.md)<br><sub>🏛️ MIC-DKFZ · Heidelberg University · NCT Heidelberg · Helmholtz Imaging</sub> | 3D · 自然语言任务 + Agent 空间提示 | [code](https://github.com/MIC-DKFZ/nninteractive-agent) | [nnInteractive 基础权重](https://huggingface.co/MIC-DKFZ/nnInteractive) | [指南](nninteractive-agent/README.zh-CN.md) |
+| [nnInteractive Agent](nninteractive-agent/README.zh-CN.md)<br><sub>🏛️ MIC-DKFZ · Heidelberg University · NCT Heidelberg · Helmholtz Imaging</sub> | 3D · 自然语言任务 + Agent 空间提示 | [code](https://github.com/MIC-DKFZ/nninteractive-agent) | [nnInteractive 基础权重](https://huggingface.co/MIC-DKFZ/nnInteractive) | [指南](nninteractive-agent/README.zh-CN.md) |
 
 ## 使用与复现提示
 
 - 不同模型支持的模态、空间维度和提示类型不同；阅读结果时应注明输入、提示策略和交互预算。
 - 同一项目可能提供论文 checkpoint、较新版本、任务专用权重或 adapter。记录准确的模型版本、权重和预处理。
-- Agentic 方法会自主选择提示，其交互轮数不能直接等同于固定次数的人工点击。nnInteractive-Agent 调用 nnInteractive 完成分割，本身不提供独立的分割 checkpoint。
+- Agentic 方法会自主选择提示，其交互轮数不能直接等同于固定次数的人工点击。nnInteractive Agent 调用 nnInteractive 完成分割，本身不提供独立的分割 checkpoint。
 - 某些演示/评估代码会根据真值合成提示。此类运行属于 GT-derived/oracle，应与人工或部署式推理区分。
 - 代码和权重可能采用不同许可；下载或使用前请分别查看对应来源。
 

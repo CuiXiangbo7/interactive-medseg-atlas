@@ -1,6 +1,6 @@
 <p align="center"><a href="README.md">English</a> | <strong>简体中文</strong></p>
 
-# 🧠 nnInteractive-Agent
+# 🧠 nnInteractive Agent
 
 <p align="center"><strong>一种基于 nnInteractive 的 Agentic 三维标注流程：通用 AI Agent 理解自然语言任务、选择空间提示、检查三维掩膜并逐轮修正。</strong></p>
 
@@ -28,7 +28,7 @@
 
 ## 📦 权重与获取方式
 
-nnInteractive-Agent 没有单独训练的分割 checkpoint。安装流程会安装 nnInteractive backend，并从官方模型注册表下载基础模型权重（约 400 MB）；论文 benchmark 使用 nnInteractive v1.0。通用语言模型需通过 Claude Code、Codex 或其他兼容 Agent runtime 单独配置。
+nnInteractive Agent 没有单独训练的分割 checkpoint。安装流程会安装 nnInteractive backend，并从官方模型注册表下载基础模型权重（约 400 MB）；论文 benchmark 使用 nnInteractive v1.0。通用语言模型需通过 Claude Code、Codex 或其他兼容 Agent runtime 单独配置。
 
 上方链接指向基础模型权重。基础权重与 Apache-2.0 的 Agent 代码适用不同许可。
 

@@ -43,13 +43,13 @@ This catalog summarizes 15 interactive or promptable medical segmentation models
 | Model / institutional origin | Modality / prompts | Official code | Weights | Details |
 |---|---|---|---|---|
 | [MedSAM-Agent](medsam-agent/README.md)<br><sub>🏛️ The Chinese University of Hong Kong · Tencent Hunyuan</sub> | 2D · autonomous multi-turn | [code](https://github.com/CUHK-AIM-Group/MedSAM-Agent) | [Hugging-Face](https://huggingface.co/Saint-lsy/MedSAM-Agent-Qwen3-VL-8B-MedSAM2) | [guide](medsam-agent/README.md) |
-| [nnInteractive-Agent](nninteractive-agent/README.md)<br><sub>🏛️ MIC-DKFZ · Heidelberg University · NCT Heidelberg · Helmholtz Imaging</sub> | 3D · natural-language tasks + agent-selected prompts | [code](https://github.com/MIC-DKFZ/nninteractive-agent) | [nnInteractive base weights](https://huggingface.co/MIC-DKFZ/nnInteractive) | [guide](nninteractive-agent/README.md) |
+| [nnInteractive Agent](nninteractive-agent/README.md)<br><sub>🏛️ MIC-DKFZ · Heidelberg University · NCT Heidelberg · Helmholtz Imaging</sub> | 3D · natural-language tasks + agent-selected prompts | [code](https://github.com/MIC-DKFZ/nninteractive-agent) | [nnInteractive base weights](https://huggingface.co/MIC-DKFZ/nnInteractive) | [guide](nninteractive-agent/README.md) |
 
 ## Practical notes
 
 - Models differ in modality, spatial dimensionality and prompt type. Report the input, prompt policy and interaction budget when describing results.
 - A project may host an original paper checkpoint, a newer release, task-specific weights or an adapter. Record the exact model version, checkpoint and preprocessing.
-- Agentic methods choose prompts autonomously; their interaction rounds are not directly equivalent to a fixed number of manual clicks. nnInteractive-Agent orchestrates nnInteractive and has no separate segmentation checkpoint.
+- Agentic methods choose prompts autonomously; their interaction rounds are not directly equivalent to a fixed number of manual clicks. nnInteractive Agent orchestrates nnInteractive and has no separate segmentation checkpoint.
 - Some demo/evaluation code synthesizes prompts from ground truth. Mark those runs as GT-derived/oracle and distinguish them from human-input or deployment-style inference.
 - Code and weights may use different licenses. Review both before downloading or reusing a model.
 

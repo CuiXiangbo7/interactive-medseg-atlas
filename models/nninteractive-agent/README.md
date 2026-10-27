@@ -1,6 +1,6 @@
 <p align="center"><strong>English</strong> | <a href="README.zh-CN.md">简体中文</a></p>
 
-# 🧠 nnInteractive-Agent
+# 🧠 nnInteractive Agent
 
 <p align="center"><strong>An agentic 3D annotation workflow that gives general-purpose AI agents nnInteractive as a tool, so they can interpret requests, place spatial prompts, inspect the resulting volume masks and refine them iteratively.</strong></p>
 
@@ -28,7 +28,7 @@
 
 ## 📦 Checkpoints and access
 
-nnInteractive-Agent has no separate trained segmentation checkpoint. Its setup installs the nnInteractive backend and downloads the base model weights (about 400 MB) from the official model registry; the paper's benchmark uses nnInteractive v1.0. The general-purpose language model is configured separately through Claude Code, Codex or another compatible agent runtime.
+nnInteractive Agent has no separate trained segmentation checkpoint. Its setup installs the nnInteractive backend and downloads the base model weights (about 400 MB) from the official model registry; the paper's benchmark uses nnInteractive v1.0. The general-purpose language model is configured separately through Claude Code, Codex or another compatible agent runtime.
 
 The base weights are linked above. Their license is separate from the Apache-2.0 agent code.
 
