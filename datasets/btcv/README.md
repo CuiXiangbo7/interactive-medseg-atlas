@@ -4,13 +4,20 @@
 
 <p align="center">
 <a href="https://www.synapse.org/Synapse:syn3193805/wiki/217752"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
-<a href="https://www.synapse.org/Synapse:syn3193805/wiki/217752"><img src="https://img.shields.io/badge/MICCAI%20workshop-2015-8b1e3f?style=flat-square" alt="MICCAI workshop 2015"></a> <a href="https://doi.org/10.7303/syn3193805"><img src="https://img.shields.io/badge/Dataset%20DOI-10.7303%2Fsyn3193805-1f6feb?style=flat-square" alt="Dataset DOI 10.7303/syn3193805"></a>
+<a href="https://www.synapse.org/Synapse:syn3193805/wiki/217752"><img src="https://img.shields.io/badge/CHALLENGE-MICCAI%202015-8b1e3f?style=flat-square" alt="Related challenge"></a>
+</p>
+
+<p align="center"><strong>📚 Publications and records</strong></p>
+<p align="center">
+<a href="https://www.synapse.org/Synapse:syn3193805/wiki/217752"><img src="https://img.shields.io/badge/MICCAI%20workshop-2015-8b1e3f?style=flat-square" alt="MICCAI workshop 2015"></a>
+<a href="https://doi.org/10.7303/syn3193805"><img src="https://img.shields.io/badge/Dataset%20DOI-10.7303%2Fsyn3193805-1f6feb?style=flat-square" alt="Dataset DOI 10.7303/syn3193805"></a>
 </p>
 
 | Quick facts | |
 | --- | --- |
 | **Input** | Abdominal CT |
 | **Targets** | 13 organs |
+| **Institutional origin** | The abdominal CT scans were acquired at Vanderbilt University Medical Center. The dataset was released through the MICCAI 2015 Multi-Atlas Labeling Beyond the Cranial Vault workshop challenge. [Challenge record](https://www.synapse.org/Synapse:syn3193805/wiki/217752). |
 | **Challenge source** | [MICCAI 2015 Multi-Atlas Labeling Beyond the Cranial Vault](https://www.synapse.org/Synapse:syn3193805/wiki/217752) |
 
 ## 🧾 Dataset overview
@@ -31,6 +38,12 @@ The official source defines training and test cohorts; it does not establish the
 - [Official Synapse challenge page](https://www.synapse.org/Synapse:syn3193805/wiki/217752)
 - [Synapse files](https://www.synapse.org/Synapse:syn3193805/files/)
 - Synapse access requires accepting the project’s applicable data-use terms. The challenge source should be checked for current instructions and licensing language.
+
+## 🏁 Related challenge
+
+**MICCAI 2015 Multi-Atlas Labeling Beyond the Cranial Vault** was a workshop challenge for multi-organ abdominal CT labeling; the BTCV abdomen cohort is the 13-structure abdominal task.
+
+- [Official Synapse challenge and dataset page](https://www.synapse.org/Synapse:syn3193805/wiki/217752)
 
 ## 📚 Publication and citation
 
