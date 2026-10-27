@@ -4,7 +4,14 @@
 
 <p align="center">
 <a href="https://imagingdatasets.ucsf.edu/dataset/1"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
-<a href="https://doi.org/10.1148/ryai.230126"><img src="https://img.shields.io/badge/Radiology%20AI-2024-6f42c1?style=flat-square" alt="Radiology AI 2024"></a> <a href="https://doi.org/10.1148/ryai.230126"><img src="https://img.shields.io/badge/DOI-10.1148%2Fryai.230126-1f6feb?style=flat-square" alt="DOI 10.1148/ryai.230126"></a>
+<a href="https://www.synapse.org/Synapse:syn51156910/wiki/622553"><img src="https://img.shields.io/badge/CHALLENGE-BraTS%20METS%202023-8b1e3f?style=flat-square" alt="Related challenge"></a>
+</p>
+
+<p align="center"><strong>📚 Publications and records</strong></p>
+<p align="center">
+<a href="https://doi.org/10.1148/ryai.230126"><img src="https://img.shields.io/badge/Radiology%20AI-2024-2455a4?style=flat-square" alt="Radiology AI 2024"></a>
+<a href="https://doi.org/10.1148/ryai.230126"><img src="https://img.shields.io/badge/DOI-10.1148%2Fryai.230126-1f6feb?style=flat-square" alt="DOI 10.1148/ryai.230126"></a>
+<a href="https://arxiv.org/abs/2306.00838"><img src="https://img.shields.io/badge/arXiv-2306.00838-b31b1b?style=flat-square" alt="arXiv 2306.00838"></a>
 </p>
 
 | Quick facts | |
@@ -13,6 +20,7 @@
 | **Public download** | The UCSF page currently advertises 461 examinations |
 | **Input** | T1 post-contrast, T1 pre-contrast, FLAIR, subtraction |
 | **Target** | Voxelwise enhancing brain-metastasis annotations |
+| **Institutional origin** | Collected at the University of California, San Francisco (UCSF); the official registry lists the UCSF Center for Intelligent Imaging as the dataset manager. [UCSF dataset page](https://imagingdatasets.ucsf.edu/dataset/1). |
 | **Official source** | [UCSF Ci2 dataset page](https://imagingdatasets.ucsf.edu/dataset/1) |
 
 ## 🧾 Dataset overview
@@ -32,6 +40,12 @@ Each examination may include T1 post-contrast, T1 pre-contrast, FLAIR, and subtr
 ## 🔒 Access and terms
 
 The official UCSF repository states the data are provided at no cost for **non-commercial research**. Its dataset-specific terms include attribution and restrictions on redistribution and re-identification. Read the current [UCSF dataset terms](https://imagingdatasets.ucsf.edu/dataset/1) before use. The [AWS Registry entry](https://registry.opendata.aws/ucsf-bmsr/) is a secondary access mirror; prefer the UCSF source for the governing terms.
+
+## 🏁 Related challenge
+
+**2023 ASNR–MICCAI BraTS Brain Metastasis Segmentation Challenge:** 324 pre-operative exams from UCSF-BMSR were included as an external data source in the larger challenge cohort, alongside Stanford BrainMetShare, NYUMets, and other sites.
+
+- [Official BraTS 2023 challenge hub](https://www.synapse.org/Synapse:syn51156910/wiki/622553) · [Challenge paper](https://arxiv.org/abs/2306.00838)
 
 ## 📚 Publication and citation
 
