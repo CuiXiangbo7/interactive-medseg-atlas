@@ -12,23 +12,24 @@
 
 AMOS was designed to evaluate abdominal organ segmentation across multi-center, multi-vendor, multi-modality and multi-disease imaging. The dataset paper describes voxel-level annotations for 15 organs, including the spleen, kidneys, gallbladder, esophagus, liver, stomach, aorta, inferior vena cava, pancreas, adrenal glands, duodenum, bladder, and prostate/uterus.
 
-The challenge has a CT-only task and a mixed CT/MRI task. The official Zenodo record provides the labeled set (500 CT + 100 MRI) and separately links additional unlabeled data.
+The challenge has a CT-only task and a mixed CT/MRI task. The official Zenodo record links a labeled 500-CT/100-MRI archive and additional unlabeled data.
 
 ## Official split and label availability
 
-| Cohort | Official information |
+| Release / cohort | Official information |
 | --- | --- |
-| Labeled development data | Training and validation data were released after the challenge with reference labels; the combined accessible cohort is 300 CT and 60 MRI |
-| Challenge test data | Images were released without ground-truth labels for the official test phase |
-| Additional unlabeled data | Linked from the Zenodo record as separate downloads; not part of the 600 labeled scans |
+| Challenge development data | Training and validation data were released with reference labels. A later peer-reviewed description reports 300 CT and 60 MRI across these accessible sections. |
+| Challenge test data | The challenge portal describes test images without ground-truth labels during the challenge. |
+| Post-challenge Zenodo v2 | The Zenodo record describes its 500-CT/100-MRI archive as labeled. This is broader than the original challenge-time test release; check the archive contents and version before treating test references as available. |
+| Additional unlabeled data | Linked separately from the Zenodo record; these are not the 600 labeled scans. |
 
-The challenge page and post-challenge Zenodo package are the authority for the exact files and current access terms. Do not infer an official train/validation subdivision from a merged post-challenge archive.
+The challenge split and the post-challenge archive are different release contexts. Do not infer a train/validation subdivision from a merged post-challenge package.
 
 ## Access and terms
 
 - [AMOS challenge portal](https://amos22.grand-challenge.org/)
 - [Zenodo dataset record, DOI 10.5281/zenodo.7262581](https://doi.org/10.5281/zenodo.7262581)
-- The Zenodo record lists the labeled archive, file checksums, and separate unlabeled-data downloads. Review the source terms and attribution requirements before reuse.
+- The Zenodo record lists archives and file checksums. Review its current metadata and the challenge terms before reuse.
 
 ## Dataset paper
 
