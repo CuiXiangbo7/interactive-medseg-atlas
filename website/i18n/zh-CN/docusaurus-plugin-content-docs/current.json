@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.atlasSidebar.category.Datasets": {
+    "message": "数据集",
+    "description": "The label for category 'Datasets' in sidebar 'atlasSidebar'"
+  },
+  "sidebar.atlasSidebar.category.Models": {
+    "message": "模型",
+    "description": "The label for category 'Models' in sidebar 'atlasSidebar'"
+  },
+  "sidebar.atlasSidebar.doc.Project overview": {
+    "message": "项目概览",
+    "description": "The label for the doc item 'Project overview' in sidebar 'atlasSidebar', linking to the doc project-overview"
+  }
+}

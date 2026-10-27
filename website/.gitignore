@@ -1,0 +1,6 @@
+node_modules/
+.docusaurus/
+build/
+docs/
+i18n/zh-CN/docusaurus-plugin-content-docs/current/
+src/data/catalog.json

@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Interactive MedSeg Atlas",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Interactive MedSeg Atlas",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Home": {
+    "message": "首页",
+    "description": "Navbar item with label Home"
+  },
+  "item.label.Datasets": {
+    "message": "数据集",
+    "description": "Navbar item with label Datasets"
+  },
+  "item.label.Models": {
+    "message": "模型",
+    "description": "Navbar item with label Models"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
