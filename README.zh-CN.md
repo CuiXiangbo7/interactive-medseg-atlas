@@ -6,7 +6,7 @@
 
 <p align="center">
 <a href="datasets/README.zh-CN.md"><img src="https://img.shields.io/badge/DATASETS-11%20dataset%20guides-2563eb?style=flat-square" alt="11 个数据集指南"></a>
-<a href="models/"><img src="https://img.shields.io/badge/MODELS-interactive%20methods-7c3aed?style=flat-square" alt="交互式模型指南"></a>
+<a href="models/README.zh-CN.md"><img src="https://img.shields.io/badge/MODELS-14%20model%20guides-7c3aed?style=flat-square" alt="14 个模型指南"></a>
 <a href="datasets/README.zh-CN.md"><img src="https://img.shields.io/badge/SOURCES-official%20%2B%20papers-16803c?style=flat-square" alt="官方来源与论文"></a>
 </p>
 
@@ -18,7 +18,7 @@
 
 ## 🤖 交互式模型指南
 
-[models 目录](models/)用于收录模型介绍与运行指南，内容将涵盖官方代码仓库、交互方式、检查点、环境要求，以及可复现的推理步骤。
+浏览[模型目录](models/README.zh-CN.md)，查看此前讨论的两组共 14 个对比方法，并进入各模型的中英文页面。每页链接原始论文、代码和权重，并整理安装、推理、模态、提示方式、版本与许可信息。
 
 ## 📖 项目范围与引用
 

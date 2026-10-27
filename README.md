@@ -6,7 +6,7 @@
 
 <p align="center">
 <a href="datasets/README.md"><img src="https://img.shields.io/badge/DATASETS-11%20dataset%20guides-2563eb?style=flat-square" alt="11 dataset guides"></a>
-<a href="models/"><img src="https://img.shields.io/badge/MODELS-interactive%20methods-7c3aed?style=flat-square" alt="Interactive model guides"></a>
+<a href="models/README.md"><img src="https://img.shields.io/badge/MODELS-14%20model%20guides-7c3aed?style=flat-square" alt="14 model guides"></a>
 <a href="datasets/README.md"><img src="https://img.shields.io/badge/SOURCES-official%20%2B%20papers-16803c?style=flat-square" alt="Official sources and papers"></a>
 </p>
 
@@ -18,7 +18,7 @@ Browse the [dataset catalog](datasets/README.md) for concise comparisons and ded
 
 ## 🤖 Interactive model guides
 
-The [models directory](models/) is reserved for model cards and run guides covering official repositories, interaction behavior, checkpoints, requirements, and reproducible inference steps.
+Browse the [model atlas](models/README.md) for the two comparison sets discussed in this project, with bilingual pages for all 14 methods. Each page links to the original paper, source code and weights, and summarizes installation, inference, modality, prompting, version and license details.
 
 ## 📖 Scope and citation
 
