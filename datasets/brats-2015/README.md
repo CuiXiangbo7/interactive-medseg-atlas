@@ -1,3 +1,5 @@
+<p align="center"><strong>English</strong> | <a href="README.zh-CN.md">简体中文</a></p>
+
 <h1 align="center">🧠 BraTS 2015</h1>
 
 <p align="center"><strong>Multimodal glioma MRI · historical BraTS challenge release</strong></p>

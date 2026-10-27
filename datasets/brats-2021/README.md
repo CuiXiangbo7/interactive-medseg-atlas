@@ -1,3 +1,5 @@
+<p align="center"><strong>English</strong> | <a href="README.zh-CN.md">简体中文</a></p>
+
 <h1 align="center">🧠 BraTS 2021</h1>
 
 <p align="center"><strong>RSNA–ASNR–MICCAI brain tumor benchmark · pre-operative MRI</strong></p>

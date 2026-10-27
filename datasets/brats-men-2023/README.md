@@ -1,3 +1,5 @@
+<p align="center"><strong>English</strong> | <a href="README.zh-CN.md">简体中文</a></p>
+
 <h1 align="center">🧠 BraTS-MEN 2023</h1>
 
 <p align="center"><strong>Pre-operative meningioma segmentation · multiparametric MRI</strong></p>

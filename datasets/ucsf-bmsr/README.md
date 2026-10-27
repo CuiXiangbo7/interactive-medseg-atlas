@@ -1,3 +1,5 @@
+<p align="center"><strong>English</strong> | <a href="README.zh-CN.md">简体中文</a></p>
+
 <h1 align="center">🧠 UCSF-BMSR</h1>
 
 <p align="center"><strong>Brain metastasis segmentation · stereotactic radiosurgery MRI</strong></p>

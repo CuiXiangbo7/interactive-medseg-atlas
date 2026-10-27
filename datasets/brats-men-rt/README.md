@@ -1,3 +1,5 @@
+<p align="center"><strong>English</strong> | <a href="README.zh-CN.md">简体中文</a></p>
+
 <h1 align="center">🧠 BraTS-MEN-RT 2024</h1>
 
 <p align="center"><strong>Meningioma radiotherapy target segmentation · post-contrast T1 MRI</strong></p>

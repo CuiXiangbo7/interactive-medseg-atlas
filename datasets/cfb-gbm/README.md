@@ -1,3 +1,5 @@
+<p align="center"><strong>English</strong> | <a href="README.zh-CN.md">简体中文</a></p>
+
 <h1 align="center">🧠 CFB-GBM</h1>
 
 <p align="center"><strong>Glioblastoma imaging and segmentation · longitudinal multimodal data</strong></p>

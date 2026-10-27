@@ -1,3 +1,5 @@
+<p align="center"><strong>English</strong> | <a href="README.zh-CN.md">简体中文</a></p>
+
 <h1 align="center">🩻 AMOS 2022</h1>
 
 <p align="center"><strong>Abdominal multi-organ segmentation · CT and MRI</strong></p>

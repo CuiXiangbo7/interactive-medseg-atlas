@@ -1,3 +1,5 @@
+<p align="center"><strong>English</strong> | <a href="README.zh-CN.md">简体中文</a></p>
+
 <h1 align="center">🩻 BTCV — Beyond the Cranial Vault</h1>
 
 <p align="center"><strong>Abdominal multi-organ segmentation · CT</strong></p>
