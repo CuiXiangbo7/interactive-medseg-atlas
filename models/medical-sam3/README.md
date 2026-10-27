@@ -17,7 +17,7 @@
 | Field | Details |
 |---|---|
 | Model type | Medical SAM3 2D/3D adaptation |
-| Research team / organization | AIM Research Lab project |
+| Research team / organization | The paper lists affiliations at University of Central Florida, University College London, University of Illinois Urbana-Champaign, University of Trento, The Hong Kong Polytechnic University and University of Pennsylvania. |
 | Input / modality | 2D medical benchmarks and 3D NPZ volumes; check which code path/version a result uses. |
 | Prompt / interaction | 2D box/text prompts; current 3D v2 inference is text-prompted and full-depth. |
 | Code license | The repository includes Meta's SAM License for SAM materials. Check the current Hugging Face model card for the fine-tuned checkpoint's terms. |

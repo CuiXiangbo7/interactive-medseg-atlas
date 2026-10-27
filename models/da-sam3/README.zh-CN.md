@@ -17,7 +17,7 @@
 | 字段 | 说明 |
 |---|---|
 | 模型类型 | 参数高效的医学 SAM3 适配 |
-| 研究团队 / 机构 | MICCAI 2026 论文作者：Ying Chen、Jinyue Li、Kun Wang、Qiankun Li、Yang Liu |
+| 研究团队 / 机构 | Shenzhen Research Institute, The Chinese University of Hong Kong, Shenzhen（香港中文大学深圳研究院）；University of Science and Technology of China（中国科学技术大学）；Nanyang Technological University（南洋理工大学）；Imperial College London（帝国理工学院，Imperial Global Singapore）。 |
 | 输入 / 模态 | 医学图像分割；公开仓库列出 Synapse、MMWHS、BTCV 和 ACDC 数据集。 |
 | 提示 / 交互 | 自然语言文本提示，并结合图像条件的 expert routing。 |
 | 代码许可 | 检查到的 GitHub README 标注 research use only，仓库快照未见顶层 LICENSE。SAM 3 base weights 仍受 Meta SAM License 约束。MICCAI 论文页未列代码链接，而公开 GitHub README 自称 official implementation。 |

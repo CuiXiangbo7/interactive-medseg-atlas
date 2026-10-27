@@ -17,7 +17,7 @@
 | Field | Details |
 |---|---|
 | Model type | Parameter-efficient medical SAM3 adaptation |
-| Research team / organization | MICCAI 2026 paper authors: Ying Chen, Jinyue Li, Kun Wang, Qiankun Li and Yang Liu |
+| Research team / organization | Shenzhen Research Institute, The Chinese University of Hong Kong, Shenzhen; University of Science and Technology of China; Nanyang Technological University; Imperial College London (Imperial Global Singapore). |
 | Input / modality | Medical image segmentation; the public repository lists Synapse, MMWHS, BTCV and ACDC datasets. |
 | Prompt / interaction | Natural-language text prompt combined with image-conditioned expert routing. |
 | Code license | The GitHub README says research use only and the repository has no top-level LICENSE in the checked snapshot. SAM 3 base weights remain subject to Meta's SAM License. The MICCAI paper page lists no code URL, while the public GitHub README calls itself an official implementation. |
@@ -28,7 +28,7 @@
 
 ## 📦 Checkpoints and access
 
-The project links the gated [SAM 3 base checkpoint](https://huggingface.co/facebook/sam3), but does not list a downloadable DA-SAM3 checkpoint. Its inference example expects a locally produced `outputs/da_sam3/best_warmup.pt`. Its inference example expects a locally produced `outputs/da_sam3/best_warmup.pt`.
+The project links the gated [SAM 3 base checkpoint](https://huggingface.co/facebook/sam3), but does not list a downloadable DA-SAM3 checkpoint. Its inference example expects a locally produced `outputs/da_sam3/best_warmup.pt`.
 
 The code, model checkpoint and any required foundation-model checkpoint can have different terms. Review each linked source before use or redistribution.
 

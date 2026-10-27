@@ -17,7 +17,7 @@
 | 字段 | 说明 |
 |---|---|
 | 模型类型 | 3D 点提示分割模型 |
-| 研究团队 / 机构 | Uni-Medical 医学图像研究项目 |
+| 研究团队 / 机构 | Shanghai Jiao Tong University（上海交通大学）；Shanghai Artificial Intelligence Laboratory（上海人工智能实验室）；Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences（中国科学院深圳先进技术研究院）。 |
 | 输入 / 模态 | 3D 医学体数据；项目在 CT、MRI 等多种体数据模态上评估。 |
 | 提示 / 交互 | 3D 点提示交互与迭代修正。 |
 | 代码许可 | 代码：Apache-2.0。权重条款请以对应 checkpoint 页面为准。 |

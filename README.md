@@ -6,7 +6,7 @@
 
 <p align="center">
 <a href="datasets/README.md"><img src="https://img.shields.io/badge/DATASETS-11%20dataset%20guides-2563eb?style=flat-square" alt="11 dataset guides"></a>
-<a href="models/README.md"><img src="https://img.shields.io/badge/MODELS-14%20model%20guides-7c3aed?style=flat-square" alt="14 model guides"></a>
+<a href="models/README.md"><img src="https://img.shields.io/badge/MODELS-15%20model%20guides-7c3aed?style=flat-square" alt="15 model guides"></a>
 <a href="datasets/README.md"><img src="https://img.shields.io/badge/SOURCES-official%20%2B%20papers-16803c?style=flat-square" alt="Official sources and papers"></a>
 </p>
 
@@ -18,7 +18,7 @@ Browse the [dataset catalog](datasets/README.md) for concise comparisons and ded
 
 ## 🤖 Interactive model guides
 
-Browse the [model atlas](models/README.md) for a bilingual overview of interactive and promptable medical segmentation models. Each model page links to its original paper, source code and weights, and summarizes setup, inference, modality, prompts, versions and licenses.
+Browse the [model atlas](models/README.md) for a bilingual overview of interactive and promptable medical segmentation models and agentic workflows. Each guide links to its original paper, source code and available weights, and summarizes institutional affiliations, setup, inference, modality, prompts, versions and licenses.
 
 ## 📖 Scope and citation
 

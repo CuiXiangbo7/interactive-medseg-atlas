@@ -17,7 +17,7 @@
 | Field | Details |
 |---|---|
 | Model type | 3D point-prompt segmentation model |
-| Research team / organization | Uni-Medical research project |
+| Research team / organization | Shanghai Jiao Tong University; Shanghai Artificial Intelligence Laboratory; Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences. |
 | Input / modality | 3D medical volumes; the project benchmarks CT, MRI and other volumetric modalities. |
 | Prompt / interaction | Interactive 3D point prompts; iterative corrections. |
 | Code license | Code: Apache-2.0. Check the checkpoint page for the weight-specific terms. |

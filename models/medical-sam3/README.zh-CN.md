@@ -17,7 +17,7 @@
 | 字段 | 说明 |
 |---|---|
 | 模型类型 | Medical-SAM3 的 2D/3D 适配 |
-| 研究团队 / 机构 | AIM Research Lab 项目 |
+| 研究团队 / 机构 | 论文署名单位包括 University of Central Florida、University College London、University of Illinois Urbana-Champaign、University of Trento、The Hong Kong Polytechnic University 和 University of Pennsylvania。 |
 | 输入 / 模态 | 2D 医学 benchmark 与 3D NPZ 体数据；需注明结果使用的代码路径/版本。 |
 | 提示 / 交互 | 2D 框/文本提示；当前 3D v2 推理使用文本提示并覆盖完整深度。 |
 | 代码许可 | 仓库中的 SAM materials 包含 Meta 的 SAM License。微调 checkpoint 的条款请查看当前 Hugging Face model card。 |

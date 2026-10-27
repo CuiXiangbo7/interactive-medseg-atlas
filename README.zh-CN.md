@@ -6,7 +6,7 @@
 
 <p align="center">
 <a href="datasets/README.zh-CN.md"><img src="https://img.shields.io/badge/DATASETS-11%20dataset%20guides-2563eb?style=flat-square" alt="11 个数据集指南"></a>
-<a href="models/README.zh-CN.md"><img src="https://img.shields.io/badge/MODELS-14%20model%20guides-7c3aed?style=flat-square" alt="14 个模型指南"></a>
+<a href="models/README.zh-CN.md"><img src="https://img.shields.io/badge/MODELS-15%20model%20guides-7c3aed?style=flat-square" alt="15 个模型指南"></a>
 <a href="datasets/README.zh-CN.md"><img src="https://img.shields.io/badge/SOURCES-official%20%2B%20papers-16803c?style=flat-square" alt="官方来源与论文"></a>
 </p>
 
@@ -18,7 +18,7 @@
 
 ## 🤖 交互式模型指南
 
-浏览[模型目录](models/README.zh-CN.md)，了解交互式与提示式医学分割模型。各模型页面提供中英文介绍，并链接原始论文、代码和权重，整理环境、推理、模态、提示方式、版本与许可信息。
+浏览[模型目录](models/README.zh-CN.md)，了解交互式与提示式医学分割模型及 Agent 工作流。各页面提供中英文介绍、机构/大学信息，并链接原始论文、代码和可获取的权重，整理环境、推理、模态、提示方式、版本与许可信息。
 
 ## 📖 项目范围与引用
 

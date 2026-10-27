@@ -43,7 +43,7 @@ nninteractive-download-model nnInteractive_v1.0
 
 ## ⚠️ 版本与使用说明
 
-该模型以官方预训练 checkpoint 形式发布。代码和权重适用不同许可，复用或再分发前请分别核对。
+该模型以官方预训练 checkpoint 形式发布。代码和权重适用不同许可，复用或再分发前请分别核对。基于 nnInteractive 的 Agent 工作流见[nnInteractive-Agent](../nninteractive-agent/README.zh-CN.md)；它通过 MCP 调用模型，不是新的分割 checkpoint。
 
 ## 📜 许可
 
