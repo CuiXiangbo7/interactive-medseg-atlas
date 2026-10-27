@@ -5,10 +5,36 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import catalog from '../data/catalog.json';
 
+const FEATURED = [
+  ['dataset', 'brats-2021'],
+  ['dataset', 'amos'],
+  ['model', 'nninteractive'],
+  ['model', 'sam-3'],
+];
+
+const FEATURED_COPY = {
+  'dataset:brats-2021': {
+    en: ['BRAIN MRI', 'Glioma benchmark · pre-operative MRI'],
+    zh: ['脑部 MRI', '胶质瘤基准 · 术前 MRI'],
+  },
+  'dataset:amos': {
+    en: ['ABDOMINAL IMAGING', 'Multi-organ segmentation · CT + MRI'],
+    zh: ['腹部影像', '多器官分割 · CT + MRI'],
+  },
+  'model:nninteractive': {
+    en: ['SPATIAL PROMPTS', '3D interaction · points, boxes, lasso'],
+    zh: ['空间提示', '3D 交互 · 点、框、套索'],
+  },
+  'model:sam-3': {
+    en: ['TEXT + VISUAL PROMPTS', '2D and video · concepts and visual prompts'],
+    zh: ['文本与视觉提示', '2D 与视频 · 概念和视觉提示'],
+  },
+};
+
 export default function Home() {
   const { i18n } = useDocusaurusContext();
-  const atlasMarkUrl = useBaseUrl('/img/atlas-mark.svg');
   const isZh = i18n.currentLocale === 'zh-CN';
+  const atlasVisualUrl = useBaseUrl('/img/atlas-scan.svg');
   const [query, setQuery] = useState('');
   const [filter, setFilter] = useState('all');
   const searchInputRef = useRef(null);
@@ -39,105 +65,114 @@ export default function Home() {
     });
   }, [allItems, filter, query]);
 
+  const featuredItems = useMemo(() => FEATURED.map(([kind, slug]) => allItems.find((item) => item.kind === kind && item.slug === slug)).filter(Boolean), [allItems]);
+  const isSearching = Boolean(query.trim()) || filter !== 'all';
+  const shownItems = isSearching ? visibleItems.slice(0, 8) : featuredItems;
+
   const copy = isZh ? {
-    eyebrow: '开放的医学分割知识库',
-    titleA: '找到数据。', titleB: '理解模型。',
-    intro: '汇总公开医学图像分割数据集与交互式模型，直达官方来源、论文、代码、权重和运行指南。',
+    eyebrow: '医学图像分割 · 开放资料库',
+    titleA: '数据集与模型，', titleB: '一站式探索。',
+    intro: '从官方数据入口与评测划分，到交互式方法、论文、权重和运行指南，沿着可核查的来源快速查找。',
     exploreData: '浏览数据集', exploreModels: '浏览模型',
-    searchLabel: '搜索数据集与模型', searchPlaceholder: '试试 BraTS、nnInteractive、CT…',
-    all: '全部', datasets: '数据集', models: '模型', results: '条目',
-    noResults: '没有找到匹配的条目。试试其他关键词。',
-    datasetDesc: '官方获取入口、数据划分、标签可用性、许可与论文。',
-    modelDesc: '原始项目、论文、权重、环境配置与推理入口。',
-    datasetEyebrow: '数据资源', modelEyebrow: '方法与工具',
-    browse: '打开目录', sourceNote: '以原始来源为准 · 不托管第三方数据、代码或权重',
+    metricDatasets: '数据集指南', metricModels: '模型指南', metricLanguages: '中英双语',
+    searchTitle: '查找资料', searchNote: '按名称、模态或提示方式搜索',
+    searchLabel: '搜索数据集与模型', searchPlaceholder: '试试 BraTS、CT、point prompts…',
+    all: '全部', datasets: '数据集', models: '模型', results: '条匹配',
+    initialCount: `共 ${allItems.length} 个指南`, noResults: '没有找到匹配条目，换个关键词试试。',
+    featured: '精选入口', featuredTitle: '从这些指南开始', featuredNote: '常用数据集与交互方法',
+    browse: '查看完整目录',
+    howTitle: '每份指南都回答三个问题',
+    step1Title: '数据从哪里来？', step1Text: '查找官方入口、发布方、数据划分与标签可用性。',
+    step2Title: '方法怎样交互？', step2Text: '了解支持的模态、提示类型、论文版本与官方代码。',
+    step3Title: '如何复现运行？', step3Text: '查看权重、环境依赖、推理入口和许可说明。',
+    note: '资料优先链接至官方发布方与原始论文。数据、代码和权重由原项目托管；使用时请以来源页面的当前说明为准。',
     itemDataset: '数据集', itemModel: '模型',
   } : {
-    eyebrow: 'An open atlas for medical segmentation',
-    titleA: 'Find the data.', titleB: 'Know the models.',
-    intro: 'A curated guide to public medical segmentation datasets and interactive models, with direct links to official sources, papers, code, weights, and run instructions.',
+    eyebrow: 'MEDICAL IMAGING · OPEN RESEARCH ATLAS',
+    titleA: 'Datasets and models,', titleB: 'mapped together.',
+    intro: 'Move from official data access and evaluation splits to interactive methods, papers, weights, and run guides through source-linked pages.',
     exploreData: 'Explore datasets', exploreModels: 'Explore models',
-    searchLabel: 'Search datasets and models', searchPlaceholder: 'Try BraTS, nnInteractive, CT…',
-    all: 'All', datasets: 'Datasets', models: 'Models', results: 'entries',
-    noResults: 'No matching entries. Try another search.',
-    datasetDesc: 'Official access, dataset splits, label availability, reuse terms, and papers.',
-    modelDesc: 'Original projects, papers, weights, setup notes, and inference entry points.',
-    datasetEyebrow: 'Data resources', modelEyebrow: 'Methods & tools',
-    browse: 'Browse catalog', sourceNote: 'Source-first · No third-party data, code, or weights are hosted here',
-    itemDataset: 'Dataset', itemModel: 'Model',
+    metricDatasets: 'dataset guides', metricModels: 'model guides', metricLanguages: 'EN + 中文',
+    searchTitle: 'Find a guide', searchNote: 'Search by name, modality, or prompt type',
+    searchLabel: 'Search datasets and models', searchPlaceholder: 'Try BraTS, CT, point prompts…',
+    all: 'All', datasets: 'Datasets', models: 'Models', results: 'matches',
+    initialCount: `${allItems.length} guides`, noResults: 'No matching entries. Try another search.',
+    featured: 'START HERE', featuredTitle: 'Selected guides', featuredNote: 'A few useful places to begin',
+    browse: 'Browse full catalog',
+    howTitle: 'Each guide answers three questions',
+    step1Title: 'Where does the data come from?', step1Text: 'Find official access, organizers, data splits, and label availability.',
+    step2Title: 'How does the method interact?', step2Text: 'Review modalities, prompt types, paper versions, and official code.',
+    step3Title: 'How can I run it?', step3Text: 'Check weights, environment requirements, inference entry points, and licenses.',
+    note: 'Guides link to official releases and original papers. Data, code, and weights remain with their source projects; follow the current terms on those pages.',
+    itemDataset: 'DATASET', itemModel: 'MODEL',
   };
 
   return (
     <Layout
-      title={isZh ? '医学分割资料库' : 'Medical Segmentation Atlas'}
+      title={isZh ? '医学图像分割资料库' : 'Interactive Medical Segmentation Atlas'}
       description={copy.intro}>
       <main className="atlas-home">
         <section className="atlas-hero">
-          <div className="atlas-hero-glow atlas-hero-glow-one" />
-          <div className="atlas-hero-glow atlas-hero-glow-two" />
+          <div className="atlas-hero-grid" aria-hidden="true" />
           <div className="container atlas-hero-inner">
             <div className="atlas-hero-copy">
-              <p className="atlas-eyebrow"><span className="atlas-eyebrow-dot" />{copy.eyebrow}</p>
+              <p className="atlas-eyebrow"><span className="atlas-eyebrow-mark" />{copy.eyebrow}</p>
               <h1>{copy.titleA}<br /><span>{copy.titleB}</span></h1>
               <p className="atlas-hero-intro">{copy.intro}</p>
               <div className="atlas-hero-actions">
-                <Link className="button button--primary button--lg atlas-button-primary" to="/docs/datasets">{copy.exploreData}<span aria-hidden="true">↗</span></Link>
-                <Link className="button button--secondary button--lg atlas-button-secondary" to="/docs/models">{copy.exploreModels}<span aria-hidden="true">↗</span></Link>
+                <Link className="atlas-button atlas-button-primary" to="/docs/datasets">{copy.exploreData}<span aria-hidden="true">↗</span></Link>
+                <Link className="atlas-button atlas-button-quiet" to="/docs/models">{copy.exploreModels}<span aria-hidden="true">↗</span></Link>
               </div>
-              <div className="atlas-hero-note"><span aria-hidden="true">✳</span>{copy.sourceNote}</div>
+              <div className="atlas-hero-metrics" aria-label={isZh ? '资料库规模' : 'Atlas collection size'}>
+                <div><strong>{String(catalog.datasets.length).padStart(2, '0')}</strong><span>{copy.metricDatasets}</span></div>
+                <i />
+                <div><strong>{String(catalog.models.length).padStart(2, '0')}</strong><span>{copy.metricModels}</span></div>
+                <i />
+                <div><strong>EN<span className="atlas-plus">+</span>中</strong><span>{copy.metricLanguages}</span></div>
+              </div>
             </div>
-            <div className="atlas-hero-art" aria-hidden="true">
-              <div className="atlas-orbit orbit-outer" />
-              <div className="atlas-orbit orbit-inner" />
-              <div className="atlas-art-card art-card-data"><span className="art-icon">◈</span><span>DATA</span><small>curated sources</small></div>
-              <div className="atlas-art-card art-card-prompt"><span className="art-icon">⌖</span><span>PROMPT</span><small>interactive tools</small></div>
-              <div className="atlas-art-core"><img src={atlasMarkUrl} alt="" /></div>
-              <span className="atlas-art-node node-one" /><span className="atlas-art-node node-two" /><span className="atlas-art-node node-three" />
+            <div className="atlas-hero-visual">
+              <img src={atlasVisualUrl} alt={isZh ? '脑部 MRI 与分割轮廓的示意图' : 'Illustration of an MRI slice with segmentation contours'} />
+              <span className="atlas-visual-caption">{isZh ? '示意图 · 非真实医学影像' : 'Illustration · not a clinical image'}</span>
             </div>
           </div>
           <div className="atlas-hero-bottom" />
         </section>
 
-        <section className="container atlas-content">
-          <div className="atlas-stat-row" aria-label={isZh ? '资料库规模' : 'Atlas collection size'}>
-            <div className="atlas-stat"><strong>{catalog.datasets.length.toString().padStart(2, '0')}</strong><span>{isZh ? '数据集指南' : 'dataset guides'}</span></div>
-            <div className="atlas-stat-divider" />
-            <div className="atlas-stat"><strong>{catalog.models.length.toString().padStart(2, '0')}</strong><span>{isZh ? '模型指南' : 'model guides'}</span></div>
-            <div className="atlas-stat-divider" />
-            <div className="atlas-stat atlas-stat-note"><strong>EN <i>+</i> 中文</strong><span>{isZh ? '双语资料' : 'bilingual guides'}</span></div>
-          </div>
-
-          <div className="atlas-section-heading">
-            <div><p className="atlas-section-kicker">{isZh ? '快速开始' : 'Start exploring'}</p><h2>{isZh ? '从你关心的内容开始' : 'Start with what you need'}</h2></div>
-            <p>{isZh ? '搜索名称或主题，快速定位对应指南。' : 'Search a name or topic to jump straight to a guide.'}</p>
+        <section className="container atlas-main-content">
+          <div className="atlas-explore-heading">
+            <div><p className="atlas-kicker">{isZh ? '浏览资料库' : 'EXPLORE THE ATLAS'}</p><h2>{isZh ? '按你的研究问题开始' : 'Start with your research question'}</h2></div>
+            <p>{isZh ? '数据集与方法指南并列整理，原始来源一键可达。' : 'Dataset and method guides sit side by side, with their original sources one click away.'}</p>
           </div>
 
           <div className="atlas-collection-grid">
             <Link className="atlas-collection-card atlas-data-card" to="/docs/datasets">
-              <span className="atlas-card-icon">▤</span>
-              <span className="atlas-collection-count">{catalog.datasets.length} {isZh ? '个指南' : 'guides'}</span>
-              <span className="atlas-collection-eyebrow">{copy.datasetEyebrow}</span>
+              <span className="atlas-collection-icon" aria-hidden="true">01</span>
+              <span className="atlas-collection-topline">{copy.metricDatasets}</span>
               <strong>{copy.datasets}</strong>
-              <span className="atlas-collection-description">{copy.datasetDesc}</span>
-              <span className="atlas-collection-link">{copy.browse}<span aria-hidden="true">↗</span></span>
+              <span className="atlas-collection-description">{isZh ? '官方下载与访问 · 挑战赛划分 · 标签状态 · 数据集论文' : 'Official access · challenge splits · label status · dataset papers'}</span>
+              <span className="atlas-collection-tags"><i>Brain MRI</i><i>CT</i><i>CT + MRI</i></span>
+              <span className="atlas-collection-link">{copy.browse}<b aria-hidden="true">↗</b></span>
+              <span className="atlas-card-orbit" aria-hidden="true" />
             </Link>
             <Link className="atlas-collection-card atlas-model-card" to="/docs/models">
-              <span className="atlas-card-icon">⌘</span>
-              <span className="atlas-collection-count">{catalog.models.length} {isZh ? '个指南' : 'guides'}</span>
-              <span className="atlas-collection-eyebrow">{copy.modelEyebrow}</span>
+              <span className="atlas-collection-icon" aria-hidden="true">02</span>
+              <span className="atlas-collection-topline">{copy.metricModels}</span>
               <strong>{copy.models}</strong>
-              <span className="atlas-collection-description">{copy.modelDesc}</span>
-              <span className="atlas-collection-link">{copy.browse}<span aria-hidden="true">↗</span></span>
+              <span className="atlas-collection-description">{isZh ? '交互提示方式 · 原始论文与代码 · 权重 · 推理入口' : 'Prompt styles · original papers and code · weights · inference entry points'}</span>
+              <span className="atlas-collection-tags"><i>Points</i><i>Text</i><i>Agentic</i></span>
+              <span className="atlas-collection-link">{copy.browse}<b aria-hidden="true">↗</b></span>
+              <span className="atlas-card-orbit" aria-hidden="true" />
             </Link>
           </div>
 
-          <div className="atlas-search-section">
-            <div className="atlas-search-heading">
-              <div><p className="atlas-section-kicker">{isZh ? '资料库' : 'The atlas'}</p><h2>{isZh ? '查找指南' : 'Find a guide'}</h2></div>
-              <span className="atlas-result-total">{visibleItems.length} {copy.results}</span>
+          <section className="atlas-search-section" aria-labelledby="atlas-search-title">
+            <div className="atlas-section-heading">
+              <div><p className="atlas-kicker">{copy.searchTitle}</p><h2 id="atlas-search-title">{copy.searchNote}</h2></div>
+              <span className="atlas-total-count">{isSearching ? `${visibleItems.length} ${copy.results}` : copy.initialCount}</span>
             </div>
             <label className="atlas-search-box">
-              <span className="atlas-search-icon" aria-hidden="true">⌕</span>
+              <span className="atlas-search-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg></span>
               <span className="visually-hidden">{copy.searchLabel}</span>
               <input ref={searchInputRef} value={query} onChange={(event) => setQuery(event.target.value)} placeholder={copy.searchPlaceholder} type="search" />
               <kbd>/</kbd>
@@ -145,18 +180,37 @@ export default function Home() {
             <div className="atlas-filter-row" role="group" aria-label={isZh ? '筛选条目' : 'Filter entries'}>
               {[
                 ['all', copy.all], ['dataset', copy.datasets], ['model', copy.models],
-              ].map(([key, label]) => <button key={key} type="button" className={`atlas-filter ${filter === key ? 'is-active' : ''}`} onClick={() => setFilter(key)}>{label}</button>)}
+              ].map(([key, label]) => <button key={key} type="button" className={`atlas-filter ${filter === key ? 'is-active' : ''}`} onClick={() => setFilter(key)} aria-pressed={filter === key}>{label}</button>)}
             </div>
-            {visibleItems.length ? <div className="atlas-result-grid">
-              {visibleItems.map((item) => <Link className="atlas-result-card" to={item.path} key={`${item.kind}-${item.slug}`}>
-                <span className={`atlas-result-icon ${item.kind}`}>{item.kind === 'dataset' ? '▤' : '⌘'}</span>
-                <span className="atlas-result-body"><span className="atlas-result-kind">{item.kind === 'dataset' ? copy.itemDataset : copy.itemModel}</span><strong>{isZh ? item.titleZh : item.titleEn}</strong><small>{isZh ? item.subtitleZh || item.subtitleEn : item.subtitleEn}</small></span>
-                <span className="atlas-result-arrow" aria-hidden="true">↗</span>
-              </Link>)}
+            {shownItems.length ? <div className="atlas-result-grid">
+              {shownItems.map((item) => {
+                const meta = FEATURED_COPY[`${item.kind}:${item.slug}`];
+                const label = meta ? meta[isZh ? 'zh' : 'en'][0] : (item.kind === 'dataset' ? copy.itemDataset : copy.itemModel);
+                const summary = meta ? meta[isZh ? 'zh' : 'en'][1] : (isZh ? item.subtitleZh || item.subtitleEn : item.subtitleEn);
+                return <Link className="atlas-result-card" to={item.path} key={`${item.kind}-${item.slug}`}>
+                  <span className={`atlas-result-index ${item.kind}`} aria-hidden="true">{item.kind === 'dataset' ? 'D' : 'M'}</span>
+                  <span className="atlas-result-body"><span className="atlas-result-kind">{label}</span><strong>{isZh ? item.titleZh : item.titleEn}</strong><small>{summary}</small></span>
+                  <span className="atlas-result-arrow" aria-hidden="true">↗</span>
+                </Link>;
+              })}
             </div> : <p className="atlas-empty-state">{copy.noResults}</p>}
-          </div>
+            {!isSearching && <p className="atlas-featured-caption">{copy.featured} <span>·</span> {copy.featuredTitle}</p>}
+            <div className="atlas-directory-links">
+              <Link to="/docs/datasets">{copy.datasets}<span>{catalog.datasets.length}</span><b aria-hidden="true">↗</b></Link>
+              <Link to="/docs/models">{copy.models}<span>{catalog.models.length}</span><b aria-hidden="true">↗</b></Link>
+            </div>
+          </section>
 
-          <div className="atlas-citation-note"><span aria-hidden="true">ⓘ</span><p>{isZh ? '各条目均链接至原始数据集、论文或模型项目。下载、标签状态与许可请以对应官方来源为准。' : 'Every guide links back to original dataset, paper, or model sources. Check the linked official source for current downloads, label status, and terms.'}</p></div>
+          <section className="atlas-reading-path">
+            <div className="atlas-reading-heading"><p className="atlas-kicker">{isZh ? '阅读路径' : 'HOW TO USE THE ATLAS'}</p><h2>{copy.howTitle}</h2></div>
+            <div className="atlas-steps">
+              <article><span>01</span><h3>{copy.step1Title}</h3><p>{copy.step1Text}</p></article>
+              <article><span>02</span><h3>{copy.step2Title}</h3><p>{copy.step2Text}</p></article>
+              <article><span>03</span><h3>{copy.step3Title}</h3><p>{copy.step3Text}</p></article>
+            </div>
+          </section>
+
+          <div className="atlas-source-note"><span aria-hidden="true">↗</span><p>{copy.note}</p><a href="https://github.com/CuiXiangbo7/interactive-medseg-atlas" aria-label="GitHub repository">GitHub ↗</a></div>
         </section>
       </main>
     </Layout>
