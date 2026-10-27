@@ -4,7 +4,14 @@
 
 <p align="center">
 <a href="https://www.synapse.org/Synapse:syn59059779"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
-<a href="https://doi.org/10.1038/s41597-026-06649-x"><img src="https://img.shields.io/badge/Scientific%20Data-2026-2455a4?style=flat-square" alt="Scientific Data 2026"></a> <a href="https://doi.org/10.7303/syn59059779"><img src="https://img.shields.io/badge/Synapse%20DOI-10.7303%2Fsyn59059779-1f6feb?style=flat-square" alt="Synapse DOI 10.7303/syn59059779"></a>
+<a href="https://www.synapse.org/Synapse:syn53708249/wiki/627491"><img src="https://img.shields.io/badge/CHALLENGE-BraTS%202024-8b1e3f?style=flat-square" alt="Related challenge"></a>
+</p>
+
+<p align="center"><strong>📚 Publications and records</strong></p>
+<p align="center">
+<a href="https://doi.org/10.1038/s41597-026-06649-x"><img src="https://img.shields.io/badge/Scientific%20Data-2026-2455a4?style=flat-square" alt="Scientific Data 2026"></a>
+<a href="https://doi.org/10.7303/syn59059779"><img src="https://img.shields.io/badge/Synapse%20DOI-10.7303%2Fsyn59059779-1f6feb?style=flat-square" alt="Synapse DOI 10.7303/syn59059779"></a>
+<a href="https://arxiv.org/abs/2405.18383"><img src="https://img.shields.io/badge/arXiv-2405.18383-b31b1b?style=flat-square" alt="arXiv 2405.18383"></a>
 </p>
 
 | Quick facts | |
@@ -12,6 +19,7 @@
 | **Cohort** | 750 MRI examinations from 747 patients |
 | **Input** | Radiotherapy-planning 3D post-contrast T1 MRI |
 | **Target** | Gross tumor volume (GTV), including at-risk postoperative site when applicable |
+| **Institutional origin** | The dataset paper reports seven contributing academic centers: Duke University, University of California San Francisco, SUNY Upstate Medical University, University of Washington, University of Missouri, King’s College London, and University of California San Diego. [Scientific Data article](https://doi.org/10.1038/s41597-026-06649-x). |
 | **Official source** | [Synapse dataset](https://www.synapse.org/Synapse:syn59059779) |
 
 ## 🗂️ Official split and label availability
@@ -33,6 +41,12 @@ This is a radiotherapy-planning cohort, not the pre-operative four-sequence BraT
 - [Official Synapse dataset, DOI 10.7303/syn59059779](https://doi.org/10.7303/syn59059779)
 - [Challenge dataset paper and access steps](https://doi.org/10.1038/s41597-026-06649-x)
 - Follow Synapse registration, data-use terms, and the release-specific download instructions.
+
+## 🏁 Related challenge
+
+**BraTS-MEN-RT 2024** benchmarked gross tumor volume (GTV) segmentation for meningioma radiotherapy planning, using a single native-resolution post-contrast T1 MRI per exam.
+
+- [Official challenge description and data portal](https://www.synapse.org/Synapse:syn53708249/wiki/627491) · [Challenge manuscript](https://arxiv.org/abs/2405.18383) · [Training data](https://www.synapse.org/Synapse:syn59059779)
 
 ## 📚 Publication and citation
 
