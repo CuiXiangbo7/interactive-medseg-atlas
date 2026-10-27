@@ -11,7 +11,7 @@
 | [BraTS 2015](brats-2015/README.md) | MRI: T1, T1ce, T2, FLAIR | Glioma subregions | Historical release; consult its edition-specific source for the exact files and split |
 | [BraTS 2019](brats-2019/README.md) | MRI: T1, T1ce, T2, FLAIR | Glioma subregions | Training labels; validation/test were challenge evaluation cohorts |
 | [BraTS 2021](brats-2021/README.md) | MRI: T1, T1ce, T2, FLAIR | Glioma subregions | 1,251 labeled training cases; later GLI release changes ET value 4 → 3 |
-| [AMOS 2022](amos/README.md) | CT and MRI | 15 abdominal organs | Challenge test images were released without ground truth |
+| [AMOS 2022](amos/README.md) | CT and MRI | 15 abdominal organs | Challenge-time test labels were withheld; post-challenge Zenodo describes a broader labeled archive |
 | [BTCV](btcv/README.md) | CT | 13 abdominal organs | 30 labeled development cases; 20 test cases without public labels |
 | [UCSF-BMSR](ucsf-bmsr/README.md) | MRI: T1post, T1pre, FLAIR, subtraction | Brain metastases | 461 exams currently advertised for download; paper describes a 99-exam challenge test set |
 | [BraTS-PEDs](brats-peds/README.md) | MRI: T1n, T1c, T2w, T2f | Pediatric high-grade glioma | 257 labeled training; 91 validation without labels; 109 hidden test |
