@@ -6,8 +6,8 @@
 
 <p align="center">
 <a href="https://github.com/uni-medical/SAM-Med3D"><img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat-square&logo=github" alt="Official code"></a>
-<a href="https://arxiv.org/abs/2310.15161"><img src="https://img.shields.io/badge/PAPER-ECCV%2DBIC%2D2024%2DOral-7f1d1d?style=flat-square&logo=academia" alt="Paper"></a>
-<a href="https://huggingface.co/blueyo0/SAM-Med3D"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
+<a href="https://arxiv.org/abs/2310.15161"><img src="https://img.shields.io/badge/PAPER-ECCV--BIC--2024--Oral-7f1d1d?style=flat-square&logo=academia" alt="Paper"></a>
+<a href="https://huggingface.co/blueyo0/SAM-Med3D"><img src="https://img.shields.io/badge/WEIGHTS-Hugging--Face-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
 </p>
 
 [← Model atlas](../README.md)

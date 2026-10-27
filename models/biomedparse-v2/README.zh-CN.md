@@ -6,8 +6,8 @@
 
 <p align="center">
 <a href="https://github.com/microsoft/BiomedParse/tree/v2"><img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat-square&logo=github" alt="官方代码"></a>
-<a href="https://doi.org/10.1038/s41592-024-02499-w"><img src="https://img.shields.io/badge/PAPER-Nature%2DMethods%2D2025-166534?style=flat-square&logo=academia" alt="论文"></a>
-<a href="https://huggingface.co/microsoft/BiomedParse"><img src="https://img.shields.io/badge/WEIGHTS-Gated%2DCheckpoint-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
+<a href="https://doi.org/10.1038/s41592-024-02499-w"><img src="https://img.shields.io/badge/PAPER-Nature--Methods--2025-166534?style=flat-square&logo=academia" alt="论文"></a>
+<a href="https://huggingface.co/microsoft/BiomedParse"><img src="https://img.shields.io/badge/WEIGHTS-Gated--Checkpoint-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
 </p>
 
 [← 模型目录](../README.zh-CN.md)

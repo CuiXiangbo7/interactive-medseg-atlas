@@ -6,8 +6,8 @@
 
 <p align="center">
 <a href="https://github.com/MedICL-VU/PRISM"><img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat-square&logo=github" alt="官方代码"></a>
-<a href="https://arxiv.org/abs/2404.15028"><img src="https://img.shields.io/badge/PAPER-MICCAI%2D2024-166534?style=flat-square&logo=academia" alt="论文"></a>
-<a href="https://github.com/MedICL-VU/PRISM#models"><img src="https://img.shields.io/badge/WEIGHTS-Google%2DDrive-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
+<a href="https://arxiv.org/abs/2404.15028"><img src="https://img.shields.io/badge/PAPER-MICCAI--2024-166534?style=flat-square&logo=academia" alt="论文"></a>
+<a href="https://github.com/MedICL-VU/PRISM#models"><img src="https://img.shields.io/badge/WEIGHTS-Google--Drive-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
 </p>
 
 [← 模型目录](../README.zh-CN.md)

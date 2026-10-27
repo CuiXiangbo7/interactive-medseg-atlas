@@ -6,7 +6,7 @@
 
 <p align="center">
 <a href="https://github.com/computational-cell-analytics/medico-sam"><img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat-square&logo=github" alt="官方代码"></a>
-<a href="https://doi.org/10.1109/TMI.2025.3644811"><img src="https://img.shields.io/badge/PAPER-IEEE%2DTMI%2D2026-1d4ed8?style=flat-square&logo=academia" alt="论文"></a>
+<a href="https://doi.org/10.1109/TMI.2025.3644811"><img src="https://img.shields.io/badge/PAPER-IEEE--TMI--2026-1d4ed8?style=flat-square&logo=academia" alt="论文"></a>
 <a href="https://owncloud.gwdg.de/index.php/s/f5Ol4FrjPQWfjUF"><img src="https://img.shields.io/badge/WEIGHTS-OwnCloud-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
 </p>
 

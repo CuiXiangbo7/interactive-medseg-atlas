@@ -6,8 +6,8 @@
 
 <p align="center">
 <a href="https://github.com/Project-MONAI/VISTA"><img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat-square&logo=github" alt="官方代码"></a>
-<a href="https://openaccess.thecvf.com/content/CVPR2025/html/He_VISTA3D_A_Unified_Segmentation_Foundation_Model_For_3D_Medical_Imaging_CVPR_2025_paper.html"><img src="https://img.shields.io/badge/PAPER-CVPR%2D2025-075985?style=flat-square&logo=academia" alt="论文"></a>
-<a href="https://huggingface.co/nvidia/NV-Segment-CT"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
+<a href="https://openaccess.thecvf.com/content/CVPR2025/html/He_VISTA3D_A_Unified_Segmentation_Foundation_Model_For_3D_Medical_Imaging_CVPR_2025_paper.html"><img src="https://img.shields.io/badge/PAPER-CVPR--2025-075985?style=flat-square&logo=academia" alt="论文"></a>
+<a href="https://huggingface.co/nvidia/NV-Segment-CT"><img src="https://img.shields.io/badge/WEIGHTS-Hugging--Face-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
 </p>
 
 [← 模型目录](../README.zh-CN.md)

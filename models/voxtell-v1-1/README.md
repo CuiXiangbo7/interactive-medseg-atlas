@@ -6,8 +6,8 @@
 
 <p align="center">
 <a href="https://github.com/MIC-DKFZ/VoxTell"><img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat-square&logo=github" alt="Official code"></a>
-<a href="https://openaccess.thecvf.com/content/CVPR2026/html/Rokuss_VoxTell_Free-Text_Promptable_Universal_3D_Medical_Image_Segmentation_CVPR_2026_paper.html"><img src="https://img.shields.io/badge/PAPER-CVPR%2D2026-075985?style=flat-square&logo=academia" alt="Paper"></a>
-<a href="https://huggingface.co/mrokuss/VoxTell"><img src="https://img.shields.io/badge/WEIGHTS-Hugging%2DFace-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
+<a href="https://openaccess.thecvf.com/content/CVPR2026/html/Rokuss_VoxTell_Free-Text_Promptable_Universal_3D_Medical_Image_Segmentation_CVPR_2026_paper.html"><img src="https://img.shields.io/badge/PAPER-CVPR--2026-075985?style=flat-square&logo=academia" alt="Paper"></a>
+<a href="https://huggingface.co/mrokuss/VoxTell"><img src="https://img.shields.io/badge/WEIGHTS-Hugging--Face-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
 </p>
 
 [← Model atlas](../README.md)

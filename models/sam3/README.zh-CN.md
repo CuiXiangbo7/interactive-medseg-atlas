@@ -6,8 +6,8 @@
 
 <p align="center">
 <a href="https://github.com/facebookresearch/sam3"><img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat-square&logo=github" alt="官方代码"></a>
-<a href="https://arxiv.org/abs/2511.16719"><img src="https://img.shields.io/badge/PAPER-arXiv%2D2511.16719-991b1b?style=flat-square&logo=academia" alt="论文"></a>
-<a href="https://huggingface.co/facebook/sam3"><img src="https://img.shields.io/badge/WEIGHTS-Gated%2DCheckpoint-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
+<a href="https://arxiv.org/abs/2511.16719"><img src="https://img.shields.io/badge/PAPER-arXiv--2511.16719-991b1b?style=flat-square&logo=academia" alt="论文"></a>
+<a href="https://huggingface.co/facebook/sam3"><img src="https://img.shields.io/badge/WEIGHTS-Gated--Checkpoint-f59e0b?style=flat-square&logo=huggingface" alt="权重"></a>
 </p>
 
 [← 模型目录](../README.zh-CN.md)

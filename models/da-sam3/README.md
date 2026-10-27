@@ -6,8 +6,8 @@
 
 <p align="center">
 <a href="https://github.com/Reconsider80/DA-SAM3"><img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat-square&logo=github" alt="Official code"></a>
-<a href="https://papers.miccai.org/miccai-2026/0308-Paper0711.html"><img src="https://img.shields.io/badge/PAPER-MICCAI%2D2026-166534?style=flat-square&logo=academia" alt="Paper"></a>
-<a href="https://github.com/Reconsider80/DA-SAM3#readme"><img src="https://img.shields.io/badge/WEIGHTS-Not%2DListed-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
+<a href="https://papers.miccai.org/miccai-2026/0308-Paper0711.html"><img src="https://img.shields.io/badge/PAPER-MICCAI--2026-166534?style=flat-square&logo=academia" alt="Paper"></a>
+<a href="https://github.com/Reconsider80/DA-SAM3#readme"><img src="https://img.shields.io/badge/WEIGHTS-Not--Listed-f59e0b?style=flat-square&logo=huggingface" alt="Weights"></a>
 </p>
 
 [← Model atlas](../README.md)
