@@ -1,18 +1,25 @@
-# interactive-medseg-atlas
+<h1 align="center">🧠 Interactive MedSeg Atlas</h1>
 
-A curated, source-first guide to medical image segmentation datasets, interactive models, and reproducible inference and evaluation workflows.
+<p align="center"><strong>A practical guide to medical segmentation datasets, interactive models, and reproducible workflows</strong></p>
 
-## Dataset catalog
+<p align="center">
+<a href="datasets/README.md"><img src="https://img.shields.io/badge/DATASETS-11%20dataset%20guides-2563eb?style=flat-square" alt="11 dataset guides"></a>
+<a href="models/"><img src="https://img.shields.io/badge/MODELS-interactive%20methods-7c3aed?style=flat-square" alt="Interactive model guides"></a>
+<a href="datasets/README.md"><img src="https://img.shields.io/badge/SOURCES-official%20%2B%20papers-16803c?style=flat-square" alt="Official sources and papers"></a>
+</p>
 
-Browse the [public dataset index](datasets/README.md) for official dataset pages, download and access links, split and label availability, reuse terms, and dataset papers.
+> 🧭 A source-first atlas: follow each dataset card to its official access page, split and annotation notes, reuse terms, and publication.
 
-The catalog distinguishes challenge-time releases from later public releases. It only calls a split or label status “official” when the dataset organizer, institutional repository, or dataset paper documents it.
+## 🗂️ Dataset atlas
 
-## Model catalog
+Browse the [dataset catalog](datasets/README.md) for concise comparisons and dedicated pages covering official downloads, modalities, labels, challenge splits, test-label availability, licenses, and dataset papers.
 
-Model guides and reproducible run notes belong in [models/](models/).
+## 🤖 Interactive model guides
 
-## Scope
+The [models directory](models/) is reserved for model cards and run guides covering official repositories, interaction behavior, checkpoints, requirements, and reproducible inference steps.
 
-This repository documents sources and methods; it does not host medical images, segmentation masks, or paper PDFs. Always follow the current dataset-specific access terms and cite the linked dataset paper.
+## 📖 Scope and citation
 
+This repository links to public sources. It does not host medical images, masks, or paper PDFs. Dataset access and reuse terms can change, so follow the current official source and cite the associated dataset paper when using a collection.
+
+Split and label statements are attributed to dataset organizers, institutional archives, repository records, or dataset papers. If a source does not document a detail, the catalog marks it as unspecified instead of inferring it.
