@@ -4,13 +4,21 @@
 
 <p align="center">
 <a href="https://www.synapse.org/Synapse:syn51514106"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
-<a href="https://doi.org/10.1038/s41597-024-03350-9"><img src="https://img.shields.io/badge/Scientific%20Data-2024-2455a4?style=flat-square" alt="Scientific Data 2024"></a> <a href="https://arxiv.org/abs/2405.09787"><img src="https://img.shields.io/badge/arXiv-2405.09787-b31b1b?style=flat-square" alt="arXiv 2405.09787"></a>
+<a href="https://www.synapse.org/Synapse:syn51156910/wiki/622351"><img src="https://img.shields.io/badge/CHALLENGE-BraTS%202023-8b1e3f?style=flat-square" alt="Related challenge"></a>
+</p>
+
+<p align="center"><strong>📚 Publications and records</strong></p>
+<p align="center">
+<a href="https://doi.org/10.1038/s41597-024-03350-9"><img src="https://img.shields.io/badge/Scientific%20Data-2024-2455a4?style=flat-square" alt="Scientific Data 2024"></a>
+<a href="https://arxiv.org/abs/2405.09787"><img src="https://img.shields.io/badge/arXiv-2405.09787-b31b1b?style=flat-square" alt="arXiv 2405.09787"></a>
+<a href="https://doi.org/10.7303/syn51514106"><img src="https://img.shields.io/badge/Synapse%20DOI-10.7303%2Fsyn51514106-1f6feb?style=flat-square" alt="Synapse DOI 10.7303/syn51514106"></a>
 </p>
 
 | Quick facts | |
 | --- | --- |
 | **Cohort** | 1,424 MRI examinations from 1,344 patients |
 | **Input** | T1, T1ce, T2, FLAIR |
+| **Institutional origin** | The dataset paper reports six contributing academic medical centers: Duke University, Thomas Jefferson University, Yale University, University of California San Francisco, University of Missouri, and University of Pennsylvania. [Scientific Data article](https://doi.org/10.1038/s41597-024-03350-9). |
 | **Official source** | [BraTS-MEN Synapse dataset](https://www.synapse.org/Synapse:syn51514106) · [BraTS 2023 challenge page](https://www.synapse.org/Synapse:syn51156910/wiki/622351) |
 
 ## 🧾 Dataset overview
@@ -36,6 +44,12 @@ The four MRI sequences are T1, post-contrast T1 (T1ce), T2, and FLAIR. The annot
 - [Synapse dataset record, DOI 10.7303/syn51514106](https://doi.org/10.7303/syn51514106)
 - [Official challenge / access information](https://www.synapse.org/Synapse:syn51156910/wiki/622351)
 - Synapse registration and acceptance of the applicable post-challenge data terms may be required.
+
+## 🏁 Related challenge
+
+**ASNR–MICCAI BraTS 2023 Intracranial Meningioma Challenge** evaluated multi-compartment tumor segmentation from pre-operative T1, T1ce, T2, and FLAIR MRI.
+
+- [Official BraTS 2023 challenge hub](https://www.synapse.org/Synapse:syn51156910/wiki/622351) · [Challenge overview paper](https://arxiv.org/abs/2305.07642) · [Challenge results analysis](https://arxiv.org/abs/2405.09787)
 
 ## 📚 Publications and citation
 
