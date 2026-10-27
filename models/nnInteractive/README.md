@@ -43,7 +43,7 @@ Use the [official minimal inference example](https://github.com/MIC-DKFZ/nnInter
 
 ## ⚠️ Version and practical notes
 
-The official model is distributed as a pretrained checkpoint. Its code and weights have different licenses, so review both before reuse or redistribution. For an agentic workflow built on nnInteractive, see [nnInteractive-Agent](../nninteractive-agent/README.md); it adds an MCP/agent layer rather than a new segmentation checkpoint.
+The official model is distributed as a pretrained checkpoint. Its code and weights have different licenses, so review both before reuse or redistribution. For an agentic workflow built on nnInteractive, see [nnInteractive Agent](../nnInteractive%20Agent/README.md); it adds an MCP/agent layer rather than a new segmentation checkpoint.
 
 ## 📜 License
 
