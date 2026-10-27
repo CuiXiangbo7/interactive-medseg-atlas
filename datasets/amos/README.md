@@ -1,6 +1,11 @@
-# AMOS 2022
+<h1 align="center">🩻 AMOS 2022</h1>
 
-> **Abdominal multi-organ segmentation · CT and MRI**
+<p align="center"><strong>Abdominal multi-organ segmentation · CT and MRI</strong></p>
+
+<p align="center">
+<a href="https://amos22.grand-challenge.org/"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
+<a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/ee604e1bedbd069d9fc9328b7b9584be-Paper-Datasets_and_Benchmarks.pdf"><img src="https://img.shields.io/badge/NeurIPS%20D%26B-2022-2d6a4f?style=flat-square" alt="NeurIPS D&B 2022"></a> <a href="https://arxiv.org/abs/2206.08023"><img src="https://img.shields.io/badge/arXiv-2206.08023-b31b1b?style=flat-square" alt="arXiv 2206.08023"></a>
+</p>
 
 | Quick facts | |
 | --- | --- |
@@ -8,13 +13,13 @@
 | **Targets** | 15 abdominal organs |
 | **Official source** | [AMOS 2022 challenge](https://amos22.grand-challenge.org/) · [Post-challenge Zenodo record](https://zenodo.org/records/7262581) |
 
-## Dataset overview
+## 🧾 Dataset overview
 
 AMOS was designed to evaluate abdominal organ segmentation across multi-center, multi-vendor, multi-modality and multi-disease imaging. The dataset paper describes voxel-level annotations for 15 organs, including the spleen, kidneys, gallbladder, esophagus, liver, stomach, aorta, inferior vena cava, pancreas, adrenal glands, duodenum, bladder, and prostate/uterus.
 
 The challenge has a CT-only task and a mixed CT/MRI task. The official Zenodo record links a labeled 500-CT/100-MRI archive and additional unlabeled data.
 
-## Official split and label availability
+## 🗂️ Official split and label availability
 
 | Release / cohort | Official information |
 | --- | --- |
@@ -25,17 +30,21 @@ The challenge has a CT-only task and a mixed CT/MRI task. The official Zenodo re
 
 The challenge split and the post-challenge archive are different release contexts. Do not infer a train/validation subdivision from a merged post-challenge package.
 
-## Access and terms
+## 🔒 Access and terms
 
 - [AMOS challenge portal](https://amos22.grand-challenge.org/)
 - [Zenodo dataset record, DOI 10.5281/zenodo.7262581](https://doi.org/10.5281/zenodo.7262581)
 - The Zenodo record lists archives and file checksums. Review its current metadata and the challenge terms before reuse.
 
-## Dataset paper
+## 📚 Publication and citation
 
-**Ji et al.** “AMOS: A Large-Scale Abdominal Multi-Organ Benchmark for Versatile Medical Image Segmentation.” *Advances in Neural Information Processing Systems: Datasets and Benchmarks*, 2022, vol. 35, pp. 36722–36732.
+**Ji et al.** “AMOS: A Large-Scale Abdominal Multi-Organ Benchmark for Versatile Medical Image Segmentation.” *Advances in Neural Information Processing Systems (NeurIPS), Datasets and Benchmarks Track*, vol. 35, 2022, pp. 36722–36732.
 
-- [NeurIPS proceedings paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/ee604e1bedbd069d9fc9328b7b9584be-Paper-Datasets_and_Benchmarks.pdf)
-- [arXiv:2206.08023](https://arxiv.org/abs/2206.08023)
+- [NeurIPS proceedings paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/ee604e1bedbd069d9fc9328b7b9584be-Paper-Datasets_and_Benchmarks.pdf) · [arXiv:2206.08023](https://arxiv.org/abs/2206.08023)
+- [Dataset archive DOI: 10.5281/zenodo.7262581](https://doi.org/10.5281/zenodo.7262581)
 
-**Checked:** 27 October 2026.
+The challenge portal and Zenodo archive represent different release contexts; see the split and label notes above when selecting a release.
+
+---
+
+<p align="center"><sub>🕘 Sources last checked: 27 October 2026 · <a href="../README.md">Back to the dataset catalog</a></sub></p>
