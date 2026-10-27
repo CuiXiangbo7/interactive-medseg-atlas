@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'website/**'
+      - 'hexo-preview/**'
       - 'datasets/**'
       - 'models/**'
       - 'README.md'
@@ -32,13 +33,25 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: website/package-lock.json
-      - name: Install dependencies
+          cache-dependency-path: |
+            website/package-lock.json
+            hexo-preview/package-lock.json
+      - name: Install Docusaurus dependencies
         working-directory: website
         run: npm ci
-      - name: Build site
+      - name: Build current Docusaurus site
         working-directory: website
         run: npm run build
+      - name: Install Hexo preview dependencies
+        working-directory: hexo-preview
+        run: npm ci
+      - name: Build Hexo and Butterfly preview
+        working-directory: hexo-preview
+        run: npm run build
+      - name: Add preview beside current site
+        run: |
+          mkdir -p website/build/hexo-preview
+          cp -a hexo-preview/public/. website/build/hexo-preview/
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:

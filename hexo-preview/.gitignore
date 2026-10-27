@@ -1,0 +1,10 @@
+node_modules/
+public/
+db.json
+debug.log
+source/docs/
+source/zh-CN/
+source/index.md
+source/overview/
+source/overview-zh-CN/
+themes/

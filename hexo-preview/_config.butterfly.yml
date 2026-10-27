@@ -1,0 +1,85 @@
+favicon: /img/favicon.svg
+nav:
+  logo: /img/atlas-mark.svg
+  display_title: true
+  display_post_title: true
+  fixed: true
+menu:
+  Home: / || fas fa-house
+  Datasets: /docs/datasets/ || fas fa-database
+  Models: /docs/models/ || fas fa-brain
+  GitHub: https://github.com/CuiXiangbo7/interactive-medseg-atlas || fab fa-github
+  Current site: https://cuixiangbo7.github.io/interactive-medseg-atlas/ || fas fa-arrow-left
+subtitle:
+  enable: false
+default_top_img: false
+disable_top_img: true
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: false
+search:
+  use: local_search
+  placeholder: Search datasets and models…
+  local_search:
+    preload: false
+    top_n_per_article: 2
+    unescape: true
+    pagination:
+      enable: false
+      hitsPerPage: 8
+toc:
+  post: true
+  page: true
+  number: false
+  expand: true
+post_meta:
+  date_type: created
+  date: false
+  updated: false
+  categories: false
+  tags: false
+inject:
+  head:
+    - <link rel="stylesheet" href="/interactive-medseg-atlas/hexo-preview/css/atlas.css">
+  bottom:
+    - <script defer src="/interactive-medseg-atlas/hexo-preview/js/atlas-interactions.js"></script>
+enter_transitions: true
+pjax:
+  enable: true
+  exclude:
+    - https://cuixiangbo7.github.io/interactive-medseg-atlas/
+footer:
+  owner:
+    enable: true
+    since: 2026
+  copyright: true
+  custom_text: "Theme: Butterfly (Apache-2.0) · https://github.com/jerryc127/hexo-theme-butterfly"
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+  display:
+    archive: false
+    tag: false
+    category: false
+  card_author:
+    enable: false
+  card_announcement:
+    enable: false
+  card_recent_post:
+    enable: false
+  card_newest_comments:
+    enable: false
+  card_categories:
+    enable: false
+  card_tags:
+    enable: false
+  card_archives:
+    enable: false
+  card_post_series:
+    enable: false
+  card_webinfo:
+    enable: false

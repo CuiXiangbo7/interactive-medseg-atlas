@@ -1,0 +1,7 @@
+if theme.menu
+  #sidebar
+    #menu-mask
+    #sidebar-menus
+      .avatar-img.text-center
+        img(src=url_for(theme.nav.logo) alt='Interactive MedSeg Atlas')
+      != partial('includes/header/menu_item', {}, {cache: true})

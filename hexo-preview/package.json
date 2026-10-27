@@ -1,0 +1,23 @@
+{
+  "name": "interactive-medseg-atlas-hexo-preview",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "sync-content": "node tools/sync-content.mjs",
+    "build": "npm run sync-content && hexo clean && hexo generate",
+    "server": "npm run sync-content && hexo server"
+  },
+  "dependencies": {
+    "hexo": "8.1.2",
+    "hexo-cli": "4.3.2",
+    "hexo-generator-index": "4.0.0",
+    "hexo-generator-searchdb": "1.5.0",
+    "hexo-renderer-ejs": "2.0.0",
+    "hexo-renderer-marked": "7.0.1",
+    "hexo-server": "3.0.0",
+    "hexo-theme-butterfly": "5.7.0"
+  },
+  "hexo": {
+    "version": "8.1.2"
+  }
+}
