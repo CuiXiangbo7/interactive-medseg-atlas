@@ -4,13 +4,19 @@
 
 <p align="center">
 <a href="https://www.cancerimagingarchive.net/collection/cfb-gbm/"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
-<a href="https://doi.org/10.59275/j.melba.2026-dd48"><img src="https://img.shields.io/badge/MELBA-2026-6f42c1?style=flat-square" alt="MELBA 2026"></a> <a href="https://doi.org/10.7937/V9PN-2F72"><img src="https://img.shields.io/badge/TCIA%20DOI-10.7937%2FV9PN--2F72-1f6feb?style=flat-square" alt="TCIA DOI 10.7937/V9PN-2F72"></a>
+</p>
+
+<p align="center"><strong>📚 Publications and records</strong></p>
+<p align="center">
+<a href="https://doi.org/10.59275/j.melba.2026-dd48"><img src="https://img.shields.io/badge/MELBA-2026-6f42c1?style=flat-square" alt="MELBA 2026"></a>
+<a href="https://doi.org/10.7937/V9PN-2F72"><img src="https://img.shields.io/badge/TCIA%20DOI-10.7937%2FV9PN--2F72-1f6feb?style=flat-square" alt="TCIA DOI 10.7937/V9PN-2F72"></a>
 </p>
 
 | Quick facts | |
 | --- | --- |
 | **Current TCIA collection** | 264 subjects |
 | **Modalities** | MRI, CT, and RTDOSE; availability varies by case and timepoint |
+| **Institutional origin** | A single-center clinical cohort from Centre François Baclesse in Caen, France; the collection name CFB-GBM refers to this center. [Official TCIA collection record](https://www.cancerimagingarchive.net/collection/cfb-gbm/). |
 | **Official source** | [The Cancer Imaging Archive collection](https://www.cancerimagingarchive.net/collection/cfb-gbm/) |
 
 ## 🧾 Dataset overview
