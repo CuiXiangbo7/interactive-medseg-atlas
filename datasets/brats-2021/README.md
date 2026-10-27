@@ -1,6 +1,11 @@
-# BraTS 2021
+<h1 align="center">🧠 BraTS 2021</h1>
 
-> **RSNA–ASNR–MICCAI brain tumor benchmark · pre-operative MRI**
+<p align="center"><strong>RSNA–ASNR–MICCAI brain tumor benchmark · pre-operative MRI</strong></p>
+
+<p align="center">
+<a href="https://www.med.upenn.edu/cbica/brats2021/"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
+<a href="https://arxiv.org/abs/2107.02314"><img src="https://img.shields.io/badge/arXiv-2107.02314-b31b1b?style=flat-square" alt="arXiv 2107.02314"></a> <a href="https://doi.org/10.7937/jc8x-9874"><img src="https://img.shields.io/badge/TCIA%20DOI-10.7937%2Fjc8x--9874-1f6feb?style=flat-square" alt="TCIA DOI 10.7937/jc8x-9874"></a>
+</p>
 
 | Quick facts | |
 | --- | --- |
@@ -9,7 +14,7 @@
 | **Cases** | 2,040 total: 1,251 train, 219 validation, 570 test |
 | **Official sources** | [BraTS 2021 challenge](https://www.med.upenn.edu/cbica/brats2021/) · [Current Synapse access notice](https://www.synapse.org/Synapse:syn25829067/discussion/threadId=12691) |
 
-## Official split and label availability
+## 🗂️ Official split and label availability
 
 | Cohort | Cases | Reference labels |
 | --- | ---: | --- |
@@ -19,7 +24,7 @@
 
 The current Synapse notice says the old BraTS 2018–2021 datasets are no longer hosted there. It directs users to the registered-user **BraTS-GLI** release, which reuses the BraTS 2020/2021 data after acceptance of post-challenge terms.
 
-## Important label-version note
+## ⚠️ Important label-version note
 
 The current BraTS-GLI release uses the same underlying data as BraTS 2020/2021 with one documented change: the enhancing-tumor label is **3** instead of the original **4**. Keep the release name and label mapping with any downloaded masks or results.
 
@@ -27,7 +32,7 @@ The current BraTS-GLI release uses the same underlying data as BraTS 2020/2021 w
 
 Each case uses four structural MRI sequences. The standard BraTS targets are whole tumor, tumor core, and enhancing tumor; the training references are expert tumor subregion annotations. The benchmark’s label convention should be taken from the specific release rather than inferred from a filename.
 
-## Access and terms
+## 🔒 Access and terms
 
 - [BraTS 2021 organizer page](https://www.med.upenn.edu/cbica/brats2021/)
 - [Current BraTS-GLI data access page](https://www.synapse.org/Synapse:syn51156910/wiki/622351)
@@ -36,9 +41,16 @@ Each case uses four structural MRI sequences. The standard BraTS targets are who
 
 A Synapse account and acceptance of the post-challenge terms are required for the current GLI route. Follow the current Synapse terms before downloading or redistributing data.
 
-## Papers
+## 📚 Publications and citation
 
-1. **Baid et al.** “The RSNA-ASNR-MICCAI BraTS 2021 Benchmark on Brain Tumor Segmentation and Radiogenomic Classification.” [arXiv:2107.02314](https://arxiv.org/abs/2107.02314).
-2. **Menze et al.** “The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS).” *IEEE Transactions on Medical Imaging*, 2015. [DOI: 10.1109/TMI.2014.2377694](https://doi.org/10.1109/TMI.2014.2377694).
+**Benchmark paper:** Baid et al. “The RSNA-ASNR-MICCAI BraTS 2021 Benchmark on Brain Tumor Segmentation and Radiogenomic Classification.” *arXiv preprint*, 2021. [arXiv:2107.02314](https://arxiv.org/abs/2107.02314).
 
-**Checked:** 27 October 2026.
+- [TCIA dataset record, DOI: 10.7937/jc8x-9874](https://doi.org/10.7937/jc8x-9874)
+
+**Related foundational reference:** Menze et al. “The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS).” *IEEE Transactions on Medical Imaging*, vol. 34, no. 10, pp. 1993–2024, 2015. [DOI: 10.1109/TMI.2014.2377694](https://doi.org/10.1109/TMI.2014.2377694).
+
+The arXiv entry is the linked benchmark citation; no journal or proceedings venue is claimed for that preprint here.
+
+---
+
+<p align="center"><sub>🕘 Sources last checked: 27 October 2026 · <a href="../README.md">Back to the dataset catalog</a></sub></p>
