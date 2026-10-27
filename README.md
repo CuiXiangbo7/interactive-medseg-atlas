@@ -23,3 +23,9 @@ The [models directory](models/) is reserved for model cards and run guides cover
 This repository links to public sources. It does not host medical images, masks, or paper PDFs. Dataset access and reuse terms can change, so follow the current official source and cite the associated dataset paper when using a collection.
 
 Split and label statements are attributed to dataset organizers, institutional archives, repository records, or dataset papers. If a source does not document a detail, the catalog marks it as unspecified instead of inferring it.
+
+## License
+
+Unless a page says otherwise, the original documentation and editorial organization in this repository by **CuiXiangbo7** are licensed under [CC BY 4.0](LICENSE). You may share or adapt that original material with attribution and a link to the license, and must indicate changes.
+
+This license applies to repository-authored documentation only. It does not apply to third-party datasets, papers, images, code, logos, or linked material; follow the terms stated by each original source. Linking to a project does not transfer or change its license.
