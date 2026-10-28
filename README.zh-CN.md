@@ -4,7 +4,7 @@
 
 <p align="center"><strong>医学图像分割数据集、交互式模型与可复现工作流程指南</strong></p>
 
-<p align="center"><a href="https://cuixiangbo7.github.io/interactive-medseg-atlas/hexo-preview/zh-CN/?v=20261028-r2">🌐 打开网站</a> · <a href="https://cuixiangbo7.github.io/interactive-medseg-atlas/">原 Docusaurus 版本</a></p>
+<p align="center"><a href="https://cuixiangbo7.github.io/interactive-medseg-atlas/hexo-preview/zh-CN/?v=20261028-r2">🌐 打开网站</a></p>
 
 <p align="center">
 <a href="datasets/README.zh-CN.md"><img src="https://img.shields.io/badge/DATASETS-11%20dataset%20guides-2563eb?style=flat-square" alt="11 个数据集指南"></a>
