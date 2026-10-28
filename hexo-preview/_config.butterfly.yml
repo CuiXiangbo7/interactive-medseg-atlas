@@ -8,8 +8,10 @@ menu:
   Home: / || fas fa-house
   Datasets: /docs/datasets/ || fas fa-database
   Models: /docs/models/ || fas fa-brain
+  English: / || fas fa-language
+  简体中文: /zh-CN/ || fas fa-language
   GitHub: https://github.com/CuiXiangbo7/interactive-medseg-atlas || fab fa-github
-  Current site: https://cuixiangbo7.github.io/interactive-medseg-atlas/ || fas fa-arrow-left
+  Docusaurus version: https://cuixiangbo7.github.io/interactive-medseg-atlas/ || fas fa-arrow-up-right-from-square
 subtitle:
   enable: false
 default_top_img: false
