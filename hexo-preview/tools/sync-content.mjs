@@ -156,7 +156,7 @@ function homePage(locale) {
   const c = zh ? {
     eyebrow: '医学图像分割 · 研究资料库', titleA: '交互式医学图像分割', titleB: '研究资料库',
     intro: '集中查找公开数据集、交互式模型及其原始资料：论文、官方代码、权重、评测划分与运行说明。',
-    data: '查看数据集', models: '浏览模型', dataMetric: '数据集指南', modelMetric: '模型指南', langMetric: '语言版本',
+    data: '查看数据集', models: '浏览模型', dataMetric: '数据集指南', modelMetric: '模型指南', langMetric: '双语页面',
     explore: '探索资料库', heading: '从研究问题开始', exploreNote: '从数据来源到方法实现，沿着原始论文与官方项目继续查证。',
     find: '检索', searchNote: '按名称、模态或交互提示搜索', searchLabel: '搜索数据集与模型', placeholder: '例如 BraTS、CT、point prompts…',
     all: '全部', datasets: '数据集', modelsName: '模型', initialCount: '共 ' + (generated.datasets.length + generated.models.length) + ' 条记录',
@@ -166,7 +166,7 @@ function homePage(locale) {
   } : {
     eyebrow: 'MEDICAL IMAGING / RESEARCH INDEX', titleA: 'Interactive medical', titleB: 'segmentation atlas',
     intro: 'Find public datasets, interactive models, and the sources behind them: original papers, official code, weights, evaluation splits, and run guides.',
-    data: 'Browse datasets', models: 'Explore models', dataMetric: 'dataset guides', modelMetric: 'model guides', langMetric: 'language versions',
+    data: 'Browse datasets', models: 'Explore models', dataMetric: 'dataset guides', modelMetric: 'model guides', langMetric: 'bilingual pages',
     explore: 'EXPLORE', heading: 'Start with a research question', exploreNote: 'Follow each record from its source and paper to practical access and run details.',
     find: 'SEARCH', searchNote: 'Search by name, modality, or interaction prompt', searchLabel: 'Search datasets and models', placeholder: 'For example: BraTS, CT, point prompts…',
     all: 'All', datasets: 'Datasets', modelsName: 'Models', initialCount: (generated.datasets.length + generated.models.length) + ' records',
@@ -176,9 +176,6 @@ function homePage(locale) {
   };
   const dataUrl = siteUrl('docs/datasets/', locale);
   const modelUrl = siteUrl('docs/models/', locale);
-  const scanUrl = siteRoot + 'img/atlas-scan.svg';
-  const scanAlt = zh ? '脑部 MRI 与分割区域的示意图' : 'Illustration of a brain MRI with segmentation masks';
-  const scanCaption = zh ? '视觉示意 · 非真实患者影像' : 'Illustration · no patient image shown';
   const items = generated.datasets.concat(generated.models);
   const cards = items.map((item) => cardHtml(item, locale)).join('\n');
   const datasetCopy = zh ? '官方来源、机构、数据划分、标签状态与论文' : 'Official sources, institutions, splits, label status, and papers';
@@ -190,8 +187,11 @@ function homePage(locale) {
     '<div class="atlas-hero-copy"><p class="atlas-eyebrow"><span class="atlas-eyebrow-mark" aria-hidden="true"></span>' + c.eyebrow + '</p>',
     '<h1>' + c.titleA + '<br><span>' + c.titleB + '</span></h1><p class="atlas-hero-intro">' + c.intro + '</p>',
     '<div class="atlas-hero-actions"><a href="' + dataUrl + '">' + c.data + '<span aria-hidden="true">↗</span></a><a href="' + modelUrl + '">' + c.models + '<span aria-hidden="true">↗</span></a></div>',
-    '</div><figure class="atlas-hero-visual"><img src="' + scanUrl + '" alt="' + scanAlt + '" fetchpriority="high"><figcaption>' + scanCaption + '</figcaption></figure></div>',
-    '<dl class="container atlas-hero-metrics" aria-label="' + (zh ? '资料库规模' : 'Atlas collection') + '"><div><dt>' + c.dataMetric + '</dt><dd>' + generated.datasets.length + '</dd><small>' + (zh ? '来源与论文链接' : 'source-linked records') + '</small></div><div><dt>' + c.modelMetric + '</dt><dd>' + generated.models.length + '</dd><small>' + (zh ? '论文、代码与运行指南' : 'papers, code, and run guides') + '</small></div><div><dt>' + c.langMetric + '</dt><dd>EN / 中文</dd><small>' + (zh ? '逐页提供双语内容' : 'English and Chinese pages') + '</small></div></dl></section>',
+    '</div><aside class="atlas-hero-index" aria-label="' + (zh ? '资料概览' : 'Collection overview') + '">',
+    '<p class="atlas-index-kicker">' + (zh ? '资料概览' : 'AT A GLANCE') + '</p>',
+    '<div class="atlas-index-total"><strong>' + (generated.datasets.length + generated.models.length) + '</strong><span>' + (zh ? '份双语指南' : 'source-linked guides') + '</span></div>',
+    '<dl class="atlas-index-breakdown"><div><dt>' + c.dataMetric + '</dt><dd>' + generated.datasets.length + '</dd></div><div><dt>' + c.modelMetric + '</dt><dd>' + generated.models.length + '</dd></div></dl>',
+    '<p class="atlas-index-languages"><span>EN</span><i aria-hidden="true">+</i><span>中文</span><small>' + c.langMetric + '</small></p></aside></div></section>',
     '<section class="container atlas-main-content">' + languageHome,
     '<div class="atlas-explore-heading"><div><p class="atlas-kicker">' + c.explore + '</p><h2>' + c.heading + '</h2></div><p>' + c.exploreNote + '</p></div>',
     '<div class="atlas-collection-grid"><a class="atlas-collection-card atlas-data-card" href="' + dataUrl + '"><span class="atlas-collection-index" aria-hidden="true">01</span><span class="atlas-collection-copy"><span class="atlas-collection-topline">' + generated.datasets.length + ' ' + c.dataMetric + '</span><strong>' + c.datasets + '</strong><span class="atlas-collection-description">' + datasetCopy + '</span></span><span class="atlas-collection-link">' + c.browse + '<b aria-hidden="true">↗</b></span></a>',
