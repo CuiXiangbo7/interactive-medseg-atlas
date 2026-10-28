@@ -43,7 +43,7 @@ post_meta:
   tags: false
 inject:
   head:
-    - <link rel="stylesheet" href="/interactive-medseg-atlas/hexo-preview/css/atlas.css?v=20261028">
+    - <link rel="stylesheet" href="/interactive-medseg-atlas/hexo-preview/css/atlas.css?v=20261028-r2">
   bottom:
     - <script defer src="/interactive-medseg-atlas/hexo-preview/js/atlas-interactions.js"></script>
 enter_transitions: true
