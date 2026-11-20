@@ -1,6 +1,7 @@
 node_modules/
 public/
 db.json
+_multiconfig.yml
 debug.log
 source/docs/
 source/zh-CN/
