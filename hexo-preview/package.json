@@ -5,7 +5,8 @@
   "scripts": {
     "sync-content": "node tools/sync-content.mjs",
     "build": "npm run sync-content && hexo clean && hexo generate",
-    "server": "npm run sync-content && hexo server"
+    "server": "npm run sync-content && hexo server",
+    "build:cloudflare": "ATLAS_ROOT=/ npm run sync-content && hexo clean --config _config.yml,_config.cloudflare.yml && hexo generate --config _config.yml,_config.cloudflare.yml"
   },
   "dependencies": {
     "hexo": "8.1.2",

@@ -1,0 +1,10 @@
+# Cloudflare Pages publishes the Hexo site at the domain root.
+# Keep _config.yml unchanged so the existing GitHub Pages preview remains available.
+url: https://interactive-medseg-atlas.pages.dev
+root: /
+theme_config:
+  inject:
+    head:
+      - <link rel="stylesheet" href="/css/atlas.css?v=20261120-cf">
+    bottom:
+      - <script defer src="/js/atlas-interactions.js"></script>
