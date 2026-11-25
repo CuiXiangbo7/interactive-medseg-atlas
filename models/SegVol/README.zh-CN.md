@@ -28,6 +28,8 @@
 
 ## 📦 权重与获取方式
 
+**官方权重下载：** [SegVol 模型 checkpoint（`pytorch_model.bin`）](https://huggingface.co/BAAI/SegVol/blob/main/pytorch_model.bin) · [ViT 预训练 checkpoint（`vit_pretrain.ckpt`）](https://huggingface.co/BAAI/SegVol/blob/main/vit_pretrain.ckpt)。
+
 官方 checkpoint 和 demo 数据见 BAAI Hugging Face 仓库及 Google Drive；demo 脚本还需要本地 CLIP text encoder 文件夹。
 
 代码、模型 checkpoint 及所需 foundation-model checkpoint 可能适用不同条款。使用或再分发前请分别查看对应来源。
@@ -54,4 +56,4 @@ bash script/inference_demo.sh
 
 **引用：请按作者要求引用上述论文及上游项目。本仓库仅链接原始论文，不再分发代码或权重。**
 
-<sub>来源页面核对日期：2026 年 10 月 27 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>
+<sub>来源页面核对日期：2026 年 11 月 25 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>

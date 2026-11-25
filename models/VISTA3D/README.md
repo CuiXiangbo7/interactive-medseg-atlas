@@ -28,6 +28,8 @@
 
 ## 📦 Checkpoints and access
 
+**Official research-checkpoint download:** [`model_monai1.3.pt` (NV-Segment-CT)](https://huggingface.co/nvidia/NV-Segment-CT/blob/main/vista3d_pretrained_model/model_monai1.3.pt). The separate MONAI bundle uses a different checkpoint layout.
+
 The research code automatically fetches `nvidia/NV-Segment-CT/vista3d_pretrained_model/model_monai1.3.pt`. MONAI 1.4+ bundles use different checkpoint naming. NV-Segment-CTMR is a separate automatic CT/MR model.
 
 The code, model checkpoint and any required foundation-model checkpoint can have different terms. Review each linked source before use or redistribution.
@@ -57,4 +59,4 @@ Code: Apache-2.0. The research checkpoint is distributed under NVIDIA's open mod
 
 **Citation: Cite the paper above and the upstream project as directed by its authors. This repository links to the original paper; it does not redistribute the code or weights.**
 
-<sub>Source pages checked: 27 October 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>
+<sub>Source pages checked: 25 November 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>

@@ -17,7 +17,7 @@
 
 ### 空间与视觉提示
 
-| 模型 / 机构来源 | 模态 / 提示 | 官方代码 | 权重 | 详情 |
+| 模型 / 机构来源 | 模态 / 提示 | 官方代码 | 权重下载 | 详情 |
 |---|---|---|---|---|
 | [SAM-Med3D](SAM-Med3D/README.zh-CN.md)<br><sub>🏛️ Shanghai Jiao Tong University · Shanghai Artificial Intelligence Laboratory · Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences</sub> | 3D 体数据 · 点 | [code](https://github.com/uni-medical/SAM-Med3D) | [Hugging-Face](https://huggingface.co/blueyo0/SAM-Med3D) | [指南](SAM-Med3D/README.zh-CN.md) |
 | [PRISM](PRISM/README.zh-CN.md)<br><sub>🏛️ MedICL-VU · Vanderbilt University</sub> | 2D/3D · 视觉提示 | [code](https://github.com/MedICL-VU/PRISM) | [Google-Drive](https://github.com/MedICL-VU/PRISM#models) | [指南](PRISM/README.zh-CN.md) |
@@ -57,6 +57,6 @@
 
 本目录链接至原始项目、论文及权重页面，不再分发第三方代码、checkpoint 或论文 PDF。使用模型时请引用原始方法论文，并遵守上游许可。
 
-<sub>上游页面核对日期：2026 年 10 月 27 日。访问权限、权重和依赖可能变化，请以原始项目为准。</sub>
+<sub>上游页面核对日期：2026 年 11 月 25 日。访问权限、权重和依赖可能变化，请以原始项目为准。</sub>
 
 [← 返回项目首页](../README.zh-CN.md)

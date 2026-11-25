@@ -28,6 +28,8 @@
 
 ## 📦 Checkpoints and access
 
+**Official checkpoint downloads:** [SAM-Med3D-turbo (`sam_med3d_turbo.pth`) on Hugging Face](https://huggingface.co/blueyo0/SAM-Med3D/blob/main/sam_med3d_turbo.pth) · [Google Drive](https://drive.google.com/file/d/1MuqYRQKIZb4YPtEraK8zTKKpp-dUQIR9/view?usp=sharing) · [HF-Mirror](https://hf-mirror.com/blueyo0/SAM-Med3D/tree/main).
+
 The upstream project currently highlights the newer `SAM-Med3D-turbo` checkpoint. Its README links Hugging Face, Google Drive and HF-Mirror. The Hugging Face model `blueyo0/SAM-Med3D` exposes `sam_med3d_turbo.pth` and is referenced by the upstream MedIM example.
 
 The code, model checkpoint and any required foundation-model checkpoint can have different terms. Review each linked source before use or redistribution.
@@ -53,4 +55,4 @@ Code: Apache-2.0. Check the checkpoint page for the weight-specific terms.
 
 **Citation: Cite the paper above and the upstream project as directed by its authors. This repository links to the original paper; it does not redistribute the code or weights.**
 
-<sub>Source pages checked: 27 October 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>
+<sub>Source pages checked: 25 November 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>

@@ -28,6 +28,8 @@
 
 ## 📦 权重与获取方式
 
+**所需分割权重：** [nnInteractive 官方模型注册表](https://huggingface.co/MIC-DKFZ/nnInteractive)。Agent 本身没有独立分割 checkpoint；可用 `nninteractive-download-model nnInteractive_v1.0` 预下载 v1 模型。
+
 nnInteractive Agent 没有单独训练的分割 checkpoint。安装流程会安装 nnInteractive backend，并从官方模型注册表下载基础模型权重（约 400 MB）；论文 benchmark 使用 nnInteractive v1.0。通用语言模型需通过 Claude Code、Codex 或其他兼容 Agent runtime 单独配置。
 
 上方链接指向基础模型权重。基础权重与 Apache-2.0 的 Agent 代码适用不同许可。
@@ -68,4 +70,4 @@ nninteractive-agent 仓库采用 Apache-2.0。官方 nnInteractive v1 权重采�
 
 **引用：** Fabian Isensee 等， “nnInteractive Agent: General-Purpose AI Agents as 3D Image Annotators”，arXiv:2610.31080，2026。请参阅[论文](https://arxiv.org/abs/2610.31080)和[官方项目](https://github.com/MIC-DKFZ/nninteractive-agent)。本仓库只链接原始来源，不再分发代码、权重或论文文件。
 
-<sub>上游来源核对日期：2026 年 10 月 27 日。环境要求、模型权重和服务条款可能变化，请以官方仓库和模型注册表为准。</sub>
+<sub>上游来源核对日期：2026 年 11 月 25 日。环境要求、模型权重和服务条款可能变化，请以官方仓库和模型注册表为准。</sub>

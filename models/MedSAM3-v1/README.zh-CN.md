@@ -28,6 +28,8 @@
 
 ## 📦 权重与获取方式
 
+**所需权重：** [MedSAM3-v1 LoRA 文件](https://huggingface.co/lal-Joey/MedSAM3_v1/tree/main) · [SAM 3 基础 checkpoint 申请访问](https://huggingface.co/facebook/sam3)。LoRA adapter 不能单独使用，需与 SAM 3 一起加载。
+
 v1 LoRA 托管在 `lal-Joey/MedSAM3_v1`。它是 adapter；还需申请并获取 gated SAM 3 base checkpoint。
 
 代码、模型 checkpoint 及所需 foundation-model checkpoint 可能适用不同条款。使用或再分发前请分别查看对应来源。
@@ -56,4 +58,4 @@ MedSAM3 README 未声明 LoRA 权重的单独许可。SAM 3 base materials 遵�
 
 **引用：请按作者要求引用上述论文及上游项目。本仓库仅链接原始论文，不再分发代码或权重。**
 
-<sub>来源页面核对日期：2026 年 10 月 27 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>
+<sub>来源页面核对日期：2026 年 11 月 25 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>

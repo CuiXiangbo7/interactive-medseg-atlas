@@ -28,6 +28,8 @@
 
 ## 📦 Checkpoints and access
 
+**DA-SAM3 adapter weights:** No public download is listed by the project. Its inference example expects a locally produced `best_warmup.pt`. The separate [SAM 3 base checkpoint](https://huggingface.co/facebook/sam3) is gated and does not replace the DA-SAM3 adapter.
+
 The project links the gated [SAM 3 base checkpoint](https://huggingface.co/facebook/sam3), but does not list a downloadable DA-SAM3 checkpoint. Its inference example expects a locally produced `outputs/da_sam3/best_warmup.pt`.
 
 The code, model checkpoint and any required foundation-model checkpoint can have different terms. Review each linked source before use or redistribution.
@@ -59,4 +61,4 @@ The GitHub README says research use only and the repository has no top-level LIC
 
 **Citation: Cite the paper above and the upstream project as directed by its authors. This repository links to the original paper; it does not redistribute the code or weights.**
 
-<sub>Source pages checked: 27 October 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>
+<sub>Source pages checked: 25 November 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>

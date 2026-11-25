@@ -28,6 +28,8 @@
 
 ## 📦 Checkpoints and access
 
+**Official checkpoint download:** [`vit_b_medicosam.pt`](https://owncloud.gwdg.de/index.php/s/f5Ol4FrjPQWfjUF/download) from Göttingen OwnCloud.
+
 The upstream project hosts `vit_b_medicosam.pt` on Göttingen OwnCloud. Download the checkpoint from the model link; do not assume the repository's MIT code license automatically covers that weight file.
 
 The code, model checkpoint and any required foundation-model checkpoint can have different terms. Review each linked source before use or redistribution.
@@ -55,4 +57,4 @@ Code: MIT. Check the OwnCloud checkpoint page and original SAM terms for weight-
 
 **Citation: Cite the paper above and the upstream project as directed by its authors. This repository links to the original paper; it does not redistribute the code or weights.**
 
-<sub>Source pages checked: 27 October 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>
+<sub>Source pages checked: 25 November 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>

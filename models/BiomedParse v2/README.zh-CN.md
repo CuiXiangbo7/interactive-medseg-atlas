@@ -30,6 +30,8 @@
 
 ## 📦 权重与获取方式
 
+**官方 v2 checkpoint：** [`biomedparse_v2.ckpt`（4.46 GB）](https://huggingface.co/microsoft/BiomedParse/blob/main/biomedparse_v2.ckpt) · [Hugging Face 权限页面](https://huggingface.co/microsoft/BiomedParse)。仓库受访问门控；下载前需接受条款并完成认证。
+
 `biomedparse_v2.ckpt`（约 4.46 GB）托管在 gated Hugging Face 仓库 `microsoft/BiomedParse`；访问可能需接受模型条款并登录。上游 v2 README 也提供 challenge-trained Docker image。
 
 代码、模型 checkpoint 及所需 foundation-model checkpoint 可能适用不同条款。使用或再分发前请分别查看对应来源。
@@ -58,4 +60,4 @@ python inference.py --input_dir examples/imgs --output_dir outputs/3d \
 
 **引用：请按作者要求引用上述论文及上游项目。本仓库仅链接原始论文，不再分发代码或权重。**
 
-<sub>来源页面核对日期：2026 年 10 月 27 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>
+<sub>来源页面核对日期：2026 年 11 月 25 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>

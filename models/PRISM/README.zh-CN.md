@@ -28,6 +28,8 @@
 
 ## 📦 权重与获取方式
 
+**官方权重下载：** [通用预训练权重目录](https://drive.google.com/drive/u/1/folders/1B6Df44Gd9PEBGPkE1FwC8Ds4jefCekUB) · [Colon（结肠）](https://drive.google.com/drive/u/1/folders/1nPUC0cCsyA_w-tKkhL_Bw7lesBorGzCl) · [Pancreas（胰腺）](https://drive.google.com/drive/u/1/folders/1JPiF7wtSnbFdl0ZLmFQt1b4H-XH4FDrM) · [Liver（肝脏）](https://drive.google.com/drive/u/1/folders/1JAFOca1FxWebzZjRa1lKo1OAv0HXqeh6) · [Kidney（肾脏）](https://drive.google.com/drive/u/1/folders/1sN0HQLM-LfWB5Kp119YwMsZIfv3VJj7S)。
+
 上游 README 提供预训练模型 Drive 文件夹，以及 colon、pancreas、liver、kidney 的任务专用 checkpoint。请按其模型表选择对应数据集版本。
 
 代码、模型 checkpoint 及所需 foundation-model checkpoint 可能适用不同条款。使用或再分发前请分别查看对应来源。
@@ -58,4 +60,4 @@ python test.py --data colon --data_dir /path/to/data --split test \
 
 **引用：请按作者要求引用上述论文及上游项目。本仓库仅链接原始论文，不再分发代码或权重。**
 
-<sub>来源页面核对日期：2026 年 10 月 27 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>
+<sub>来源页面核对日期：2026 年 11 月 25 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>

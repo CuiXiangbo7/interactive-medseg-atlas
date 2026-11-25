@@ -17,7 +17,7 @@ This catalog summarizes 15 interactive or promptable medical segmentation models
 
 ### Spatial and visual prompts
 
-| Model / institutional origin | Modality / prompts | Official code | Weights | Details |
+| Model / institutional origin | Modality / prompts | Official code | Weight download | Details |
 |---|---|---|---|---|
 | [SAM-Med3D](SAM-Med3D/README.md)<br><sub>🏛️ Shanghai Jiao Tong University · Shanghai Artificial Intelligence Laboratory · Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences</sub> | 3D volume · point | [code](https://github.com/uni-medical/SAM-Med3D) | [Hugging-Face](https://huggingface.co/blueyo0/SAM-Med3D) | [guide](SAM-Med3D/README.md) |
 | [PRISM](PRISM/README.md)<br><sub>🏛️ MedICL-VU · Vanderbilt University</sub> | 2D/3D · visual prompts | [code](https://github.com/MedICL-VU/PRISM) | [Google-Drive](https://github.com/MedICL-VU/PRISM#models) | [guide](PRISM/README.md) |
@@ -57,6 +57,6 @@ This catalog summarizes 15 interactive or promptable medical segmentation models
 
 This catalog links to original projects, papers and checkpoint pages. It does not redistribute third-party code, weights or paper PDFs. Cite the original method paper and follow the upstream licenses when using a model.
 
-<sub>Upstream pages checked: 27 October 2026. Access, weights and dependencies can change; follow the original project.</sub>
+<sub>Upstream pages checked: 25 November 2026. Access, weights and dependencies can change; follow the original project.</sub>
 
 [← Back to the project home](../README.md)

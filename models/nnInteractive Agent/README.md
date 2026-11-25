@@ -28,6 +28,8 @@
 
 ## 📦 Checkpoints and access
 
+**Required segmentation weights:** [Official nnInteractive model registry](https://huggingface.co/MIC-DKFZ/nnInteractive). The agent itself has no separate segmentation checkpoint; pre-download the v1 model with `nninteractive-download-model nnInteractive_v1.0`.
+
 nnInteractive Agent has no separate trained segmentation checkpoint. Its setup installs the nnInteractive backend and downloads the base model weights (about 400 MB) from the official model registry; the paper's benchmark uses nnInteractive v1.0. The general-purpose language model is configured separately through Claude Code, Codex or another compatible agent runtime.
 
 The base weights are linked above. Their license is separate from the Apache-2.0 agent code.
@@ -68,4 +70,4 @@ The nninteractive-agent repository is Apache-2.0. The official nnInteractive v1 
 
 **Citation:** Fabian Isensee et al., “nnInteractive Agent: General-Purpose AI Agents as 3D Image Annotators,” arXiv:2610.31080, 2026. See the [paper](https://arxiv.org/abs/2610.31080) and [official project](https://github.com/MIC-DKFZ/nninteractive-agent). This repository links to these sources; it does not redistribute code, weights or paper files.
 
-<sub>Upstream sources checked: 27 October 2026. Requirements, model weights and service terms can change; follow the official repository and model registry.</sub>
+<sub>Upstream sources checked: 25 November 2026. Requirements, model weights and service terms can change; follow the official repository and model registry.</sub>

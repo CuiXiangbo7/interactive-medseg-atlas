@@ -28,6 +28,8 @@
 
 ## 📦 Checkpoints and access
 
+**Required weights:** [MedSAM3-v1 LoRA files](https://huggingface.co/lal-Joey/MedSAM3_v1/tree/main) · [SAM 3 base checkpoint access](https://huggingface.co/facebook/sam3). The LoRA adapter is not standalone and must be loaded with SAM 3.
+
 The v1 LoRA is hosted at `lal-Joey/MedSAM3_v1`. It is an adapter: the gated SAM 3 base checkpoint and access approval are also required.
 
 The code, model checkpoint and any required foundation-model checkpoint can have different terms. Review each linked source before use or redistribution.
@@ -56,4 +58,4 @@ The MedSAM3 README does not state a separate license for the LoRA weights. SAM 3
 
 **Citation: Cite the paper above and the upstream project as directed by its authors. This repository links to the original paper; it does not redistribute the code or weights.**
 
-<sub>Source pages checked: 27 October 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>
+<sub>Source pages checked: 25 November 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>

@@ -28,6 +28,8 @@
 
 ## 📦 Checkpoints and access
 
+**Official checkpoint downloads:** [2D checkpoint (`checkpoint_2D.pt`)](https://huggingface.co/ChongCong/Medical-SAM3/blob/main/checkpoint_2D.pt) · [3D v2 checkpoint (`checkpoint_3D_checkpoint8.pt`)](https://huggingface.co/ChongCong/Medical-SAM3/blob/main/checkpoint_3D_checkpoint8.pt).
+
 The project links model checkpoints on Hugging Face, including the June 2026 3D v2 weights. Select the 2D or 3D asset explicitly; the 3D CLI expects a local `medical_sam3_3d.pt` checkpoint.
 
 The code, model checkpoint and any required foundation-model checkpoint can have different terms. Review each linked source before use or redistribution.
@@ -55,4 +57,4 @@ The repository includes Meta's SAM License for SAM materials. Check the current 
 
 **Citation: Cite the paper above and the upstream project as directed by its authors. This repository links to the original paper; it does not redistribute the code or weights.**
 
-<sub>Source pages checked: 27 October 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>
+<sub>Source pages checked: 25 November 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>

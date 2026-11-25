@@ -28,6 +28,8 @@
 
 ## 📦 权重与获取方式
 
+**官方研究版 checkpoint 下载：** [`model_monai1.3.pt`（NV-Segment-CT）](https://huggingface.co/nvidia/NV-Segment-CT/blob/main/vista3d_pretrained_model/model_monai1.3.pt)。独立的 MONAI bundle 使用不同的权重布局。
+
 研究代码会自动下载 `nvidia/NV-Segment-CT/vista3d_pretrained_model/model_monai1.3.pt`。MONAI 1.4+ bundle 使用不同的 checkpoint 命名；NV-Segment-CTMR 是单独的 CT/MR 自动分割模型。
 
 代码、模型 checkpoint 及所需 foundation-model checkpoint 可能适用不同条款。使用或再分发前请分别查看对应来源。
@@ -57,4 +59,4 @@ python -m scripts.infer --config_file 'configs/infer.yaml' - infer \
 
 **引用：请按作者要求引用上述论文及上游项目。本仓库仅链接原始论文，不再分发代码或权重。**
 
-<sub>来源页面核对日期：2026 年 10 月 27 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>
+<sub>来源页面核对日期：2026 年 11 月 25 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>

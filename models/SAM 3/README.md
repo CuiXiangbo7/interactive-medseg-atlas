@@ -28,6 +28,8 @@
 
 ## 📦 Checkpoints and access
 
+**Official checkpoint access/download:** [Meta's SAM 3 Hugging Face repository](https://huggingface.co/facebook/sam3). This checkpoint is gated; sign in, accept the terms, and request/receive access before downloading.
+
 The official Hugging Face checkpoint is gated: request access, accept its conditions and authenticate with `hf auth login`. The repository currently also documents SAM 3.1 checkpoints; pin the exact checkpoint/repository revision when reproducing SAM 3.
 
 The code, model checkpoint and any required foundation-model checkpoint can have different terms. Review each linked source before use or redistribution.
@@ -56,4 +58,4 @@ Code and checkpoints use Meta's SAM License, not an unrestricted permissive lice
 
 **Citation: Cite the paper above and the upstream project as directed by its authors. This repository links to the original paper; it does not redistribute the code or weights.**
 
-<sub>Source pages checked: 27 October 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>
+<sub>Source pages checked: 25 November 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>

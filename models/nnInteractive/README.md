@@ -28,6 +28,8 @@
 
 ## 📦 Checkpoints and access
 
+**Official model download:** [Hugging Face model registry](https://huggingface.co/MIC-DKFZ/nnInteractive). Download the recommended v1 checkpoint with `nninteractive-download-model nnInteractive_v1.0`.
+
 The official model registry downloads `nnInteractive_v1.0` on demand from Hugging Face. It is cached locally under `~/.nninteractive` by default.
 
 The code, model checkpoint and any required foundation-model checkpoint can have different terms. Review each linked source before use or redistribution.
@@ -51,4 +53,4 @@ Code: Apache-2.0. Official v1 checkpoint: CC BY-NC-SA 4.0; model terms are more 
 
 **Citation: Cite the paper above and the upstream project as directed by its authors. This repository links to the original paper; it does not redistribute the code or weights.**
 
-<sub>Source pages checked: 27 October 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>
+<sub>Source pages checked: 25 November 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>

@@ -28,6 +28,8 @@
 
 ## 📦 权重与获取方式
 
+**官方 checkpoint 下载：** [推荐版 `MedSAM2_latest.pt`](https://huggingface.co/wanglab/MedSAM2/resolve/main/MedSAM2_latest.pt) · [全部可用权重](https://huggingface.co/wanglab/MedSAM2/tree/main)。上游仓库也提供 `bash download.sh`。
+
 官方 Hugging Face 集合包含 `MedSAM2_latest.pt`、`MedSAM2_2411.pt`，以及 CT 病灶、MRI 肝病灶和超声心脏等任务专用权重。`bash download.sh` 会下载列表中的全部权重。
 
 代码、模型 checkpoint 及所需 foundation-model checkpoint 可能适用不同条款。使用或再分发前请分别查看对应来源。
@@ -54,4 +56,4 @@ python medsam2_infer_3D_CT.py -i CT_DeepLesion/images -o CT_DeepLesion/segmentat
 
 **引用：请按作者要求引用上述论文及上游项目。本仓库仅链接原始论文，不再分发代码或权重。**
 
-<sub>来源页面核对日期：2026 年 10 月 27 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>
+<sub>来源页面核对日期：2026 年 11 月 25 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>

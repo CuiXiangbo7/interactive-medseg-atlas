@@ -28,6 +28,8 @@
 
 ## 📦 权重与获取方式
 
+**官方 checkpoint 下载：** 从 Göttingen OwnCloud 下载 [`vit_b_medicosam.pt`](https://owncloud.gwdg.de/index.php/s/f5Ol4FrjPQWfjUF/download)。
+
 上游项目通过 Göttingen OwnCloud 提供 `vit_b_medicosam.pt`。请从模型链接下载；不要假定仓库 MIT 代码许可自动覆盖该权重文件。
 
 代码、模型 checkpoint 及所需 foundation-model checkpoint 可能适用不同条款。使用或再分发前请分别查看对应来源。
@@ -55,4 +57,4 @@ wget 'https://owncloud.gwdg.de/index.php/s/f5Ol4FrjPQWfjUF/download' \
 
 **引用：请按作者要求引用上述论文及上游项目。本仓库仅链接原始论文，不再分发代码或权重。**
 
-<sub>来源页面核对日期：2026 年 10 月 27 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>
+<sub>来源页面核对日期：2026 年 11 月 25 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>

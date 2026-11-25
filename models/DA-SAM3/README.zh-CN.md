@@ -28,6 +28,8 @@
 
 ## 📦 权重与获取方式
 
+**DA-SAM3 adapter 权重：** 项目尚未列出公开下载；推理示例要求本地生成 `best_warmup.pt`。[SAM 3 基础 checkpoint](https://huggingface.co/facebook/sam3) 需单独申请访问，不能代替 DA-SAM3 adapter。
+
 项目链接了 gated [SAM 3 base checkpoint](https://huggingface.co/facebook/sam3)，但没有列出可下载的 DA-SAM3 checkpoint。推理示例要求本地生成 `outputs/da_sam3/best_warmup.pt`。
 
 代码、模型 checkpoint 及所需 foundation-model checkpoint 可能适用不同条款。使用或再分发前请分别查看对应来源。
@@ -59,4 +61,4 @@ python infer.py --config configs/da_sam3_default.yaml \
 
 **引用：请按作者要求引用上述论文及上游项目。本仓库仅链接原始论文，不再分发代码或权重。**
 
-<sub>来源页面核对日期：2026 年 10 月 27 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>
+<sub>来源页面核对日期：2026 年 11 月 25 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>

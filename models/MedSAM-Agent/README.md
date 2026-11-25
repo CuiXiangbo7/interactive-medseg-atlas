@@ -28,6 +28,8 @@
 
 ## 📦 Checkpoints and access
 
+**Required weights:** [MedSAM-Agent Qwen checkpoint](https://huggingface.co/Saint-lsy/MedSAM-Agent-Qwen3-VL-8B-MedSAM2) + [MedSAM2 segmentation checkpoint (`MedSAM2_latest.pt`)](https://huggingface.co/wanglab/MedSAM2/resolve/main/MedSAM2_latest.pt). These are separate model files.
+
 The official Hugging Face model is `Saint-lsy/MedSAM-Agent-Qwen3-VL-8B-MedSAM2`. Inference also requires a segmentation checkpoint (e.g. MedSAM2) and its configuration. Dataset/trajectory releases are marked pending in the upstream README.
 
 The code, model checkpoint and any required foundation-model checkpoint can have different terms. Review each linked source before use or redistribution.
@@ -58,4 +60,4 @@ The GitHub repository snapshot does not include a top-level LICENSE file. Check 
 
 **Citation: Cite the paper above and the upstream project as directed by its authors. This repository links to the original paper; it does not redistribute the code or weights.**
 
-<sub>Source pages checked: 27 October 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>
+<sub>Source pages checked: 25 November 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>

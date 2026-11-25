@@ -28,6 +28,8 @@
 
 ## 📦 Checkpoints and access
 
+**Official weight downloads:** [SegVol model checkpoint (`pytorch_model.bin`)](https://huggingface.co/BAAI/SegVol/blob/main/pytorch_model.bin) · [ViT pretraining checkpoint (`vit_pretrain.ckpt`)](https://huggingface.co/BAAI/SegVol/blob/main/vit_pretrain.ckpt).
+
 Official checkpoints and demo data are linked from the BAAI Hugging Face repository and Google Drive; the demo script also expects a local CLIP text-encoder folder.
 
 The code, model checkpoint and any required foundation-model checkpoint can have different terms. Review each linked source before use or redistribution.
@@ -54,4 +56,4 @@ Code: MIT. Verify the checkpoint-specific terms on the model-hosting page.
 
 **Citation: Cite the paper above and the upstream project as directed by its authors. This repository links to the original paper; it does not redistribute the code or weights.**
 
-<sub>Source pages checked: 27 October 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>
+<sub>Source pages checked: 25 November 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>

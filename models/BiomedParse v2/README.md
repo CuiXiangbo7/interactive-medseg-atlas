@@ -30,6 +30,8 @@
 
 ## 📦 Checkpoints and access
 
+**Official v2 checkpoint:** [`biomedparse_v2.ckpt` (4.46 GB)](https://huggingface.co/microsoft/BiomedParse/blob/main/biomedparse_v2.ckpt) · [Hugging Face access page](https://huggingface.co/microsoft/BiomedParse). The repository is gated; accept its conditions and authenticate before downloading.
+
 `biomedparse_v2.ckpt` (~4.46 GB) is hosted in the gated Hugging Face repository `microsoft/BiomedParse`; access may require accepting model conditions and authentication. The upstream v2 README also provides a challenge-trained Docker image.
 
 The code, model checkpoint and any required foundation-model checkpoint can have different terms. Review each linked source before use or redistribution.
@@ -58,4 +60,4 @@ Code: Apache-2.0. The Hugging Face model card lists CC BY-NC-SA 4.0 for model ar
 
 **Citation: Cite the paper above and the upstream project as directed by its authors. This repository links to the original paper; it does not redistribute the code or weights.**
 
-<sub>Source pages checked: 27 October 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>
+<sub>Source pages checked: 25 November 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>

@@ -28,6 +28,8 @@
 
 ## 📦 Checkpoints and access
 
+**Official v1.1 checkpoint download:** [`checkpoint_final.pth`](https://huggingface.co/mrokuss/VoxTell/blob/main/voxtell_v1.1/fold_0/checkpoint_final.pth) · [VoxTell v1.1 model files](https://huggingface.co/mrokuss/VoxTell/tree/main/voxtell_v1.1). The required Qwen3-Embedding-4B text encoder is downloaded separately from [its official model page](https://huggingface.co/Qwen/Qwen3-Embedding-4B).
+
 Official Hugging Face repository: `mrokuss/VoxTell`; v1.1 is downloaded automatically on first use and cached. The model includes the frozen Qwen3-Embedding-4B text encoder.
 
 The code, model checkpoint and any required foundation-model checkpoint can have different terms. Review each linked source before use or redistribution.
@@ -53,4 +55,4 @@ Code: Apache-2.0. Check the Hugging Face repository for model-weight terms.
 
 **Citation: Cite the paper above and the upstream project as directed by its authors. This repository links to the original paper; it does not redistribute the code or weights.**
 
-<sub>Source pages checked: 27 October 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>
+<sub>Source pages checked: 25 November 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>

@@ -28,6 +28,8 @@
 
 ## 📦 权重与获取方式
 
+**所需权重：** [MedSAM-Agent Qwen checkpoint](https://huggingface.co/Saint-lsy/MedSAM-Agent-Qwen3-VL-8B-MedSAM2) + [MedSAM2 分割 checkpoint（`MedSAM2_latest.pt`）](https://huggingface.co/wanglab/MedSAM2/resolve/main/MedSAM2_latest.pt)。这是两个独立的模型文件。
+
 官方 Hugging Face 模型为 `Saint-lsy/MedSAM-Agent-Qwen3-VL-8B-MedSAM2`。推理还需单独提供 segmentation checkpoint（例如 MedSAM2）及配置。数据集/trajectory 发布在上游 README 中仍标为待完成。
 
 代码、模型 checkpoint 及所需 foundation-model checkpoint 可能适用不同条款。使用或再分发前请分别查看对应来源。
@@ -58,4 +60,4 @@ python infer/run_single_inference.py \
 
 **引用：请按作者要求引用上述论文及上游项目。本仓库仅链接原始论文，不再分发代码或权重。**
 
-<sub>来源页面核对日期：2026 年 10 月 27 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>
+<sub>来源页面核对日期：2026 年 11 月 25 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>

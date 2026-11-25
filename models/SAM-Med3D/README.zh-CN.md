@@ -28,6 +28,8 @@
 
 ## 📦 权重与获取方式
 
+**官方 checkpoint 下载：** [Hugging Face 上的 SAM-Med3D-turbo（`sam_med3d_turbo.pth`）](https://huggingface.co/blueyo0/SAM-Med3D/blob/main/sam_med3d_turbo.pth) · [Google Drive](https://drive.google.com/file/d/1MuqYRQKIZb4YPtEraK8zTKKpp-dUQIR9/view?usp=sharing) · [HF-Mirror](https://hf-mirror.com/blueyo0/SAM-Med3D/tree/main)。
+
 上游项目目前重点推荐较新的 `SAM-Med3D-turbo` 权重，README 提供 Hugging Face、Google Drive 和 HF-Mirror 入口。上游 MedIM 示例引用 Hugging Face 模型 `blueyo0/SAM-Med3D` 中的 `sam_med3d_turbo.pth`。
 
 代码、模型 checkpoint 及所需 foundation-model checkpoint 可能适用不同条款。使用或再分发前请分别查看对应来源。
@@ -53,4 +55,4 @@ python medim_val_single.py
 
 **引用：请按作者要求引用上述论文及上游项目。本仓库仅链接原始论文，不再分发代码或权重。**
 
-<sub>来源页面核对日期：2026 年 10 月 27 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>
+<sub>来源页面核对日期：2026 年 11 月 25 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>

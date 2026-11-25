@@ -28,6 +28,8 @@
 
 ## 📦 Checkpoints and access
 
+**Official task-specific checkpoint downloads:** [General pretrained-model folder](https://drive.google.com/drive/u/1/folders/1B6Df44Gd9PEBGPkE1FwC8Ds4jefCekUB) · [Colon](https://drive.google.com/drive/u/1/folders/1nPUC0cCsyA_w-tKkhL_Bw7lesBorGzCl) · [Pancreas](https://drive.google.com/drive/u/1/folders/1JPiF7wtSnbFdl0ZLmFQt1b4H-XH4FDrM) · [Liver](https://drive.google.com/drive/u/1/folders/1JAFOca1FxWebzZjRa1lKo1OAv0HXqeh6) · [Kidney](https://drive.google.com/drive/u/1/folders/1sN0HQLM-LfWB5Kp119YwMsZIfv3VJj7S).
+
 The upstream README provides a pretrained-model Drive folder and separate task-specific checkpoints for colon, pancreas, liver and kidney. Follow its model table for the intended dataset variant.
 
 The code, model checkpoint and any required foundation-model checkpoint can have different terms. Review each linked source before use or redistribution.
@@ -58,4 +60,4 @@ The project states Apache-2.0 for its code/model; verify the terms of third-part
 
 **Citation: Cite the paper above and the upstream project as directed by its authors. This repository links to the original paper; it does not redistribute the code or weights.**
 
-<sub>Source pages checked: 27 October 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>
+<sub>Source pages checked: 25 November 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>

@@ -28,6 +28,8 @@
 
 ## 📦 权重与获取方式
 
+**官方 checkpoint 申请/下载：** [Meta 的 SAM 3 Hugging Face 仓库](https://huggingface.co/facebook/sam3)。该权重受访问门控；下载前需登录、接受条款并按要求申请/获得权限。
+
 官方 Hugging Face checkpoint 为 gated：需申请访问、接受条款并用 `hf auth login` 登录。仓库目前还提供 SAM 3.1 checkpoint；复现 SAM 3 时应固定具体 checkpoint 和仓库 revision。
 
 代码、模型 checkpoint 及所需 foundation-model checkpoint 可能适用不同条款。使用或再分发前请分别查看对应来源。
@@ -56,4 +58,4 @@ SAM 3 原生处理 2D 图像和视频。3D 医学工作流程需要额外适配�
 
 **引用：请按作者要求引用上述论文及上游项目。本仓库仅链接原始论文，不再分发代码或权重。**
 
-<sub>来源页面核对日期：2026 年 10 月 27 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>
+<sub>来源页面核对日期：2026 年 11 月 25 日。上游环境、权重和访问政策可能变化，请以链接的项目页面为准。</sub>

@@ -28,6 +28,8 @@
 
 ## 📦 Checkpoints and access
 
+**Official checkpoint downloads:** [Recommended `MedSAM2_latest.pt`](https://huggingface.co/wanglab/MedSAM2/resolve/main/MedSAM2_latest.pt) · [all available checkpoints](https://huggingface.co/wanglab/MedSAM2/tree/main). The upstream repository also provides `bash download.sh`.
+
 The official Hugging Face collection includes `MedSAM2_latest.pt`, `MedSAM2_2411.pt` and task-specific CT lesion, MRI liver lesion and ultrasound heart checkpoints. `bash download.sh` downloads all listed weights.
 
 The code, model checkpoint and any required foundation-model checkpoint can have different terms. Review each linked source before use or redistribution.
@@ -54,4 +56,4 @@ Code repository: Apache-2.0. Check each Hugging Face checkpoint page and the ori
 
 **Citation: Cite the paper above and the upstream project as directed by its authors. This repository links to the original paper; it does not redistribute the code or weights.**
 
-<sub>Source pages checked: 27 October 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>
+<sub>Source pages checked: 25 November 2026. Upstream environments, weights and access policies may change; use the linked project as the source of truth.</sub>
