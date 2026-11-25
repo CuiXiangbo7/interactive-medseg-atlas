@@ -5,7 +5,7 @@
 <p align="center"><strong>Official access · dataset splits · labels · reuse terms · papers</strong></p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/DATA%20CARDS-11-2563eb?style=flat-square" alt="11 dataset cards">
+<img src="https://img.shields.io/badge/DATA%20CARDS-14-2563eb?style=flat-square" alt="14 dataset cards">
 <img src="https://img.shields.io/badge/SOURCE%20POLICY-official%20first-16803c?style=flat-square" alt="Official source first">
 <img src="https://img.shields.io/badge/PAPERS-linked-6f42c1?style=flat-square" alt="Linked dataset papers">
 </p>
@@ -27,12 +27,25 @@
 | [BraTS-MEN-RT](brats-men-rt/README.md)<br><sub>🏛️ 7 centers: Duke, UCSF, SUNY Upstate, UW, Missouri, KCL, UCSD</sub> | Radiotherapy GTV · post-contrast T1 MRI | 500 labeled train; 70 image-only validation; 180 private test | <a href="https://doi.org/10.1038/s41597-026-06649-x"><img src="https://img.shields.io/badge/Scientific%20Data-2026-2455a4?style=flat-square" alt="Scientific Data 2026"></a> |
 | [CFB-GBM](cfb-gbm/README.md)<br><sub>🏛️ Centre François Baclesse, France · single-center</sub> | Longitudinal glioblastoma · MRI, CT, RT dose/structures | TCIA collection; no official train/validation/test split | <a href="https://doi.org/10.59275/j.melba.2026-dd48"><img src="https://img.shields.io/badge/MELBA-2026-6f42c1?style=flat-square" alt="MELBA 2026"></a> |
 
+## 🦴 Spine imaging
+
+| Dataset and institutional origin | Task and modality | Official split and annotation status | Publication |
+| --- | --- | --- | --- |
+| [VerSe19 + VerSe20](verse19-20/README.md)<br><sub>🏛️ Multi-site, multi-detector CT collection</sub> | Vertebral labeling and segmentation · CT | 374 scans from 355 patients in the combined release; complete annotations include formerly held-out data | <a href="https://doi.org/10.1016/j.media.2021.102166"><img src="https://img.shields.io/badge/Medical%20Image%20Analysis-2021-2455a4?style=flat-square" alt="Medical Image Analysis 2021"></a> |
+
 ## 🩻 Abdominal segmentation
 
 | Dataset and institutional origin | Task and modality | Official split and annotation status | Publication |
 | --- | --- | --- | --- |
 | [AMOS 2022](amos/README.md)<br><sub>🏛️ HKU, CUHK-Shenzhen/SRIBD, Longgang hospitals · multicenter</sub> | 15 abdominal organs · CT and MRI | Challenge-time test labels withheld; later Zenodo release describes a labeled archive | <a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/ee604e1bedbd069d9fc9328b7b9584be-Paper-Datasets_and_Benchmarks.pdf"><img src="https://img.shields.io/badge/NeurIPS%20D%26B-2022-2d6a4f?style=flat-square" alt="NeurIPS D&B 2022"></a> |
+| [KiTS23](kits23/README.md)<br><sub>🏛️ M Health Fairview medical center</sub> | Kidney, renal tumor, cyst · contrast-enhanced CT | 489 labeled training cases; 110 test cases, labels withheld by the organizer | <a href="https://doi.org/10.1007/978-3-031-54806-2"><img src="https://img.shields.io/badge/Springer%20LNCS-2024-8b1e3f?style=flat-square" alt="Springer LNCS 2024"></a> |
 | [BTCV](btcv/README.md)<br><sub>🏛️ Vanderbilt University Medical Center</sub> | 13 abdominal organs · CT | 30 labeled development cases; 20 test cases without public labels | <a href="https://www.synapse.org/Synapse:syn3193805/wiki/217752"><img src="https://img.shields.io/badge/MICCAI%20workshop-2015-8b1e3f?style=flat-square" alt="MICCAI workshop 2015"></a> |
+
+## 🩻 Head and neck radiotherapy
+
+| Dataset and institutional origin | Task and modality | Official split and annotation status | Publication |
+| --- | --- | --- | --- |
+| [SegRap2023](segrap2023/README.md)<br><sub>🏛️ Sichuan Cancer Hospital & Institute, China</sub> | NPC radiotherapy · paired non-contrast and contrast-enhanced CT | 120 train / 20 validation / 60 test patients; train labels published, validation images unlabeled, test held out | <a href="https://doi.org/10.1016/j.media.2024.103447"><img src="https://img.shields.io/badge/Medical%20Image%20Analysis-2025-2455a4?style=flat-square" alt="Medical Image Analysis 2025"></a> |
 
 ## 🧠 Stroke imaging
 
@@ -51,4 +64,4 @@
 
 **Source rule:** if the official source does not specify a split, license, or label status, the card says so rather than filling the gap with an unofficial estimate. No images, masks, or paper PDFs are hosted here.
 
-*Sources checked: 27 October 2026.*
+*Sources checked: 25 November 2026.*

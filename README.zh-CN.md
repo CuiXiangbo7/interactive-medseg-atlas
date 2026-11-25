@@ -4,10 +4,10 @@
 
 <p align="center"><strong>医学图像分割数据集、交互式模型与可复现工作流程指南</strong></p>
 
-<p align="center"><a href="https://cuixiangbo7.github.io/interactive-medseg-atlas/hexo-preview/zh-CN/?v=20261028-r2">🌐 打开网站</a></p>
+<p align="center"><a href="https://interactive-medseg-atlas.pages.dev/zh-CN/">🌐 打开网站</a></p>
 
 <p align="center">
-<a href="datasets/README.zh-CN.md"><img src="https://img.shields.io/badge/DATASETS-11%20dataset%20guides-2563eb?style=flat-square" alt="11 个数据集指南"></a>
+<a href="datasets/README.zh-CN.md"><img src="https://img.shields.io/badge/DATASETS-14%20dataset%20guides-2563eb?style=flat-square" alt="14 个数据集指南"></a>
 <a href="models/README.zh-CN.md"><img src="https://img.shields.io/badge/MODELS-15%20model%20guides-7c3aed?style=flat-square" alt="15 个模型指南"></a>
 <a href="datasets/README.zh-CN.md"><img src="https://img.shields.io/badge/SOURCES-official%20%2B%20papers-16803c?style=flat-square" alt="官方来源与论文"></a>
 </p>
