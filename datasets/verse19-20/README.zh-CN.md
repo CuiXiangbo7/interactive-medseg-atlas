@@ -30,18 +30,6 @@ VerSe 是用于椎体标记与分割的多探测器、多中心 CT 基准数据�
 
 两个版本并非互不重叠的独立队列：基准论文报告有 86 位患者同时出现在两届数据中。官方仓库建议使用重构后的完整数据；其标注格式与原始挑战赛格式数据包不同。
 
-## nnInteractive 训练清单中的对应记录
-
-论文附录 A1 对该数据集列出以下记录。影像数是模型训练清单中的行级数字，不一定等于当前官方版本的总规模。
-
-| A1 字段 | 论文所列内容 |
-| --- | --- |
-| 影像数 | 113 |
-| 模态 | CT |
-| 目标 | 28 Vertebrae |
-| A1 数据入口 | [打开来源页面](https://github.com/anjany/verse) |
-| 论文引用 | [ref 123](https://arxiv.org/html/2503.08373v1#bib.bib123), [ref 81](https://arxiv.org/html/2503.08373v1#bib.bib81), [ref 74](https://arxiv.org/html/2503.08373v1#bib.bib74) |
-
 ## 🏷️ 官方标签定义
 
 | 标签 ID | 椎体类别 |
@@ -81,5 +69,17 @@ Sekuboyina A. et al. “VerSe: A Vertebrae Labelling and Segmentation Benchmark 
 引用 VerSe19/VerSe20 合并数据时，请引用这篇基准论文。
 
 ---
+
+## 📑 文献条目记录
+
+| 字段 | 条目所列内容 |
+| --- | --- |
+| 影像数 | 113 |
+| 模态 | CT |
+| 目标 | 28 Vertebrae |
+| 数据入口 | [官方/来源页面](https://github.com/anjany/verse) |
+| 数据集引用文献 | [Sekuboyina et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib123), [Löffler et al. (2020)](https://arxiv.org/html/2503.08373v1#bib.bib81), [Liebl et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib74) |
+
+上方影像数保留为该文献条目的记录，不视为数据集总队列规模或当前可下载的带标签病例数；这些范围请查看前文的官方发布说明。
 
 <p align="center"><sub>🕘 来源最后核查：2026 年 11 月 25 日 · <a href="../README.zh-CN.md">返回数据集目录</a></sub></p>

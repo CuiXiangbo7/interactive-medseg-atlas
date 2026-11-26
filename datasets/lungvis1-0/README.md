@@ -2,52 +2,64 @@
 
 <h1 align="center">🗂️ LungVis1.0</h1>
 
-<p align="center"><strong>Airway · Fluorescence microscopy</strong></p>
+<p align="center"><strong>Airway · fluorescence microscopy</strong></p>
 
 <p align="center">
-<a href="https://zenodo.org/records/7413818"><img src="https://img.shields.io/badge/SOURCE-A1%20linked%20resource-2e8b57?style=flat-square" alt="Dataset source"></a>
-<a href="https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset"><img src="https://img.shields.io/badge/nnInteractive-Training%20Table%20A1-6f42c1?style=flat-square" alt="nnInteractive training table"></a>
+<a href="https://zenodo.org/records/7413818"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
+<a href="https://arxiv.org/html/2503.08373v1#bib.bib149"><img src="https://img.shields.io/badge/PAPER-2023-2455a4?style=flat-square" alt="Dataset publication"></a>
 </p>
 
 | Quick facts | |
 | --- | --- |
-| **Paper-listed images** | 22 in the nnInteractive Table A1 row; this is the paper’s training-inventory figure, **not a verified total size for the current official release** |
-| **Modality (A1 wording)** | Fl. Microscopy |
-| **Target** | Airway, as listed in nnInteractive Table A1 |
+| **Input** | fluorescence microscopy; see the official page for the acquisition protocol and file format |
+| **Literature-entry image count** | 22 images; this entry count is distinct from any official release-wide cohort total |
+| **Targets** | Airway |
 | **Navigation categories** | Chest, lung and airway, Microscopy and cellular imaging |
-| **Source page title captured** | LungVis1.0: Active learning AI-powered 3D imaging ecosystem for spatial profiling of lung geometry and pulmonary nanoparticle delivery \| Zenodo |
+| **Official source** | [Dataset/challenge record](https://zenodo.org/records/7413818) |
+| **Record title** | LungVis1.0: Active learning AI-powered 3D imaging ecosystem for spatial profiling of lung geometry and pulmonary nanoparticle delivery \| Zenodo |
 
-## Dataset overview
+## 🧾 Dataset overview
 
-The A1-linked source page summarizes the resource as: “The imaging dataset was obtained by light sheet fluorescence microscopy on tissue cleared murine lungs. It includes whole.”
+LungVis1.0 uses light-sheet fluorescence microscopy of cleared mouse lungs. The official Zenodo record combines whole-lung autofluorescence imaging with particle-distribution information for studies of lung geometry and pulmonary delivery.
 
-The nnInteractive paper includes this named entry in its training-data table and reports **22 images** for the row. The paper’s row-level figure is kept separate from any total, cohort size, or release split stated by the dataset provider. The dataset access/source page cited by Appendix A1 is linked below.
-> **Source note:** The official Zenodo record describes light-sheet fluorescence microscopy of cleared mouse lungs for lung-geometry and pulmonary nanoparticle research.
+The paper-entry image count is shown separately from the official release scope below. Dataset files are not mirrored in this atlas.
 
-## Official label and annotation information
+## 🏷️ Segmentation targets and labels
 
-**nnInteractive A1 target field:** Airway. This is the model paper’s summary, not a class-ID schema. The retrieved source page did not expose a full label schema; use the release documentation for class names, IDs, and annotation rules.
+| Item | Dataset information |
+| --- | --- |
+| Target listed for this entry | Airway |
+| Label definitions | The dataset entry identifies **Airway** as its segmentation target. The public landing page captured here does not expose a complete class-ID table; use the linked label files or dataset documentation for IDs and boundary rules. |
 
-The nnInteractive paper’s target field is useful for locating the entry, but does not replace the official label map, annotation protocol, or class-ID definitions.
+## 🗂️ Official release and split
 
-## Split and label availability stated by the source
+The Zenodo record describes light-sheet fluorescence images of cleared mouse lungs, including whole-lung autofluorescence and particle-distribution data.
 
-The official Zenodo record describes light-sheet fluorescence microscopy of cleared mouse lungs for lung-geometry and pulmonary nanoparticle research.
+## ⬇️ Access and reuse terms
 
-## Access and reuse terms
+- [Official dataset or challenge page](https://zenodo.org/records/7413818).
 
-- [Dataset access/source page](https://zenodo.org/records/7413818) (the route cited by nnInteractive Appendix A1).
+- **Reuse terms:** The official source text states CC BY 4.0; follow the source record for the complete terms.
+- This atlas does not host the images, masks, or dataset archives.
 
-- **Source-page check:** The source page responded during this review (HTTP 200); its current release page remains authoritative.
-- **Reuse terms:** The captured source page states **CC BY 4.0**. Follow the linked record for the full terms.
-- No image, mask, or dataset archive is hosted in this atlas.
+## 📚 Publication and citation
 
-## Publication and citation
+- [Yang et al., “Lungvis1.0: Active learning ai-powered 3d imaging ecosystem for spatial profiling of lung geometry and pulmonary nanoparticle delivery, 2023.”](https://arxiv.org/html/2503.08373v1#bib.bib149)
 
-The nnInteractive paper cites this row using [ref 149](https://arxiv.org/html/2503.08373v1#bib.bib149). Open those references in the paper to see the cited dataset publication(s) and their bibliographic details.
 
-- [nnInteractive: Redefining 3D Promptable Segmentation — Appendix A1](https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset)
-- [nnInteractive abstract and paper record](https://arxiv.org/abs/2503.08373)
+Use the dataset-specific citation and DOI on the official page when available. The source list may include more than one paper for a dataset or task.
+
+## 📑 Published dataset record
+
+| Field | Listed value |
+| --- | --- |
+| Image count | 22 |
+| Modality | Fl. Microscopy |
+| Target | Airway |
+| Dataset entry | [Official/source page](https://zenodo.org/records/7413818) |
+| Cited dataset publication(s) | [Yang et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib149) |
+
+The image count above is retained for this literature entry. It is not treated as the total cohort size or the number of publicly downloadable, labelled cases; consult the release details above for those scopes.
 
 ---
 

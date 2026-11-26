@@ -5,49 +5,61 @@
 <p align="center"><strong>Cell Nuclei · 荧光显微镜</strong></p>
 
 <p align="center">
-<a href="https://bbbc.broadinstitute.org/BBBC024"><img src="https://img.shields.io/badge/SOURCE-A1%20linked%20resource-2e8b57?style=flat-square" alt="数据来源"></a>
-<a href="https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset"><img src="https://img.shields.io/badge/nnInteractive-Training%20Table%20A1-6f42c1?style=flat-square" alt="nnInteractive 训练表"></a>
+<a href="https://bbbc.broadinstitute.org/BBBC024"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="官方数据来源"></a>
+<a href="https://arxiv.org/html/2503.08373v1#bib.bib131"><img src="https://img.shields.io/badge/PAPER-2009-2455a4?style=flat-square" alt="数据集论文"></a>
 </p>
 
 | 基本信息 | |
 | --- | --- |
-| **论文所列影像数** | nnInteractive 表 A1 此行报告 240 幅；这是论文训练清单中的行级数值，**不是已核实的当前官方发布总量** |
-| **模态（A1 原文）** | Fl. Microscopy |
-| **目标** | Cell Nuclei（nnInteractive 表 A1 原文） |
+| **输入模态** | 荧光显微镜；采集方案和文件格式请查阅官方页面 |
+| **文献条目影像数** | 240 幅；该条目数量与官方发布的完整队列规模分别记录 |
+| **目标** | Cell Nuclei |
 | **导航分类** | 显微、细胞与科学成像 |
-| **来源页标题** | 3D HL60 Cell line (synthetic data) \| Broad Bioimage Benchmark Collection |
+| **官方来源** | [数据集/挑战记录](https://bbbc.broadinstitute.org/BBBC024) |
+| **来源记录标题** | 3D HL60 Cell line (synthetic data) \| Broad Bioimage Benchmark Collection |
 
-## 数据集介绍
+## 🧾 数据集简介
 
-附录 A1 将此条链接到标题为“3D HL60 Cell line (synthetic data) | Broad Bioimage Benchmark Collection”的数据集合/挑战赛页面。上方的模态、目标和影像数保留 nnInteractive 对应行的原始记录。
+BBBC024 是 HL60 细胞的合成三维荧光显微图像集。Broad Bioimage Benchmark Collection 提供图像及相应真值掩膜，可用于细胞核分割。
 
-nnInteractive 论文将此名称列入训练数据表，并在该行报告 **240 幅影像**。这里将论文行级数字与数据集提供方公布的总规模、队列大小和数据划分分开记录。下方提供附录 A1 所列的数据入口/来源页。
-> **来源说明：**Broad Bioimage Benchmark Collection 页面提供影像下载和前景/背景真值掩膜，并将其标为合成 3D HL60 细胞数据。
+论文条目影像数与官方发布范围分开记录。本图谱不镜像托管影像或掩膜文件。
 
-## 官方标签与标注信息
+## 🏷️ 分割目标与标签
 
-**nnInteractive A1 目标字段：**Cell Nuclei。这是模型论文的概述，不是标签 ID 定义。 链接的来源页提到标签或标注；具体类别名、ID 和标注规则请查阅数据发布文档。
+| 项目 | 数据集信息 |
+| --- | --- |
+| 本条记录列出的目标 | Cell Nuclei |
+| 标签定义 | 该数据集条目将 **Cell Nuclei** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。 |
 
-nnInteractive 论文的目标字段可帮助定位数据，但不能替代官方标签图、标注流程或类别 ID 定义。
+## 🗂️ 官方发布与数据划分
 
-## 来源页面所述的数据划分与标签开放状态
+来源记录标注这是合成 3D HL60 细胞图像，并提供图像和真值文件。
 
-Broad Bioimage Benchmark Collection 页面提供影像下载和前景/背景真值掩膜，并将其标为合成 3D HL60 细胞数据。
+## ⬇️ 获取方式与使用条款
 
-## 获取方式与使用条款
+- [官方数据集或挑战页面](https://bbbc.broadinstitute.org/BBBC024)。
 
-- [数据入口/来源页面](https://bbbc.broadinstitute.org/BBBC024)（nnInteractive 附录 A1 所列入口）。
-
-- **来源页核查：**本次核查时来源页面可响应（HTTP 200）；当前发布页仍是权威信息来源。
-- **使用条款：**本次读取的来源页注明 **CC BY 3.0**；完整条款请查看来源记录。
+- **使用条款：**官方来源正文注明 CC BY 3.0；完整条款请以来源记录为准。
 - 本图谱不托管影像、掩膜或数据集压缩包。
 
-## 论文与引用
+## 📚 论文与引用
 
-nnInteractive 论文在此行引用 [ref 131](https://arxiv.org/html/2503.08373v1#bib.bib131)。点击文献编号可查看其引用的原始数据集论文及完整书目信息。
+- [Svoboda et al., “Generation of digital phantoms of cell nuclei and simulation of image formation in 3d image cytometry.” Cytometry Part A: The Journal of the International Society for Advancement of Cytometry, 75(6):494–509, 2009.](https://arxiv.org/html/2503.08373v1#bib.bib131)
 
-- [nnInteractive: Redefining 3D Promptable Segmentation — 附录 A1](https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset)
-- [nnInteractive 摘要与论文页面](https://arxiv.org/abs/2503.08373)
+
+如官方页面提供数据集专用引用和 DOI，请优先按该页面引用。一个数据集或任务可能对应多篇来源论文。
+
+## 📑 文献条目记录
+
+| 字段 | 条目所列内容 |
+| --- | --- |
+| 影像数 | 240 |
+| 模态 | Fl. Microscopy |
+| 目标 | Cell Nuclei |
+| 数据入口 | [官方/来源页面](https://bbbc.broadinstitute.org/BBBC024) |
+| 数据集引用文献 | [Svoboda et al. (2009)](https://arxiv.org/html/2503.08373v1#bib.bib131) |
+
+上方影像数保留为该文献条目的记录，不视为数据集总队列规模或当前可下载的带标签病例数；这些范围请查看前文的官方发布说明。
 
 ---
 

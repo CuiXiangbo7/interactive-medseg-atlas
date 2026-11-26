@@ -5,48 +5,62 @@
 <p align="center"><strong>Multiple Types of Lesions · CT</strong></p>
 
 <p align="center">
-<a href="https://nihcc.app.box.com/v/DeepLesion"><img src="https://img.shields.io/badge/SOURCE-A1%20linked%20resource-2e8b57?style=flat-square" alt="Dataset source"></a>
-<a href="https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset"><img src="https://img.shields.io/badge/nnInteractive-Training%20Table%20A1-6f42c1?style=flat-square" alt="nnInteractive training table"></a>
+<a href="https://nihcc.app.box.com/v/DeepLesion"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
+<a href="https://arxiv.org/html/2503.08373v1#bib.bib146"><img src="https://img.shields.io/badge/PAPER-2017-2455a4?style=flat-square" alt="Dataset publication"></a>
 </p>
 
 | Quick facts | |
 | --- | --- |
-| **Paper-listed images** | 1,093 in the nnInteractive Table A1 row; this is the paper’s training-inventory figure, **not a verified total size for the current official release** |
-| **Modality (A1 wording)** | CT |
-| **Target** | Multiple Types of Lesions, as listed in nnInteractive Table A1 |
+| **Input** | CT; see the official page for the acquisition protocol and file format |
+| **Literature-entry image count** | 1,093 images; this entry count is distinct from any official release-wide cohort total |
+| **Targets** | Multiple Types of Lesions |
 | **Navigation categories** | Whole-body and multi-region |
-| **Source page title captured** | Box |
+| **Official source** | [Dataset/challenge record](https://nihcc.app.box.com/v/DeepLesion) |
+| **Record title** | Box |
 
-## Dataset overview
+## 🧾 Dataset overview
 
-Appendix A1 links this entry to the collection/challenge page titled “Box.” The task-specific modality, target, and image count shown above are the values reported in the nnInteractive row.
+DeepLesion is a large-scale CT collection of radiology lesions mined from clinical reports and marked with image-level and lesion-level information. The official download page is hosted by the US National Institutes of Health.
+> **Source note:** The linked Box page requires browser JavaScript for its full contents; use the NIH download page and cited paper for release details.
 
-The nnInteractive paper includes this named entry in its training-data table and reports **1,093 images** for the row. The paper’s row-level figure is kept separate from any total, cohort size, or release split stated by the dataset provider. The dataset access/source page cited by Appendix A1 is linked below.
+The paper-entry image count is shown separately from the official release scope below. Dataset files are not mirrored in this atlas.
 
-## Official label and annotation information
+## 🏷️ Segmentation targets and labels
 
-**nnInteractive A1 target field:** Multiple Types of Lesions. This is the model paper’s summary, not a class-ID schema. The retrieved source page did not expose a full label schema; use the release documentation for class names, IDs, and annotation rules.
+| Item | Dataset information |
+| --- | --- |
+| Target listed for this entry | Multiple Types of Lesions |
+| Label definitions | DeepLesion supplies lesion-centre and bounding-box-style annotations for multiple lesion types rather than one organ-specific voxelwise mask. Use the annotation protocol and lesion metadata supplied by the NIH release. |
 
-The nnInteractive paper’s target field is useful for locating the entry, but does not replace the official label map, annotation protocol, or class-ID definitions.
+## 🗂️ Official release and split
 
-## Split and label availability stated by the source
+A complete train/validation/test breakdown was not stated in the public landing-page text captured for this guide. No split is inferred from the literature-listed image count.
 
-Appendix A1 does not give this entry’s case-level split or label-availability status. Check the linked release page; no split is inferred from the A1 image count.
+## ⬇️ Access and reuse terms
 
-## Access and reuse terms
+- [Official dataset or challenge page](https://nihcc.app.box.com/v/DeepLesion).
 
-- [Dataset access/source page](https://nihcc.app.box.com/v/DeepLesion) (the route cited by nnInteractive Appendix A1).
+- **Reuse terms:** No explicit dataset license was visible in the captured landing-page text. Check the linked source before downloading, redistributing, or using the data commercially.
+- This atlas does not host the images, masks, or dataset archives.
 
-- **Source-page check:** The source URL responded, but the public page text was not readable in this review. Use the linked source for current terms and release details.
-- **Reuse terms:** No clear license statement was found in the landing-page text retrieved for this review. Check the source record before reuse.
-- No image, mask, or dataset archive is hosted in this atlas.
+## 📚 Publication and citation
 
-## Publication and citation
+- [Yan et al., “Deeplesion: Automated deep mining, categorization and detection of significant radiology image findings using large-scale clinical lesion annotations, 2017.”](https://arxiv.org/html/2503.08373v1#bib.bib146)
 
-The nnInteractive paper cites this row using [ref 146](https://arxiv.org/html/2503.08373v1#bib.bib146). Open those references in the paper to see the cited dataset publication(s) and their bibliographic details.
 
-- [nnInteractive: Redefining 3D Promptable Segmentation — Appendix A1](https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset)
-- [nnInteractive abstract and paper record](https://arxiv.org/abs/2503.08373)
+Use the dataset-specific citation and DOI on the official page when available. The source list may include more than one paper for a dataset or task.
+
+## 📑 Published dataset record
+
+| Field | Listed value |
+| --- | --- |
+| Image count | 1,093 |
+| Modality | CT |
+| Target | Multiple Types of Lesions |
+| Dataset entry | [Official/source page](https://nihcc.app.box.com/v/DeepLesion) |
+| Cited dataset publication(s) | [Yan et al. (2017)](https://arxiv.org/html/2503.08373v1#bib.bib146) |
+
+The image count above is retained for this literature entry. It is not treated as the total cohort size or the number of publicly downloadable, labelled cases; consult the release details above for those scopes.
 
 ---
 

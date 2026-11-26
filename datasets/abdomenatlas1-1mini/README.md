@@ -5,48 +5,62 @@
 <p align="center"><strong>8 Abdominal Organs · CT</strong></p>
 
 <p align="center">
-<a href="https://huggingface.co/datasets/AbdomenAtlas/_AbdomenAtlas1.1Mini"><img src="https://img.shields.io/badge/SOURCE-A1%20linked%20resource-2e8b57?style=flat-square" alt="Dataset source"></a>
-<a href="https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset"><img src="https://img.shields.io/badge/nnInteractive-Training%20Table%20A1-6f42c1?style=flat-square" alt="nnInteractive training table"></a>
+<a href="https://huggingface.co/datasets/AbdomenAtlas/_AbdomenAtlas1.1Mini"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
+<a href="https://arxiv.org/html/2503.08373v1#bib.bib71"><img src="https://img.shields.io/badge/PAPER-source-2455a4?style=flat-square" alt="Dataset publication"></a>
 </p>
 
 | Quick facts | |
 | --- | --- |
-| **Paper-listed images** | 5,195 in the nnInteractive Table A1 row; this is the paper’s training-inventory figure, **not a verified total size for the current official release** |
-| **Modality (A1 wording)** | CT |
-| **Target** | 8 Abdominal Organs, as listed in nnInteractive Table A1 |
+| **Input** | CT; see the official page for the acquisition protocol and file format |
+| **Literature-entry image count** | 5,195 images; this entry count is distinct from any official release-wide cohort total |
+| **Targets** | 8 Abdominal Organs |
 | **Navigation categories** | Abdomen and pelvis |
-| **Source page title captured** | AbdomenAtlas/_AbdomenAtlas1.1Mini · Datasets at Hugging Face |
+| **Official source** | [Dataset/challenge record](https://huggingface.co/datasets/AbdomenAtlas/_AbdomenAtlas1.1Mini) |
+| **Record title** | AbdomenAtlas/_AbdomenAtlas1.1Mini · Datasets at Hugging Face |
 
-## Dataset overview
+## 🧾 Dataset overview
 
-The A1-linked source page summarizes the resource as: “Dataset with 175k rows (Text). Explore, preview and download it on Hugging Face.”
+AbdomenAtlas1.1Mini is a subset release in the AbdomenAtlas family of annotated abdominal CT. The linked dataset card describes the larger parent collection as fully annotated across 25 structures and gates file access behind the dataset-host terms; the Mini count in the literature entry is retained separately.
 
-The nnInteractive paper includes this named entry in its training-data table and reports **5,195 images** for the row. The paper’s row-level figure is kept separate from any total, cohort size, or release split stated by the dataset provider. The dataset access/source page cited by Appendix A1 is linked below.
+The paper-entry image count is shown separately from the official release scope below. Dataset files are not mirrored in this atlas.
 
-## Official label and annotation information
+## 🏷️ Segmentation targets and labels
 
-**nnInteractive A1 target field:** 8 Abdominal Organs. This is the model paper’s summary, not a class-ID schema. The linked source text mentions labels or annotations, but this review did not verify a full class-ID schema; consult the release documentation for exact class names, IDs, and annotation rules.
+| Item | Dataset information |
+| --- | --- |
+| Target listed for this entry | 8 Abdominal Organs |
+| Label definitions | The dataset entry identifies **8 Abdominal Organs** as its segmentation target. The public landing page captured here does not expose a complete class-ID table; use the linked label files or dataset documentation for IDs and boundary rules. |
 
-The nnInteractive paper’s target field is useful for locating the entry, but does not replace the official label map, annotation protocol, or class-ID definitions.
+## 🗂️ Official release and split
 
-## Split and label availability stated by the source
+The linked card describes a Mini subset and separately reports the parent AbdomenAtlas as 9,262 fully annotated CT volumes with 25 structures. Access to the Mini files is gated by the host’s dataset terms; the parent-collection number is not substituted for the entry count.
 
-The linked source page includes training/validation/test or data-partition information. See that page for the exact release-specific case counts; the A1 image count is a separate training-inventory figure.
+## ⬇️ Access and reuse terms
 
-## Access and reuse terms
+- [Official dataset or challenge page](https://huggingface.co/datasets/AbdomenAtlas/_AbdomenAtlas1.1Mini).
 
-- [Dataset access/source page](https://huggingface.co/datasets/AbdomenAtlas/_AbdomenAtlas1.1Mini) (the route cited by nnInteractive Appendix A1).
+- **Reuse terms:** The official source text states CC BY-NC-SA 4.0; follow the source record for the complete terms.
+- This atlas does not host the images, masks, or dataset archives.
 
-- **Source-page check:** The source page responded during this review (HTTP 200); its current release page remains authoritative.
-- **Reuse terms:** The captured source page states **CC BY-NC-SA 4.0**. Follow the linked record for the full terms.
-- No image, mask, or dataset archive is hosted in this atlas.
+## 📚 Publication and citation
 
-## Publication and citation
+- [Li et al., “How well do supervised models transfer to 3d image segmentation?.” In The Twelfth International Conference on Learning Representations, 2024b.](https://arxiv.org/html/2503.08373v1#bib.bib71)
+- [Qu et al., “Abdomenatlas-8k: Annotating 8,000 ct volumes for multi-organ segmentation in three weeks.” Advances in Neural Information Processing Systems, 2023b.](https://arxiv.org/html/2503.08373v1#bib.bib108)
 
-The nnInteractive paper cites this row using [ref 71](https://arxiv.org/html/2503.08373v1#bib.bib71), [ref 108](https://arxiv.org/html/2503.08373v1#bib.bib108). Open those references in the paper to see the cited dataset publication(s) and their bibliographic details.
 
-- [nnInteractive: Redefining 3D Promptable Segmentation — Appendix A1](https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset)
-- [nnInteractive abstract and paper record](https://arxiv.org/abs/2503.08373)
+Use the dataset-specific citation and DOI on the official page when available. The source list may include more than one paper for a dataset or task.
+
+## 📑 Published dataset record
+
+| Field | Listed value |
+| --- | --- |
+| Image count | 5,195 |
+| Modality | CT |
+| Target | 8 Abdominal Organs |
+| Dataset entry | [Official/source page](https://huggingface.co/datasets/AbdomenAtlas/_AbdomenAtlas1.1Mini) |
+| Cited dataset publication(s) | [Li et al.](https://arxiv.org/html/2503.08373v1#bib.bib71), [Qu et al.](https://arxiv.org/html/2503.08373v1#bib.bib108) |
+
+The image count above is retained for this literature entry. It is not treated as the total cohort size or the number of publicly downloadable, labelled cases; consult the release details above for those scopes.
 
 ---
 

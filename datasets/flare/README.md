@@ -5,48 +5,61 @@
 <p align="center"><strong>13 Abdominal Organs · CT</strong></p>
 
 <p align="center">
-<a href="https://flare22.grand-challenge.org"><img src="https://img.shields.io/badge/SOURCE-A1%20linked%20resource-2e8b57?style=flat-square" alt="Dataset source"></a>
-<a href="https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset"><img src="https://img.shields.io/badge/nnInteractive-Training%20Table%20A1-6f42c1?style=flat-square" alt="nnInteractive training table"></a>
+<a href="https://flare22.grand-challenge.org"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
+<a href="https://arxiv.org/abs/2308.05862"><img src="https://img.shields.io/badge/PAPER-2023-2455a4?style=flat-square" alt="Dataset publication"></a>
 </p>
 
 | Quick facts | |
 | --- | --- |
-| **Paper-listed images** | 50 in the nnInteractive Table A1 row; this is the paper’s training-inventory figure, **not a verified total size for the current official release** |
-| **Modality (A1 wording)** | CT |
-| **Target** | 13 Abdominal Organs, as listed in nnInteractive Table A1 |
+| **Input** | CT; see the official page for the acquisition protocol and file format |
+| **Literature-entry image count** | 50 images; this entry count is distinct from any official release-wide cohort total |
+| **Targets** | 13 Abdominal Organs |
 | **Navigation categories** | Abdomen and pelvis |
-| **Source page title captured** | Home - MICCAI FLARE 2022 - Grand Challenge |
+| **Official source** | [Dataset/challenge record](https://flare22.grand-challenge.org) |
+| **Record title** | Home - MICCAI FLARE 2022 - Grand Challenge |
 
-## Dataset overview
+## 🧾 Dataset overview
 
-The A1-linked source page summarizes the resource as: “MICCAI 2022 Fast and Low-resource semi-supervised Abdominal oRgan sEgmentation (FLARE) Challenge.”
+FLARE 2022 is a low-resource semi-supervised abdominal CT challenge. Its official page describes 50 labeled and 2,000 unlabeled training cases, 50 validation cases, and 200 hidden test cases across 13 organs.
 
-The nnInteractive paper includes this named entry in its training-data table and reports **50 images** for the row. The paper’s row-level figure is kept separate from any total, cohort size, or release split stated by the dataset provider. The dataset access/source page cited by Appendix A1 is linked below.
+The paper-entry image count is shown separately from the official release scope below. Dataset files are not mirrored in this atlas.
 
-## Official label and annotation information
+## 🏷️ Segmentation targets and labels
 
-**nnInteractive A1 target field:** 13 Abdominal Organs. This is the model paper’s summary, not a class-ID schema. The retrieved source page did not expose a full label schema; use the release documentation for class names, IDs, and annotation rules.
+| Item | Dataset information |
+| --- | --- |
+| Target listed for this entry | 13 Abdominal Organs |
+| Label definitions | The dataset entry identifies **13 Abdominal Organs** as its segmentation target. The public landing page captured here does not expose a complete class-ID table; use the linked label files or dataset documentation for IDs and boundary rules. |
 
-The nnInteractive paper’s target field is useful for locating the entry, but does not replace the official label map, annotation protocol, or class-ID definitions.
+## 🗂️ Official release and split
 
-## Split and label availability stated by the source
+The official challenge reports 50 labelled and 2,000 unlabelled training cases, 50 visible validation cases, and 200 hidden test cases. The challenge target set contains 13 abdominal organs.
 
-The linked source page includes training/validation/test or data-partition information. See that page for the exact release-specific case counts; the A1 image count is a separate training-inventory figure.
+## ⬇️ Access and reuse terms
 
-## Access and reuse terms
+- [Official dataset or challenge page](https://flare22.grand-challenge.org).
 
-- [Dataset access/source page](https://flare22.grand-challenge.org) (the route cited by nnInteractive Appendix A1).
+- **Reuse terms:** No explicit dataset license was visible in the captured landing-page text. Check the linked source before downloading, redistributing, or using the data commercially.
+- This atlas does not host the images, masks, or dataset archives.
 
-- **Source-page check:** The source page responded during this review (HTTP 200); its current release page remains authoritative.
-- **Reuse terms:** No clear license statement was found in the landing-page text retrieved for this review. Check the source record before reuse.
-- No image, mask, or dataset archive is hosted in this atlas.
+## 📚 Publication and citation
 
-## Publication and citation
+- [Ma et al., “Unleashing the strengths of unlabeled data in pan-cancer abdominal organ quantification: the flare22 challenge.” arXiv preprint arXiv:2308.05862 (2023).](https://arxiv.org/abs/2308.05862)
 
-The nnInteractive paper cites this row using [ref 87](https://arxiv.org/html/2503.08373v1#bib.bib87). Open those references in the paper to see the cited dataset publication(s) and their bibliographic details.
 
-- [nnInteractive: Redefining 3D Promptable Segmentation — Appendix A1](https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset)
-- [nnInteractive abstract and paper record](https://arxiv.org/abs/2503.08373)
+Use the dataset-specific citation and DOI on the official page when available. The source list may include more than one paper for a dataset or task.
+
+## 📑 Published dataset record
+
+| Field | Listed value |
+| --- | --- |
+| Image count | 50 |
+| Modality | CT |
+| Target | 13 Abdominal Organs |
+| Dataset entry | [Official/source page](https://flare22.grand-challenge.org) |
+| Cited dataset publication(s) | [Ma et al. (2023)](https://arxiv.org/abs/2308.05862) |
+
+The image count above is retained for this literature entry. It is not treated as the total cohort size or the number of publicly downloadable, labelled cases; consult the release details above for those scopes.
 
 ---
 

@@ -30,18 +30,6 @@ VerSe is a multi-detector, multi-site CT benchmark for vertebra labeling and seg
 
 The combined release is not the arithmetic sum of the two editions: the official benchmark paper reports 86 patients represented in both. The official repository recommends the restructured complete dataset, whose annotation format differs from the original challenge-format packages.
 
-## nnInteractive training-table entry
-
-The paper’s Appendix A1 reports the following row for this dataset. Its image count is a training-inventory figure, not necessarily the total size of the current release.
-
-| A1 field | Paper-listed value |
-| --- | --- |
-| Images | 113 |
-| Modality | CT |
-| Target | 28 Vertebrae |
-| Dataset entry linked by A1 | [Open source page](https://github.com/anjany/verse) |
-| Cited references | [ref 123](https://arxiv.org/html/2503.08373v1#bib.bib123), [ref 81](https://arxiv.org/html/2503.08373v1#bib.bib81), [ref 74](https://arxiv.org/html/2503.08373v1#bib.bib74) |
-
 ## 🏷️ Official label definitions
 
 | Label IDs | Vertebral types |
@@ -81,5 +69,17 @@ Sekuboyina A. et al. “VerSe: A Vertebrae Labelling and Segmentation Benchmark 
 The benchmark paper is the primary citation for the combined VerSe19/VerSe20 collection.
 
 ---
+
+## 📑 Published dataset record
+
+| Field | Listed value |
+| --- | --- |
+| Image count | 113 |
+| Modality | CT |
+| Target | 28 Vertebrae |
+| Dataset entry | [Official/source page](https://github.com/anjany/verse) |
+| Cited dataset publication(s) | [Sekuboyina et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib123), [Löffler et al. (2020)](https://arxiv.org/html/2503.08373v1#bib.bib81), [Liebl et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib74) |
+
+The image count above is retained for this literature entry. It is not treated as the total cohort size or the number of publicly downloadable, labelled cases; consult the release details above for those scopes.
 
 <p align="center"><sub>🕘 Sources last checked: 25 November 2026 · <a href="../README.md">Back to the dataset catalog</a></sub></p>

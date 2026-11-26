@@ -26,18 +26,6 @@
 
 BTCV is associated with the MICCAI 2015 Multi-Atlas Labeling Beyond the Cranial Vault workshop and challenge. The abdominal challenge data contain 30 labeled CT cases for development and a separate 20-case test cohort. The labels cover 13 organs: spleen, right and left kidneys, gallbladder, esophagus, liver, stomach, aorta, inferior vena cava, portal and splenic veins, and right and left adrenal glands.
 
-## nnInteractive training-table entry
-
-The paper’s Appendix A1 reports the following row for this dataset. Its image count is a training-inventory figure, not necessarily the total size of the current release.
-
-| A1 field | Paper-listed value |
-| --- | --- |
-| Images | 30 |
-| Modality | CT |
-| Target | 13 Abdominal Organs |
-| Dataset entry linked by A1 | [Open source page](https://www.synapse.org/Synapse:syn3193805/wiki/89480) |
-| Cited references | [ref 67](https://arxiv.org/html/2503.08373v1#bib.bib67) |
-
 ## 🗂️ Official split and label availability
 
 | Cohort | Cases | Labels |
@@ -68,5 +56,17 @@ Landman et al. “MICCAI Multi-Atlas Labeling Beyond the Cranial Vault — Works
 Use the challenge dataset record for access details and the workshop citation when referencing the original benchmark.
 
 ---
+
+## 📑 Published dataset record
+
+| Field | Listed value |
+| --- | --- |
+| Image count | 30 |
+| Modality | CT |
+| Target | 13 Abdominal Organs |
+| Dataset entry | [Official/source page](https://www.synapse.org/Synapse:syn3193805/wiki/89480) |
+| Cited dataset publication(s) | [Landman et al. (2015)](https://arxiv.org/html/2503.08373v1#bib.bib67) |
+
+The image count above is retained for this literature entry. It is not treated as the total cohort size or the number of publicly downloadable, labelled cases; consult the release details above for those scopes.
 
 <p align="center"><sub>🕘 Sources last checked: 27 October 2026 · <a href="../README.md">Back to the dataset catalog</a></sub></p>

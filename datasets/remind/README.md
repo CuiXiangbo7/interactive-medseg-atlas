@@ -5,48 +5,61 @@
 <p align="center"><strong>Brain Resection · MRI</strong></p>
 
 <p align="center">
-<a href="https://www.cancerimagingarchive.net/collection/remind"><img src="https://img.shields.io/badge/SOURCE-A1%20linked%20resource-2e8b57?style=flat-square" alt="Dataset source"></a>
-<a href="https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset"><img src="https://img.shields.io/badge/nnInteractive-Training%20Table%20A1-6f42c1?style=flat-square" alt="nnInteractive training table"></a>
+<a href="https://www.cancerimagingarchive.net/collection/remind"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
+<a href="https://arxiv.org/html/2503.08373v1#bib.bib54"><img src="https://img.shields.io/badge/PAPER-2024-2455a4?style=flat-square" alt="Dataset publication"></a>
 </p>
 
 | Quick facts | |
 | --- | --- |
-| **Paper-listed images** | 213 in the nnInteractive Table A1 row; this is the paper’s training-inventory figure, **not a verified total size for the current official release** |
-| **Modality (A1 wording)** | MRI |
-| **Target** | Brain Resection, as listed in nnInteractive Table A1 |
+| **Input** | MRI; see the official page for the acquisition protocol and file format |
+| **Literature-entry image count** | 213 images; this entry count is distinct from any official release-wide cohort total |
+| **Targets** | Brain Resection |
 | **Navigation categories** | Brain and neuro-oncology |
-| **Source page title captured** | REMIND - The Cancer Imaging Archive (TCIA) |
+| **Official source** | [Dataset/challenge record](https://www.cancerimagingarchive.net/collection/remind) |
+| **Record title** | REMIND - The Cancer Imaging Archive (TCIA) |
 
-## Dataset overview
+## 🧾 Dataset overview
 
-The A1-linked source page summarizes the resource as: “View this dataset for more details.”
+ReMIND contains preoperative and intraoperative imaging from patients undergoing image-guided brain-tumour resection. The TCIA record describes MRI, intraoperative ultrasound, and segmentations of relevant tumour/resection structures.
 
-The nnInteractive paper includes this named entry in its training-data table and reports **213 images** for the row. The paper’s row-level figure is kept separate from any total, cohort size, or release split stated by the dataset provider. The dataset access/source page cited by Appendix A1 is linked below.
+The paper-entry image count is shown separately from the official release scope below. Dataset files are not mirrored in this atlas.
 
-## Official label and annotation information
+## 🏷️ Segmentation targets and labels
 
-**nnInteractive A1 target field:** Brain Resection. This is the model paper’s summary, not a class-ID schema. The retrieved source page did not expose a full label schema; use the release documentation for class names, IDs, and annotation rules.
+| Item | Dataset information |
+| --- | --- |
+| Target listed for this entry | Brain Resection |
+| Label definitions | The TCIA release distinguishes preoperative tumour, residual tumour, resection cavity, and automated cerebrum annotations. Each label type has its own case coverage. |
 
-The nnInteractive paper’s target field is useful for locating the entry, but does not replace the official label map, annotation protocol, or class-ID definitions.
+## 🗂️ Official release and split
 
-## Split and label availability stated by the source
+The TCIA record contains several distinct annotation types and counts, including preoperative whole-tumour masks for 113 cases, residual-tumour masks for 58, and resection-cavity masks for 21. These label-specific counts should not be collapsed into one total.
 
-The linked source page includes training/validation/test or data-partition information. See that page for the exact release-specific case counts; the A1 image count is a separate training-inventory figure.
+## ⬇️ Access and reuse terms
 
-## Access and reuse terms
+- [Official dataset or challenge page](https://www.cancerimagingarchive.net/collection/remind).
 
-- [Dataset access/source page](https://www.cancerimagingarchive.net/collection/remind) (the route cited by nnInteractive Appendix A1).
+- **Reuse terms:** The official source text states CC BY 4.0; follow the source record for the complete terms.
+- This atlas does not host the images, masks, or dataset archives.
 
-- **Source-page check:** The source page responded during this review (HTTP 200); its current release page remains authoritative.
-- **Reuse terms:** The captured source page states **CC BY 4.0**. Follow the linked record for the full terms.
-- No image, mask, or dataset archive is hosted in this atlas.
+## 📚 Publication and citation
 
-## Publication and citation
+- [Juvekar et al., “Remind: The brain resection multimodal imaging database.” Scientific Data, 11(1):494, 2024.](https://arxiv.org/html/2503.08373v1#bib.bib54)
 
-The nnInteractive paper cites this row using [ref 54](https://arxiv.org/html/2503.08373v1#bib.bib54). Open those references in the paper to see the cited dataset publication(s) and their bibliographic details.
 
-- [nnInteractive: Redefining 3D Promptable Segmentation — Appendix A1](https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset)
-- [nnInteractive abstract and paper record](https://arxiv.org/abs/2503.08373)
+Use the dataset-specific citation and DOI on the official page when available. The source list may include more than one paper for a dataset or task.
+
+## 📑 Published dataset record
+
+| Field | Listed value |
+| --- | --- |
+| Image count | 213 |
+| Modality | MRI |
+| Target | Brain Resection |
+| Dataset entry | [Official/source page](https://www.cancerimagingarchive.net/collection/remind) |
+| Cited dataset publication(s) | [Juvekar et al. (2024)](https://arxiv.org/html/2503.08373v1#bib.bib54) |
+
+The image count above is retained for this literature entry. It is not treated as the total cohort size or the number of publicly downloadable, labelled cases; consult the release details above for those scopes.
 
 ---
 

@@ -5,48 +5,61 @@
 <p align="center"><strong>Nasopharynx Cancer · CT</strong></p>
 
 <p align="center">
-<a href="https://structseg2019.grand-challenge.org"><img src="https://img.shields.io/badge/SOURCE-A1%20linked%20resource-2e8b57?style=flat-square" alt="数据来源"></a>
-<a href="https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset"><img src="https://img.shields.io/badge/nnInteractive-Training%20Table%20A1-6f42c1?style=flat-square" alt="nnInteractive 训练表"></a>
+<a href="https://structseg2019.grand-challenge.org"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="官方数据来源"></a>
+<a href="https://structseg2019.grand-challenge.org/"><img src="https://img.shields.io/badge/PAPER-2019-2455a4?style=flat-square" alt="数据集论文"></a>
 </p>
 
 | 基本信息 | |
 | --- | --- |
-| **论文所列影像数** | nnInteractive 表 A1 此行报告 50 幅；这是论文训练清单中的行级数值，**不是已核实的当前官方发布总量** |
-| **模态（A1 原文）** | CT |
-| **目标** | Nasopharynx Cancer（nnInteractive 表 A1 原文） |
+| **输入模态** | CT；采集方案和文件格式请查阅官方页面 |
+| **文献条目影像数** | 50 幅；该条目数量与官方发布的完整队列规模分别记录 |
+| **目标** | Nasopharynx Cancer |
 | **导航分类** | 头颈部 |
-| **来源页标题** | Home - StructSeg2019 - Grand Challenge |
+| **官方来源** | [数据集/挑战记录](https://structseg2019.grand-challenge.org) |
+| **来源记录标题** | Home - StructSeg2019 - Grand Challenge |
 
-## 数据集介绍
+## 🧾 数据集简介
 
-附录 A1 所列来源页的公开摘要为：“Welcome to Automatic Structure Segmentation for Radiotherapy Planning Challenge 2019. This competition is part of the MICCAI 2019。”
+StructSeg 2019 任务 2 评估头颈 CT 中鼻咽癌大体肿瘤体积（GTV）的分割，目标为放疗计划中的原发鼻咽肿瘤。
 
-nnInteractive 论文将此名称列入训练数据表，并在该行报告 **50 幅影像**。这里将论文行级数字与数据集提供方公布的总规模、队列大小和数据划分分开记录。下方提供附录 A1 所列的数据入口/来源页。
+论文条目影像数与官方发布范围分开记录。本图谱不镜像托管影像或掩膜文件。
 
-## 官方标签与标注信息
+## 🏷️ 分割目标与标签
 
-**nnInteractive A1 目标字段：**Nasopharynx Cancer。这是模型论文的概述，不是标签 ID 定义。 链接的来源页提到标签或标注；具体类别名、ID 和标注规则请查阅数据发布文档。
+| 项目 | 数据集信息 |
+| --- | --- |
+| 本条记录列出的目标 | Nasopharynx Cancer |
+| 标签定义 | 目标为鼻咽癌大体肿瘤体积；该任务未定义多器官标签图。 |
 
-nnInteractive 论文的目标字段可帮助定位数据，但不能替代官方标签图、标注流程或类别 ID 定义。
+## 🗂️ 官方发布与数据划分
 
-## 来源页面所述的数据划分与标签开放状态
+官方任务页说明鼻咽癌 GTV 任务有 50 例带标签训练 CT 和 10 例测试 CT。测试标注保留用于挑战评估。
 
-链接页面包含训练/验证/测试或数据划分信息；具体发布版本的病例数请以该页面为准。A1 影像数是单独的训练清单数值。
+## ⬇️ 获取方式与使用条款
 
-## 获取方式与使用条款
+- [官方数据集或挑战页面](https://structseg2019.grand-challenge.org)。
 
-- [数据入口/来源页面](https://structseg2019.grand-challenge.org)（nnInteractive 附录 A1 所列入口）。
-
-- **来源页核查：**本次核查时来源页面可响应（HTTP 200）；当前发布页仍是权威信息来源。
-- **使用条款：**本次读取的入口页正文未找到明确许可声明；使用前请在来源记录核实条款。
+- **使用条款：**本次读取的入口页正文未显示明确的数据许可。下载、再分发或商业使用前请核实链接来源中的条款。
 - 本图谱不托管影像、掩膜或数据集压缩包。
 
-## 论文与引用
+## 📚 论文与引用
 
-nnInteractive 论文在此行引用 [ref 69](https://arxiv.org/html/2503.08373v1#bib.bib69)。点击文献编号可查看其引用的原始数据集论文及完整书目信息。
+- [Li et al., “Automatic structure segmentation for radiotherapy planning challenge, 2019.”](https://structseg2019.grand-challenge.org/)
 
-- [nnInteractive: Redefining 3D Promptable Segmentation — 附录 A1](https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset)
-- [nnInteractive 摘要与论文页面](https://arxiv.org/abs/2503.08373)
+
+如官方页面提供数据集专用引用和 DOI，请优先按该页面引用。一个数据集或任务可能对应多篇来源论文。
+
+## 📑 文献条目记录
+
+| 字段 | 条目所列内容 |
+| --- | --- |
+| 影像数 | 50 |
+| 模态 | CT |
+| 目标 | Nasopharynx Cancer |
+| 数据入口 | [官方/来源页面](https://structseg2019.grand-challenge.org) |
+| 数据集引用文献 | [Li et al. (2019)](https://structseg2019.grand-challenge.org/) |
+
+上方影像数保留为该文献条目的记录，不视为数据集总队列规模或当前可下载的带标签病例数；这些范围请查看前文的官方发布说明。
 
 ---
 

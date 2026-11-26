@@ -5,48 +5,61 @@
 <p align="center"><strong>Lumbar Spine · MRI</strong></p>
 
 <p align="center">
-<a href="https://zenodo.org/records/10159290"><img src="https://img.shields.io/badge/SOURCE-A1%20linked%20resource-2e8b57?style=flat-square" alt="Dataset source"></a>
-<a href="https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset"><img src="https://img.shields.io/badge/nnInteractive-Training%20Table%20A1-6f42c1?style=flat-square" alt="nnInteractive training table"></a>
+<a href="https://zenodo.org/records/10159290"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
+<a href="https://arxiv.org/html/2503.08373v1#bib.bib137"><img src="https://img.shields.io/badge/PAPER-2023-2455a4?style=flat-square" alt="Dataset publication"></a>
 </p>
 
 | Quick facts | |
 | --- | --- |
-| **Paper-listed images** | 447 in the nnInteractive Table A1 row; this is the paper’s training-inventory figure, **not a verified total size for the current official release** |
-| **Modality (A1 wording)** | MRI |
-| **Target** | Lumbar Spine, as listed in nnInteractive Table A1 |
+| **Input** | MRI; see the official page for the acquisition protocol and file format |
+| **Literature-entry image count** | 447 images; this entry count is distinct from any official release-wide cohort total |
+| **Targets** | Lumbar Spine |
 | **Navigation categories** | Spine and musculoskeletal |
-| **Source page title captured** | SPIDER - Lumbar spine segmentation in MR images: a dataset and a public benchmark \| Zenodo |
+| **Official source** | [Dataset/challenge record](https://zenodo.org/records/10159290) |
+| **Record title** | SPIDER - Lumbar spine segmentation in MR images: a dataset and a public benchmark \| Zenodo |
 
-## Dataset overview
+## 🧾 Dataset overview
 
-The A1-linked source page summarizes the resource as: “This is a large publicly available multi-center lumbar spine magnetic resonance imaging (MRI) dataset with reference segmentations of.”
+SPIDER is a multicenter lumbar-spine MRI dataset with reference segmentation of vertebrae, intervertebral discs, and spinal canal. Its official record documents the cohort and identifies a separate hidden challenge test set.
 
-The nnInteractive paper includes this named entry in its training-data table and reports **447 images** for the row. The paper’s row-level figure is kept separate from any total, cohort size, or release split stated by the dataset provider. The dataset access/source page cited by Appendix A1 is linked below.
+The paper-entry image count is shown separately from the official release scope below. Dataset files are not mirrored in this atlas.
 
-## Official label and annotation information
+## 🏷️ Segmentation targets and labels
 
-**nnInteractive A1 target field:** Lumbar Spine. This is the model paper’s summary, not a class-ID schema. The retrieved source page did not expose a full label schema; use the release documentation for class names, IDs, and annotation rules.
+| Item | Dataset information |
+| --- | --- |
+| Target listed for this entry | Lumbar Spine |
+| Label definitions | The release includes reference segmentations for vertebrae, intervertebral discs, and the spinal canal. It also contains vertebral-level information; refer to the official label schema for IDs. |
 
-The nnInteractive paper’s target field is useful for locating the entry, but does not replace the official label map, annotation protocol, or class-ID definitions.
+## 🗂️ Official release and split
 
-## Split and label availability stated by the source
+The Zenodo record reports 447 sagittal T1- and T2-weighted MRI series from 218 studies in 218 patients across four hospitals, plus a separate hidden challenge test set. The 447 value is a series count, not a patient count.
 
-The linked source page includes training/validation/test or data-partition information. See that page for the exact release-specific case counts; the A1 image count is a separate training-inventory figure.
+## ⬇️ Access and reuse terms
 
-## Access and reuse terms
+- [Official dataset or challenge page](https://zenodo.org/records/10159290).
 
-- [Dataset access/source page](https://zenodo.org/records/10159290) (the route cited by nnInteractive Appendix A1).
+- **Reuse terms:** The official source text states CC BY 4.0; follow the source record for the complete terms.
+- This atlas does not host the images, masks, or dataset archives.
 
-- **Source-page check:** The source page responded during this review (HTTP 200); its current release page remains authoritative.
-- **Reuse terms:** The captured source page states **CC BY 4.0**. Follow the linked record for the full terms.
-- No image, mask, or dataset archive is hosted in this atlas.
+## 📚 Publication and citation
 
-## Publication and citation
+- [Graaf et al., “Spider - lumbar spine segmentation in mr images: a dataset and a public benchmark, 2023.”](https://arxiv.org/html/2503.08373v1#bib.bib137)
 
-The nnInteractive paper cites this row using [ref 137](https://arxiv.org/html/2503.08373v1#bib.bib137). Open those references in the paper to see the cited dataset publication(s) and their bibliographic details.
 
-- [nnInteractive: Redefining 3D Promptable Segmentation — Appendix A1](https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset)
-- [nnInteractive abstract and paper record](https://arxiv.org/abs/2503.08373)
+Use the dataset-specific citation and DOI on the official page when available. The source list may include more than one paper for a dataset or task.
+
+## 📑 Published dataset record
+
+| Field | Listed value |
+| --- | --- |
+| Image count | 447 |
+| Modality | MRI |
+| Target | Lumbar Spine |
+| Dataset entry | [Official/source page](https://zenodo.org/records/10159290) |
+| Cited dataset publication(s) | [Graaf et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib137) |
+
+The image count above is retained for this literature entry. It is not treated as the total cohort size or the number of publicly downloadable, labelled cases; consult the release details above for those scopes.
 
 ---
 

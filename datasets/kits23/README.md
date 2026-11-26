@@ -29,18 +29,6 @@ KiTS23 is the third Kidney and Kidney Tumor Segmentation challenge. The cohort i
 
 The challenge source notes that parts of the training set were previously used in KiTS19, KiTS21, or KNIGHT. Consider this overlap when describing data provenance or evaluation independence.
 
-## nnInteractive training-table entry
-
-The paper’s Appendix A1 reports the following row for this dataset. Its image count is a training-inventory figure, not necessarily the total size of the current release.
-
-| A1 field | Paper-listed value |
-| --- | --- |
-| Images | 489 |
-| Modality | CT |
-| Target | Kidneys, K. Tumor, Cysts |
-| Dataset entry linked by A1 | [Open source page](https://kits-challenge.org/kits23) |
-| Cited references | [ref 43](https://arxiv.org/html/2503.08373v1#bib.bib43) |
-
 ## 🏷️ Official label definitions
 
 | Value | Class | Official definition |
@@ -86,5 +74,17 @@ The challenge proceedings were published as *Kidney and Kidney Tumor Segmentatio
 - [Proceedings DOI: 10.1007/978-3-031-54806-2](https://doi.org/10.1007/978-3-031-54806-2)
 
 ---
+
+## 📑 Published dataset record
+
+| Field | Listed value |
+| --- | --- |
+| Image count | 489 |
+| Modality | CT |
+| Target | Kidneys, K. Tumor, Cysts |
+| Dataset entry | [Official/source page](https://kits-challenge.org/kits23) |
+| Cited dataset publication(s) | [Heller et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib43) |
+
+The image count above is retained for this literature entry. It is not treated as the total cohort size or the number of publicly downloadable, labelled cases; consult the release details above for those scopes.
 
 <p align="center"><sub>🕘 Sources last checked: 25 November 2026 · <a href="../README.md">Back to the dataset catalog</a></sub></p>

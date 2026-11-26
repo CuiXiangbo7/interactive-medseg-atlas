@@ -5,48 +5,61 @@
 <p align="center"><strong>Head and Neck Tumor · PET/CT</strong></p>
 
 <p align="center">
-<a href="https://hecktor.grand-challenge.org"><img src="https://img.shields.io/badge/SOURCE-A1%20linked%20resource-2e8b57?style=flat-square" alt="数据来源"></a>
-<a href="https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset"><img src="https://img.shields.io/badge/nnInteractive-Training%20Table%20A1-6f42c1?style=flat-square" alt="nnInteractive 训练表"></a>
+<a href="https://hecktor.grand-challenge.org"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="官方数据来源"></a>
+<a href="https://arxiv.org/html/2503.08373v1#bib.bib4"><img src="https://img.shields.io/badge/PAPER-2023-2455a4?style=flat-square" alt="数据集论文"></a>
 </p>
 
 | 基本信息 | |
 | --- | --- |
-| **论文所列影像数** | nnInteractive 表 A1 此行报告 524 幅；这是论文训练清单中的行级数值，**不是已核实的当前官方发布总量** |
-| **模态（A1 原文）** | PET,CT |
-| **目标** | Head and Neck Tumor（nnInteractive 表 A1 原文） |
+| **输入模态** | PET/CT；采集方案和文件格式请查阅官方页面 |
+| **文献条目影像数** | 524 幅；该条目数量与官方发布的完整队列规模分别记录 |
+| **目标** | Head and Neck Tumor |
 | **导航分类** | 胸部、肺、气道与纵隔, 头颈部 |
-| **来源页标题** | Overview - MICCAI HECKTOR 2022 - Grand Challenge |
+| **官方来源** | [数据集/挑战记录](https://hecktor.grand-challenge.org) |
+| **来源记录标题** | Overview - MICCAI HECKTOR 2022 - Grand Challenge |
 
-## 数据集介绍
+## 🧾 数据集简介
 
-附录 A1 所列来源页的公开摘要为：“Automatic Head and Neck Tumor Segmentation and Outcome Prediction in PET/CT Images。”
+HECKTOR 2022 使用头颈部 FDG PET/CT，任务包括原发肿瘤和受累淋巴结分割，并设有独立的结局预测任务。数据背景为放疗与肿瘤临床应用。
 
-nnInteractive 论文将此名称列入训练数据表，并在该行报告 **524 幅影像**。这里将论文行级数字与数据集提供方公布的总规模、队列大小和数据划分分开记录。下方提供附录 A1 所列的数据入口/来源页。
+论文条目影像数与官方发布范围分开记录。本图谱不镜像托管影像或掩膜文件。
 
-## 官方标签与标注信息
+## 🏷️ 分割目标与标签
 
-**nnInteractive A1 目标字段：**Head and Neck Tumor。这是模型论文的概述，不是标签 ID 定义。 链接的来源页提到标签或标注；具体类别名、ID 和标注规则请查阅数据发布文档。
+| 项目 | 数据集信息 |
+| --- | --- |
+| 本条记录列出的目标 | Head and Neck Tumor |
+| 标签定义 | 该数据集条目将 **Head and Neck Tumor** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。 |
 
-nnInteractive 论文的目标字段可帮助定位数据，但不能替代官方标签图、标注流程或类别 ID 定义。
+## 🗂️ 官方发布与数据划分
 
-## 来源页面所述的数据划分与标签开放状态
+挑战网站将训练、验证数据与留出测试评测分开。两个预测任务分别为原发肿瘤/淋巴结分割和无复发生存预测；结局预测任务不属于额外分割标签。
 
-链接页面包含训练/验证/测试或数据划分信息；具体发布版本的病例数请以该页面为准。A1 影像数是单独的训练清单数值。
+## ⬇️ 获取方式与使用条款
 
-## 获取方式与使用条款
+- [官方数据集或挑战页面](https://hecktor.grand-challenge.org)。
 
-- [数据入口/来源页面](https://hecktor.grand-challenge.org)（nnInteractive 附录 A1 所列入口）。
-
-- **来源页核查：**本次核查时来源页面可响应（HTTP 200）；当前发布页仍是权威信息来源。
-- **使用条款：**本次读取的入口页正文未找到明确许可声明；使用前请在来源记录核实条款。
+- **使用条款：**本次读取的入口页正文未显示明确的数据许可。下载、再分发或商业使用前请核实链接来源中的条款。
 - 本图谱不托管影像、掩膜或数据集压缩包。
 
-## 论文与引用
+## 📚 论文与引用
 
-nnInteractive 论文在此行引用 [ref 4](https://arxiv.org/html/2503.08373v1#bib.bib4)。点击文献编号可查看其引用的原始数据集论文及完整书目信息。
+- [Andrearczyk et al., “Overview of the HECKTOR challenge at MICCAI 2022: Automatic head and neck TumOR segmentation and outcome prediction in PET/CT.” Head Neck Tumor Chall (2022), 2023.](https://arxiv.org/html/2503.08373v1#bib.bib4)
 
-- [nnInteractive: Redefining 3D Promptable Segmentation — 附录 A1](https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset)
-- [nnInteractive 摘要与论文页面](https://arxiv.org/abs/2503.08373)
+
+如官方页面提供数据集专用引用和 DOI，请优先按该页面引用。一个数据集或任务可能对应多篇来源论文。
+
+## 📑 文献条目记录
+
+| 字段 | 条目所列内容 |
+| --- | --- |
+| 影像数 | 524 |
+| 模态 | PET,CT |
+| 目标 | Head and Neck Tumor |
+| 数据入口 | [官方/来源页面](https://hecktor.grand-challenge.org) |
+| 数据集引用文献 | [Andrearczyk et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib4) |
+
+上方影像数保留为该文献条目的记录，不视为数据集总队列规模或当前可下载的带标签病例数；这些范围请查看前文的官方发布说明。
 
 ---
 

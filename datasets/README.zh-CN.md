@@ -5,13 +5,12 @@
 <p align="center"><strong>官方获取 · 数据划分 · 标签 · 使用条款 · 论文</strong></p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/DATA%20GUIDES-124-2563eb?style=flat-square" alt="124 个中英文独立数据集页面">
-<img src="https://img.shields.io/badge/NNINTERACTIVE%20A1%20ROWS-114-7c3aed?style=flat-square" alt="nnInteractive 附录 A1 共 114 条">
+<img src="https://img.shields.io/badge/DATA%20GUIDES-124-2563eb?style=flat-square" alt="124 个中英文数据集介绍页">
 <img src="https://img.shields.io/badge/SOURCE%20POLICY-official%20first-16803c?style=flat-square" alt="优先采用官方来源">
 <img src="https://img.shields.io/badge/PAPERS-linked-6f42c1?style=flat-square" alt="论文链接">
 </p>
 
-> 🧭 目录现有 124 个独立数据集介绍页：原有 14 页，以及本次为 nnInteractive 训练清单中缺少的数据新增的 110 页。
+> 🧭 124 个中英文数据集介绍页涵盖官方入口、队列范围、标签、访问条款和数据集论文。
 
 **划分信息说明：** 页面中的病例数量和标签状态对应各页注明的数据来源或挑战赛发布版本。原始挑战赛数据与后续档案版本可能不同；未能确认的细节会明确标出。
 
@@ -54,221 +53,9 @@
 | --- | --- | --- | --- |
 | [AISD](aisd/README.zh-CN.md)<br><sub>🏛️ 研究团队来自北邮、深度视界、南京大学/金陵医院、北京大学、港大；采集医院未注明</sub> | 急性缺血性梗死 · 平扫 CT | 训练/验证合计 345 例；测试 52 例；测试掩膜是否提供未明确列出 | <a href="https://doi.org/10.1007/978-3-030-87234-2_41"><img src="https://img.shields.io/badge/MICCAI-2021-8b1e3f?style=flat-square" alt="MICCAI 2021"></a> |
 
-## 🧩 nnInteractive 训练集条目与独立介绍页
-
-论文称训练集包含 120 多个公开数据集。附录 A1 表题写 120，但表中有 **114 条有效具名记录**；TeX 源码另有一条被注释的 `AbdOrgSegm`。其中 4 条已有详细介绍，因此本次新增 **110 个中英文独立页面**。论文没有列出其余 6 条的名称，目录不会臆造。
-
-下方逐行列出附录 A1 的影像数、模态、目标、来源链接和论文引用。论文报告的行级影像数不等同于官方发布总量。附录 A2 是留出测试/OOD 数据集，不混入训练清单。分类按 A1 的解剖目标整理；跨部位数据会出现在多个分类中。
-
-**来源页核查：**来源链接于 2026 年 11 月 26 日核查。部分门户需要注册或阻止自动化预览。若页面未显示划分、标签定义或许可信息，独立页面会如实说明并保留来源链接，不会猜测。
-
-**Paper:** [Isensee et al., “nnInteractive: Redefining 3D Promptable Segmentation” (arXiv v1, Appendix A1)](https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset). [Abstract and full paper](https://arxiv.org/abs/2503.08373).
-
-### 按目标解剖部位浏览
-
-分类数量是出现次数，不是唯一记录数；多目标数据可能出现在多个分类。
-
-### 🧠 脑与神经系统 — 23 个分类条目
-
-Targets include brain regions, stroke/demyelinating lesions, brain tumors, and cerebral vessels.
-
-| 数据集 / 任务 | A1 影像数 | 模态（A1 原文） | 目标（A1 原文） | 官方/来源页面 | 引用文献 |
-| --- | --- | --- | --- | --- | --- |
-| [Decathlon Task 4](decathlon-task-4/README.zh-CN.md) | 208 | MRI | Hippocampus | [source](http://medicaldecathlon.com) | [ref 5](https://arxiv.org/html/2503.08373v1#bib.bib5), [ref 125](https://arxiv.org/html/2503.08373v1#bib.bib125) |
-| [ISLES2015](isles2015/README.zh-CN.md) | 28 | MRI | Stroke Lesion | [source](http://www.isles-challenge.org/ISLES2015) | [ref 91](https://arxiv.org/html/2503.08373v1#bib.bib91) |
-| [ISBILesion2015](isbilesion2015/README.zh-CN.md) | 42 | MRI | MS Lesion | [source](https://iacl.ece.jhu.edu/index.php/MSChallenge) | [ref 23](https://arxiv.org/html/2503.08373v1#bib.bib23) |
-| [BrainMetShare](brainmetshare/README.zh-CN.md) | 84 | MRI | Brain Metastases | [source](https://aimi.stanford.edu/brainmetshare) | [ref 40](https://arxiv.org/html/2503.08373v1#bib.bib40) |
-| [CrossModa22](crossmoda22/README.zh-CN.md) | 168 | MRI | Vestibular Schwannoma, Cochlea | [source](https://crossmoda2022.grand-challenge.org) | [ref 124](https://arxiv.org/html/2503.08373v1#bib.bib124) |
-| [Atlas22](atlas22/README.zh-CN.md) | 524 | MRI | Stroke Lesion | [source](https://atlas.grand-challenge.org) | [ref 75](https://arxiv.org/html/2503.08373v1#bib.bib75) |
-| [BraTS24](brats24/README.zh-CN.md) | 1,251 | MRI | Glioblastoma | [source](https://www.synapse.org/Synapse:syn51156910/wiki/621282) | [ref 57](https://arxiv.org/html/2503.08373v1#bib.bib57), [ref 9](https://arxiv.org/html/2503.08373v1#bib.bib9), [ref 96](https://arxiv.org/html/2503.08373v1#bib.bib96), [ref 8](https://arxiv.org/html/2503.08373v1#bib.bib8) |
-| [CTORG](ctorg/README.zh-CN.md) | 140 | CT | Lung, Brain, Bones, Liver, Kidney, Bladder | [source](https://www.cancerimagingarchive.net/collection/ct-org) | [ref 114](https://arxiv.org/html/2503.08373v1#bib.bib114) |
-| [TopCow](topcow/README.zh-CN.md) | 200 | CT,MRI | Vessel Components of CoW | [source](https://topcow23.grand-challenge.org) | [ref 148](https://arxiv.org/html/2503.08373v1#bib.bib148) |
-| [AxonEM](axonem/README.zh-CN.md) | 18 | El. Microscopy | Axon Instances | [source](https://axonem.grand-challenge.org) | [ref 142](https://arxiv.org/html/2503.08373v1#bib.bib142) |
-| [NucMM](nucmm/README.zh-CN.md) | 62 | El. Microscopy | Neuronal Nuclei | [source](https://nucmm.grand-challenge.org) | [ref 76](https://arxiv.org/html/2503.08373v1#bib.bib76) |
-| [FETA](feta/README.zh-CN.md) | 120 | MRI | Brain Regions | [source](https://fetachallenge.github.io/pages/Data_description) | [ref 102](https://arxiv.org/html/2503.08373v1#bib.bib102) |
-| [Drosophila](drosophila/README.zh-CN.md) | 1 | El. Microscopy | Mitochondria, Synapses | [source](https://github.com/unidesigner/groundtruth-drosophila-vnc) | [ref 36](https://arxiv.org/html/2503.08373v1#bib.bib36) |
-| [LGGMRISeg](lggmriseg/README.zh-CN.md) | 110 | MRI | Tumor | [source](https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation/data) | [ref 21](https://arxiv.org/html/2503.08373v1#bib.bib21) |
-| [M-CRIB](m-crib/README.zh-CN.md) | 10 | MRI | Neonatal Brain Atlas | [source](https://osf.io/4vthr) | [ref 3](https://arxiv.org/html/2503.08373v1#bib.bib3) |
-| [RESECT](resect/README.zh-CN.md) | 69 | US | Cerebral Tumor | [source](https://osf.io/jv8bk) | [ref 12](https://arxiv.org/html/2503.08373v1#bib.bib12) |
-| [WMHSegChallenge](wmhsegchallenge/README.zh-CN.md) | 60 | MRI | White Matter Hyperintensities | [source](https://dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/AECRSD) | [ref 64](https://arxiv.org/html/2503.08373v1#bib.bib64) |
-| [OASIS](oasis/README.zh-CN.md) | 436 | MRI | Brain Regions | [source](https://sites.wustl.edu/oasisbrains/home/oasis-1) | [ref 92](https://arxiv.org/html/2503.08373v1#bib.bib92) |
-| [MrBrains18](mrbrains18/README.zh-CN.md) | 30 | MRI | Brain Structures | [source](https://doi.org/10.34894/E0U32Q) | [ref 63](https://arxiv.org/html/2503.08373v1#bib.bib63) |
-| [VALDO Task 2](valdo-task-2/README.zh-CN.md) | 72 | MRI | Cerebral Microbleed | [source](https://valdo.grand-challenge.org/Task2) | [ref 129](https://arxiv.org/html/2503.08373v1#bib.bib129) |
-| [UPENN-GBM](upenn-gbm/README.zh-CN.md) | 147 | MRI | Edema, Tumor | [source](https://www.cancerimagingarchive.net/collection/upenn-gbm) | [ref 10](https://arxiv.org/html/2503.08373v1#bib.bib10) |
-| [ReMIND](remind/README.zh-CN.md) | 213 | MRI | Brain Resection | [source](https://www.cancerimagingarchive.net/collection/remind) | [ref 54](https://arxiv.org/html/2503.08373v1#bib.bib54) |
-| [Instance2022](instance2022/README.zh-CN.md) | 100 | CT | Intracranial Hemorrhage | [source](https://instance.grand-challenge.org) | [ref 72](https://arxiv.org/html/2503.08373v1#bib.bib72) |
-
-### ❤️ 心脏与心血管结构 — 20 个分类条目
-
-Targets include cardiac chambers, myocardium, heart structures, and vessels.
-
-| 数据集 / 任务 | A1 影像数 | 模态（A1 原文） | 目标（A1 原文） | 官方/来源页面 | 引用文献 |
-| --- | --- | --- | --- | --- | --- |
-| [Decathlon Task 2](decathlon-task-2/README.zh-CN.md) | 20 | MRI | Heart | [source](http://medicaldecathlon.com) | [ref 5](https://arxiv.org/html/2503.08373v1#bib.bib5), [ref 125](https://arxiv.org/html/2503.08373v1#bib.bib125) |
-| [Decathlon Task 8](decathlon-task-8/README.zh-CN.md) | 303 | CT | Hepatic Vessel, H. Tumor | [source](http://medicaldecathlon.com) | [ref 5](https://arxiv.org/html/2503.08373v1#bib.bib5), [ref 125](https://arxiv.org/html/2503.08373v1#bib.bib125) |
-| [ACDC](acdc/README.zh-CN.md) | 200 | MRI | RV Cavity, LV Myocardium, LV Cavity | [source](https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html) | [ref 15](https://arxiv.org/html/2503.08373v1#bib.bib15) |
-| [SegTHOR](segthor/README.zh-CN.md) | 40 | CT | Heart, Aorta, Trachea, Esophagus | [source](https://competitions.codalab.org/competitions/21145) | [ref 66](https://arxiv.org/html/2503.08373v1#bib.bib66) |
-| [M&Ms](m-and-ms/README.zh-CN.md) | 300 | MRI | Left & Right Ventricle, Myocardium | [source](https://www.ub.edu/mnms) | [ref 22](https://arxiv.org/html/2503.08373v1#bib.bib22), [ref 93](https://arxiv.org/html/2503.08373v1#bib.bib93) |
-| [SegA](sega/README.zh-CN.md) | 56 | CT | Aorta | [source](https://multicenteraorta.grand-challenge.org/) | [ref 110](https://arxiv.org/html/2503.08373v1#bib.bib110), [ref 51](https://arxiv.org/html/2503.08373v1#bib.bib51), [ref 104](https://arxiv.org/html/2503.08373v1#bib.bib104) |
-| [CTORG](ctorg/README.zh-CN.md) | 140 | CT | Lung, Brain, Bones, Liver, Kidney, Bladder | [source](https://www.cancerimagingarchive.net/collection/ct-org) | [ref 114](https://arxiv.org/html/2503.08373v1#bib.bib114) |
-| [TopCow](topcow/README.zh-CN.md) | 200 | CT,MRI | Vessel Components of CoW | [source](https://topcow23.grand-challenge.org) | [ref 148](https://arxiv.org/html/2503.08373v1#bib.bib148) |
-| [AortaSeg24](aortaseg24/README.zh-CN.md) | 50 | CT | Aorta | [source](https://aortaseg24.grand-challenge.org) | [ref 45](https://arxiv.org/html/2503.08373v1#bib.bib45) |
-| [CAMUS](camus/README.zh-CN.md) | 1,000 | US | Endocardium, Epicardium, Atrium | [source](https://www.creatis.insa-lyon.fr/Challenge/camus/index.html) | [ref 68](https://arxiv.org/html/2503.08373v1#bib.bib68) |
-| [CETUS](cetus/README.zh-CN.md) | 90 | US | LV Lumen | [source](https://www.creatis.insa-lyon.fr/Challenge/CETUS/databases.html) | [ref 14](https://arxiv.org/html/2503.08373v1#bib.bib14) |
-| [CAP](cap/README.zh-CN.md) | 1,637 | MRI | Left Ventricle | [source](https://www.cardiacatlas.org/lv-segmentation-challenge) | [ref 55](https://arxiv.org/html/2503.08373v1#bib.bib55) |
-| [AtriaSeg2018](atriaseg2018/README.zh-CN.md) | 100 | MRI | Left Atrium | [source](https://www.cardiacatlas.org/atriaseg2018-challenge/atria-seg-data) | [ref 145](https://arxiv.org/html/2503.08373v1#bib.bib145) |
-| [SegThy 1](segthy-1/README.zh-CN.md) | 14 | MRI | Thyroid, Carotid, Jugular Vein | [source](https://www.cs.cit.tum.de/camp/publications/segthy-dataset) | [ref 62](https://arxiv.org/html/2503.08373v1#bib.bib62) |
-| [SegThy 2](segthy-2/README.zh-CN.md) | 32 | US | Thyroid, Carotid, Jugular Vein | [source](https://www.cs.cit.tum.de/camp/publications/segthy-dataset) | [ref 62](https://arxiv.org/html/2503.08373v1#bib.bib62) |
-| [Emidec](emidec/README.zh-CN.md) | 100 | MRI | Heart Structures | [source](https://emidec.com) | [ref 65](https://arxiv.org/html/2503.08373v1#bib.bib65) |
-| [HVSMR-2.0](hvsmr-2-0/README.zh-CN.md) | 60 | MRI | Heart, Vessel | [source](https://segchd.csail.mit.edu) | [ref 101](https://arxiv.org/html/2503.08373v1#bib.bib101) |
-| [Kipa22](kipa22/README.zh-CN.md) | 70 | CT | Kidney, Vessel, Tumor | [source](https://kipa22.grand-challenge.org) | [ref 41](https://arxiv.org/html/2503.08373v1#bib.bib41) |
-| [OrCaScore](orcascore/README.zh-CN.md) | 32 | CT | Calcifications | [source](https://orcascore.grand-challenge.org) | [ref 143](https://arxiv.org/html/2503.08373v1#bib.bib143) |
-| [Parse22](parse22/README.zh-CN.md) | 100 | CT | Pulmonary Artery | [source](https://parse2022.grand-challenge.org/Parse2022) | [ref 83](https://arxiv.org/html/2503.08373v1#bib.bib83) |
-
-### 🫁 胸部、肺、气道与纵隔 — 22 个分类条目
-
-Targets include lungs, airways, mediastinal structures, and pleural disease.
-
-| 数据集 / 任务 | A1 影像数 | 模态（A1 原文） | 目标（A1 原文） | 官方/来源页面 | 引用文献 |
-| --- | --- | --- | --- | --- | --- |
-| [Decathlon Task 6](decathlon-task-6/README.zh-CN.md) | 63 | CT | Lung Lesion | [source](http://medicaldecathlon.com) | [ref 5](https://arxiv.org/html/2503.08373v1#bib.bib5), [ref 125](https://arxiv.org/html/2503.08373v1#bib.bib125) |
-| [LIDC](lidc/README.zh-CN.md) | 1,010 | CT | Lung Lesion | [source](https://www.cancerimagingarchive.net/collection/lidc-idri) | [ref 7](https://arxiv.org/html/2503.08373v1#bib.bib7) |
-| [StructSeg Task3](structseg-task3/README.zh-CN.md) | 50 | CT | 6 OAR Lung | [source](https://structseg2019.grand-challenge.org) | [ref 69](https://arxiv.org/html/2503.08373v1#bib.bib69) |
-| [StructSeg Task4](structseg-task4/README.zh-CN.md) | 50 | CT | Lung Cancer | [source](https://structseg2019.grand-challenge.org) | [ref 69](https://arxiv.org/html/2503.08373v1#bib.bib69) |
-| [SegTHOR](segthor/README.zh-CN.md) | 40 | CT | Heart, Aorta, Trachea, Esophagus | [source](https://competitions.codalab.org/competitions/21145) | [ref 66](https://arxiv.org/html/2503.08373v1#bib.bib66) |
-| [Hecktor2022](hecktor2022/README.zh-CN.md) | 524 | PET,CT | Head and Neck Tumor | [source](https://hecktor.grand-challenge.org) | [ref 4](https://arxiv.org/html/2503.08373v1#bib.bib4) |
-| [CTORG](ctorg/README.zh-CN.md) | 140 | CT | Lung, Brain, Bones, Liver, Kidney, Bladder | [source](https://www.cancerimagingarchive.net/collection/ct-org) | [ref 114](https://arxiv.org/html/2503.08373v1#bib.bib114) |
-| [Aero Path](aero-path/README.zh-CN.md) | 27 | CT | Lungs, Airways | [source](https://github.com/raidionics/AeroPath) | [ref 128](https://arxiv.org/html/2503.08373v1#bib.bib128) |
-| [LungVis1.0](lungvis1-0/README.zh-CN.md) | 22 | Fl. Microscopy | Airway | [source](https://zenodo.org/records/7413818) | [ref 149](https://arxiv.org/html/2503.08373v1#bib.bib149) |
-| [BBBC046 FiloData3D](bbbc046-filodata3d/README.zh-CN.md) | 5,400 | Fl. Microscopy | Lung Cancer Cells | [source](https://bbbc.broadinstitute.org/BBBC046) | [ref 80](https://arxiv.org/html/2503.08373v1#bib.bib80) |
-| [MediaLymph](medialymph/README.zh-CN.md) | 15 | CT | Mediastinal Lymph Nodes | [source](https://github.com/dbouget/ct_mediastinal_structures_segmentation) | [ref 19](https://arxiv.org/html/2503.08373v1#bib.bib19) |
-| [MediaStruct](mediastruct/README.zh-CN.md) | 15 | CT | Mediastinal Structures | [source](https://github.com/dbouget/ct_mediastinal_structures_segmentation) | [ref 18](https://arxiv.org/html/2503.08373v1#bib.bib18) |
-| [CT Lymph Nodes](ct-lymph-nodes/README.zh-CN.md) | 175 | CT | Lymph Nodes | [source](https://www.cancerimagingarchive.net/collection/ct-lymph-nodes) | [ref 118](https://arxiv.org/html/2503.08373v1#bib.bib118) |
-| [MAMA MIA](mama-mia/README.zh-CN.md) | 1,506 | MRI | Breast Lesions | [source](https://www.synapse.org/Synapse:syn60868042/wiki/628716) | [ref 33](https://arxiv.org/html/2503.08373v1#bib.bib33) |
-| [ATM2022](atm2022/README.zh-CN.md) | 300 | CT | Airway Tree | [source](https://atm22.grand-challenge.org) | [ref 151](https://arxiv.org/html/2503.08373v1#bib.bib151) |
-| [Parse22](parse22/README.zh-CN.md) | 100 | CT | Pulmonary Artery | [source](https://parse2022.grand-challenge.org/Parse2022) | [ref 83](https://arxiv.org/html/2503.08373v1#bib.bib83) |
-| [COVID-19 CT Lung](covid-19-ct-lung/README.zh-CN.md) | 10 | CT | COVID -19 | [source](https://zenodo.org/records/3757476) | [ref 53](https://arxiv.org/html/2503.08373v1#bib.bib53) |
-| [LNDb](lndb/README.zh-CN.md) | 229 | CT | Lymph Nodes | [source](https://lndb.grand-challenge.org) | [ref 103](https://arxiv.org/html/2503.08373v1#bib.bib103) |
-| [NIH Lymph](nih-lymph/README.zh-CN.md) | 176 | CT | Lymph Nodes | [source](https://www.cancerimagingarchive.net/collection/ct-lymph-nodes) | [ref 117](https://arxiv.org/html/2503.08373v1#bib.bib117) |
-| [NSCLC Pleural Effusion](nsclc-pleural-effusion/README.zh-CN.md) | 78 | CT | Pleural Effusion | [source](https://www.cancerimagingarchive.net/analysis-result/plethora) | [ref 61](https://arxiv.org/html/2503.08373v1#bib.bib61) |
-| [NSCLC Radiomics](nsclc-radiomics/README.zh-CN.md) | 503 | CT | Lung Lesions | [source](https://www.cancerimagingarchive.net/collection/nsclc-radiomics) | [ref 2](https://arxiv.org/html/2503.08373v1#bib.bib2) |
-| [COVID-19-20](covid-19-20/README.zh-CN.md) | 199 | CT | COVID-19 | [source](https://covid-segmentation.grand-challenge.org/COVID-19-20) | [ref 120](https://arxiv.org/html/2503.08373v1#bib.bib120) |
-
-### 🩻 腹部与盆腔器官 — 29 个分类条目
-
-Targets include abdominal organs and pelvic structures such as the prostate.
-
-| 数据集 / 任务 | A1 影像数 | 模态（A1 原文） | 目标（A1 原文） | 官方/来源页面 | 引用文献 |
-| --- | --- | --- | --- | --- | --- |
-| [Decathlon Task 3](decathlon-task-3/README.zh-CN.md) | 131 | CT | Liver, L. Tumor | [source](http://medicaldecathlon.com) | [ref 5](https://arxiv.org/html/2503.08373v1#bib.bib5), [ref 125](https://arxiv.org/html/2503.08373v1#bib.bib125) |
-| [Decathlon Task 5](decathlon-task-5/README.zh-CN.md) | 32 | MRI | Prostate | [source](http://medicaldecathlon.com) | [ref 5](https://arxiv.org/html/2503.08373v1#bib.bib5), [ref 125](https://arxiv.org/html/2503.08373v1#bib.bib125) |
-| [Decathlon Task 7](decathlon-task-7/README.zh-CN.md) | 281 | CT | Pancreas, P. Tumor | [source](http://medicaldecathlon.com) | [ref 5](https://arxiv.org/html/2503.08373v1#bib.bib5), [ref 125](https://arxiv.org/html/2503.08373v1#bib.bib125) |
-| [Decathlon Task 8](decathlon-task-8/README.zh-CN.md) | 303 | CT | Hepatic Vessel, H. Tumor | [source](http://medicaldecathlon.com) | [ref 5](https://arxiv.org/html/2503.08373v1#bib.bib5), [ref 125](https://arxiv.org/html/2503.08373v1#bib.bib125) |
-| [Decathlon Task 9](decathlon-task-9/README.zh-CN.md) | 41 | CT | Spleen | [source](http://medicaldecathlon.com) | [ref 5](https://arxiv.org/html/2503.08373v1#bib.bib5), [ref 125](https://arxiv.org/html/2503.08373v1#bib.bib125) |
-| [Decathlon Task 10](decathlon-task-10/README.zh-CN.md) | 126 | CT | Colon Tumor | [source](http://medicaldecathlon.com) | [ref 5](https://arxiv.org/html/2503.08373v1#bib.bib5), [ref 125](https://arxiv.org/html/2503.08373v1#bib.bib125) |
-| [BTCV](btcv/README.zh-CN.md) | 30 | CT | 13 Abdominal Organs | [source](https://www.synapse.org/Synapse:syn3193805/wiki/89480) | [ref 67](https://arxiv.org/html/2503.08373v1#bib.bib67) |
-| [Promise12](promise12/README.zh-CN.md) | 50 | MRI | Prostate | [source](https://zenodo.org/records/8026660) | [ref 77](https://arxiv.org/html/2503.08373v1#bib.bib77) |
-| [CHAOS](chaos/README.zh-CN.md) | 60 | MRI | Liver, Kidney (L and R), Spleen | [source](https://zenodo.org/records/3431873) | [ref 58](https://arxiv.org/html/2503.08373v1#bib.bib58) |
-| [BTCV 2](btcv-2/README.zh-CN.md) | 63 | CT | 9 Abdominal Organs | [source](https://zenodo.org/records/1169361) | [ref 37](https://arxiv.org/html/2503.08373v1#bib.bib37) |
-| [NIH-Pan](nih-pan/README.zh-CN.md) | 82 | CT | Pancreas | [source](https://wiki.cancerimagingarchive.net/display/Public/Pancreas-CT) | [ref 25](https://arxiv.org/html/2503.08373v1#bib.bib25), [ref 119](https://arxiv.org/html/2503.08373v1#bib.bib119) |
-| [ProstateX](prostatex/README.zh-CN.md) | 140 | MRI | Prostate Lesion | [source](https://www.aapm.org/GrandChallenge/PROSTATEx-2) | [ref 78](https://arxiv.org/html/2503.08373v1#bib.bib78) |
-| [KiTS23](kits23/README.zh-CN.md) | 489 | CT | Kidneys, K. Tumor, Cysts | [source](https://kits-challenge.org/kits23) | [ref 43](https://arxiv.org/html/2503.08373v1#bib.bib43) |
-| [AMOS](amos/README.zh-CN.md) | 360 | CT,MRI | 15 Abdominal Organs | [source](https://amos22.grand-challenge.org) | [ref 50](https://arxiv.org/html/2503.08373v1#bib.bib50) |
-| [AbdomenAtlas1.1Mini](abdomenatlas1-1mini/README.zh-CN.md) | 5,195 | CT | 8 Abdominal Organs | [source](https://huggingface.co/datasets/AbdomenAtlas/_AbdomenAtlas1.1Mini) | [ref 71](https://arxiv.org/html/2503.08373v1#bib.bib71), [ref 108](https://arxiv.org/html/2503.08373v1#bib.bib108) |
-| [FLARE](flare/README.zh-CN.md) | 50 | CT | 13 Abdominal Organs | [source](https://flare22.grand-challenge.org) | [ref 87](https://arxiv.org/html/2503.08373v1#bib.bib87) |
-| [WORD](word/README.zh-CN.md) | 120 | CT | 16 Abdominal Organs | [source](https://github.com/HiLab-git/WORD) | [ref 84](https://arxiv.org/html/2503.08373v1#bib.bib84), [ref 73](https://arxiv.org/html/2503.08373v1#bib.bib73) |
-| [AbdomenCT1K](abdomenct1k/README.zh-CN.md) | 996 | CT | Liver, Kidney, Spleen, Pancreas | [source](https://github.com/JunMa11/AbdomenCT-1K) | [ref 86](https://arxiv.org/html/2503.08373v1#bib.bib86) |
-| [CTORG](ctorg/README.zh-CN.md) | 140 | CT | Lung, Brain, Bones, Liver, Kidney, Bladder | [source](https://www.cancerimagingarchive.net/collection/ct-org) | [ref 114](https://arxiv.org/html/2503.08373v1#bib.bib114) |
-| [Duke Liver](duke-liver/README.zh-CN.md) | 310 | MRI | Liver | [source](https://zenodo.org/records/7774566) | [ref 90](https://arxiv.org/html/2503.08373v1#bib.bib90) |
-| [BBBC027 Colon Tissue](bbbc027-colon-tissue/README.zh-CN.md) | 60 | Fl. Microscopy | Colon Tissue | [source](https://bbbc.broadinstitute.org/BBBC027) | [ref 132](https://arxiv.org/html/2503.08373v1#bib.bib132) |
-| [NCI-ISBI](nci-isbi/README.zh-CN.md) | 59 | MRI | Prostate | [source](https://www.cancerimagingarchive.net/analysis-result/isbi-mr-prostate-2013) | [ref 16](https://arxiv.org/html/2503.08373v1#bib.bib16) |
-| [Pediatric CT SEG](pediatric-ct-seg/README.zh-CN.md) | 353 | CT | Organs | [source](https://doi.org/10.7937/TCIA.X0H0-1706) | [ref 52](https://arxiv.org/html/2503.08373v1#bib.bib52) |
-| [Atlas Bourgogne](atlas-bourgogne/README.zh-CN.md) | 60 | MRI | Liver, Tumor | [source](https://atlas-challenge.u-bourgogne.fr) | [ref 109](https://arxiv.org/html/2503.08373v1#bib.bib109) |
-| [CC Tumor Heterogeneity](cc-tumor-heterogeneity/README.zh-CN.md) | 63 | MRI | Cervix, Tumor | [source](https://www.cancerimagingarchive.net/collection/cc-tumor-heterogeneity) | [ref 95](https://arxiv.org/html/2503.08373v1#bib.bib95) |
-| [CURVAS](curvas/README.zh-CN.md) | 60 | CT | Pancreas, Kidney, Liver | [source](https://curvas.grand-challenge.org/curvas-dataset) | [ref 113](https://arxiv.org/html/2503.08373v1#bib.bib113) |
-| [Kipa22](kipa22/README.zh-CN.md) | 70 | CT | Kidney, Vessel, Tumor | [source](https://kipa22.grand-challenge.org) | [ref 41](https://arxiv.org/html/2503.08373v1#bib.bib41) |
-| [ProstateEdgeCases](prostateedgecases/README.zh-CN.md) | 131 | CT | Bladder, Prostate, Rectum | [source](https://www.cancerimagingarchive.net/collection/prostate-anatomical-edge-cases) | [ref 56](https://arxiv.org/html/2503.08373v1#bib.bib56) |
-| [Prostate158](prostate158/README.zh-CN.md) | 188 | MRI | Gland, Tumor | [source](https://zenodo.org/records/6481141) | [ref 130](https://arxiv.org/html/2503.08373v1#bib.bib130) |
-
-### 🗣️ 头颈部 — 8 个分类条目
-
-Targets include head-and-neck organs at risk, nasopharynx, thyroid, cochlea, and dental structures.
-
-| 数据集 / 任务 | A1 影像数 | 模态（A1 原文） | 目标（A1 原文） | 官方/来源页面 | 引用文献 |
-| --- | --- | --- | --- | --- | --- |
-| [StructSeg Task1](structseg-task1/README.zh-CN.md) | 50 | CT | 22 OAR Head & Neck | [source](https://structseg2019.grand-challenge.org) | [ref 69](https://arxiv.org/html/2503.08373v1#bib.bib69) |
-| [StructSeg Task2](structseg-task2/README.zh-CN.md) | 50 | CT | Nasopharynx Cancer | [source](https://structseg2019.grand-challenge.org) | [ref 69](https://arxiv.org/html/2503.08373v1#bib.bib69) |
-| [CrossModa22](crossmoda22/README.zh-CN.md) | 168 | MRI | Vestibular Schwannoma, Cochlea | [source](https://crossmoda2022.grand-challenge.org) | [ref 124](https://arxiv.org/html/2503.08373v1#bib.bib124) |
-| [Hecktor2022](hecktor2022/README.zh-CN.md) | 524 | PET,CT | Head and Neck Tumor | [source](https://hecktor.grand-challenge.org) | [ref 4](https://arxiv.org/html/2503.08373v1#bib.bib4) |
-| [SegThy 1](segthy-1/README.zh-CN.md) | 14 | MRI | Thyroid, Carotid, Jugular Vein | [source](https://www.cs.cit.tum.de/camp/publications/segthy-dataset) | [ref 62](https://arxiv.org/html/2503.08373v1#bib.bib62) |
-| [SegThy 2](segthy-2/README.zh-CN.md) | 32 | US | Thyroid, Carotid, Jugular Vein | [source](https://www.cs.cit.tum.de/camp/publications/segthy-dataset) | [ref 62](https://arxiv.org/html/2503.08373v1#bib.bib62) |
-| [PDDCA](pddca/README.zh-CN.md) | 47 | CT | Head and Neck Structures | [source](https://www.imagenglab.com/newsite/pddca) | [ref 111](https://arxiv.org/html/2503.08373v1#bib.bib111) |
-| [ToothFairy 2](toothfairy-2/README.zh-CN.md) | 480 | CT | Dental Structures | [source](https://ditto.ing.unimore.it/toothfairy2) | [ref 17](https://arxiv.org/html/2503.08373v1#bib.bib17) |
-
-### 🦴 脊柱与肌肉骨骼 — 8 个分类条目
-
-Targets include vertebrae, ribs, lumbar spine, lower limbs, cartilage, and bone.
-
-| 数据集 / 任务 | A1 影像数 | 模态（A1 原文） | 目标（A1 原文） | 官方/来源页面 | 引用文献 |
-| --- | --- | --- | --- | --- | --- |
-| [VerSe2020](verse19-20/README.zh-CN.md) | 113 | CT | 28 Vertebrae | [source](https://github.com/anjany/verse) | [ref 123](https://arxiv.org/html/2503.08373v1#bib.bib123), [ref 81](https://arxiv.org/html/2503.08373v1#bib.bib81), [ref 74](https://arxiv.org/html/2503.08373v1#bib.bib74) |
-| [RibSeg](ribseg/README.zh-CN.md) | 370 | CT | Ribs | [source](https://github.com/HINTLab/RibSeg) | [ref 147](https://arxiv.org/html/2503.08373v1#bib.bib147) |
-| [CTORG](ctorg/README.zh-CN.md) | 140 | CT | Lung, Brain, Bones, Liver, Kidney, Bladder | [source](https://www.cancerimagingarchive.net/collection/ct-org) | [ref 114](https://arxiv.org/html/2503.08373v1#bib.bib114) |
-| [Leg3DUS](leg3dus/README.zh-CN.md) | 44 | US | Lower-Limb Leg | [source](https://www.cs.cit.tum.de/camp/publications/leg-3d-us-dataset) | [ref 31](https://arxiv.org/html/2503.08373v1#bib.bib31) |
-| [Spine-Mets](spine-mets/README.zh-CN.md) | 55 | CT | Vertebra | [source](https://www.cancerimagingarchive.net/collection/spine-mets-ct-seg) | [ref 105](https://arxiv.org/html/2503.08373v1#bib.bib105) |
-| [SKI10](ski10/README.zh-CN.md) | 100 | MRI | Cartilage, Bone | [source](https://ski10.grand-challenge.org) | [ref 138](https://arxiv.org/html/2503.08373v1#bib.bib138) |
-| [Soft Tissue Sarcoma](soft-tissue-sarcoma/README.zh-CN.md) | 102 | MRI | Edema, Tumor | [source](https://www.cancerimagingarchive.net/collection/soft-tissue-sarcoma) | [ref 136](https://arxiv.org/html/2503.08373v1#bib.bib136) |
-| [Spider](spider/README.zh-CN.md) | 447 | MRI | Lumbar Spine | [source](https://zenodo.org/records/10159290) | [ref 137](https://arxiv.org/html/2503.08373v1#bib.bib137) |
-
-### 🔬 显微、细胞与科学成像 — 18 个分类条目
-
-Grouped by microscopy modality or cellular/microstructural targets, including non-clinical scientific images.
-
-| 数据集 / 任务 | A1 影像数 | 模态（A1 原文） | 目标（A1 原文） | 官方/来源页面 | 引用文献 |
-| --- | --- | --- | --- | --- | --- |
-| [AxonEM](axonem/README.zh-CN.md) | 18 | El. Microscopy | Axon Instances | [source](https://axonem.grand-challenge.org) | [ref 142](https://arxiv.org/html/2503.08373v1#bib.bib142) |
-| [MitoEM](mitoem/README.zh-CN.md) | 4 | El. Microscopy | Mitochondria Instances | [source](https://mitoem.grand-challenge.org) | [ref 142](https://arxiv.org/html/2503.08373v1#bib.bib142) |
-| [NucMM](nucmm/README.zh-CN.md) | 62 | El. Microscopy | Neuronal Nuclei | [source](https://nucmm.grand-challenge.org) | [ref 76](https://arxiv.org/html/2503.08373v1#bib.bib76) |
-| [LungVis1.0](lungvis1-0/README.zh-CN.md) | 22 | Fl. Microscopy | Airway | [source](https://zenodo.org/records/7413818) | [ref 149](https://arxiv.org/html/2503.08373v1#bib.bib149) |
-| [BBBC024 HL60 Cell line](bbbc024-hl60-cell-line/README.zh-CN.md) | 240 | Fl. Microscopy | Cell Nuclei | [source](https://bbbc.broadinstitute.org/BBBC024) | [ref 131](https://arxiv.org/html/2503.08373v1#bib.bib131) |
-| [BBBC027 Colon Tissue](bbbc027-colon-tissue/README.zh-CN.md) | 60 | Fl. Microscopy | Colon Tissue | [source](https://bbbc.broadinstitute.org/BBBC027) | [ref 132](https://arxiv.org/html/2503.08373v1#bib.bib132) |
-| [BBBC032 MouseEmbryoBlastocyst](bbbc032-mouseembryoblastocyst/README.zh-CN.md) | 1 | Fl. Microscopy | Blastocyst Cells | [source](https://bbbc.broadinstitute.org/BBBC032) | [ref 80](https://arxiv.org/html/2503.08373v1#bib.bib80) |
-| [BBBC033 MouseTrophoblast](bbbc033-mousetrophoblast/README.zh-CN.md) | 1 | Microscopy | Trophoblast | [source](https://bbbc.broadinstitute.org/BBBC033) | [ref 80](https://arxiv.org/html/2503.08373v1#bib.bib80) |
-| [BBBC034 PluripStemCells](bbbc034-pluripstemcells/README.zh-CN.md) | 1 | Microscopy | Stem Cells | [source](https://bbbc.broadinstitute.org/BBBC034) | [ref 80](https://arxiv.org/html/2503.08373v1#bib.bib80) |
-| [BBBC046 FiloData3D](bbbc046-filodata3d/README.zh-CN.md) | 5,400 | Fl. Microscopy | Lung Cancer Cells | [source](https://bbbc.broadinstitute.org/BBBC046) | [ref 80](https://arxiv.org/html/2503.08373v1#bib.bib80) |
-| [BBBC050 MouseEmbryoNuclei](bbbc050-mouseembryonuclei/README.zh-CN.md) | 165 | Fl. Microscopy | Mouse Embryonic Cells | [source](https://bbbc.broadinstitute.org/BBBC050) | [ref 80](https://arxiv.org/html/2503.08373v1#bib.bib80) |
-| [EPFL Mito](epfl-mito/README.zh-CN.md) | 1 | El. Microscopy | Mitochondria | [source](https://www.epfl.ch/labs/cvlab/data/data-em) | [ref 82](https://arxiv.org/html/2503.08373v1#bib.bib82) |
-| [Drosophila](drosophila/README.zh-CN.md) | 1 | El. Microscopy | Mitochondria, Synapses | [source](https://github.com/unidesigner/groundtruth-drosophila-vnc) | [ref 36](https://arxiv.org/html/2503.08373v1#bib.bib36) |
-| [ParticleSeg3D](particleseg3d/README.zh-CN.md) | 54 | MicroCT | Mineral Samples | [source](https://syncandshare.desy.de/index.php/s/wjiDQ49KangiPj5) | [ref 39](https://arxiv.org/html/2503.08373v1#bib.bib39) |
-| [NIS3D](nis3d/README.zh-CN.md) | 6 | Fl. Microscopy | Cell Nuclei | [source](https://zenodo.org/records/11456029) | [ref 153](https://arxiv.org/html/2503.08373v1#bib.bib153) |
-| [Fluo C3DH A549](fluo-c3dh-a549/README.zh-CN.md) | 90 | Fl. Microscopy | Cell | [source](https://celltrackingchallenge.net/3d-datasets) | [ref 94](https://arxiv.org/html/2503.08373v1#bib.bib94) |
-| [Fluo N3DH](fluo-n3dh/README.zh-CN.md) | 230 | Fl. Microscopy | Cell, Border | [source](https://celltrackingchallenge.net/3d-datasets) | [ref 94](https://arxiv.org/html/2503.08373v1#bib.bib94) |
-| [LAPD Mouse](lapd-mouse/README.zh-CN.md) | 34 | Fl. Microscopy | Airway | [source](https://cebs-ext.niehs.nih.gov/cahs/report/lapd/web-download-links) | [ref 13](https://arxiv.org/html/2503.08373v1#bib.bib13) |
-
-### 🌐 全身与多部位 — 7 个分类条目
-
-Targets explicitly span the whole body, multiple organs, or multiple lesion types.
-
-| 数据集 / 任务 | A1 影像数 | 模态（A1 原文） | 目标（A1 原文） | 官方/来源页面 | 引用文献 |
-| --- | --- | --- | --- | --- | --- |
-| [AutoPet2](autopet2/README.zh-CN.md) | 1,014 | PET,CT | Lesions | [source](https://autopet-ii.grand-challenge.org) | [ref 34](https://arxiv.org/html/2503.08373v1#bib.bib34) |
-| [TotalSegmentatorV2](totalsegmentatorv2/README.zh-CN.md) | 1,180 | CT | 117 Classes of Whole Body | [source](https://github.com/wasserth/TotalSegmentator) | [ref 141](https://arxiv.org/html/2503.08373v1#bib.bib141) |
-| [DAP-ATLAS](dap-atlas/README.zh-CN.md) | 533 | CT | 142 Classes of Whole Body | [source](https://github.com/alexanderjaus/AtlasDataset) | [ref 48](https://arxiv.org/html/2503.08373v1#bib.bib48) |
-| [CTORG](ctorg/README.zh-CN.md) | 140 | CT | Lung, Brain, Bones, Liver, Kidney, Bladder | [source](https://www.cancerimagingarchive.net/collection/ct-org) | [ref 114](https://arxiv.org/html/2503.08373v1#bib.bib114) |
-| [Pediatric CT SEG](pediatric-ct-seg/README.zh-CN.md) | 353 | CT | Organs | [source](https://doi.org/10.7937/TCIA.X0H0-1706) | [ref 52](https://arxiv.org/html/2503.08373v1#bib.bib52) |
-| [TotalSegmentator MRI](totalsegmentator-mri/README.zh-CN.md) | 298 | MRI | Organs | [source](https://zenodo.org/records/11367005) | [ref 26](https://arxiv.org/html/2503.08373v1#bib.bib26) |
-| [Deep Lesion](deep-lesion/README.zh-CN.md) | 1,093 | CT | Multiple Types of Lesions | [source](https://nihcc.app.box.com/v/DeepLesion) | [ref 146](https://arxiv.org/html/2503.08373v1#bib.bib146) |
-
 ## 🧾 各数据集页面包含
 
 - 🔗 官方数据集、挑战赛或机构页面链接
-- 🧾 nnInteractive 条目会区分模型论文行数据与数据源页面事实；官方未说明的字段明确标注，不作推断
-- 🧾 nnInteractive 条目会区分模型论文行数据与数据源页面事实；官方未说明的字段明确标注，不作推断
-- 🧾 nnInteractive 条目会区分模型论文行数据与数据源页面事实；官方未说明的字段明确标注，不作推断
-- 🧾 nnInteractive 条目会区分模型论文行数据与数据源页面事实；官方未说明的字段明确标注，不作推断
-- 🧾 nnInteractive 条目会区分模型论文行数据与数据源页面事实；官方未说明的字段明确标注，不作推断
-- 🧾 nnInteractive 条目会区分模型论文行数据与数据源页面事实；官方未说明的字段明确标注，不作推断
-- 🧾 nnInteractive 条目会区分模型论文行数据与数据源页面事实；官方未说明的字段明确标注，不作推断
 - 🗂️ 组织方公布的数据划分信息
 - 🏷️ 标签定义及验证集/测试集参考标注是否公开
 - ⬇️ 下载入口与访问要求
@@ -276,5 +63,212 @@ Targets explicitly span the whole body, multiple organs, or multiple lesion type
 - 📚 论文发表平台、年份、卷期/页码或文章编号、DOI，以及可用的预印本链接
 
 **来源原则：** 如果官方来源未说明某项划分、许可或标签状态，页面会如实标注，而不会用非官方估计补全。本仓库不托管图像、掩膜或论文 PDF。
+
+*来源核查日期：2026 年 11 月 25 日。*
+
+## 按解剖目标浏览
+
+同一数据集覆盖多个部位时会出现在多个分类中。目录影像数为文献条目数量；官方队列规模、数据划分、标签开放状态和访问条款请查阅各数据集页。
+
+### 🧠 脑与神经系统 — 23 个条目
+
+脑区、卒中/脱髓鞘病灶、脑肿瘤和脑血管目标。
+
+| 数据集 / 任务 | 条目影像数 | 模态 | 分割目标 | 官方队列、划分与标签说明 | 官方数据入口 | 引用文献 |
+| --- | --- | --- | --- | --- | --- | --- |
+| [Decathlon Task 4](decathlon-task-4/README.zh-CN.md) | 208 | MRI | Hippocampus | 官方挑战发布：394 例 MRI，其中训练 263 例、测试 131 例。文献条目影像数（208）不等于挑战总量或官方训练集数量。<br><sub>标签：该任务标注海马头部和体部；具体类别 ID 和标注约定以发布文件为准。</sub> | [官方页面](http://medicaldecathlon.com) | [Antonelli et al. (2021)](https://arxiv.org/abs/2106.05735), [Simpson et al. (2019)](https://arxiv.org/abs/1902.09063) |
+| [ISLES2015](isles2015/README.zh-CN.md) | 28 | MRI | Stroke Lesion | 历史挑战门户将训练/测试数据及评估指向 VSD；该门户本身不能证明原下载服务目前仍可用。<br><sub>标签：该数据集条目将 **Stroke Lesion** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](http://www.isles-challenge.org/ISLES2015) | [Maier et al. (2015)](https://arxiv.org/html/2503.08373v1#bib.bib91) |
+| [ISBILesion2015](isbilesion2015/README.zh-CN.md) | 42 | MRI | MS Lesion | 挑战网站分别链接训练和测试数据包，并包含多个时间点的纵向 MRI。本页保留 论文条目影像数 42；该数不应解释为受试者数或标注文件数。<br><sub>标签：挑战使用两位标注者的病灶掩膜评估分割和纵向变化；复现基准时应保留原始标注者信息。</sub> | [官方页面](https://iacl.ece.jhu.edu/index.php/MSChallenge) | [Carass et al. (2017)](https://arxiv.org/html/2503.08373v1#bib.bib23) |
+| [BrainMetShare](brainmetshare/README.zh-CN.md) | 84 | MRI | Brain Metastases | 斯坦福记录报告 156 次检查并提供放射科医生真值掩膜；数据页面和 DOI 提供访问与引用信息。<br><sub>标签：放射科医生真值标注脑转移瘤；公开简介未列出完整类别 ID 字典。</sub> | [官方页面](https://aimi.stanford.edu/brainmetshare) | [Grøvik et al. (2020)](https://arxiv.org/html/2503.08373v1#bib.bib40) |
+| [CrossModa22](crossmoda22/README.zh-CN.md) | 168 | MRI | Vestibular Schwannoma, Cochlea | 官方挑战设置训练/验证和评测阶段。训练/验证发布覆盖源 MRI 域和目标 MRI 域；挑战测试标签保留用于评测。<br><sub>标签：该数据集条目将 **Vestibular Schwannoma, Cochlea** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://crossmoda2022.grand-challenge.org) | [Shapey et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib124) |
+| [Atlas22](atlas22/README.zh-CN.md) | 524 | MRI | Stroke Lesion | ATLAS R2.0 报告 1,271 例 T1 加权 MRI：公开训练 655 例、掩膜隐藏的测试 300 例，以及完全隐藏的泛化队列 316 例。<br><sub>标签：任务在 T1 加权 MRI 上使用二值病灶掩膜；测试集和泛化集参考掩膜未公开。</sub> | [官方页面](https://atlas.grand-challenge.org) | [Liew et al. (2018)](https://arxiv.org/html/2503.08373v1#bib.bib75) |
+| [BraTS24](brats24/README.zh-CN.md) | 1,251 | MRI | Glioblastoma | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：该数据集条目将 **Glioblastoma** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://www.synapse.org/Synapse:syn51156910/wiki/621282) | [Karargyris et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib57), [Bakas et al. (2017)](https://arxiv.org/html/2503.08373v1#bib.bib9), [Menze et al. (2015)](https://arxiv.org/html/2503.08373v1#bib.bib96), [Baid et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib8) |
+| [CTORG](ctorg/README.zh-CN.md) | 140 | CT | Lung, Brain, Bones, Liver, Kidney, Bladder | TCIA 发布包含 140 次 CT 扫描：训练 119 次、测试 21 次。140 幅影像中有 131 次为独立 CT 检查，另 9 次来自 PET/CT 的 CT 部分。<br><sub>标签：TCIA 记录说明集合标注肺、骨、肝脏、肾脏和膀胱；脑掩膜仅出现在影像中包含脑部的子集。</sub> | [官方页面](https://www.cancerimagingarchive.net/collection/ct-org) | [Rister et al. (2019)](https://arxiv.org/html/2503.08373v1#bib.bib114) |
+| [TopCow](topcow/README.zh-CN.md) | 200 | CT,MRI | Vessel Components of CoW | 挑战分阶段发布训练集，并分别评估 CTA 和 MRA 域。官方页面记录了不同的验证及最终测试提交阶段；数据划分请使用组织方提供的文件，不以论文条目影像数推断。<br><sub>标签：该数据集条目将 **Vessel Components of CoW** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://topcow23.grand-challenge.org) | [Yang et al. (2024)](https://arxiv.org/html/2503.08373v1#bib.bib148) |
+| [AxonEM](axonem/README.zh-CN.md) | 18 | El. Microscopy | Axon Instances | 挑战分别提供人和小鼠数据集。官方页面说明每个数据集有 9 个密集标注训练体数据，图像堆栈另行分发；论文条目影像数并非体数据数量。<br><sub>标签：该数据集条目将 **Axon Instances** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://axonem.grand-challenge.org) | [Wei et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib142) |
+| [NucMM](nucmm/README.zh-CN.md) | 62 | El. Microscopy | Neuronal Nuclei | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：该数据集条目将 **Neuronal Nuclei** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://nucmm.grand-challenge.org) | [Lin et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib76) |
+| [FETA](feta/README.zh-CN.md) | 120 | MRI | Brain Regions | FeTA 2024 提供来自两家机构的 120 例训练 T2 加权胎儿脑重建影像，并人工标注 7 类组织；挑战页面另列 180 例测试数据。<br><sub>标签：官方 7 类组织标签为外部脑脊液、灰质、白质、脑室、小脑、深部灰质和脑干。</sub> | [官方页面](https://fetachallenge.github.io/pages/Data_description) | [Payette et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib102) |
+| [Drosophila](drosophila/README.zh-CN.md) | 1 | El. Microscopy | Mitochondria, Synapses | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：真值仓库包含神经组织结构（如线粒体和突触）的实例标注。不同体数据堆栈提供的标签内容可能不同，请逐卷查阅文件。</sub> | [官方页面](https://github.com/unidesigner/groundtruth-drosophila-vnc) | [Gerhard et al. (2013)](https://arxiv.org/html/2503.08373v1#bib.bib36) |
+| [LGGMRISeg](lggmriseg/README.zh-CN.md) | 110 | MRI | Tumor | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：该数据集条目将 **Tumor** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation/data) | [Buda et al. (2019)](https://arxiv.org/html/2503.08373v1#bib.bib21) |
+| [M-CRIB](m-crib/README.zh-CN.md) | 10 | MRI | Neonatal Brain Atlas | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：该数据集条目将 **Neonatal Brain Atlas** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://osf.io/4vthr) | [Alexander et al. (2019)](https://arxiv.org/html/2503.08373v1#bib.bib3) |
+| [RESECT](resect/README.zh-CN.md) | 69 | US | Cerebral Tumor | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：该数据集条目将 **Cerebral Tumor** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://osf.io/jv8bk) | [Behboodi et al. (2024)](https://arxiv.org/html/2503.08373v1#bib.bib12) |
+| [WMHSegChallenge](wmhsegchallenge/README.zh-CN.md) | 60 | MRI | White Matter Hyperintensities | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：参考标签勾画脑 MRI 中的白质高信号。掩膜的具体定义请遵循挑战的标注规则和病灶纳入标准。</sub> | [官方页面](https://dataverse.nl/dataset.xhtml?persistentId=doi:10.34894/AECRSD) | [Kuijf et al. (2019)](https://arxiv.org/html/2503.08373v1#bib.bib64) |
+| [OASIS](oasis/README.zh-CN.md) | 436 | MRI | Brain Regions | OASIS-1 官方页面报告 416 名 18–96 岁受试者，每人单次扫描中获得 3 或 4 次 T1 加权 MRI。论文条目影像数 436 按引用保留为影像级记录。<br><sub>标签：OASIS-1 提供结构脑 MRI 及相关临床/人口学记录。论文数据集表中的目标字段描述该引用中的分割用途，并不表示每次 OASIS-1 扫描都公开提供逐体素掩膜。</sub> | [官方页面](https://sites.wustl.edu/oasisbrains/home/oasis-1) | [Marcus et al. (2007)](https://arxiv.org/html/2503.08373v1#bib.bib92) |
+| [MrBrains18](mrbrains18/README.zh-CN.md) | 30 | MRI | Brain Structures | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：该数据集条目将 **Brain Structures** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://doi.org/10.34894/E0U32Q) | [Kuijf et al. (2024)](https://doi.org/10.34894/E0U32Q) |
+| [VALDO Task 2](valdo-task-2/README.zh-CN.md) | 72 | MRI | Cerebral Microbleed | 任务论文介绍 20 例带脑微出血点标注的病例。挑战评测区分带标签训练数据和保留测试数据；准确划分及标签表示请以官方任务说明为准。<br><sub>标签：挑战赛规定二值掩膜：0 为背景，1 为脑微出血。</sub> | [官方页面](https://valdo.grand-challenge.org/Task2) | [Sudre et al. (2024)](https://arxiv.org/html/2503.08373v1#bib.bib129) |
+| [UPENN-GBM](upenn-gbm/README.zh-CN.md) | 147 | MRI | Edema, Tumor | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：该集合包含与胶质母细胞瘤多参数 MRI 对应的肿瘤亚区标签。具体肿瘤类别和病例覆盖范围以 TCIA 分割记录为准。</sub> | [官方页面](https://www.cancerimagingarchive.net/collection/upenn-gbm) | [Bakas et al. (2022)](https://arxiv.org/html/2503.08373v1#bib.bib10) |
+| [ReMIND](remind/README.zh-CN.md) | 213 | MRI | Brain Resection | TCIA 记录包含多种不同标注及数量，包括 113 例术前全肿瘤掩膜、58 例残余肿瘤掩膜和 21 例切除腔掩膜。不同标签的病例数不应合并为一个总数。<br><sub>标签：TCIA 发布区分术前肿瘤、残余肿瘤、切除腔及自动脑组织标注；每类标签覆盖的病例数不同。</sub> | [官方页面](https://www.cancerimagingarchive.net/collection/remind) | [Juvekar et al. (2024)](https://arxiv.org/html/2503.08373v1#bib.bib54) |
+| [Instance2022](instance2022/README.zh-CN.md) | 100 | CT | Intracranial Hemorrhage | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：该任务在头部平扫 CT 上标注颅内出血。出血亚型映射及各数据划分是否提供参考掩膜，请查阅挑战标签规范。</sub> | [官方页面](https://instance.grand-challenge.org) | [Li et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib72) |
+
+### ❤️ 心脏与心血管结构 — 20 个条目
+
+心腔、心肌、心脏和血管结构。
+
+| 数据集 / 任务 | 条目影像数 | 模态 | 分割目标 | 官方队列、划分与标签说明 | 官方数据入口 | 引用文献 |
+| --- | --- | --- | --- | --- | --- | --- |
+| [Decathlon Task 2](decathlon-task-2/README.zh-CN.md) | 20 | MRI | Heart | 官方挑战发布：30 例心脏 MRI，其中训练 20 例、测试 10 例。目录所列影像数与有标签训练数一致。<br><sub>标签：挑战目标为左心房；标签图和文件编码以所选发布压缩包的定义为准。</sub> | [官方页面](http://medicaldecathlon.com) | [Antonelli et al. (2021)](https://arxiv.org/abs/2106.05735), [Simpson et al. (2019)](https://arxiv.org/abs/1902.09063) |
+| [Decathlon Task 8](decathlon-task-8/README.zh-CN.md) | 303 | CT | Hepatic Vessel, H. Tumor | 官方挑战发布：443 例 CT，其中训练 303 例、测试 140 例。文献条目影像数与训练数一致。<br><sub>标签：该任务目标为肝血管和肿瘤；类别 ID 请查阅发布标签图。</sub> | [官方页面](http://medicaldecathlon.com) | [Antonelli et al. (2021)](https://arxiv.org/abs/2106.05735), [Simpson et al. (2019)](https://arxiv.org/abs/1902.09063) |
+| [ACDC](acdc/README.zh-CN.md) | 200 | MRI | RV Cavity, LV Myocardium, LV Cavity | 官方挑战页面介绍 150 名不同患者，分为五个等规模临床亚组。训练页和测试页分别提供挑战文件；本页将文献条目的 200 与官方患者总数分开记录。<br><sub>标签：官方分割目标为右心室腔、左心室心肌和左心室腔。挑战还提供临床诊断类别，该信息属于元数据而非分割类别。</sub> | [官方页面](https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html) | [Bernard et al. (2018)](https://arxiv.org/html/2503.08373v1#bib.bib15) |
+| [SegTHOR](segthor/README.zh-CN.md) | 40 | CT | Heart, Aorta, Trachea, Esophagus | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：该数据集条目将 **Heart, Aorta, Trachea, Esophagus** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://competitions.codalab.org/competitions/21145) | [Lambert et al. (2019)](https://arxiv.org/abs/1912.05950) |
+| [M&Ms](m-and-ms/README.zh-CN.md) | 300 | MRI | Left & Right Ventricle, Myocardium | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：分割目标为标注心动时相上的左心室、右心室和心肌。比较标签时应保留时相及扫描仪厂商/域信息。</sub> | [官方页面](https://www.ub.edu/mnms) | [Campello et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib22), [Martín-Isla et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib93) |
+| [SegA](sega/README.zh-CN.md) | 56 | CT | Aorta | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：条目目标为主动脉。本次读取的公开主页未显示完整分支级标签字典。</sub> | [官方页面](https://multicenteraorta.grand-challenge.org/) | [Radl et al. (2022)](https://arxiv.org/html/2503.08373v1#bib.bib110), [Jin et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib51), [Pepe et al. (2020)](https://arxiv.org/html/2503.08373v1#bib.bib104) |
+| [CTORG](ctorg/README.zh-CN.md) | 140 | CT | Lung, Brain, Bones, Liver, Kidney, Bladder | TCIA 发布包含 140 次 CT 扫描：训练 119 次、测试 21 次。140 幅影像中有 131 次为独立 CT 检查，另 9 次来自 PET/CT 的 CT 部分。<br><sub>标签：TCIA 记录说明集合标注肺、骨、肝脏、肾脏和膀胱；脑掩膜仅出现在影像中包含脑部的子集。</sub> | [官方页面](https://www.cancerimagingarchive.net/collection/ct-org) | [Rister et al. (2019)](https://arxiv.org/html/2503.08373v1#bib.bib114) |
+| [TopCow](topcow/README.zh-CN.md) | 200 | CT,MRI | Vessel Components of CoW | 挑战分阶段发布训练集，并分别评估 CTA 和 MRA 域。官方页面记录了不同的验证及最终测试提交阶段；数据划分请使用组织方提供的文件，不以论文条目影像数推断。<br><sub>标签：该数据集条目将 **Vessel Components of CoW** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://topcow23.grand-challenge.org) | [Yang et al. (2024)](https://arxiv.org/html/2503.08373v1#bib.bib148) |
+| [AortaSeg24](aortaseg24/README.zh-CN.md) | 50 | CT | Aorta | 官方挑战页面介绍 100 例 CTA 体数据。文献条目列出 50 幅影像；本页将其与挑战总量分开记录，不把它视为完整发布规模。<br><sub>标签：该数据集条目将 **Aorta** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://aortaseg24.grand-challenge.org) | [Imran et al. (2024)](https://arxiv.org/html/2503.08373v1#bib.bib45) |
+| [CAMUS](camus/README.zh-CN.md) | 1,000 | US | Endocardium, Epicardium, Atrium | 官方项目报告 500 位患者的心尖两腔和四腔序列。可下载集合包含带标签训练序列；在线评测平台已关闭。<br><sub>标签：项目为所支持切面提供左心室心内膜、心外膜和左心房标签。</sub> | [官方页面](https://www.creatis.insa-lyon.fr/Challenge/camus/index.html) | [Leclerc et al. (2019)](https://arxiv.org/html/2503.08373v1#bib.bib68) |
+| [CETUS](cetus/README.zh-CN.md) | 90 | US | LV Lumen | 官方挑战说明训练集有 15 位患者且提供人工轮廓；另有两个测试组，每组 15 位患者，不含人工轮廓。<br><sub>标签：该数据集条目将 **LV Lumen** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://www.creatis.insa-lyon.fr/Challenge/CETUS/databases.html) | [Bernard et al. (2015)](https://arxiv.org/html/2503.08373v1#bib.bib14) |
+| [CAP](cap/README.zh-CN.md) | 1,637 | MRI | Left Ventricle | Cardiac Atlas Project 页面介绍从 DETERMINE 队列抽取的 100 例训练和 100 例测试病例。论文条目中的 1,637 幅 MRI 采用不同的影像级统计范围，故单独保留。<br><sub>标签：该数据集条目将 **Left Ventricle** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://www.cardiacatlas.org/lv-segmentation-challenge) | [Kadish et al. (2009)](https://arxiv.org/html/2503.08373v1#bib.bib55) |
+| [AtriaSeg2018](atriaseg2018/README.zh-CN.md) | 100 | MRI | Left Atrium | 官方页面报告 154 例三维 MRI：训练集 100 例并提供标签，测试/评估集 54 例不公开掩膜。原始体素间距为各向同性 0.625 mm。<br><sub>标签：参考掩膜为左心房腔；官方页面说明二值值为前景 255、背景 0。</sub> | [官方页面](https://www.cardiacatlas.org/atriaseg2018-challenge/atria-seg-data) | [Xiong et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib145) |
+| [SegThy 1](segthy-1/README.zh-CN.md) | 14 | MRI | Thyroid, Carotid, Jugular Vein | 来源介绍子数据集 1 有 28 名健康志愿者，子数据集 2 有 186 名常规诊疗患者。志愿者扫描包括每人 1 次 3 T T1 加权颈部 MRI 和 9 次跟踪式三维超声；这些是采集数，不是受试者数。<br><sub>标签：来源为 MRI 和超声采集提供甲状腺标签图；相关发布还定义颈动脉和颈静脉标签。不要假定每次扫描都包含全部结构，具体以子数据集标注文件为准。</sub> | [官方页面](https://www.cs.cit.tum.de/camp/publications/segthy-dataset) | [Krönke et al. (2022)](https://arxiv.org/html/2503.08373v1#bib.bib62) |
+| [SegThy 2](segthy-2/README.zh-CN.md) | 32 | US | Thyroid, Carotid, Jugular Vein | 来源介绍两个子数据集合计包含 28 名健康志愿者和 186 名常规诊疗患者。MRI 与超声采集数量差别较大；论文条目影像数不能解释为受试者数。<br><sub>标签：条目目标为甲状腺、颈动脉和颈静脉。具体结构及标签开放情况取决于发布子数据集和扫描。</sub> | [官方页面](https://www.cs.cit.tum.de/camp/publications/segthy-dataset) | [Krönke et al. (2022)](https://arxiv.org/html/2503.08373v1#bib.bib62) |
+| [Emidec](emidec/README.zh-CN.md) | 100 | MRI | Heart Structures | 官方页面报告 150 例心脏 MRI：50 例正常病例和 100 例心肌梗死病例。临床病例包含延迟增强 MRI 及相应心脏/病灶标注。<br><sub>标签：标签覆盖心脏结构和心肌梗死区域。健康对照和心肌梗死病例的病灶标签开放情况不同，请查阅官方方案和病例文件。</sub> | [官方页面](https://emidec.com) | [Lalande et al. (2020)](https://arxiv.org/html/2503.08373v1#bib.bib65) |
+| [HVSMR-2.0](hvsmr-2-0/README.zh-CN.md) | 60 | MRI | Heart, Vessel | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：该数据集条目将 **Heart, Vessel** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://segchd.csail.mit.edu) | [Pace et al. (2024)](https://arxiv.org/html/2503.08373v1#bib.bib101) |
+| [Kipa22](kipa22/README.zh-CN.md) | 70 | CT | Kidney, Vessel, Tumor | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：该数据集条目将 **Kidney, Vessel, Tumor** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://kipa22.grand-challenge.org) | [He et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib41) |
+| [OrCaScore](orcascore/README.zh-CN.md) | 32 | CT | Calcifications | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：该数据集条目将 **Calcifications** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://orcascore.grand-challenge.org) | [Wolterink et al. (2016)](https://arxiv.org/html/2503.08373v1#bib.bib143) |
+| [Parse22](parse22/README.zh-CN.md) | 100 | CT | Pulmonary Artery | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：目标为胸部 CT 上的肺动脉。主肺动脉和分支纳入边界请遵循挑战标签规范。</sub> | [官方页面](https://parse2022.grand-challenge.org/Parse2022) | [Luo et al.](https://arxiv.org/abs/2304.03708) |
+
+### 🫁 胸部、肺、气道与纵隔 — 22 个条目
+
+肺、气道、纵隔和胸膜目标。
+
+| 数据集 / 任务 | 条目影像数 | 模态 | 分割目标 | 官方队列、划分与标签说明 | 官方数据入口 | 引用文献 |
+| --- | --- | --- | --- | --- | --- | --- |
+| [Decathlon Task 6](decathlon-task-6/README.zh-CN.md) | 63 | CT | Lung Lesion | 官方挑战发布：48 例前列腺 MRI，其中训练 32 例、测试 16 例。文献条目影像数与训练数一致。<br><sub>标签：官方目标包括前列腺中央腺体和外周带。</sub> | [官方页面](http://medicaldecathlon.com) | [Antonelli et al. (2021)](https://arxiv.org/abs/2106.05735), [Simpson et al. (2019)](https://arxiv.org/abs/1902.09063) |
+| [LIDC](lidc/README.zh-CN.md) | 1,010 | CT | Lung Lesion | TCIA 集合统计列出 1,010 名受试者，正文则描述 1,018 个病例。来源将其说明为多读片者 CT 参考数据发布；本页同时保留两种来源数字，不推断训练/测试划分。<br><sub>标签：LIDC-IDRI 包含放射科医生标记的肺结节；官方集合说明涉及多位读片者的标注，并非单一共识掩膜。</sub> | [官方页面](https://www.cancerimagingarchive.net/collection/lidc-idri) | [Armato et al. (2015)](https://arxiv.org/html/2503.08373v1#bib.bib7) |
+| [StructSeg Task3](structseg-task3/README.zh-CN.md) | 50 | CT | 6 OAR Lung | 官方任务页说明肺癌胸部 CT 任务有 50 例训练病例、6 类 OAR 标签和 10 例测试病例。文献条目影像数对应训练集。<br><sub>标签：该任务在胸部 CT 上标注 6 类胸部危及器官。类别名称和体素值编码以对应发布版本的组织方说明为准。</sub> | [官方页面](https://structseg2019.grand-challenge.org) | [Li et al. (2019)](https://structseg2019.grand-challenge.org/) |
+| [StructSeg Task4](structseg-task4/README.zh-CN.md) | 50 | CT | Lung Cancer | 官方任务页说明肺癌 GTV 任务有 50 例带标签训练 CT 和 10 例测试 CT。测试标注保留用于挑战评估。<br><sub>标签：目标为胸部 CT 上的肺癌大体肿瘤体积；体素编码和标注边界请以挑战标签文件为准。</sub> | [官方页面](https://structseg2019.grand-challenge.org) | [Li et al. (2019)](https://structseg2019.grand-challenge.org/) |
+| [SegTHOR](segthor/README.zh-CN.md) | 40 | CT | Heart, Aorta, Trachea, Esophagus | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：该数据集条目将 **Heart, Aorta, Trachea, Esophagus** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://competitions.codalab.org/competitions/21145) | [Lambert et al. (2019)](https://arxiv.org/abs/1912.05950) |
+| [Hecktor2022](hecktor2022/README.zh-CN.md) | 524 | PET,CT | Head and Neck Tumor | 挑战网站将训练、验证数据与留出测试评测分开。两个预测任务分别为原发肿瘤/淋巴结分割和无复发生存预测；结局预测任务不属于额外分割标签。<br><sub>标签：该数据集条目将 **Head and Neck Tumor** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://hecktor.grand-challenge.org) | [Andrearczyk et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib4) |
+| [CTORG](ctorg/README.zh-CN.md) | 140 | CT | Lung, Brain, Bones, Liver, Kidney, Bladder | TCIA 发布包含 140 次 CT 扫描：训练 119 次、测试 21 次。140 幅影像中有 131 次为独立 CT 检查，另 9 次来自 PET/CT 的 CT 部分。<br><sub>标签：TCIA 记录说明集合标注肺、骨、肝脏、肾脏和膀胱；脑掩膜仅出现在影像中包含脑部的子集。</sub> | [官方页面](https://www.cancerimagingarchive.net/collection/ct-org) | [Rister et al. (2019)](https://arxiv.org/html/2503.08373v1#bib.bib114) |
+| [Aero Path](aero-path/README.zh-CN.md) | 27 | CT | Lungs, Airways | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：每例 CT 体数据均分别提供肺部和气道掩膜；气道标注是该基准的主要目标。</sub> | [官方页面](https://github.com/raidionics/AeroPath) | [Støverud et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib128) |
+| [LungVis1.0](lungvis1-0/README.zh-CN.md) | 22 | Fl. Microscopy | Airway | Zenodo 记录介绍透明化小鼠肺的光片荧光图像，包括全肺自发荧光及颗粒分布数据。<br><sub>标签：该数据集条目将 **Airway** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://zenodo.org/records/7413818) | [Yang et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib149) |
+| [BBBC046 FiloData3D](bbbc046-filodata3d/README.zh-CN.md) | 5,400 | Fl. Microscopy | Lung Cancer Cells | Broad 页面注明该合成图像集采用 CC BY-NC-SA 4.0 许可。<br><sub>标签：该数据集条目将 **Lung Cancer Cells** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://bbbc.broadinstitute.org/BBBC046) | [Ljosa et al. (2012)](https://arxiv.org/html/2503.08373v1#bib.bib80) |
+| [MediaLymph](medialymph/README.zh-CN.md) | 15 | CT | Mediastinal Lymph Nodes | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：该任务提供 CT 纵隔淋巴结分割参考。相关仓库还将周围解剖结构作为单独任务提供；淋巴结与结构标签文件不可混用。</sub> | [官方页面](https://github.com/dbouget/ct_mediastinal_structures_segmentation) | [Bouget et al. (2022)](https://arxiv.org/html/2503.08373v1#bib.bib19) |
+| [MediaStruct](mediastruct/README.zh-CN.md) | 15 | CT | Mediastinal Structures | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：目标为作者发布页所列纵隔解剖结构。其标签文件与仓库中的纵隔淋巴结标签分开。</sub> | [官方页面](https://github.com/dbouget/ct_mediastinal_structures_segmentation) | [Bouget et al. (2019)](https://arxiv.org/html/2503.08373v1#bib.bib18) |
+| [CT Lymph Nodes](ct-lymph-nodes/README.zh-CN.md) | 175 | CT | Lymph Nodes | TCIA 集合报告 90 名患者中的 388 个纵隔淋巴结，以及 86 名患者中的 595 个腹部淋巴结。标注包含坐标和尺寸测量，不等同于每个结节对应一个二值三维分割掩膜。<br><sub>标签：TCIA 标注包含淋巴结位置、物理坐标和尺寸测量。这些点位/测量标注不能视为逐体素病灶掩膜。</sub> | [官方页面](https://www.cancerimagingarchive.net/collection/ct-lymph-nodes) | [Roth et al. (2014)](https://arxiv.org/html/2503.08373v1#bib.bib118) |
+| [MAMA MIA](mama-mia/README.zh-CN.md) | 1,506 | MRI | Breast Lesions | 数据托管于 Synapse；访问文件可能需要 Synapse 账户并接受当前数据使用条件。<br><sub>标签：该数据集条目将 **Breast Lesions** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://www.synapse.org/Synapse:syn60868042/wiki/628716) | [Garrucho et al. (2024)](https://arxiv.org/abs/2406.13844) |
+| [ATM2022](atm2022/README.zh-CN.md) | 300 | CT | Airway Tree | 官方页面记录 300 例训练数据，并另设 150 例长期隐藏测试阶段。其他验证阶段及文件访问需遵循挑战注册和发布规则。<br><sub>标签：该数据集条目将 **Airway Tree** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://atm22.grand-challenge.org) | [Zhang et al. (2022)](https://arxiv.org/html/2503.08373v1#bib.bib151) |
+| [Parse22](parse22/README.zh-CN.md) | 100 | CT | Pulmonary Artery | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：目标为胸部 CT 上的肺动脉。主肺动脉和分支纳入边界请遵循挑战标签规范。</sub> | [官方页面](https://parse2022.grand-challenge.org/Parse2022) | [Luo et al.](https://arxiv.org/abs/2304.03708) |
+| [COVID-19 CT Lung](covid-19-ct-lung/README.zh-CN.md) | 10 | CT | COVID -19 | Zenodo 提供 20 例带标签 CT 扫描，并分别列出肺部和感染区域掩膜；下载文件见官方记录。<br><sub>标签：掩膜区分左肺、右肺和感染区域；感染标签由资深放射科医生复核。</sub> | [官方页面](https://zenodo.org/records/3757476) | [Jun et al. (2020)](https://arxiv.org/html/2503.08373v1#bib.bib53) |
+| [LNDb](lndb/README.zh-CN.md) | 229 | CT | Lymph Nodes | 挑战门户设置训练/验证和测试阶段，测试数据在训练/验证提交截止后发布。论文条目中的 229 是论文条目数，不是官方划分数量。<br><sub>标签：挑战包含结节检出、分割、表征和随访分类标签。这些属于不同任务标注，请按任务使用挑战标签文件。</sub> | [官方页面](https://lndb.grand-challenge.org) | [Pedrosa et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib103) |
+| [NIH Lymph](nih-lymph/README.zh-CN.md) | 176 | CT | Lymph Nodes | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：该数据集条目将 **Lymph Nodes** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://www.cancerimagingarchive.net/collection/ct-lymph-nodes) | [Roth et al.](https://arxiv.org/html/2503.08373v1#bib.bib117) |
+| [NSCLC Pleural Effusion](nsclc-pleural-effusion/README.zh-CN.md) | 78 | CT | Pleural Effusion | TCIA 报告 402 次 CT 扫描并提供左右胸腔分割；相关病灶标签包括肺实质、肿瘤、肺不张、粘连和积液。<br><sub>标签：TCIA 分析标注胸腔及积液等胸部表现。这些轮廓用于定位和预处理，并非单一类别的胸膜积液掩膜。</sub> | [官方页面](https://www.cancerimagingarchive.net/analysis-result/plethora) | [Kiser et al. (2020)](https://arxiv.org/html/2503.08373v1#bib.bib61) |
+| [NSCLC Radiomics](nsclc-radiomics/README.zh-CN.md) | 503 | CT | Lung Lesions | TCIA 报告 422 名非小细胞肺癌患者，提供治疗前 CT、大体肿瘤轮廓和临床结局。<br><sub>标签：TCIA 集合为肺癌病例提供大体肿瘤轮廓。影像组学目标不等同于多类别器官分割图。</sub> | [官方页面](https://www.cancerimagingarchive.net/collection/nsclc-radiomics) | [Aerts et al. (2019)](https://arxiv.org/html/2503.08373v1#bib.bib2) |
+| [COVID-19-20](covid-19-20/README.zh-CN.md) | 199 | CT | COVID-19 | 官方页面提供挑战数据和赛后论文，但本次读取的公开入口页未列出可与全部发布/评测病例比较的统一总数。因此 论文条目影像数与挑战数据划分分开记录。<br><sub>标签：该数据集条目将 **COVID-19** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://covid-segmentation.grand-challenge.org/COVID-19-20) | [Roth et al. (2022)](https://arxiv.org/html/2503.08373v1#bib.bib120) |
+
+### 🩻 腹部与盆腔器官 — 29 个条目
+
+腹部器官及前列腺等盆腔目标。
+
+| 数据集 / 任务 | 条目影像数 | 模态 | 分割目标 | 官方队列、划分与标签说明 | 官方数据入口 | 引用文献 |
+| --- | --- | --- | --- | --- | --- | --- |
+| [Decathlon Task 3](decathlon-task-3/README.zh-CN.md) | 131 | CT | Liver, L. Tumor | 官方挑战发布：201 例门静脉期 CT，其中训练 131 例、测试 70 例。文献条目影像数与训练数一致。<br><sub>标签：官方任务区分肝脏和肝肿瘤；类别 ID 和背景编码以数据集标签图为准。</sub> | [官方页面](http://medicaldecathlon.com) | [Antonelli et al. (2021)](https://arxiv.org/abs/2106.05735), [Simpson et al. (2019)](https://arxiv.org/abs/1902.09063) |
+| [Decathlon Task 5](decathlon-task-5/README.zh-CN.md) | 32 | MRI | Prostate | 官方挑战发布：96 例 CT，其中训练 64 例、测试 32 例。文献条目影像数与此划分分别记录。<br><sub>标签：该数据集条目将 **Prostate** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](http://medicaldecathlon.com) | [Antonelli et al. (2021)](https://arxiv.org/abs/2106.05735), [Simpson et al. (2019)](https://arxiv.org/abs/1902.09063) |
+| [Decathlon Task 7](decathlon-task-7/README.zh-CN.md) | 281 | CT | Pancreas, P. Tumor | 官方挑战页面报告 420 例，其中训练 282 例、测试 139 例；两项相加为 421，页面中的数量差异照实保留。文献条目影像数另行记录。<br><sub>标签：官方任务为含肿瘤的胰腺分割；页面将胰腺与肿瘤作为不同目标尺度描述。</sub> | [官方页面](http://medicaldecathlon.com) | [Antonelli et al. (2021)](https://arxiv.org/abs/2106.05735), [Simpson et al. (2019)](https://arxiv.org/abs/1902.09063) |
+| [Decathlon Task 8](decathlon-task-8/README.zh-CN.md) | 303 | CT | Hepatic Vessel, H. Tumor | 官方挑战发布：443 例 CT，其中训练 303 例、测试 140 例。文献条目影像数与训练数一致。<br><sub>标签：该任务目标为肝血管和肿瘤；类别 ID 请查阅发布标签图。</sub> | [官方页面](http://medicaldecathlon.com) | [Antonelli et al. (2021)](https://arxiv.org/abs/2106.05735), [Simpson et al. (2019)](https://arxiv.org/abs/1902.09063) |
+| [Decathlon Task 9](decathlon-task-9/README.zh-CN.md) | 41 | CT | Spleen | 官方挑战发布：61 例 CT，其中训练 41 例、测试 20 例。文献条目影像数与训练数一致。<br><sub>标签：该数据集条目将 **Spleen** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](http://medicaldecathlon.com) | [Antonelli et al. (2021)](https://arxiv.org/abs/2106.05735), [Simpson et al. (2019)](https://arxiv.org/abs/1902.09063) |
+| [Decathlon Task 10](decathlon-task-10/README.zh-CN.md) | 126 | CT | Colon Tumor | 官方挑战发布：190 例 CT，其中训练 126 例、测试 64 例。文献条目影像数与训练数一致。<br><sub>标签：该数据集条目将 **Colon Tumor** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](http://medicaldecathlon.com) | [Antonelli et al. (2021)](https://arxiv.org/abs/2106.05735), [Simpson et al. (2019)](https://arxiv.org/abs/1902.09063) |
+| [BTCV](btcv/README.zh-CN.md) | 30 | CT | 13 Abdominal Organs | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：该数据集条目将 **13 Abdominal Organs** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://www.synapse.org/Synapse:syn3193805/wiki/89480) | [Landman et al. (2015)](https://arxiv.org/html/2503.08373v1#bib.bib67) |
+| [Promise12](promise12/README.zh-CN.md) | 50 | MRI | Prostate | 当前 Zenodo 记录分别提供 training_data.zip、test_data.zip 和 livechallenge_test_data.zip。入口页正文未汇总统一的病例总数；各压缩包范围请以清单和挑战说明为准。<br><sub>标签：目标为 MR 影像上的前列腺腺体。发布包为训练数据提供真值文件；在线挑战/测试压缩包的标签开放状态不同。</sub> | [官方页面](https://zenodo.org/records/8026660) | [Litjens et al. (2014)](https://arxiv.org/html/2503.08373v1#bib.bib77) |
+| [CHAOS](chaos/README.zh-CN.md) | 60 | MRI | Liver, Kidney (L and R), Spleen | 官方 Zenodo 挑战记录说明 CT 和 MRI 数据各包含 20 例训练病例和 20 例测试病例。<br><sub>标签：CT 病例提供肝脏掩膜；MRI 病例提供肝脏、右肾、左肾和脾脏掩膜。因此两种模态的标签集合并不相同。</sub> | [官方页面](https://zenodo.org/records/3431873) | [Kavur et al. (2019)](https://arxiv.org/html/2503.08373v1#bib.bib58) |
+| [BTCV 2](btcv-2/README.zh-CN.md) | 63 | CT | 9 Abdominal Organs | Zenodo 记录包含 90 例分割体数据及相应裁剪坐标。CT 影像来自 TCIA Pancreas-CT 和 BTCV Abdomen；记录提醒参考分割包含挑战测试数据，不得用于开发该挑战的提交结果。<br><sub>标签：该发布为脾脏、肾脏、胆囊、食管、肝脏、胃、胰腺和十二指肠提供参考掩膜。来源混合 Pancreas-CT 与 BTCV 标注，需按病例核对各标签是否可用。</sub> | [官方页面](https://zenodo.org/records/1169361) | [Gibson et al. (2018)](https://arxiv.org/html/2503.08373v1#bib.bib37) |
+| [NIH-Pan](nih-pan/README.zh-CN.md) | 82 | CT | Pancreas | TCIA 报告 80 名受试者、80 项检查、80 个序列和 18,942 张 DICOM 影像。集合摘要另称 80 名受试者完成 82 次增强 CT 扫描；因此 论文条目中的 82 是扫描数，不是 DICOM 切片数。<br><sub>标签：参考标注为胰腺掩膜。TCIA 记录将人工分割压缩包与 DICOM 影像集合分别提供。</sub> | [官方页面](https://wiki.cancerimagingarchive.net/display/Public/Pancreas-CT) | [Clark et al. (2013)](https://arxiv.org/html/2503.08373v1#bib.bib25), [Roth et al. (2015)](https://arxiv.org/html/2503.08373v1#bib.bib119) |
+| [ProstateX](prostatex/README.zh-CN.md) | 140 | MRI | Prostate Lesion | 挑战门户将带参考信息的训练病例与不公开真值的留出测试集分开。本页按引用保留 论文条目影像数，不以此估计当前可下载档案的总量。<br><sub>标签：该数据集条目将 **Prostate Lesion** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://www.aapm.org/GrandChallenge/PROSTATEx-2) | [Litjens et al. (2017)](https://arxiv.org/html/2503.08373v1#bib.bib78) |
+| [KiTS23](kits23/README.zh-CN.md) | 489 | CT | Kidneys, K. Tumor, Cysts | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：该数据集条目将 **Kidneys, K. Tumor, Cysts** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://kits-challenge.org/kits23) | [Heller et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib43) |
+| [AMOS](amos/README.zh-CN.md) | 360 | CT,MRI | 15 Abdominal Organs | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：该数据集条目将 **15 Abdominal Organs** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://amos22.grand-challenge.org) | [Ji et al. (2022)](https://arxiv.org/html/2503.08373v1#bib.bib50) |
+| [AbdomenAtlas1.1Mini](abdomenatlas1-1mini/README.zh-CN.md) | 5,195 | CT | 8 Abdominal Organs | 所链接数据卡介绍 Mini 子集，并另行报告母集合 AbdomenAtlas 有 9,262 例全标注 CT、覆盖 25 类结构。Mini 文件访问受托管平台条款控制；母集合数量不替代本条目影像数。<br><sub>标签：该数据集条目将 **8 Abdominal Organs** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://huggingface.co/datasets/AbdomenAtlas/_AbdomenAtlas1.1Mini) | [Li et al.](https://arxiv.org/html/2503.08373v1#bib.bib71), [Qu et al.](https://arxiv.org/html/2503.08373v1#bib.bib108) |
+| [FLARE](flare/README.zh-CN.md) | 50 | CT | 13 Abdominal Organs | 官方挑战报告 50 例带标签和 2,000 例无标签训练数据、50 例可见验证病例及 200 例隐藏测试病例。挑战目标为 13 类腹部器官。<br><sub>标签：该数据集条目将 **13 Abdominal Organs** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://flare22.grand-challenge.org) | [Ma et al. (2023)](https://arxiv.org/abs/2308.05862) |
+| [WORD](word/README.zh-CN.md) | 120 | CT | 16 Abdominal Organs | 作者仓库发布包含 16 类腹部器官标签的 WORD CT 数据集，并提供病例列表和预处理说明。具体下载包包含哪些病例和标签，请以仓库版本和清单为准。<br><sub>标签：该数据集条目将 **16 Abdominal Organs** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://github.com/HiLab-git/WORD) | [Luo et al. (2022)](https://arxiv.org/html/2503.08373v1#bib.bib84), [Liao et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib73) |
+| [AbdomenCT1K](abdomenct1k/README.zh-CN.md) | 996 | CT | Liver, Kidney, Spleen, Pancreas | 官方仓库介绍了多个相关发布版本，并非单一同质划分：FLARE2022 使用含 13 类器官标注的 50 例数据，扩展伪肿瘤标签集另行说明。论文条目影像数作为独立条目值保留。<br><sub>标签：该数据集条目将 **Liver, Kidney, Spleen, Pancreas** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://github.com/JunMa11/AbdomenCT-1K) | [Ma et al. (2022)](https://arxiv.org/html/2503.08373v1#bib.bib86) |
+| [CTORG](ctorg/README.zh-CN.md) | 140 | CT | Lung, Brain, Bones, Liver, Kidney, Bladder | TCIA 发布包含 140 次 CT 扫描：训练 119 次、测试 21 次。140 幅影像中有 131 次为独立 CT 检查，另 9 次来自 PET/CT 的 CT 部分。<br><sub>标签：TCIA 记录说明集合标注肺、骨、肝脏、肾脏和膀胱；脑掩膜仅出现在影像中包含脑部的子集。</sub> | [官方页面](https://www.cancerimagingarchive.net/collection/ct-org) | [Rister et al. (2019)](https://arxiv.org/html/2503.08373v1#bib.bib114) |
+| [Duke Liver](duke-liver/README.zh-CN.md) | 310 | MRI | Liver | Zenodo 介绍 105 名受试者的 2,000 多个匿名 MRI 序列，其中序列分类部分有 2,146 个序列，肝脏分割子集有 310 幅影像。记录为受限访问。<br><sub>标签：该数据集条目将 **Liver** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://zenodo.org/records/7774566) | [Macdonald et al. (2020)](https://arxiv.org/html/2503.08373v1#bib.bib90) |
+| [BBBC027 Colon Tissue](bbbc027-colon-tissue/README.zh-CN.md) | 60 | Fl. Microscopy | Colon Tissue | 来源记录标注这是合成 3D 结肠组织图像，并提供细胞二值真值掩膜。<br><sub>标签：该数据集条目将 **Colon Tissue** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://bbbc.broadinstitute.org/BBBC027) | [Svoboda et al. (2011)](https://arxiv.org/html/2503.08373v1#bib.bib132) |
+| [NCI-ISBI](nci-isbi/README.zh-CN.md) | 59 | MRI | Prostate | TCIA 列出 80 位受试者，并说明数据分为训练、排行榜和最终测试三部分。记录提供 1.5 T 和 3 T 扫描的轴位 T2 加权前列腺 MRI。<br><sub>标签：该数据集条目将 **Prostate** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://www.cancerimagingarchive.net/analysis-result/isbi-mr-prostate-2013) | [Bloch et al. (2015)](https://arxiv.org/html/2503.08373v1#bib.bib16) |
+| [Pediatric CT SEG](pediatric-ct-seg/README.zh-CN.md) | 353 | CT | Organs | TCIA 记录介绍多机构儿科 CT 集合；由于薄层图像噪声影响人工标注，后续大部分扫描在勾画前重采样至 2.0 mm 层厚。当前具体病例和标签文件请查阅集合记录。<br><sub>标签：条目中的器官目标对应发布的儿科 CT 轮廓。TCIA 记录说明各结构轮廓开放情况及重采样处理；请使用来源标签，不要从目录名称推断所有病例都有完整器官集。</sub> | [官方页面](https://doi.org/10.7937/TCIA.X0H0-1706) | [Jordan et al. (2022)](https://arxiv.org/html/2503.08373v1#bib.bib52) |
+| [Atlas Bourgogne](atlas-bourgogne/README.zh-CN.md) | 60 | MRI | Liver, Tumor | 官方挑战页面报告 90 位患者的 90 例肝脏增强 MRI：训练 60 例、测试 30 例。<br><sub>标签：该数据集条目将 **Liver, Tumor** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://atlas-challenge.u-bourgogne.fr) | [Quinton et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib109) |
+| [CC Tumor Heterogeneity](cc-tumor-heterogeneity/README.zh-CN.md) | 63 | MRI | Cervix, Tumor | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：该数据集条目将 **Cervix, Tumor** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://www.cancerimagingarchive.net/collection/cc-tumor-heterogeneity) | [Mayr et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib95) |
+| [CURVAS](curvas/README.zh-CN.md) | 60 | CT | Pancreas, Kidney, Liver | 官方挑战报告 90 例在埃尔朗根大学医院前瞻性采集的 CT。初始训练队列包含 20 例带标注的 A 组扫描；其余数据分配至后续挑战阶段。<br><sub>标签：该数据集条目将 **Pancreas, Kidney, Liver** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://curvas.grand-challenge.org/curvas-dataset) | [Riera-Marín et al. (2024)](https://arxiv.org/html/2503.08373v1#bib.bib113) |
+| [Kipa22](kipa22/README.zh-CN.md) | 70 | CT | Kidney, Vessel, Tumor | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：该数据集条目将 **Kidney, Vessel, Tumor** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://kipa22.grand-challenge.org) | [He et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib41) |
+| [ProstateEdgeCases](prostateedgecases/README.zh-CN.md) | 131 | CT | Bladder, Prostate, Rectum | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：该集合针对盆腔 CT 中的前列腺、膀胱和直肠，病例选自解剖结构不典型或较困难的情况。病例级轮廓可用性请查阅 TCIA 记录。</sub> | [官方页面](https://www.cancerimagingarchive.net/collection/prostate-anatomical-edge-cases) | [Kanwar et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib56) |
+| [Prostate158](prostate158/README.zh-CN.md) | 188 | MRI | Gland, Tumor | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：数据集条目列出腺体和肿瘤目标。具体类别 ID 及哪些扫描包含病灶掩膜，请查阅 Zenodo 训练发布和引用论文。</sub> | [官方页面](https://zenodo.org/records/6481141) | [Sunoqrot et al. (2022)](https://arxiv.org/html/2503.08373v1#bib.bib130) |
+
+### 🗣️ 头颈部 — 8 个条目
+
+头颈部危及器官、鼻咽、甲状腺、耳蜗和牙科结构。
+
+| 数据集 / 任务 | 条目影像数 | 模态 | 分割目标 | 官方队列、划分与标签说明 | 官方数据入口 | 引用文献 |
+| --- | --- | --- | --- | --- | --- | --- |
+| [StructSeg Task1](structseg-task1/README.zh-CN.md) | 50 | CT | 22 OAR Head & Neck | 官方任务页说明头颈 OAR 任务有 50 例训练 CT 和 10 例测试 CT。文献条目中的影像数对应训练集数量。<br><sub>标签：该任务定义 22 类头颈危及器官。具体结构名称及个别病例中缺少的结构请以官方任务标签清单为准。</sub> | [官方页面](https://structseg2019.grand-challenge.org) | [Li et al. (2019)](https://structseg2019.grand-challenge.org/) |
+| [StructSeg Task2](structseg-task2/README.zh-CN.md) | 50 | CT | Nasopharynx Cancer | 官方任务页说明鼻咽癌 GTV 任务有 50 例带标签训练 CT 和 10 例测试 CT。测试标注保留用于挑战评估。<br><sub>标签：目标为鼻咽癌大体肿瘤体积；该任务未定义多器官标签图。</sub> | [官方页面](https://structseg2019.grand-challenge.org) | [Li et al. (2019)](https://structseg2019.grand-challenge.org/) |
+| [CrossModa22](crossmoda22/README.zh-CN.md) | 168 | MRI | Vestibular Schwannoma, Cochlea | 官方挑战设置训练/验证和评测阶段。训练/验证发布覆盖源 MRI 域和目标 MRI 域；挑战测试标签保留用于评测。<br><sub>标签：该数据集条目将 **Vestibular Schwannoma, Cochlea** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://crossmoda2022.grand-challenge.org) | [Shapey et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib124) |
+| [Hecktor2022](hecktor2022/README.zh-CN.md) | 524 | PET,CT | Head and Neck Tumor | 挑战网站将训练、验证数据与留出测试评测分开。两个预测任务分别为原发肿瘤/淋巴结分割和无复发生存预测；结局预测任务不属于额外分割标签。<br><sub>标签：该数据集条目将 **Head and Neck Tumor** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://hecktor.grand-challenge.org) | [Andrearczyk et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib4) |
+| [SegThy 1](segthy-1/README.zh-CN.md) | 14 | MRI | Thyroid, Carotid, Jugular Vein | 来源介绍子数据集 1 有 28 名健康志愿者，子数据集 2 有 186 名常规诊疗患者。志愿者扫描包括每人 1 次 3 T T1 加权颈部 MRI 和 9 次跟踪式三维超声；这些是采集数，不是受试者数。<br><sub>标签：来源为 MRI 和超声采集提供甲状腺标签图；相关发布还定义颈动脉和颈静脉标签。不要假定每次扫描都包含全部结构，具体以子数据集标注文件为准。</sub> | [官方页面](https://www.cs.cit.tum.de/camp/publications/segthy-dataset) | [Krönke et al. (2022)](https://arxiv.org/html/2503.08373v1#bib.bib62) |
+| [SegThy 2](segthy-2/README.zh-CN.md) | 32 | US | Thyroid, Carotid, Jugular Vein | 来源介绍两个子数据集合计包含 28 名健康志愿者和 186 名常规诊疗患者。MRI 与超声采集数量差别较大；论文条目影像数不能解释为受试者数。<br><sub>标签：条目目标为甲状腺、颈动脉和颈静脉。具体结构及标签开放情况取决于发布子数据集和扫描。</sub> | [官方页面](https://www.cs.cit.tum.de/camp/publications/segthy-dataset) | [Krönke et al. (2022)](https://arxiv.org/html/2503.08373v1#bib.bib62) |
+| [PDDCA](pddca/README.zh-CN.md) | 47 | CT | Head and Neck Structures | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：官方记录列出腮腺、脑干、视交叉、视神经、下颌骨、颌下腺和骨性标志；部分病例缺少若干结构标注。</sub> | [官方页面](https://www.imagenglab.com/newsite/pddca) | [Raudaschl et al. (2017)](https://arxiv.org/html/2503.08373v1#bib.bib111) |
+| [ToothFairy 2](toothfairy-2/README.zh-CN.md) | 480 | CT | Dental Structures | 官方页面报告 480 例 CBCT：A 组 417 例，新增宽视野 B 组 63 例。42 类解剖标签以对应发布版本的标签文件为准。<br><sub>标签：官方发布说明包含 42 类颌面结构，包括颌骨、管道、鼻窦、咽部、牙齿、牙冠/桥体和种植体。</sub> | [官方页面](https://ditto.ing.unimore.it/toothfairy2) | [Bolelli et al. (2024)](https://arxiv.org/html/2503.08373v1#bib.bib17) |
+
+### 🦴 脊柱与肌肉骨骼 — 8 个条目
+
+椎骨、肋骨、腰椎、下肢、软骨和骨骼目标。
+
+| 数据集 / 任务 | 条目影像数 | 模态 | 分割目标 | 官方队列、划分与标签说明 | 官方数据入口 | 引用文献 |
+| --- | --- | --- | --- | --- | --- | --- |
+| [VerSe2020](verse19-20/README.zh-CN.md) | 113 | CT | 28 Vertebrae | 官方挑战仓库报告 2019 和 2020 两届共有 355 名患者的 374 次多中心 CT 扫描，并提供椎体级标签。文献条目影像数 113 是该条目的较窄范围。<br><sub>标签：挑战对可见脊柱进行椎体级标记和分割，标签包含椎体身份信息，因此任务不只是前景/背景脊柱掩膜。</sub> | [官方页面](https://github.com/anjany/verse) | [Sekuboyina et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib123), [Löffler et al. (2020)](https://arxiv.org/html/2503.08373v1#bib.bib81), [Liebl et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib74) |
+| [RibSeg](ribseg/README.zh-CN.md) | 370 | CT | Ribs | 引用的仓库目前是迁移通知。当前数据包、版本说明和病例清单请查阅所链接的 HINTLab 新仓库；原始来源链接作为来源链路保留。<br><sub>标签：目标为肋骨实例级分割；使用发布标签时应将每根肋骨保留为独立实例。</sub> | [官方页面](https://github.com/HINTLab/RibSeg) | [Yang et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib147) |
+| [CTORG](ctorg/README.zh-CN.md) | 140 | CT | Lung, Brain, Bones, Liver, Kidney, Bladder | TCIA 发布包含 140 次 CT 扫描：训练 119 次、测试 21 次。140 幅影像中有 131 次为独立 CT 检查，另 9 次来自 PET/CT 的 CT 部分。<br><sub>标签：TCIA 记录说明集合标注肺、骨、肝脏、肾脏和膀胱；脑掩膜仅出现在影像中包含脑部的子集。</sub> | [官方页面](https://www.cancerimagingarchive.net/collection/ct-org) | [Rister et al. (2019)](https://arxiv.org/html/2503.08373v1#bib.bib114) |
+| [Leg3DUS](leg3dus/README.zh-CN.md) | 44 | US | Lower-Limb Leg | 大学官方页面分别提供训练、验证和测试数据下载。<br><sub>标签：该数据集条目将 **Lower-Limb Leg** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://www.cs.cit.tum.de/camp/publications/leg-3d-us-dataset) | [Duque et al. (2024)](https://arxiv.org/html/2503.08373v1#bib.bib31) |
+| [Spine-Mets](spine-mets/README.zh-CN.md) | 55 | CT | Vertebra | TCIA 集合页面是发布范围、受试者数、影像文件和分割下载的权威来源；页面未规定挑战赛式训练/验证/测试划分。<br><sub>标签：该数据集条目将 **Vertebra** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://www.cancerimagingarchive.net/collection/spine-mets-ct-seg) | [Pieper et al. (2024)](https://arxiv.org/html/2503.08373v1#bib.bib105) |
+| [SKI10](ski10/README.zh-CN.md) | 100 | MRI | Cartilage, Bone | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：该数据集条目将 **Cartilage, Bone** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://ski10.grand-challenge.org) | [Ginneken et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib138) |
+| [Soft Tissue Sarcoma](soft-tissue-sarcoma/README.zh-CN.md) | 102 | MRI | Edema, Tumor | TCIA 集合介绍 51 名四肢软组织肉瘤患者，提供治疗前 FDG-PET/CT 和解剖 MRI 序列。论文条目影像数 102 与患者数分别记录。<br><sub>标签：所引目标指肿瘤和水肿区域；TCIA 集合轮廓与相关分析文件分开提供。请按具体受试者和扫描确认包含哪些轮廓。</sub> | [官方页面](https://www.cancerimagingarchive.net/collection/soft-tissue-sarcoma) | [Vallières et al. (2015)](https://arxiv.org/html/2503.08373v1#bib.bib136) |
+| [Spider](spider/README.zh-CN.md) | 447 | MRI | Lumbar Spine | Zenodo 记录报告 4 家医院 218 名患者的 218 项检查，共 447 个矢状位 T1/T2 加权 MRI 序列，另设隐藏挑战测试集。447 是序列数，不是患者数。<br><sub>标签：该发布包含椎体、椎间盘和椎管的参考分割，并提供椎体级信息；类别 ID 请参阅官方标签规范。</sub> | [官方页面](https://zenodo.org/records/10159290) | [Graaf et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib137) |
+
+### 🔬 显微、细胞与科学成像 — 18 个条目
+
+按显微成像模态或细胞/微观结构目标归类，其中含非临床显微图像。
+
+| 数据集 / 任务 | 条目影像数 | 模态 | 分割目标 | 官方队列、划分与标签说明 | 官方数据入口 | 引用文献 |
+| --- | --- | --- | --- | --- | --- | --- |
+| [AxonEM](axonem/README.zh-CN.md) | 18 | El. Microscopy | Axon Instances | 挑战分别提供人和小鼠数据集。官方页面说明每个数据集有 9 个密集标注训练体数据，图像堆栈另行分发；论文条目影像数并非体数据数量。<br><sub>标签：该数据集条目将 **Axon Instances** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://axonem.grand-challenge.org) | [Wei et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib142) |
+| [MitoEM](mitoem/README.zh-CN.md) | 4 | El. Microscopy | Mitochondria Instances | 挑战发布提供人和大鼠图像体数据。v2 标注页将前 500 张切片划分为训练（0–399）和验证（400–499）；发布说明指出 v2 修正了早期标注中的错误。<br><sub>标签：该数据集条目将 **Mitochondria Instances** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://mitoem.grand-challenge.org) | [Wei et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib142) |
+| [NucMM](nucmm/README.zh-CN.md) | 62 | El. Microscopy | Neuronal Nuclei | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：该数据集条目将 **Neuronal Nuclei** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://nucmm.grand-challenge.org) | [Lin et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib76) |
+| [LungVis1.0](lungvis1-0/README.zh-CN.md) | 22 | Fl. Microscopy | Airway | Zenodo 记录介绍透明化小鼠肺的光片荧光图像，包括全肺自发荧光及颗粒分布数据。<br><sub>标签：该数据集条目将 **Airway** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://zenodo.org/records/7413818) | [Yang et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib149) |
+| [BBBC024 HL60 Cell line](bbbc024-hl60-cell-line/README.zh-CN.md) | 240 | Fl. Microscopy | Cell Nuclei | 来源记录标注这是合成 3D HL60 细胞图像，并提供图像和真值文件。<br><sub>标签：该数据集条目将 **Cell Nuclei** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://bbbc.broadinstitute.org/BBBC024) | [Svoboda et al. (2009)](https://arxiv.org/html/2503.08373v1#bib.bib131) |
+| [BBBC027 Colon Tissue](bbbc027-colon-tissue/README.zh-CN.md) | 60 | Fl. Microscopy | Colon Tissue | 来源记录标注这是合成 3D 结肠组织图像，并提供细胞二值真值掩膜。<br><sub>标签：该数据集条目将 **Colon Tissue** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://bbbc.broadinstitute.org/BBBC027) | [Svoboda et al. (2011)](https://arxiv.org/html/2503.08373v1#bib.bib132) |
+| [BBBC032 MouseEmbryoBlastocyst](bbbc032-mouseembryoblastocyst/README.zh-CN.md) | 1 | Fl. Microscopy | Blastocyst Cells | Broad 集合提供小鼠胚胎囊胚细胞显微图像和人工标注真值。<br><sub>标签：该数据集条目将 **Blastocyst Cells** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://bbbc.broadinstitute.org/BBBC032) | [Ljosa et al. (2012)](https://arxiv.org/html/2503.08373v1#bib.bib80) |
+| [BBBC033 MouseTrophoblast](bbbc033-mousetrophoblast/README.zh-CN.md) | 1 | Microscopy | Trophoblast | Broad 集合提供小鼠滋养层干细胞图像及相应参考标注。<br><sub>标签：该数据集条目将 **Trophoblast** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://bbbc.broadinstitute.org/BBBC033) | [Ljosa et al. (2012)](https://arxiv.org/html/2503.08373v1#bib.bib80) |
+| [BBBC034 PluripStemCells](bbbc034-pluripstemcells/README.zh-CN.md) | 1 | Microscopy | Stem Cells | Broad 页面注明图像和真值采用 CC BY 4.0 许可。<br><sub>标签：该数据集条目将 **Stem Cells** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://bbbc.broadinstitute.org/BBBC034) | [Ljosa et al. (2012)](https://arxiv.org/html/2503.08373v1#bib.bib80) |
+| [BBBC046 FiloData3D](bbbc046-filodata3d/README.zh-CN.md) | 5,400 | Fl. Microscopy | Lung Cancer Cells | Broad 页面注明该合成图像集采用 CC BY-NC-SA 4.0 许可。<br><sub>标签：该数据集条目将 **Lung Cancer Cells** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://bbbc.broadinstitute.org/BBBC046) | [Ljosa et al. (2012)](https://arxiv.org/html/2503.08373v1#bib.bib80) |
+| [BBBC050 MouseEmbryoNuclei](bbbc050-mouseembryonuclei/README.zh-CN.md) | 165 | Fl. Microscopy | Mouse Embryonic Cells | Broad 集合提供早期小鼠胚胎荧光三维时间序列图像及多种细胞核真值版本。<br><sub>标签：该数据集条目将 **Mouse Embryonic Cells** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://bbbc.broadinstitute.org/BBBC050) | [Ljosa et al. (2012)](https://arxiv.org/html/2503.08373v1#bib.bib80) |
+| [EPFL Mito](epfl-mito/README.zh-CN.md) | 1 | El. Microscopy | Mitochondria | 官方页面介绍一个来自海马 CA1 区域的 5 × 5 × 5 μm³ 电子显微镜体数据，并提供单独标注的训练和测试子体积。目录条目中的“1”并非子体积数量。<br><sub>标签：该数据集条目将 **Mitochondria** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://www.epfl.ch/labs/cvlab/data/data-em) | [Lucchi et al. (2011)](https://arxiv.org/html/2503.08373v1#bib.bib82) |
+| [Drosophila](drosophila/README.zh-CN.md) | 1 | El. Microscopy | Mitochondria, Synapses | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：真值仓库包含神经组织结构（如线粒体和突触）的实例标注。不同体数据堆栈提供的标签内容可能不同，请逐卷查阅文件。</sub> | [官方页面](https://github.com/unidesigner/groundtruth-drosophila-vnc) | [Gerhard et al. (2013)](https://arxiv.org/html/2503.08373v1#bib.bib36) |
+| [ParticleSeg3D](particleseg3d/README.zh-CN.md) | 54 | MicroCT | Mineral Samples | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：该数据集条目将 **Mineral Samples** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://syncandshare.desy.de/index.php/s/wjiDQ49KangiPj5) | [Gotkowski et al. (2024)](https://arxiv.org/html/2503.08373v1#bib.bib39) |
+| [NIS3D](nis3d/README.zh-CN.md) | 6 | Fl. Microscopy | Cell Nuclei | Zenodo 记录介绍 22,000 多个经人工标注的细胞；链接仓库提供基准详情和下载说明。<br><sub>标签：该基准提供细胞核密集实例掩膜。其发布规模以标注细胞数表示，而 论文条目数以影像数表示。</sub> | [官方页面](https://zenodo.org/records/11456029) | [Zheng et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib153) |
+| [Fluo C3DH A549](fluo-c3dh-a549/README.zh-CN.md) | 90 | Fl. Microscopy | Cell | 官方挑战条目提供训练序列和独立测试序列；参考掩膜按 Cell Tracking Challenge 规则发布。<br><sub>标签：该数据集条目将 **Cell** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://celltrackingchallenge.net/3d-datasets) | [Maška et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib94) |
+| [Fluo N3DH](fluo-n3dh/README.zh-CN.md) | 230 | Fl. Microscopy | Cell, Border | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：该数据集条目将 **Cell, Border** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://celltrackingchallenge.net/3d-datasets) | [Maška et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib94) |
+| [LAPD Mouse](lapd-mouse/README.zh-CN.md) | 34 | Fl. Microscopy | Airway | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：档案除肺部解剖和颗粒沉积测量外，还包含气道标签。不同文件代表不同数据产品；将其视为分割掩膜前请先查阅病例元数据。</sub> | [官方页面](https://cebs-ext.niehs.nih.gov/cahs/report/lapd/web-download-links) | [Beichel et al. (2019)](https://arxiv.org/html/2503.08373v1#bib.bib13) |
+
+### 🌐 全身与多部位 — 7 个条目
+
+目标明确覆盖全身、多器官或多类病灶，而非单一解剖区域。
+
+| 数据集 / 任务 | 条目影像数 | 模态 | 分割目标 | 官方队列、划分与标签说明 | 官方数据入口 | 引用文献 |
+| --- | --- | --- | --- | --- | --- | --- |
+| [AutoPet2](autopet2/README.zh-CN.md) | 1,014 | PET,CT | Lesions | 挑战页面介绍单中心采集的全身 FDG-PET/CT 训练库，共 900 名患者的 1,014 次检查。论文条目中的 1,014 是检查数，不是患者数。<br><sub>标签：该数据集条目将 **Lesions** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。</sub> | [官方页面](https://autopet-ii.grand-challenge.org) | [Kuestner et al. (2022)](https://arxiv.org/html/2503.08373v1#bib.bib34) |
+| [TotalSegmentatorV2](totalsegmentatorv2/README.zh-CN.md) | 1,180 | CT | 117 Classes of Whole Body | 当前官方仓库链接 1,228 名 CT 受试者和 616 名 MR 受试者的训练资源。该仓库数字描述当前工具数据资源，可能与所引论文条目的研究队列不同。<br><sub>标签：所引条目描述 117 类全身结构。当前仓库可能更新任务清单或增加结构；请使用对应发布版本的标签图，不要假定所有版本类别完全一致。</sub> | [官方页面](https://github.com/wasserth/TotalSegmentator) | [Wasserthal et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib141) |
+| [DAP-ATLAS](dap-atlas/README.zh-CN.md) | 533 | CT | 142 Classes of Whole Body | 所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。<br><sub>标签：论文条目列出 142 类全身解剖结构。具体类别名称、层级及体素 ID 请以仓库对应发布版标签图为准。</sub> | [官方页面](https://github.com/alexanderjaus/AtlasDataset) | [Jaus et al. (2023)](https://arxiv.org/abs/2307.13375) |
+| [CTORG](ctorg/README.zh-CN.md) | 140 | CT | Lung, Brain, Bones, Liver, Kidney, Bladder | TCIA 发布包含 140 次 CT 扫描：训练 119 次、测试 21 次。140 幅影像中有 131 次为独立 CT 检查，另 9 次来自 PET/CT 的 CT 部分。<br><sub>标签：TCIA 记录说明集合标注肺、骨、肝脏、肾脏和膀胱；脑掩膜仅出现在影像中包含脑部的子集。</sub> | [官方页面](https://www.cancerimagingarchive.net/collection/ct-org) | [Rister et al. (2019)](https://arxiv.org/html/2503.08373v1#bib.bib114) |
+| [Pediatric CT SEG](pediatric-ct-seg/README.zh-CN.md) | 353 | CT | Organs | TCIA 记录介绍多机构儿科 CT 集合；由于薄层图像噪声影响人工标注，后续大部分扫描在勾画前重采样至 2.0 mm 层厚。当前具体病例和标签文件请查阅集合记录。<br><sub>标签：条目中的器官目标对应发布的儿科 CT 轮廓。TCIA 记录说明各结构轮廓开放情况及重采样处理；请使用来源标签，不要从目录名称推断所有病例都有完整器官集。</sub> | [官方页面](https://doi.org/10.7937/TCIA.X0H0-1706) | [Jordan et al. (2022)](https://arxiv.org/html/2503.08373v1#bib.bib52) |
+| [TotalSegmentator MRI](totalsegmentator-mri/README.zh-CN.md) | 298 | MRI | Organs | Zenodo 记录为开放数据集（v1.0.0），页面提供数据、元数据和引用说明。<br><sub>标签：Zenodo 发布包含 56 类解剖结构掩膜。类别名称和 ID 请使用该发布的标签图；此 MRI 标签清单与 CT TotalSegmentator v2 清单不同。</sub> | [官方页面](https://zenodo.org/records/11367005) | [D’Antonoli et al. (2024)](https://arxiv.org/html/2503.08373v1#bib.bib26) |
+| [Deep Lesion](deep-lesion/README.zh-CN.md) | 1,093 | CT | Multiple Types of Lesions | 本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。<br><sub>标签：DeepLesion 为多种病灶提供中心点和框式标注，而非单一器官的逐体素掩膜。标注协议和病灶元数据请以 NIH 发布内容为准。</sub> | [官方页面](https://nihcc.app.box.com/v/DeepLesion) | [Yan et al. (2017)](https://arxiv.org/html/2503.08373v1#bib.bib146) |
+
+## 🧾 各数据集页面包含
+
+- 🔗 官方数据集、挑战赛或机构页面链接
+- 🧾 数据集简介、分割目标、队列范围和划分状态
+- 🏷️ 来源公开的标注信息与标签定义
+- 🔒 来源注明的访问要求和复用条款
+- 📚 数据集论文与来源引用
+
+**来源原则：** 当前队列规模、标签、访问和许可信息以官方数据记录为准。文献条目影像数单独列出，不据此推断发布总量或划分。本仓库不托管图像、掩膜或论文 PDF。
 
 *来源核查日期：2026 年 11 月 26 日。*

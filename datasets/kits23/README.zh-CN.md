@@ -29,18 +29,6 @@ KiTS23 是第三届 Kidney and Kidney Tumor Segmentation 挑战赛。队列包�
 
 挑战赛官方说明指出，训练集中有部分病例曾用于 KiTS19、KiTS21 或 KNIGHT。描述数据来源或评估独立性时应考虑这些重叠。
 
-## nnInteractive 训练清单中的对应记录
-
-论文附录 A1 对该数据集列出以下记录。影像数是模型训练清单中的行级数字，不一定等于当前官方版本的总规模。
-
-| A1 字段 | 论文所列内容 |
-| --- | --- |
-| 影像数 | 489 |
-| 模态 | CT |
-| 目标 | Kidneys, K. Tumor, Cysts |
-| A1 数据入口 | [打开来源页面](https://kits-challenge.org/kits23) |
-| 论文引用 | [ref 43](https://arxiv.org/html/2503.08373v1#bib.bib43) |
-
 ## 🏷️ 官方标签定义
 
 | 数值 | 类别 | 官方定义 |
@@ -86,5 +74,17 @@ KiTS23 是第三届 Kidney and Kidney Tumor Segmentation 挑战赛。队列包�
 - [论文集 DOI：10.1007/978-3-031-54806-2](https://doi.org/10.1007/978-3-031-54806-2)
 
 ---
+
+## 📑 文献条目记录
+
+| 字段 | 条目所列内容 |
+| --- | --- |
+| 影像数 | 489 |
+| 模态 | CT |
+| 目标 | Kidneys, K. Tumor, Cysts |
+| 数据入口 | [官方/来源页面](https://kits-challenge.org/kits23) |
+| 数据集引用文献 | [Heller et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib43) |
+
+上方影像数保留为该文献条目的记录，不视为数据集总队列规模或当前可下载的带标签病例数；这些范围请查看前文的官方发布说明。
 
 <p align="center"><sub>🕘 来源最后核查：2026 年 11 月 25 日 · <a href="../README.zh-CN.md">返回数据集目录</a></sub></p>

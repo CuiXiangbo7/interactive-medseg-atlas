@@ -5,48 +5,61 @@
 <p align="center"><strong>Lymph Nodes · CT</strong></p>
 
 <p align="center">
-<a href="https://www.cancerimagingarchive.net/collection/ct-lymph-nodes"><img src="https://img.shields.io/badge/SOURCE-A1%20linked%20resource-2e8b57?style=flat-square" alt="Dataset source"></a>
-<a href="https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset"><img src="https://img.shields.io/badge/nnInteractive-Training%20Table%20A1-6f42c1?style=flat-square" alt="nnInteractive training table"></a>
+<a href="https://www.cancerimagingarchive.net/collection/ct-lymph-nodes"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
+<a href="https://arxiv.org/html/2503.08373v1#bib.bib118"><img src="https://img.shields.io/badge/PAPER-2014-2455a4?style=flat-square" alt="Dataset publication"></a>
 </p>
 
 | Quick facts | |
 | --- | --- |
-| **Paper-listed images** | 175 in the nnInteractive Table A1 row; this is the paper’s training-inventory figure, **not a verified total size for the current official release** |
-| **Modality (A1 wording)** | CT |
-| **Target** | Lymph Nodes, as listed in nnInteractive Table A1 |
+| **Input** | CT; see the official page for the acquisition protocol and file format |
+| **Literature-entry image count** | 175 images; this entry count is distinct from any official release-wide cohort total |
+| **Targets** | Lymph Nodes |
 | **Navigation categories** | Chest, lung and airway |
-| **Source page title captured** | CT-LYMPH-NODES - The Cancer Imaging Archive (TCIA) |
+| **Official source** | [Dataset/challenge record](https://www.cancerimagingarchive.net/collection/ct-lymph-nodes) |
+| **Record title** | CT-LYMPH-NODES - The Cancer Imaging Archive (TCIA) |
 
-## Dataset overview
+## 🧾 Dataset overview
 
-The A1-linked source page summarizes the resource as: “View this dataset for more details.”
+The TCIA CT-Lymph-Nodes collection combines mediastinal and abdominal lymph-node CT annotations. Its record describes 388 mediastinal nodes in 90 patients and 595 abdominal nodes in 86 patients, with point/measurement annotations rather than a uniform volumetric mask for every node.
 
-The nnInteractive paper includes this named entry in its training-data table and reports **175 images** for the row. The paper’s row-level figure is kept separate from any total, cohort size, or release split stated by the dataset provider. The dataset access/source page cited by Appendix A1 is linked below.
+The paper-entry image count is shown separately from the official release scope below. Dataset files are not mirrored in this atlas.
 
-## Official label and annotation information
+## 🏷️ Segmentation targets and labels
 
-**nnInteractive A1 target field:** Lymph Nodes. This is the model paper’s summary, not a class-ID schema. The linked source text mentions labels or annotations, but this review did not verify a full class-ID schema; consult the release documentation for exact class names, IDs, and annotation rules.
+| Item | Dataset information |
+| --- | --- |
+| Target listed for this entry | Lymph Nodes |
+| Label definitions | The TCIA annotations include node locations, physical coordinates, and size measurements. These point/measurement annotations should not be treated as voxelwise lesion masks. |
 
-The nnInteractive paper’s target field is useful for locating the entry, but does not replace the official label map, annotation protocol, or class-ID definitions.
+## 🗂️ Official release and split
 
-## Split and label availability stated by the source
+The TCIA collection reports 388 mediastinal lymph nodes in 90 patients and 595 abdominal nodes in 86 patients. Annotations include coordinates and size measurements; they are not equivalent to one binary 3D segmentation mask per node.
 
-Appendix A1 does not give this entry’s case-level split or label-availability status. Check the linked release page; no split is inferred from the A1 image count.
+## ⬇️ Access and reuse terms
 
-## Access and reuse terms
+- [Official dataset or challenge page](https://www.cancerimagingarchive.net/collection/ct-lymph-nodes).
 
-- [Dataset access/source page](https://www.cancerimagingarchive.net/collection/ct-lymph-nodes) (the route cited by nnInteractive Appendix A1).
+- **Reuse terms:** The official source text states CC BY 3.0; follow the source record for the complete terms.
+- This atlas does not host the images, masks, or dataset archives.
 
-- **Source-page check:** The source page responded during this review (HTTP 200); its current release page remains authoritative.
-- **Reuse terms:** The captured source page states **CC BY 3.0**. Follow the linked record for the full terms.
-- No image, mask, or dataset archive is hosted in this atlas.
+## 📚 Publication and citation
 
-## Publication and citation
+- [Roth et al., “A new 2.5 d representation for lymph node detection using random sets of deep convolutional neural network observations.” In Medical Image Computing and Computer-Assisted Intervention–MICCAI 2014: 17th International Conference, Boston, MA, USA, September 14-18, 2014, Proceedings, Part I 17, pages 520–527. Springer, 2014b.](https://arxiv.org/html/2503.08373v1#bib.bib118)
 
-The nnInteractive paper cites this row using [ref 118](https://arxiv.org/html/2503.08373v1#bib.bib118). Open those references in the paper to see the cited dataset publication(s) and their bibliographic details.
 
-- [nnInteractive: Redefining 3D Promptable Segmentation — Appendix A1](https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset)
-- [nnInteractive abstract and paper record](https://arxiv.org/abs/2503.08373)
+Use the dataset-specific citation and DOI on the official page when available. The source list may include more than one paper for a dataset or task.
+
+## 📑 Published dataset record
+
+| Field | Listed value |
+| --- | --- |
+| Image count | 175 |
+| Modality | CT |
+| Target | Lymph Nodes |
+| Dataset entry | [Official/source page](https://www.cancerimagingarchive.net/collection/ct-lymph-nodes) |
+| Cited dataset publication(s) | [Roth et al. (2014)](https://arxiv.org/html/2503.08373v1#bib.bib118) |
+
+The image count above is retained for this literature entry. It is not treated as the total cohort size or the number of publicly downloadable, labelled cases; consult the release details above for those scopes.
 
 ---
 

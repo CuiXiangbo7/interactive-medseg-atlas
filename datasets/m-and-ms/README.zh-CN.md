@@ -5,48 +5,62 @@
 <p align="center"><strong>Left & Right Ventricle, Myocardium · MRI</strong></p>
 
 <p align="center">
-<a href="https://www.ub.edu/mnms"><img src="https://img.shields.io/badge/SOURCE-A1%20linked%20resource-2e8b57?style=flat-square" alt="数据来源"></a>
-<a href="https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset"><img src="https://img.shields.io/badge/nnInteractive-Training%20Table%20A1-6f42c1?style=flat-square" alt="nnInteractive 训练表"></a>
+<a href="https://www.ub.edu/mnms"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="官方数据来源"></a>
+<a href="https://arxiv.org/html/2503.08373v1#bib.bib22"><img src="https://img.shields.io/badge/PAPER-2021-2455a4?style=flat-square" alt="数据集论文"></a>
 </p>
 
 | 基本信息 | |
 | --- | --- |
-| **论文所列影像数** | nnInteractive 表 A1 此行报告 300 幅；这是论文训练清单中的行级数值，**不是已核实的当前官方发布总量** |
-| **模态（A1 原文）** | MRI |
-| **目标** | Left & Right Ventricle, Myocardium（nnInteractive 表 A1 原文） |
+| **输入模态** | MRI；采集方案和文件格式请查阅官方页面 |
+| **文献条目影像数** | 300 幅；该条目数量与官方发布的完整队列规模分别记录 |
+| **目标** | Left & Right Ventricle, Myocardium |
 | **导航分类** | 心脏与心血管结构 |
-| **来源页标题** | M&Ms challenge |
+| **官方来源** | [数据集/挑战记录](https://www.ub.edu/mnms) |
+| **来源记录标题** | M&Ms challenge |
 
-## 数据集介绍
+## 🧾 数据集简介
 
-附录 A1 将此条链接到标题为“M&Ms challenge”的数据集合/挑战赛页面。上方的模态、目标和影像数保留 nnInteractive 对应行的原始记录。
+Multi-Centre, Multi-Vendor and Multi-Disease 心脏 MRI 挑战用于评估分割方法跨采集域的表现。数据包含多个中心和扫描仪厂商的 cine MRI，并标注左、右心室及心肌。
 
-nnInteractive 论文将此名称列入训练数据表，并在该行报告 **300 幅影像**。这里将论文行级数字与数据集提供方公布的总规模、队列大小和数据划分分开记录。下方提供附录 A1 所列的数据入口/来源页。
+论文条目影像数与官方发布范围分开记录。本图谱不镜像托管影像或掩膜文件。
 
-## 官方标签与标注信息
+## 🏷️ 分割目标与标签
 
-**nnInteractive A1 目标字段：**Left & Right Ventricle, Myocardium。这是模型论文的概述，不是标签 ID 定义。 本次读取的来源页未显示完整标签体系；具体类别名、ID 和标注规则请查阅数据发布文档。
+| 项目 | 数据集信息 |
+| --- | --- |
+| 本条记录列出的目标 | Left & Right Ventricle, Myocardium |
+| 标签定义 | 分割目标为标注心动时相上的左心室、右心室和心肌。比较标签时应保留时相及扫描仪厂商/域信息。 |
 
-nnInteractive 论文的目标字段可帮助定位数据，但不能替代官方标签图、标注流程或类别 ID 定义。
+## 🗂️ 官方发布与数据划分
 
-## 来源页面所述的数据划分与标签开放状态
+本指南读取到的公开入口页正文未列出完整训练/验证/测试划分；不会根据文献条目影像数推断数据划分。
 
-附录 A1 未提供此条目的病例级划分或标签开放状态。请查阅链接的发布页；不会根据 A1 影像数推断划分。
+## ⬇️ 获取方式与使用条款
 
-## 获取方式与使用条款
+- [官方数据集或挑战页面](https://www.ub.edu/mnms)。
 
-- [数据入口/来源页面](https://www.ub.edu/mnms)（nnInteractive 附录 A1 所列入口）。
-
-- **来源页核查：**本次核查中来源网址有响应，但未能读取可用页面正文；当前条款和发布信息请以链接页面为准。
-- **使用条款：**本次读取的入口页正文未找到明确许可声明；使用前请在来源记录核实条款。
+- **使用条款：**本次读取的入口页正文未显示明确的数据许可。下载、再分发或商业使用前请核实链接来源中的条款。
 - 本图谱不托管影像、掩膜或数据集压缩包。
 
-## 论文与引用
+## 📚 论文与引用
 
-nnInteractive 论文在此行引用 [ref 22](https://arxiv.org/html/2503.08373v1#bib.bib22), [ref 93](https://arxiv.org/html/2503.08373v1#bib.bib93)。点击文献编号可查看其引用的原始数据集论文及完整书目信息。
+- [Campello et al., “Multi-centre, multi-vendor and multi-disease cardiac segmentation: The mms challenge.” IEEE Transactions on Medical Imaging, 2021.](https://arxiv.org/html/2503.08373v1#bib.bib22)
+- [Martín-Isla et al., “Deep learning segmentation of the right ventricle in cardiac mri: The mms challenge.” IEEE Journal of Biomedical and Health Informatics, 2023.](https://arxiv.org/html/2503.08373v1#bib.bib93)
 
-- [nnInteractive: Redefining 3D Promptable Segmentation — 附录 A1](https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset)
-- [nnInteractive 摘要与论文页面](https://arxiv.org/abs/2503.08373)
+
+如官方页面提供数据集专用引用和 DOI，请优先按该页面引用。一个数据集或任务可能对应多篇来源论文。
+
+## 📑 文献条目记录
+
+| 字段 | 条目所列内容 |
+| --- | --- |
+| 影像数 | 300 |
+| 模态 | MRI |
+| 目标 | Left & Right Ventricle, Myocardium |
+| 数据入口 | [官方/来源页面](https://www.ub.edu/mnms) |
+| 数据集引用文献 | [Campello et al. (2021)](https://arxiv.org/html/2503.08373v1#bib.bib22), [Martín-Isla et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib93) |
+
+上方影像数保留为该文献条目的记录，不视为数据集总队列规模或当前可下载的带标签病例数；这些范围请查看前文的官方发布说明。
 
 ---
 

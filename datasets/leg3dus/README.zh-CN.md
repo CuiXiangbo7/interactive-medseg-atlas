@@ -5,49 +5,61 @@
 <p align="center"><strong>Lower-Limb Leg · 超声</strong></p>
 
 <p align="center">
-<a href="https://www.cs.cit.tum.de/camp/publications/leg-3d-us-dataset"><img src="https://img.shields.io/badge/SOURCE-A1%20linked%20resource-2e8b57?style=flat-square" alt="数据来源"></a>
-<a href="https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset"><img src="https://img.shields.io/badge/nnInteractive-Training%20Table%20A1-6f42c1?style=flat-square" alt="nnInteractive 训练表"></a>
+<a href="https://www.cs.cit.tum.de/camp/publications/leg-3d-us-dataset"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="官方数据来源"></a>
+<a href="https://arxiv.org/html/2503.08373v1#bib.bib31"><img src="https://img.shields.io/badge/PAPER-2024-2455a4?style=flat-square" alt="数据集论文"></a>
 </p>
 
 | 基本信息 | |
 | --- | --- |
-| **论文所列影像数** | nnInteractive 表 A1 此行报告 44 幅；这是论文训练清单中的行级数值，**不是已核实的当前官方发布总量** |
-| **模态（A1 原文）** | US |
-| **目标** | Lower-Limb Leg（nnInteractive 表 A1 原文） |
+| **输入模态** | 超声；采集方案和文件格式请查阅官方页面 |
+| **文献条目影像数** | 44 幅；该条目数量与官方发布的完整队列规模分别记录 |
+| **目标** | Lower-Limb Leg |
 | **导航分类** | 脊柱与肌肉骨骼 |
-| **来源页标题** | Leg-3D-US Dataset - Lehrstuhl für Informatikanwendungen in der Medizin |
+| **官方来源** | [数据集/挑战记录](https://www.cs.cit.tum.de/camp/publications/leg-3d-us-dataset) |
+| **来源记录标题** | Leg-3D-US Dataset - Lehrstuhl für Informatikanwendungen in der Medizin |
 
-## 数据集介绍
+## 🧾 数据集简介
 
-附录 A1 将此条链接到标题为“Leg-3D-US Dataset - Lehrstuhl für Informatikanwendungen in der Medizin”的数据集合/挑战赛页面。上方的模态、目标和影像数保留 nnInteractive 对应行的原始记录。
+Leg-3D-US 是用于下肢肌肉与组织分析的三维超声资源。大学官方页面分别提供训练、验证和测试数据下载。
 
-nnInteractive 论文将此名称列入训练数据表，并在该行报告 **44 幅影像**。这里将论文行级数字与数据集提供方公布的总规模、队列大小和数据划分分开记录。下方提供附录 A1 所列的数据入口/来源页。
-> **来源说明：**TUM 官方页面为下肢 3D 超声数据集分别提供训练、验证和测试集下载。
+论文条目影像数与官方发布范围分开记录。本图谱不镜像托管影像或掩膜文件。
 
-## 官方标签与标注信息
+## 🏷️ 分割目标与标签
 
-**nnInteractive A1 目标字段：**Lower-Limb Leg。这是模型论文的概述，不是标签 ID 定义。 链接的来源页提到标签或标注；具体类别名、ID 和标注规则请查阅数据发布文档。
+| 项目 | 数据集信息 |
+| --- | --- |
+| 本条记录列出的目标 | Lower-Limb Leg |
+| 标签定义 | 该数据集条目将 **Lower-Limb Leg** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。 |
 
-nnInteractive 论文的目标字段可帮助定位数据，但不能替代官方标签图、标注流程或类别 ID 定义。
+## 🗂️ 官方发布与数据划分
 
-## 来源页面所述的数据划分与标签开放状态
+大学官方页面分别提供训练、验证和测试数据下载。
 
-TUM 官方页面为下肢 3D 超声数据集分别提供训练、验证和测试集下载。
+## ⬇️ 获取方式与使用条款
 
-## 获取方式与使用条款
+- [官方数据集或挑战页面](https://www.cs.cit.tum.de/camp/publications/leg-3d-us-dataset)。
 
-- [数据入口/来源页面](https://www.cs.cit.tum.de/camp/publications/leg-3d-us-dataset)（nnInteractive 附录 A1 所列入口）。
-
-- **来源页核查：**本次核查时来源页面可响应（HTTP 200）；当前发布页仍是权威信息来源。
-- **使用条款：**本次读取的入口页正文未找到明确许可声明；使用前请在来源记录核实条款。
+- **使用条款：**本次读取的入口页正文未显示明确的数据许可。下载、再分发或商业使用前请核实链接来源中的条款。
 - 本图谱不托管影像、掩膜或数据集压缩包。
 
-## 论文与引用
+## 📚 论文与引用
 
-nnInteractive 论文在此行引用 [ref 31](https://arxiv.org/html/2503.08373v1#bib.bib31)。点击文献编号可查看其引用的原始数据集论文及完整书目信息。
+- [Duque et al., “Ultrasound segmentation analysis via distinct and completed anatomical borders.” International Journal of Computer Assisted Radiology and Surgery, 19(7):1419–1427, 2024.](https://arxiv.org/html/2503.08373v1#bib.bib31)
 
-- [nnInteractive: Redefining 3D Promptable Segmentation — 附录 A1](https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset)
-- [nnInteractive 摘要与论文页面](https://arxiv.org/abs/2503.08373)
+
+如官方页面提供数据集专用引用和 DOI，请优先按该页面引用。一个数据集或任务可能对应多篇来源论文。
+
+## 📑 文献条目记录
+
+| 字段 | 条目所列内容 |
+| --- | --- |
+| 影像数 | 44 |
+| 模态 | US |
+| 目标 | Lower-Limb Leg |
+| 数据入口 | [官方/来源页面](https://www.cs.cit.tum.de/camp/publications/leg-3d-us-dataset) |
+| 数据集引用文献 | [Duque et al. (2024)](https://arxiv.org/html/2503.08373v1#bib.bib31) |
+
+上方影像数保留为该文献条目的记录，不视为数据集总队列规模或当前可下载的带标签病例数；这些范围请查看前文的官方发布说明。
 
 ---
 

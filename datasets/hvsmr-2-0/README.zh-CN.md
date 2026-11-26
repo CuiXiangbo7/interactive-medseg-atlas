@@ -5,48 +5,61 @@
 <p align="center"><strong>Heart, Vessel · MRI</strong></p>
 
 <p align="center">
-<a href="https://segchd.csail.mit.edu"><img src="https://img.shields.io/badge/SOURCE-A1%20linked%20resource-2e8b57?style=flat-square" alt="数据来源"></a>
-<a href="https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset"><img src="https://img.shields.io/badge/nnInteractive-Training%20Table%20A1-6f42c1?style=flat-square" alt="nnInteractive 训练表"></a>
+<a href="https://segchd.csail.mit.edu"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="官方数据来源"></a>
+<a href="https://arxiv.org/html/2503.08373v1#bib.bib101"><img src="https://img.shields.io/badge/PAPER-2024-2455a4?style=flat-square" alt="数据集论文"></a>
 </p>
 
 | 基本信息 | |
 | --- | --- |
-| **论文所列影像数** | nnInteractive 表 A1 此行报告 60 幅；这是论文训练清单中的行级数值，**不是已核实的当前官方发布总量** |
-| **模态（A1 原文）** | MRI |
-| **目标** | Heart, Vessel（nnInteractive 表 A1 原文） |
+| **输入模态** | MRI；采集方案和文件格式请查阅官方页面 |
+| **文献条目影像数** | 60 幅；该条目数量与官方发布的完整队列规模分别记录 |
+| **目标** | Heart, Vessel |
 | **导航分类** | 心脏与心血管结构 |
-| **来源页标题** | HVSMR 2016 |
+| **官方来源** | [数据集/挑战记录](https://segchd.csail.mit.edu) |
+| **来源记录标题** | HVSMR 2016 |
 
-## 数据集介绍
+## 🧾 数据集简介
 
-附录 A1 将此条链接到标题为“HVSMR 2016”的数据集合/挑战赛页面。上方的模态、目标和影像数保留 nnInteractive 对应行的原始记录。
+HVSMR 是面向心脏及大血管分割的心血管 MRI 基准，重点关注先天性心脏病。具体发布版本和标签定义请以挑战记录为准。
 
-nnInteractive 论文将此名称列入训练数据表，并在该行报告 **60 幅影像**。这里将论文行级数字与数据集提供方公布的总规模、队列大小和数据划分分开记录。下方提供附录 A1 所列的数据入口/来源页。
+论文条目影像数与官方发布范围分开记录。本图谱不镜像托管影像或掩膜文件。
 
-## 官方标签与标注信息
+## 🏷️ 分割目标与标签
 
-**nnInteractive A1 目标字段：**Heart, Vessel。这是模型论文的概述，不是标签 ID 定义。 本次读取的来源页未显示完整标签体系；具体类别名、ID 和标注规则请查阅数据发布文档。
+| 项目 | 数据集信息 |
+| --- | --- |
+| 本条记录列出的目标 | Heart, Vessel |
+| 标签定义 | 该数据集条目将 **Heart, Vessel** 列为分割目标。本次读取的公开入口页未显示完整类别 ID 表；类别编号和边界约定请以链接中的标签文件或数据说明为准。 |
 
-nnInteractive 论文的目标字段可帮助定位数据，但不能替代官方标签图、标注流程或类别 ID 定义。
+## 🗂️ 官方发布与数据划分
 
-## 来源页面所述的数据划分与标签开放状态
+所链接官方页面包含发布版本或挑战赛划分信息。请以页面注明的版本和文件级标签开放状态为准；不会根据下方条目影像数推断划分。
 
-链接页面包含训练/验证/测试或数据划分信息；具体发布版本的病例数请以该页面为准。A1 影像数是单独的训练清单数值。
+## ⬇️ 获取方式与使用条款
 
-## 获取方式与使用条款
+- [官方数据集或挑战页面](https://segchd.csail.mit.edu)。
 
-- [数据入口/来源页面](https://segchd.csail.mit.edu)（nnInteractive 附录 A1 所列入口）。
-
-- **来源页核查：**本次核查时来源页面可响应（HTTP 200）；当前发布页仍是权威信息来源。
-- **使用条款：**本次读取的入口页正文未找到明确许可声明；使用前请在来源记录核实条款。
+- **使用条款：**本次读取的入口页正文未显示明确的数据许可。下载、再分发或商业使用前请核实链接来源中的条款。
 - 本图谱不托管影像、掩膜或数据集压缩包。
 
-## 论文与引用
+## 📚 论文与引用
 
-nnInteractive 论文在此行引用 [ref 101](https://arxiv.org/html/2503.08373v1#bib.bib101)。点击文献编号可查看其引用的原始数据集论文及完整书目信息。
+- [Pace et al., “Hvsmr-2.0: A 3d cardiovascular mr dataset for whole-heart segmentation in congenital heart disease.” Scientific Data, 11(1):721, 2024.](https://arxiv.org/html/2503.08373v1#bib.bib101)
 
-- [nnInteractive: Redefining 3D Promptable Segmentation — 附录 A1](https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset)
-- [nnInteractive 摘要与论文页面](https://arxiv.org/abs/2503.08373)
+
+如官方页面提供数据集专用引用和 DOI，请优先按该页面引用。一个数据集或任务可能对应多篇来源论文。
+
+## 📑 文献条目记录
+
+| 字段 | 条目所列内容 |
+| --- | --- |
+| 影像数 | 60 |
+| 模态 | MRI |
+| 目标 | Heart, Vessel |
+| 数据入口 | [官方/来源页面](https://segchd.csail.mit.edu) |
+| 数据集引用文献 | [Pace et al. (2024)](https://arxiv.org/html/2503.08373v1#bib.bib101) |
+
+上方影像数保留为该文献条目的记录，不视为数据集总队列规模或当前可下载的带标签病例数；这些范围请查看前文的官方发布说明。
 
 ---
 

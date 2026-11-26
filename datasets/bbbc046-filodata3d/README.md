@@ -2,52 +2,64 @@
 
 <h1 align="center">🗂️ BBBC046 FiloData3D</h1>
 
-<p align="center"><strong>Lung Cancer Cells · Fluorescence microscopy</strong></p>
+<p align="center"><strong>Lung Cancer Cells · fluorescence microscopy</strong></p>
 
 <p align="center">
-<a href="https://bbbc.broadinstitute.org/BBBC046"><img src="https://img.shields.io/badge/SOURCE-A1%20linked%20resource-2e8b57?style=flat-square" alt="Dataset source"></a>
-<a href="https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset"><img src="https://img.shields.io/badge/nnInteractive-Training%20Table%20A1-6f42c1?style=flat-square" alt="nnInteractive training table"></a>
+<a href="https://bbbc.broadinstitute.org/BBBC046"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
+<a href="https://arxiv.org/html/2503.08373v1#bib.bib80"><img src="https://img.shields.io/badge/PAPER-2012-2455a4?style=flat-square" alt="Dataset publication"></a>
 </p>
 
 | Quick facts | |
 | --- | --- |
-| **Paper-listed images** | 5,400 in the nnInteractive Table A1 row; this is the paper’s training-inventory figure, **not a verified total size for the current official release** |
-| **Modality (A1 wording)** | Fl. Microscopy |
-| **Target** | Lung Cancer Cells, as listed in nnInteractive Table A1 |
+| **Input** | fluorescence microscopy; see the official page for the acquisition protocol and file format |
+| **Literature-entry image count** | 5,400 images; this entry count is distinct from any official release-wide cohort total |
+| **Targets** | Lung Cancer Cells |
 | **Navigation categories** | Chest, lung and airway, Microscopy and cellular imaging |
-| **Source page title captured** | FiloData3D - Single A549 cells with filopodia (synthetic image data) \| Broad Bioimage Benchmark Collection |
+| **Official source** | [Dataset/challenge record](https://bbbc.broadinstitute.org/BBBC046) |
+| **Record title** | FiloData3D - Single A549 cells with filopodia (synthetic image data) \| Broad Bioimage Benchmark Collection |
 
-## Dataset overview
+## 🧾 Dataset overview
 
-Appendix A1 links this entry to the collection/challenge page titled “FiloData3D - Single A549 cells with filopodia (synthetic image data) | Broad Bioimage Benchmark Collection.” The task-specific modality, target, and image count shown above are the values reported in the nnInteractive row.
+FiloData3D contains synthetic 3D images of single A549 cells with filopodia and cell-level ground truth. The Broad collection states a CC BY-NC-SA 4.0 license.
 
-The nnInteractive paper includes this named entry in its training-data table and reports **5,400 images** for the row. The paper’s row-level figure is kept separate from any total, cohort size, or release split stated by the dataset provider. The dataset access/source page cited by Appendix A1 is linked below.
-> **Source note:** The Broad Bioimage Benchmark Collection page describes synthetic 3D single-cell images with filopodia and states a CC BY-NC-SA 4.0 license.
+The paper-entry image count is shown separately from the official release scope below. Dataset files are not mirrored in this atlas.
 
-## Official label and annotation information
+## 🏷️ Segmentation targets and labels
 
-**nnInteractive A1 target field:** Lung Cancer Cells. This is the model paper’s summary, not a class-ID schema. The linked source text mentions labels or annotations, but this review did not verify a full class-ID schema; consult the release documentation for exact class names, IDs, and annotation rules.
+| Item | Dataset information |
+| --- | --- |
+| Target listed for this entry | Lung Cancer Cells |
+| Label definitions | The dataset entry identifies **Lung Cancer Cells** as its segmentation target. The public landing page captured here does not expose a complete class-ID table; use the linked label files or dataset documentation for IDs and boundary rules. |
 
-The nnInteractive paper’s target field is useful for locating the entry, but does not replace the official label map, annotation protocol, or class-ID definitions.
+## 🗂️ Official release and split
 
-## Split and label availability stated by the source
+The Broad page states that the synthetic image set uses CC BY-NC-SA 4.0.
 
-The Broad Bioimage Benchmark Collection page describes synthetic 3D single-cell images with filopodia and states a CC BY-NC-SA 4.0 license.
+## ⬇️ Access and reuse terms
 
-## Access and reuse terms
+- [Official dataset or challenge page](https://bbbc.broadinstitute.org/BBBC046).
 
-- [Dataset access/source page](https://bbbc.broadinstitute.org/BBBC046) (the route cited by nnInteractive Appendix A1).
+- **Reuse terms:** The official source text states CC BY-NC-SA 4.0; follow the source record for the complete terms.
+- This atlas does not host the images, masks, or dataset archives.
 
-- **Source-page check:** The source page responded during this review (HTTP 200); its current release page remains authoritative.
-- **Reuse terms:** The captured source page states **CC BY-NC-SA 4.0**. Follow the linked record for the full terms.
-- No image, mask, or dataset archive is hosted in this atlas.
+## 📚 Publication and citation
 
-## Publication and citation
+- [Ljosa et al., “Annotated high-throughput microscopy image sets for validation.” Nature methods, 9(7):637, 2012.](https://arxiv.org/html/2503.08373v1#bib.bib80)
 
-The nnInteractive paper cites this row using [ref 80](https://arxiv.org/html/2503.08373v1#bib.bib80). Open those references in the paper to see the cited dataset publication(s) and their bibliographic details.
 
-- [nnInteractive: Redefining 3D Promptable Segmentation — Appendix A1](https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset)
-- [nnInteractive abstract and paper record](https://arxiv.org/abs/2503.08373)
+Use the dataset-specific citation and DOI on the official page when available. The source list may include more than one paper for a dataset or task.
+
+## 📑 Published dataset record
+
+| Field | Listed value |
+| --- | --- |
+| Image count | 5,400 |
+| Modality | Fl. Microscopy |
+| Target | Lung Cancer Cells |
+| Dataset entry | [Official/source page](https://bbbc.broadinstitute.org/BBBC046) |
+| Cited dataset publication(s) | [Ljosa et al. (2012)](https://arxiv.org/html/2503.08373v1#bib.bib80) |
+
+The image count above is retained for this literature entry. It is not treated as the total cohort size or the number of publicly downloadable, labelled cases; consult the release details above for those scopes.
 
 ---
 

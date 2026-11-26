@@ -5,48 +5,61 @@
 <p align="center"><strong>Bladder, Prostate, Rectum · CT</strong></p>
 
 <p align="center">
-<a href="https://www.cancerimagingarchive.net/collection/prostate-anatomical-edge-cases"><img src="https://img.shields.io/badge/SOURCE-A1%20linked%20resource-2e8b57?style=flat-square" alt="Dataset source"></a>
-<a href="https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset"><img src="https://img.shields.io/badge/nnInteractive-Training%20Table%20A1-6f42c1?style=flat-square" alt="nnInteractive training table"></a>
+<a href="https://www.cancerimagingarchive.net/collection/prostate-anatomical-edge-cases"><img src="https://img.shields.io/badge/DATA-Official%20source-2e8b57?style=flat-square" alt="Official dataset source"></a>
+<a href="https://arxiv.org/html/2503.08373v1#bib.bib56"><img src="https://img.shields.io/badge/PAPER-2023-2455a4?style=flat-square" alt="Dataset publication"></a>
 </p>
 
 | Quick facts | |
 | --- | --- |
-| **Paper-listed images** | 131 in the nnInteractive Table A1 row; this is the paper’s training-inventory figure, **not a verified total size for the current official release** |
-| **Modality (A1 wording)** | CT |
-| **Target** | Bladder, Prostate, Rectum, as listed in nnInteractive Table A1 |
+| **Input** | CT; see the official page for the acquisition protocol and file format |
+| **Literature-entry image count** | 131 images; this entry count is distinct from any official release-wide cohort total |
+| **Targets** | Bladder, Prostate, Rectum |
 | **Navigation categories** | Abdomen and pelvis |
-| **Source page title captured** | PROSTATE-ANATOMICAL-EDGE-CASES - The Cancer Imaging Archive (TCIA) |
+| **Official source** | [Dataset/challenge record](https://www.cancerimagingarchive.net/collection/prostate-anatomical-edge-cases) |
+| **Record title** | PROSTATE-ANATOMICAL-EDGE-CASES - The Cancer Imaging Archive (TCIA) |
 
-## Dataset overview
+## 🧾 Dataset overview
 
-The A1-linked source page summarizes the resource as: “View this dataset for more details.”
+The TCIA Prostate Anatomical Edge Cases collection is intended to assess robustness on challenging pelvic anatomy. The official record describes CT images and prostate, bladder, and rectum structures.
 
-The nnInteractive paper includes this named entry in its training-data table and reports **131 images** for the row. The paper’s row-level figure is kept separate from any total, cohort size, or release split stated by the dataset provider. The dataset access/source page cited by Appendix A1 is linked below.
+The paper-entry image count is shown separately from the official release scope below. Dataset files are not mirrored in this atlas.
 
-## Official label and annotation information
+## 🏷️ Segmentation targets and labels
 
-**nnInteractive A1 target field:** Bladder, Prostate, Rectum. This is the model paper’s summary, not a class-ID schema. The linked source text mentions labels or annotations, but this review did not verify a full class-ID schema; consult the release documentation for exact class names, IDs, and annotation rules.
+| Item | Dataset information |
+| --- | --- |
+| Target listed for this entry | Bladder, Prostate, Rectum |
+| Label definitions | The collection targets prostate, bladder, and rectum in pelvic CT, with anatomy selected for atypical or difficult cases. Check the TCIA contour record for case-level availability. |
 
-The nnInteractive paper’s target field is useful for locating the entry, but does not replace the official label map, annotation protocol, or class-ID definitions.
+## 🗂️ Official release and split
 
-## Split and label availability stated by the source
+A complete train/validation/test breakdown was not stated in the public landing-page text captured for this guide. No split is inferred from the literature-listed image count.
 
-Appendix A1 does not give this entry’s case-level split or label-availability status. Check the linked release page; no split is inferred from the A1 image count.
+## ⬇️ Access and reuse terms
 
-## Access and reuse terms
+- [Official dataset or challenge page](https://www.cancerimagingarchive.net/collection/prostate-anatomical-edge-cases).
 
-- [Dataset access/source page](https://www.cancerimagingarchive.net/collection/prostate-anatomical-edge-cases) (the route cited by nnInteractive Appendix A1).
+- **Reuse terms:** The official source text states CC BY 4.0; follow the source record for the complete terms.
+- This atlas does not host the images, masks, or dataset archives.
 
-- **Source-page check:** The source page responded during this review (HTTP 200); its current release page remains authoritative.
-- **Reuse terms:** The captured source page states **CC BY 4.0**. Follow the linked record for the full terms.
-- No image, mask, or dataset archive is hosted in this atlas.
+## 📚 Publication and citation
 
-## Publication and citation
+- [Kanwar et al., “Stress-testing pelvic autosegmentation algorithms using anatomical edge cases.” Physics and Imaging in Radiation Oncology, 25:100413, 2023.](https://arxiv.org/html/2503.08373v1#bib.bib56)
 
-The nnInteractive paper cites this row using [ref 56](https://arxiv.org/html/2503.08373v1#bib.bib56). Open those references in the paper to see the cited dataset publication(s) and their bibliographic details.
 
-- [nnInteractive: Redefining 3D Promptable Segmentation — Appendix A1](https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset)
-- [nnInteractive abstract and paper record](https://arxiv.org/abs/2503.08373)
+Use the dataset-specific citation and DOI on the official page when available. The source list may include more than one paper for a dataset or task.
+
+## 📑 Published dataset record
+
+| Field | Listed value |
+| --- | --- |
+| Image count | 131 |
+| Modality | CT |
+| Target | Bladder, Prostate, Rectum |
+| Dataset entry | [Official/source page](https://www.cancerimagingarchive.net/collection/prostate-anatomical-edge-cases) |
+| Cited dataset publication(s) | [Kanwar et al. (2023)](https://arxiv.org/html/2503.08373v1#bib.bib56) |
+
+The image count above is retained for this literature entry. It is not treated as the total cohort size or the number of publicly downloadable, labelled cases; consult the release details above for those scopes.
 
 ---
 
