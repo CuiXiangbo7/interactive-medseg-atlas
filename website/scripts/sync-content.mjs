@@ -26,6 +26,7 @@ function slugify(value) {
     .toLowerCase()
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/&/g, ' and ')
+    .replace(/\+/g, ' plus ')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
 }

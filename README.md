@@ -8,7 +8,7 @@
 
 <p align="center">
 <a href="datasets/README.md"><img src="https://img.shields.io/badge/DATASETS-14%20dataset%20guides-2563eb?style=flat-square" alt="14 dataset guides"></a>
-<a href="models/README.md"><img src="https://img.shields.io/badge/MODELS-15%20model%20guides-7c3aed?style=flat-square" alt="15 model guides"></a>
+<a href="models/README.md"><img src="https://img.shields.io/badge/MODELS-19%20model%20guides-7c3aed?style=flat-square" alt="19 model guides"></a>
 <a href="datasets/README.md"><img src="https://img.shields.io/badge/SOURCES-official%20%2B%20papers-16803c?style=flat-square" alt="Official sources and papers"></a>
 </p>
 
