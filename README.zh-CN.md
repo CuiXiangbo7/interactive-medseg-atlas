@@ -8,7 +8,7 @@
 
 <p align="center">
 <a href="datasets/README.zh-CN.md"><img src="https://img.shields.io/badge/DATASETS-14%20dataset%20guides-2563eb?style=flat-square" alt="14 个数据集指南"></a>
-<a href="models/README.zh-CN.md"><img src="https://img.shields.io/badge/MODELS-19%20model%20guides-7c3aed?style=flat-square" alt="19 个模型指南"></a>
+<a href="models/README.zh-CN.md"><img src="assets/model-guides-badge.svg" alt="19 个模型指南"></a>
 <a href="datasets/README.zh-CN.md"><img src="https://img.shields.io/badge/SOURCES-official%20%2B%20papers-16803c?style=flat-square" alt="官方来源与论文"></a>
 </p>
 
