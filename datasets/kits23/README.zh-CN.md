@@ -29,6 +29,18 @@ KiTS23 是第三届 Kidney and Kidney Tumor Segmentation 挑战赛。队列包�
 
 挑战赛官方说明指出，训练集中有部分病例曾用于 KiTS19、KiTS21 或 KNIGHT。描述数据来源或评估独立性时应考虑这些重叠。
 
+## nnInteractive 训练清单中的对应记录
+
+论文附录 A1 对该数据集列出以下记录。影像数是模型训练清单中的行级数字，不一定等于当前官方版本的总规模。
+
+| A1 字段 | 论文所列内容 |
+| --- | --- |
+| 影像数 | 489 |
+| 模态 | CT |
+| 目标 | Kidneys, K. Tumor, Cysts |
+| A1 数据入口 | [打开来源页面](https://kits-challenge.org/kits23) |
+| 论文引用 | [ref 43](https://arxiv.org/html/2503.08373v1#bib.bib43) |
+
 ## 🏷️ 官方标签定义
 
 | 数值 | 类别 | 官方定义 |

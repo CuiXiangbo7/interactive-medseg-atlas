@@ -26,6 +26,18 @@
 
 BTCV 与 MICCAI 2015「颅外多图谱标注」研讨会及挑战赛相关。腹部任务包含 30 例带标签的 CT 开发病例，以及另一个 20 例测试队列。标签覆盖 13 个器官：脾脏（spleen）、左右肾（right and left kidneys）、胆囊（gallbladder）、食管（esophagus）、肝脏（liver）、胃（stomach）、主动脉（aorta）、下腔静脉（inferior vena cava）、门静脉和脾静脉（portal and splenic veins），以及左右肾上腺（right and left adrenal glands）。
 
+## nnInteractive 训练清单中的对应记录
+
+论文附录 A1 对该数据集列出以下记录。影像数是模型训练清单中的行级数字，不一定等于当前官方版本的总规模。
+
+| A1 字段 | 论文所列内容 |
+| --- | --- |
+| 影像数 | 30 |
+| 模态 | CT |
+| 目标 | 13 Abdominal Organs |
+| A1 数据入口 | [打开来源页面](https://www.synapse.org/Synapse:syn3193805/wiki/89480) |
+| 论文引用 | [ref 67](https://arxiv.org/html/2503.08373v1#bib.bib67) |
+
 ## 🗂️ 官方划分与标签可用性
 
 | 队列 | 病例数 | 标签 |

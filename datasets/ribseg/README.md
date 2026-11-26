@@ -1,0 +1,56 @@
+<p align="center"><strong>English</strong> | <a href="README.zh-CN.md">简体中文</a></p>
+
+<h1 align="center">🗂️ RibSeg</h1>
+
+<p align="center"><strong>Ribs · CT</strong></p>
+
+<p align="center">
+<a href="https://github.com/HINTLab/RibSeg"><img src="https://img.shields.io/badge/SOURCE-A1%20linked%20resource-2e8b57?style=flat-square" alt="Dataset source"></a>
+<a href="https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset"><img src="https://img.shields.io/badge/nnInteractive-Training%20Table%20A1-6f42c1?style=flat-square" alt="nnInteractive training table"></a>
+</p>
+
+| Quick facts | |
+| --- | --- |
+| **Paper-listed images** | 370 in the nnInteractive Table A1 row; this is the paper’s training-inventory figure, **not a verified total size for the current official release** |
+| **Modality (A1 wording)** | CT |
+| **Target** | Ribs, as listed in nnInteractive Table A1 |
+| **Navigation categories** | Spine and musculoskeletal |
+| **Source page title captured** | GitHub - M3DV/RibSeg: Moved to https://github.com/HINTLab/RibSeg · GitHub |
+
+## Dataset overview
+
+The A1-linked source page summarizes the resource as: “Moved to https://github.com/HINTLab/RibSeg. Contribute to M3DV/RibSeg development by creating an account on GitHub.”
+
+The nnInteractive paper includes this named entry in its training-data table and reports **370 images** for the row. The paper’s row-level figure is kept separate from any total, cohort size, or release split stated by the dataset provider. The dataset access/source page cited by Appendix A1 is linked below.
+> **Source note:** The GitHub URL cited in A1 now says that the project moved; use the current HINTLab repository linked above.
+
+## Official label and annotation information
+
+**nnInteractive A1 target field:** Ribs. This is the model paper’s summary, not a class-ID schema. The retrieved source page did not expose a full label schema; use the release documentation for class names, IDs, and annotation rules.
+
+The nnInteractive paper’s target field is useful for locating the entry, but does not replace the official label map, annotation protocol, or class-ID definitions.
+
+## Split and label availability stated by the source
+
+Appendix A1 does not give this entry’s case-level split or label-availability status. Check the linked release page; no split is inferred from the A1 image count.
+
+## Access and reuse terms
+
+- [Dataset access/source page](https://github.com/HINTLab/RibSeg) (the route cited by nnInteractive Appendix A1).
+- [Current official repository (A1 URL notes it moved)](https://github.com/HINTLab/RibSeg).
+- [Original access URL printed in Appendix A1](https://github.com/M3DV/RibSeg?tab=readme-ov-file).
+
+- **Source-page check:** The source page responded during this review (HTTP 200); its current release page remains authoritative.
+- **Reuse terms:** No clear license statement was found in the landing-page text retrieved for this review. Check the source record before reuse.
+- No image, mask, or dataset archive is hosted in this atlas.
+
+## Publication and citation
+
+The nnInteractive paper cites this row using [ref 147](https://arxiv.org/html/2503.08373v1#bib.bib147). Open those references in the paper to see the cited dataset publication(s) and their bibliographic details.
+
+- [nnInteractive: Redefining 3D Promptable Segmentation — Appendix A1](https://arxiv.org/html/2503.08373v1#appendix-A3-Dataset)
+- [nnInteractive abstract and paper record](https://arxiv.org/abs/2503.08373)
+
+---
+
+<p align="center"><sub>Sources checked: 26 November 2026 · <a href="../README.md">Back to the dataset catalog</a></sub></p>

@@ -29,6 +29,18 @@ KiTS23 is the third Kidney and Kidney Tumor Segmentation challenge. The cohort i
 
 The challenge source notes that parts of the training set were previously used in KiTS19, KiTS21, or KNIGHT. Consider this overlap when describing data provenance or evaluation independence.
 
+## nnInteractive training-table entry
+
+The paper’s Appendix A1 reports the following row for this dataset. Its image count is a training-inventory figure, not necessarily the total size of the current release.
+
+| A1 field | Paper-listed value |
+| --- | --- |
+| Images | 489 |
+| Modality | CT |
+| Target | Kidneys, K. Tumor, Cysts |
+| Dataset entry linked by A1 | [Open source page](https://kits-challenge.org/kits23) |
+| Cited references | [ref 43](https://arxiv.org/html/2503.08373v1#bib.bib43) |
+
 ## 🏷️ Official label definitions
 
 | Value | Class | Official definition |

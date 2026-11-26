@@ -29,6 +29,18 @@ AMOS was designed to evaluate abdominal organ segmentation across multi-center, 
 
 The challenge has a CT-only task and a mixed CT/MRI task. The official Zenodo record links a labeled 500-CT/100-MRI archive and additional unlabeled data.
 
+## nnInteractive training-table entry
+
+The paper’s Appendix A1 reports the following row for this dataset. Its image count is a training-inventory figure, not necessarily the total size of the current release.
+
+| A1 field | Paper-listed value |
+| --- | --- |
+| Images | 360 |
+| Modality | CT,MRI |
+| Target | 15 Abdominal Organs |
+| Dataset entry linked by A1 | [Open source page](https://amos22.grand-challenge.org) |
+| Cited references | [ref 50](https://arxiv.org/html/2503.08373v1#bib.bib50) |
+
 ## 🗂️ Official split and label availability
 
 | Release / cohort | Official information |
