@@ -5,7 +5,7 @@
 <p align="center"><strong>官方代码 · 权重 · 论文 · 环境与推理指南</strong></p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/MODEL%20CARDS-19-7c3aed?style=flat-square" alt="19 个模型页面">
+<img src="https://raw.githubusercontent.com/CuiXiangbo7/interactive-medseg-atlas/main/assets/model-guides-badge.svg" alt="19 个模型页面">
 <img src="https://img.shields.io/badge/LANGUAGE-English%20%2B%20中文-16803c?style=flat-square" alt="中英文">
 </p>
 

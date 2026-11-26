@@ -5,7 +5,7 @@
 <p align="center"><strong>Official code · checkpoints · papers · setup and inference guides</strong></p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/MODEL%20CARDS-19-7c3aed?style=flat-square" alt="19 model guides">
+<img src="https://raw.githubusercontent.com/CuiXiangbo7/interactive-medseg-atlas/main/assets/model-guides-badge.svg" alt="19 model guides">
 <img src="https://img.shields.io/badge/LANGUAGE-English%20%2B%20中文-16803c?style=flat-square" alt="Bilingual">
 </p>
 
